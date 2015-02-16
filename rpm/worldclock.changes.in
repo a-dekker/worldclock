@@ -1,0 +1,50 @@
+# Rename this file as worldclock.changes to include changelog
+# entries in your RPM file.
+#
+# Add new changelog entries following the format below.
+# Add newest entries to the top of the list.
+# Separate entries from eachother with a blank line.
+
+# * date Author's Name <author's email> version-release
+# - Summary of changes
+
+* Mon Feb 2 2015 Arno Dekker <jack.tar@example.com> 0.1-11
+- daylight saving to local time, more daylight info
+
+* Mon Jan 31 2015 Arno Dekker <jack.tar@example.com> 0.1-10
+- Added more daylight saving info on city detail page
+
+* Mon Jan 26 2015 Arno Dekker <jack.tar@example.com> 0.1-9
+- Added some missing countryflags
+- show next daylight transition also as 12/24h
+
+* Sun Jan 25 2015 Arno Dekker <jack.tar@example.com> 0.1-8
+- Added countryflags
+
+* Sat Jan 24 2015 Arno Dekker <jack.tar@example.com> 0.1-7
+- Use 12h or 24h notation according to device settings
+
+* Sat Jan 24 2015 Arno Dekker <jack.tar@example.com> 0.1-6
+- Implemented coverpage
+
+* Fri Jan 23 2015 Arno Dekker <jack.tar@example.com> 0.1-5
+- Added background image
+- Added option to hide localtime when city already shown
+
+* Thu Jan 22 2015 Arno Dekker <jack.tar@example.com> 0.1-4
+- Small bugfixing
+- Added option to sort selected cities by name or date/time
+
+* Wed Jan 21 2015 Arno Dekker <jack.tar@example.com> 0.1-3
+- Added message when trying to add duplicate entries
+- Added local time as default entry
+
+* Tue Jan 20 2015 Arno Dekker <jack.tar@example.com> 0.1-2
+- Added timezone abbreviation to mainscreen
+- Added detailpage for timezone
+
+* Mon Jan 19 2015 Arno Dekker <jack.tar@example.com> 0.1-1
+- Update time and date on mainscreen
+
+* Sun Jan 18 2015 Arno Dekker <jack.tar@example.com> 0.1-0
+- Initial version
