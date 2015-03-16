@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sun Mar 15 2015 Arno Dekker <jack.tar@example.com> 0.1-12
+- Use spaces in city and country names on mainpage where appropriate
+
 * Mon Feb 2 2015 Arno Dekker <jack.tar@example.com> 0.1-11
 - daylight saving to local time, more daylight info
 

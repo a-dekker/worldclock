@@ -65,7 +65,7 @@ Page {
             title: qsTr("Timezone details")
         }
         SectionHeader {
-            text: zoneCity + ", " + zoneCountry
+            text: zoneCity.replace(/_/g, " ") + ", " + zoneCountry.replace(/([a-z])([A-Z])/g, "$1 $2")
             Image {
                 height:55
                 width: 95

@@ -304,14 +304,14 @@ Page {
                 }
                 Label {
                     id: cityLabel
-                    text: zoneCity
+                    text: zoneCity.replace(/_/g, " ")
                     width: parent.width - Theme.paddingLarge * 9
                     anchors.left: timeLabel.right
                     opacity: (index & 1) ? 0.9 : 1
                 }
                 Label {
                     anchors.top: cityLabel.bottom
-                    text: zoneCountry
+                    text: zoneCountry.replace(/([a-z])([A-Z])/g, "$1 $2")
                     font.pixelSize: Theme.fontSizeExtraSmall
                     color: (listCityItem.highlighted || listCityModel.get(
                                 index).zoneCountry == "Local time"

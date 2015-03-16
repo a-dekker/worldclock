@@ -165,7 +165,7 @@ CoverBackground {
                 }
                 Label {
                     id: cityLabel
-                    text: " " + zoneCity
+                    text: " " + zoneCity.replace(/_/g, " ")
                     anchors.left: timeLabel.right
                     font.pixelSize: Theme.fontSizeSmall
                 }

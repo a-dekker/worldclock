@@ -11,23 +11,23 @@ Page {
         id: timezones
     }
 
-    function addCurrency(country) {
+    function addCity() {
         var data
         data = timezones.readAllCities()
         data = data.split('\n')
         for (var i = 0; i < data.length; i++) {
-            currencyModel.append({
+            cityModel.append({
                                      country: data[i]
                                  })
         }
     }
 
     Component.onCompleted: {
-        addCurrency("bla")
+        addCity()
     }
 
     ListModel {
-        id: currencyModel
+        id: cityModel
     }
 
     Column {
@@ -81,8 +81,8 @@ Page {
 
 
     SilicaListView {
-        id: currencyList
-        model: currencyModel
+        id: cityList
+        model: cityModel
         header: Item {
             id: header
             width: headerContainer.width
@@ -94,7 +94,7 @@ Page {
         anchors.top: parent.top
 
         delegate: Item {
-            id: currencyListItem
+            id: cityListItem
 
             height: contentItem.visible ? contentItem.height : 0
             width: ListView.view.width
