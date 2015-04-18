@@ -1,8 +1,8 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import Launcher 1.0
-import TimeZone 1.0
-import Settings 1.0
+import harbour.worldclock.Launcher 1.0
+import harbour.worldclock.TimeZone 1.0
+import harbour.worldclock.Settings 1.0
 
 Page {
     id: page
