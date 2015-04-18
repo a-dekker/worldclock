@@ -56,15 +56,15 @@ int main(int argc, char *argv[])
     QProcess appinfo;
     QString appversion;
     // read app version from rpm database on startup
-    appinfo.start("/bin/rpm", QStringList() << "-qa" << "--queryformat" << "%{version}-%{RELEASE}" << "worldclock");
+    appinfo.start("/bin/rpm", QStringList() << "-qa" << "--queryformat" << "%{version}-%{RELEASE}" << "harbour-worldclock");
     appinfo.waitForFinished(-1);
     if (appinfo.bytesAvailable() > 0) {
         appversion = appinfo.readAll();
     }
     // To display the view, call "show()" (will show fullscreen on device).
-    qmlRegisterType<TimeZone>("TimeZone", 1 , 0 , "TZ");
-    qmlRegisterType<Launcher>("Launcher", 1 , 0 , "App");
-    qmlRegisterType<Settings>("Settings", 1 , 0 , "MySettings");
+    qmlRegisterType<TimeZone>("harbour.worldclock.TimeZone", 1 , 0 , "TZ");
+    qmlRegisterType<Launcher>("harbour.worldclock.Launcher", 1 , 0 , "App");
+    qmlRegisterType<Settings>("harbour.worldclock.Settings", 1 , 0 , "MySettings");
 
     QGuiApplication* app = SailfishApp::application(argc, argv);
 

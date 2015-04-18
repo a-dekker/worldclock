@@ -10,7 +10,7 @@
 #   - translation filenames have to be changed
 
 # The name of your application
-TARGET = worldclock
+TARGET = harbour-worldclock
 
 CONFIG += sailfishapp
 
@@ -22,9 +22,9 @@ OTHER_FILES += qml/worldclock.qml \
     qml/cover/CoverPage.qml \
     rpm/worldclock.changes.in \
     rpm/worldclock.spec \
-    rpm/worldclock.yaml \
     translations/*.ts \
-    worldclock.desktop \
+    harbour-worldclock.desktop \
+    harbour-worldclock.png \
     qml/pages/About.qml \
     qml/pages/MainPage.qml \
     qml/pages/Timezone.qml \

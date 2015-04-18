@@ -1,6 +1,6 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import Settings 1.0
+import harbour.worldclock.Settings 1.0
 
 Dialog {
     id: page
