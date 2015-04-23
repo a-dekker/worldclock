@@ -4,4 +4,4 @@ Worldclock is a Sailfish application to display clocks of cities around the worl
 
 Worldclock is using QT 5.2 's new QTimeZone class.
 
-The worlclock RPM can be downloaded from [openrepos.net](https://openrepos.net/content/ade/worldclock).
+The worlclock RPM can be downloaded from [openrepos.net](https://openrepos.net/content/ade/worldclock) and can be found in the Jolla store.
