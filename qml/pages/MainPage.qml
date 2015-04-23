@@ -36,7 +36,8 @@ Page {
                 mainapp.city_id = mainapp.city_id.replace(/(.+)\(/, "")
                 mainapp.city_id = mainapp.city_id.replace(")", "")
                 var data
-                data = timezones.readCityInfo(mainapp.city_id,mainapp.timeFormat)
+                data = timezones.readCityInfo(mainapp.city_id,
+                                              mainapp.timeFormat)
                 data = data.split(';')
                 var zoneTime = data[0]
                 var zoneCity = data[1]
@@ -97,7 +98,9 @@ Page {
             if (listCityModel.get(i).zoneCountry == "Local time") {
                 data = timezones.readLocalTime(mainapp.timeFormat)
             } else {
-                data = timezones.readCityTime(listCityModel.get(i).zoneCityFull,mainapp.timeFormat)
+                data = timezones.readCityTime(listCityModel.get(
+                                                  i).zoneCityFull,
+                                              mainapp.timeFormat)
             }
             data = data.split(';')
             var zoneTime = data[0]
@@ -179,7 +182,7 @@ Page {
 
     QtObject {
         id: local_datetime
-        property var locale: Qt.locale()
+        property var locale: Qt.locale("en_US")
         property date currentDateTime: new Date()
         property string timezone: currentDateTime.toLocaleString(locale, "t")
         property string local_date: currentDateTime.toLocaleString(
@@ -293,9 +296,12 @@ Page {
                     id: timeLabel
                     // append the listnames
                     text: zoneTime
-                    font.pixelSize: mainapp.timeFormat == "24" ? Theme.fontSizeLarge : Theme.fontSizeMedium
+                    font.pixelSize: mainapp.timeFormat
+                                    == "24" ? Theme.fontSizeLarge : Theme.fontSizeMedium
                     color: Theme.highlightColor
-                    width: mainapp.timeFormat == "24" ? parent.width - Theme.paddingLarge * 18 : parent.width - Theme.paddingLarge * 17
+                    width: mainapp.timeFormat
+                           == "24" ? parent.width - Theme.paddingLarge
+                                     * 18 : parent.width - Theme.paddingLarge * 17
                     x: Theme.paddingSmall
                     anchors.verticalCenter: parent.verticalCenter
                     verticalAlignment: Text.AlignVCenter
@@ -408,7 +414,8 @@ Page {
                         var data
                         myCities = myCities.split(",")
                         for (var myCity in myCities) {
-                            data = timezones.readCityInfo(myCities[myCity],mainapp.timeFormat)
+                            data = timezones.readCityInfo(myCities[myCity],
+                                                          mainapp.timeFormat)
                             data = data.split(';')
                             var zoneTime = data[0]
                             var zoneCity = data[1]

@@ -26,7 +26,7 @@ Page {
     }
 
     function get_city_details(cityid) {
-        var data = timezones.readCityDetails(cityid,mainapp.timeFormat)
+        var data = timezones.readCityDetails(cityid, mainapp.timeFormat)
         mainapp.city_id = ""
         data = data.split(';')
         zoneDateTime = data[0]
@@ -65,11 +65,12 @@ Page {
             title: qsTr("Timezone details")
         }
         SectionHeader {
-            text: zoneCity.replace(/_/g, " ") + ", " + zoneCountry.replace(/([a-z])([A-Z])/g, "$1 $2")
+            text: zoneCity.replace(/_/g, " ") + ", " + zoneCountry.replace(
+                      /([a-z])([A-Z])/g, "$1 $2")
             Image {
-                height:55
+                height: 55
                 width: 95
-                source: '../images/'+zoneCountry+'.png'
+                source: '../images/' + zoneCountry + '.png'
                 anchors.leftMargin: Theme.paddingSmall
             }
         }

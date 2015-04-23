@@ -17,8 +17,8 @@ Page {
         data = data.split('\n')
         for (var i = 0; i < data.length; i++) {
             cityModel.append({
-                                     country: data[i]
-                                 })
+                                 country: data[i].replace(/_/g, " ")
+                             })
         }
     }
 
@@ -52,8 +52,8 @@ Page {
     }
 
     /**************************************************************************
-     * Header for section
-     *************************************************************************/
+    * Header for section
+    *************************************************************************/
     Component {
         id: sectionHeading
         Rectangle {
@@ -78,7 +78,6 @@ Page {
         horizontalAlignment: Image.AlignHCenter
         verticalAlignment: Image.AlignVCenter
     }
-
 
     SilicaListView {
         id: cityList
@@ -112,14 +111,14 @@ Page {
             CountryItem {
                 id: contentItem
                 width: parent.width
-                countryName: qsTr(country)
+                countryName: country
                 anchors.leftMargin: Theme.paddingSmall
 
                 visible: containString(countryName)
 
                 onClicked: {
                     searchField.text = ""
-                    mainapp.city_id = countryName
+                    mainapp.city_id = countryName.replace(/ /g, "_")
                     pageStack.pop()
                 }
             }

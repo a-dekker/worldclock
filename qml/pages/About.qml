@@ -36,7 +36,7 @@ Page {
             }
             Image {
                 anchors.horizontalCenter: parent.horizontalCenter
-                source: "/usr/share/icons/hicolor/86x86/apps/worldclock.png"
+                source: "/usr/share/icons/hicolor/86x86/apps/harbour-worldclock.png"
             }
             Label {
                 text: qsTr("Version") + " " + version

@@ -111,6 +111,7 @@ QString TimeZone::TimeZone::readAllCities()
 
 QString TimeZone::TimeZone::readCityInfo(const QByteArray &cityid, const QByteArray &time_format)
 {
+    QLocale english("en_US");
     QString output;
     QString sign;
     QString timeoffset;
@@ -134,11 +135,11 @@ QString TimeZone::TimeZone::readCityInfo(const QByteArray &cityid, const QByteAr
     mytime = mytime.addSecs( offset );
     if (time_format == "24" ) {
         output += mytime.time().toString("hh:mm")+";"+cityid+";"+ QLocale::countryToString(zone.country()) \
-                  +";"+mytime.date().toString("ddd MMM d yyyy")+";"+abbreviation \
+                  +";"+english.toString(mytime.date(), "ddd MMM d yyyy")+";"+abbreviation \
                   +" ("+timeoffset+");"+QString::number(offset/60);
     } else {
-        output += mytime.time().toString("hh:mm ap")+";"+cityid+";"+ QLocale::countryToString(zone.country()) \
-                  +";"+mytime.date().toString("ddd MMM d yyyy")+";"+abbreviation+" ("+timeoffset+");" \
+        output += english.toString(mytime.time(), "hh:mm ap")+";"+cityid+";"+ QLocale::countryToString(zone.country()) \
+                  +";"+english.toString(mytime.date(), "ddd MMM d yyyy")+";"+abbreviation+" ("+timeoffset+");" \
                   +QString::number(offset/60);
     }
     return output;
@@ -146,6 +147,7 @@ QString TimeZone::TimeZone::readCityInfo(const QByteArray &cityid, const QByteAr
 
 QString TimeZone::TimeZone::readCityTime(const QByteArray &cityid, const QByteArray &time_format)
 {
+    QLocale english("en_US");
     QString output;
     QTimeZone zone = QTimeZone(cityid);
     QDateTime mytime = QDateTime::currentDateTime();
@@ -153,27 +155,29 @@ QString TimeZone::TimeZone::readCityTime(const QByteArray &cityid, const QByteAr
     mytime = mytime.toUTC();
     mytime = mytime.addSecs( offset );
     if (time_format == "24") {
-        output += mytime.time().toString("hh:mm")+';'+mytime.date().toString("ddd MMM d yyyy");
+        output += mytime.time().toString("hh:mm")+';'+english.toString(mytime.date(), "ddd MMM d yyyy");
     } else {
-        output += mytime.time().toString("hh:mm ap")+';'+mytime.date().toString("ddd MMM d yyyy");
+        output += english.toString(mytime.time(), "hh:mm ap")+';'+english.toString(mytime.date(), "ddd MMM d yyyy");
     }
     return output;
 }
 
 QString TimeZone::TimeZone::readLocalTime(const QByteArray &time_format)
 {
+    QLocale english("en_US");
     QString output;
     QDateTime mytime = QDateTime::currentDateTime();
     if (time_format == "24") {
-        output += mytime.time().toString("hh:mm")+';'+mytime.date().toString("ddd MMM d yyyy");
+        output += mytime.time().toString("hh:mm")+';'+english.toString(mytime.date(), "ddd MMM d yyyy");
     } else {
-        output += mytime.time().toString("hh:mm ap")+';'+mytime.date().toString("ddd MMM d yyyy");
+        output += english.toString(mytime.time(), "hh:mm ap")+';'+english.toString(mytime.date(), "ddd MMM d yyyy");
     }
     return output;
 }
 
 QString TimeZone::TimeZone::readCityDetails(const QByteArray &cityid, const QByteArray &time_format)
 {
+    QLocale english("en_US");
     QString output;
     QTimeZone zone = QTimeZone(cityid);
     QDateTime mytime = QDateTime::currentDateTime();
@@ -181,9 +185,9 @@ QString TimeZone::TimeZone::readCityDetails(const QByteArray &cityid, const QByt
     mytime = mytime.toUTC();
     mytime = mytime.addSecs( offset );
     QDateTime zoneTime = QDateTime(QDate::currentDate(), QTime::currentTime(), zone).toLocalTime();
-    QString longname = zone.displayName(zoneTime, QTimeZone::LongName);
+    QString longname = zone.displayName(zoneTime, QTimeZone::LongName, english );
     QString abbreviation = zone.abbreviation(zoneTime);
-    QString offsetname =  zone.displayName(zoneTime, QTimeZone::OffsetName);
+    QString offsetname = zone.displayName(zoneTime, QTimeZone::OffsetName);
 
     const QDateTime dateTime1 = QDateTime::currentDateTime();
     const QDateTime dateTime2 = QDateTime(dateTime1.date(), dateTime1.time(), Qt::UTC);
@@ -238,21 +242,21 @@ QString TimeZone::TimeZone::readCityDetails(const QByteArray &cityid, const QByt
         if (time_format == "24") {
             if ( isDayLightTime ) {
                 if ( offset > 0) {
-                    previousTransition = offset2.atUtc.addSecs(offset-3600).toString("hh:mm dddd MMMM d yyyy") + " ("+abbrevFromPrev+")";
+                    previousTransition = english.toString(offset2.atUtc.addSecs(offset-3600), "hh:mm dddd MMMM d yyyy") + " ("+abbrevFromPrev+")";
                 } else {
-                    previousTransition = offset2.atUtc.addSecs(offset+3600).toString("hh:mm dddd MMMM d yyyy") + " ("+abbrevFromPrev+")";
+                    previousTransition = english.toString(offset2.atUtc.addSecs(offset+3600), "hh:mm dddd MMMM d yyyy") + " ("+abbrevFromPrev+")";
                 }
             } else {
                 if ( offset > 0) {
-                    previousTransition = offset2.atUtc.addSecs(offset+3600).toString("hh:mm dddd MMMM d yyyy") + " ("+abbrevFromPrev+")";
+                    previousTransition = english.toString(offset2.atUtc.addSecs(offset+3600), "hh:mm dddd MMMM d yyyy") + " ("+abbrevFromPrev+")";
                 } else {
-                    previousTransition = offset2.atUtc.addSecs(offset+3600).toString("hh:mm dddd MMMM d yyyy") + " ("+abbrevFromPrev+")";
+                    previousTransition = english.toString(offset2.atUtc.addSecs(offset+3600), "hh:mm dddd MMMM d yyyy") + " ("+abbrevFromPrev+")";
                 }
             }
-            nextTransition = offset3.atUtc.addSecs(offset).toString("hh:mm dddd MMMM d yyyy") + " ("+abbreviation+")";
+            nextTransition = english.toString(offset3.atUtc.addSecs(offset), "hh:mm dddd MMMM d yyyy") + " ("+abbreviation+")";
         } else {
-            previousTransition = offset2.atUtc.toString("hh:mm ap dddd MMMM d yyyy") + " (UTC)";
-            nextTransition = offset3.atUtc.toString("hh:mm ap dddd MMMM d yyyy") + " (UTC)";
+            previousTransition = english.toString(offset2.atUtc, "hh:mm ap dddd MMMM d yyyy") + " (UTC)";
+            nextTransition = english.toString(offset3.atUtc, "hh:mm ap dddd MMMM d yyyy") + " (UTC)";
         }
         if ( isDayLightTime ) {
             // we now are in DaylightTime, so we go one hour back
@@ -269,17 +273,17 @@ QString TimeZone::TimeZone::readCityDetails(const QByteArray &cityid, const QByt
     }
 
     if (time_format == "24") {
-        output += mytime.time().toString("hh:mm")+" "+mytime.date().toString("dddd MMMM d yyyy") \
+        output += mytime.time().toString("hh:mm")+" "+english.toString(mytime.date(), "dddd MMMM d yyyy") \
                   +";"+longname+" ("+abbreviation+")"+";"+QLocale::countryToString(zone.country())+";"+cityid \
                   +";"+offsetname+";"+QTime::currentTime().toString("hh:mm")+" " \
-                  +QDate::currentDate().toString("dddd MMMM d yyyy")+";"+timeDiff+";" \
+                  +english.toString(QDate::currentDate(), "dddd MMMM d yyyy")+";"+timeDiff+";" \
                   +hasDaylighttime+";"+isDaylighttime+";"+previousTransition+";"+nextTransition+";" \
                   +abbrevToNext+";"+abbrevFromPrev+';'+DST_shift_txt_old+';'+DST_shift_txt;
     } else {
-        output += mytime.time().toString("hh:mm ap")+" "+mytime.date().toString("dddd MMMM d yyyy") \
+        output += english.toString(mytime.time(), "hh:mm ap")+" "+english.toString(mytime.date(), "dddd MMMM d yyyy") \
                   +";"+longname+" ("+abbreviation+")"+";"+QLocale::countryToString(zone.country())+";"+cityid \
-                  +";"+offsetname+";"+QTime::currentTime().toString("hh:mm ap")+" " \
-                  +QDate::currentDate().toString("dddd MMMM d yyyy")+";"+timeDiff+";" \
+                  +";"+offsetname+";"+english.toString(QTime::currentTime(), "hh:mm ap")+" " \
+                  +english.toString(QDate::currentDate(), "dddd MMMM d yyyy")+";"+timeDiff+";" \
                   +hasDaylighttime+";"+isDaylighttime+";"+previousTransition+";"+nextTransition+";" \
                   +abbrevToNext+";"+abbrevFromPrev+";"+DST_shift_txt_old+';'+DST_shift_txt;
     }
