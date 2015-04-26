@@ -24,6 +24,7 @@ Page {
     }
 
     property string local_city
+    property string local_continent
 
     onStatusChanged: {
         if (status == PageStatus.Activating) {
@@ -187,7 +188,8 @@ Page {
         property string timezone: currentDateTime.toLocaleString(locale, "t")
         property string local_date: currentDateTime.toLocaleString(
                                         locale, "ddd MMM d yyyy")
-        property string local_utc_offset: currentDateTime.getTimezoneOffset()
+        // javascript has it just the other way around: negative = +UTC
+        property string local_utc_offset: -currentDateTime.getTimezoneOffset()
         property string local_time: currentDateTime.toLocaleString(locale,
                                                                    "hh:mm")
     }
@@ -360,8 +362,9 @@ Page {
                             onClicked: {
                                 if (listCityModel.get(
                                             index).zoneCountry == "Local time") {
-                                    banner.notify("No details for Local time")
-                                    //hide()
+                                    mainapp.city_id = local_continent + "/" + local_city
+                                    pageStack.push(Qt.resolvedUrl(
+                                                       "CityDetail.qml"))
                                 } else {
                                     mainapp.city_id = listCityModel.get(
                                                 index).zoneCityFull
@@ -385,10 +388,12 @@ Page {
                     }
                 }
                 onClicked: {
-                    if (listCityModel.get(index).zoneCountry != "Local time") {
+                    if (listCityModel.get(index).zoneCountry === "Local time") {
+                        mainapp.city_id = local_continent + "/" + local_city
+                    } else {
                         mainapp.city_id = listCityModel.get(index).zoneCityFull
-                        pageStack.push(Qt.resolvedUrl("CityDetail.qml"))
                     }
+                    pageStack.push(Qt.resolvedUrl("CityDetail.qml"))
                 }
             }
 
@@ -400,14 +405,20 @@ Page {
                 offset = offset.replace("-0", "-")
                 offset = offset.replace(":00", "")
                 local_city = bar.launch("readlink /var/lib/timed/localtime")
-                for (var i = 0; i < 3; i++) {
-                    local_city = local_city.replace(/(.+)\//, "").replace(
-                                /(\r\n|\n|\r)/gm, "")
-                }
+                var intPos = local_city.lastIndexOf("/")
+                // remove city to find continent
+                local_continent = local_city.substring(0, intPos)
+                // take last entry of remaining path
+                local_continent = local_continent.replace(/(.+)\//, "").replace(/(\r\n|\n|\r)/gm, "")
+                // city itself
+                local_city = local_city.replace(/(.+)\//, "").replace(
+                            /(\r\n|\n|\r)/gm, "")
+                // add city as localtime
                 appendList(local_datetime.local_time, local_city, "Local time",
                            local_datetime.local_date,
                            local_datetime.timezone + " (" + offset + ")", "",
                            local_datetime.local_utc_offset)
+
                 if (myset.contains("Cities")) {
                     var myCities = myset.value("Cities").toString()
                     if (myCities != "") {
