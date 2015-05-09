@@ -70,7 +70,7 @@ Page {
             Image {
                 height: 55
                 width: 95
-                source: '../images/' + zoneCountry + '.png'
+                source: zoneCountry !== "" ? '../images/' + zoneCountry + '.png' : ""
                 anchors.leftMargin: Theme.paddingSmall
             }
         }

@@ -8,6 +8,7 @@ Dialog {
 
     onAccepted: {
         myset.setValue("sortorder", sorting.currentIndex)
+        myset.setValue("sortorder_completeList", citylist_sorting.currentIndex)
         myset.setValue("hidelocal", localdisplay.checked)
         myset.sync()
         mainapp.city_id = "fromsettings"
@@ -55,16 +56,38 @@ Dialog {
                 id: sorting
                 width: parent.width
                 label: qsTr("Sort order") + ":"
+                description: qsTr("Sort order of personal list")
                 currentIndex: myset.value("sortorder")
                 menu: ContextMenu {
                     MenuItem {
                         text: qsTr("None") // 0
                     }
                     MenuItem {
-                        text: qsTr("Time") // 1
+                        text: qsTr("TimeZone") // 1
                     }
                     MenuItem {
                         text: qsTr("City") //2
+                    }
+                }
+            }
+            ComboBox {
+                id: citylist_sorting
+                width: parent.width
+                label: qsTr("Sort order list") + ":"
+                description: qsTr("Sort order of complete citylist")
+                currentIndex: myset.value("sortorder_completeList")
+                menu: ContextMenu {
+                    MenuItem {
+                        text: qsTr("Continent/City") // 0
+                    }
+                    MenuItem {
+                        text: qsTr("TimeZone/Continent/City") // 1
+                    }
+                    MenuItem {
+                        text: qsTr("City") // 2
+                    }
+                    MenuItem {
+                        text: qsTr("Country") // 3
                     }
                 }
             }

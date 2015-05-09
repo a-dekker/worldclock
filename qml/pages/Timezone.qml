@@ -118,7 +118,7 @@ Page {
 
                 onClicked: {
                     searchField.text = ""
-                    mainapp.city_id = countryName.replace(/ /g, "_")
+                    mainapp.city_id = countryName.replace(/ \[(.+)\]/, "").replace(/ /g, "_")
                     pageStack.pop()
                 }
             }

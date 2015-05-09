@@ -84,19 +84,52 @@ TimeZone::TimeZone(QObject *parent) :
 
 QString TimeZone::TimeZone::readAllCities()
 {
+    QSettings settings;
+    int sortOrder = settings.value("sortorder_completeList", "").toInt();
     QList<QByteArray> ids =  QTimeZone::availableTimeZoneIds();
     QString output;
     QString sign;
     QString timeoffset;
+    QMultiMap<int, QString> map;
+    QMultiMap<QString, QString> sorted_map;
+    // QMultiMap is sorted by key by default
+    // We use QMultiMap (not QMap) so we can have duplicates
+    int dummy_counter_for_sort = 0; // to inverse reverted sorting
     foreach (QByteArray id, ids) {
         QTimeZone zone = QTimeZone(id);
         QDateTime zoneTime = QDateTime(QDate::currentDate(), QTime::currentTime(), zone).toLocalTime();
         int offset = zone.offsetFromUtc(QDateTime::currentDateTime());
+        QString countryName = QLocale::countryToString(zone.country());
+        // insert space where appropriate. Can't be done in one regex replace?
+        QRegularExpression rx("([a-z])([A-Z]).+([a-z])([A-Z])");
+        QRegularExpressionMatch match = rx.match(countryName);
+        if (match.hasMatch()) {
+            QString lowerChar1 = match.captured(1);
+            QString upperChar1 = match.captured(2);
+            QString lowerChar2 = match.captured(3);
+            QString upperChar2 = match.captured(4);
+            countryName.replace(lowerChar1+upperChar1,lowerChar1 + " " + upperChar1);
+            countryName.replace(lowerChar2+upperChar2,lowerChar2 + " " + upperChar2);
+        }
+        QRegularExpression rx2("([a-z])([A-Z])");
+        match = rx2.match(countryName);
+        if (match.hasMatch()) {
+            QString lowerChar1 = match.captured(1);
+            QString upperChar1 = match.captured(2);
+            countryName.replace(lowerChar1+upperChar1,lowerChar1 + " " + upperChar1);
+        }
+        if ( countryName == "Default") {
+            // UTC name
+            countryName = "";
+        } else {
+            countryName = " [" + countryName + "]";
+        }
         if (offset < 0)
             sign = "-";
         else
             sign = "+";
         if((offset % 3600)==0)
+            // offset equals to whole hour
             timeoffset = QString("UTC %3").arg(sign+QString::number(abs(offset)/3600));
         else
         {
@@ -104,7 +137,36 @@ QString TimeZone::TimeZone::readAllCities()
             timeoffset = QString("UTC %3:%4").arg(sign+QString::number(abs(offset)/3600)).arg(abs(minutes));
         }
 
-        output += timeoffset + " (" + id + ')' + "\n";
+        if (sortOrder == 1) {
+            dummy_counter_for_sort ++;
+            map.insert(offset + dummy_counter_for_sort,timeoffset + " (" + id + ")" + countryName);
+        } else if (sortOrder == 2) {
+            const int separator = id.lastIndexOf('/');
+            const QString cityName = id.mid(separator + 1);
+            // QString continentName = id.left(separator);
+            sorted_map.insert(cityName, timeoffset + " (" + id + ")" + countryName);
+        } else if (sortOrder == 3) {
+            sorted_map.insert(countryName, timeoffset + " (" + id + ")" + countryName);
+        } else {
+            output += timeoffset + " (" + id + ")" + countryName + "\n";
+        }
+
+    }
+    if (sortOrder == 1) {
+        QMultiMap<int, QString>::const_iterator i = map.constBegin();
+        output = "";
+        while (i != map.constEnd()) {
+            output += i.value() + "\n";
+            ++i;
+        }
+    }
+    if (sortOrder == 2 || sortOrder == 3) {
+        QMultiMap<QString, QString>::const_iterator i = sorted_map.constBegin();
+        output = "";
+        while (i != sorted_map.constEnd()) {
+            output += i.value() + "\n";
+            ++i;
+        }
     }
     return output;
 }
@@ -124,6 +186,7 @@ QString TimeZone::TimeZone::readCityInfo(const QByteArray &cityid, const QByteAr
     else
         sign = "+";
     if((offset % 3600)==0)
+        // offset equals to whole hour
         timeoffset = QString("UTC %3").arg(sign+QString::number(abs(offset)/3600));
     else
     {

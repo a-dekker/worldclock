@@ -319,7 +319,7 @@ Page {
                 }
                 Label {
                     anchors.top: cityLabel.bottom
-                    text: zoneCountry.replace(/([a-z])([A-Z])/g, "$1 $2")
+                    text: zoneCountry.replace(/([a-z])([A-Z])/g, "$1 $2").substring(0,25)
                     font.pixelSize: Theme.fontSizeExtraSmall
                     color: (listCityItem.highlighted || listCityModel.get(
                                 index).zoneCountry == "Local time"
