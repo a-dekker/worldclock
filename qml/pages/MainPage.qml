@@ -3,6 +3,7 @@ import Sailfish.Silica 1.0
 import harbour.worldclock.Launcher 1.0
 import harbour.worldclock.TimeZone 1.0
 import harbour.worldclock.Settings 1.0
+import "../localdb.js" as DB
 
 Page {
     id: page
@@ -26,14 +27,105 @@ Page {
     property string local_city
     property string local_continent
 
+    function loadData() {
+        var offset = new Date().toString().split(" ")[5].replace("GMT",
+                                                                 "UTC ")
+        offset = offset.substr(0, 7) + ":" + offset.substr(7)
+        offset = offset.replace("+0", "+")
+        offset = offset.replace("-0", "-")
+        offset = offset.replace(":00", "")
+        local_city = bar.launch("readlink /var/lib/timed/localtime")
+        var intPos = local_city.lastIndexOf("/")
+        // remove city to find continent
+        local_continent = local_city.substring(0, intPos)
+        // take last entry of remaining path
+        local_continent = local_continent.replace(/(.+)\//, "").replace(/(\r\n|\n|\r)/gm, "")
+        // city itself
+        local_city = local_city.replace(/(.+)\//, "").replace(
+                    /(\r\n|\n|\r)/gm, "")
+        // add city as localtime
+        appendList(local_datetime.local_time, local_city, "Local time",
+                   local_datetime.local_date,
+                   local_datetime.timezone + " (" + offset + ")", "",
+                   local_datetime.local_utc_offset)
+
+        if (myset.contains("Cities")) {
+            var myCities = myset.value("Cities").toString()
+            if (myCities != "") {
+                var data
+                myCities = myCities.split(",")
+                for (var myCity in myCities) {
+                    data = timezones.readCityInfo(myCities[myCity],
+                                                  mainapp.timeFormat)
+                    data = data.split(';')
+                    var zoneTime = data[0]
+                    var zoneCity = data[1]
+                    var zoneCityFull = zoneCity
+                    for (var i = 0; i < 3; i++) {
+                        zoneCity = zoneCity.replace(/(.+)\//, "")
+                    }
+                    var zoneCountry = data[2]
+                    var zoneDate = data[3]
+                    var zoneUTC = data[4]
+                    var zoneSecs = data[5]
+
+                    appendList(zoneTime, zoneCity, zoneCountry,
+                               zoneDate, zoneUTC,
+                               zoneCityFull, zoneSecs)
+                }
+            }
+        }
+        // load alias values
+        DB.readActiveAliases()
+        var customdata = mainapp.myAliases.split('\n')
+        for (var i = 0; i < customdata.length-1; i++) {
+            var myCity = customdata[i].split("|")[1]
+            data = timezones.readCityInfo(customdata[i].split("|")[0],
+                                          mainapp.timeFormat)
+            data = data.split(';')
+            var zoneTime = data[0]
+            var zoneCity = data[1]
+            var zoneCityFull = zoneCity
+            for (var x = 0; x < 3; x++) {
+                zoneCity = zoneCity.replace(/(.+)\//, "")
+            }
+            zoneCity = myCity
+            var zoneCountry = data[2]
+            var zoneDate = data[3]
+            var zoneUTC = data[4]
+            var zoneSecs = data[5]
+
+            appendList(zoneTime, zoneCity, zoneCountry,
+                       zoneDate, zoneUTC,
+                       zoneCityFull, zoneSecs)
+        }
+    }
+
+    Component.onCompleted: {
+        DB.initializeDB()
+        loadData()
+        timerclock.start()
+        if (myset.value("hidelocal") === "true") {
+            hideLocalCity(local_city)
+        }
+        sortModel()
+    }
+
     onStatusChanged: {
         if (status == PageStatus.Activating) {
-            if (mainapp.city_id == "fromsettings") {
+            if (mainapp.city_id === "fromsettings") {
                 myset.sync() // else skrewed up??
                 sortModel()
                 mainapp.city_id = ""
             }
-            if (mainapp.city_id != "") {
+            if (mainapp.city_id === "fromaliases") {
+                // cleanup current listmodel
+                listCityModel.clear()
+                loadData()
+                sortModel()
+                mainapp.city_id = ""
+            }
+            if (mainapp.city_id !== "" ) {
                 mainapp.city_id = mainapp.city_id.replace(/(.+)\(/, "")
                 mainapp.city_id = mainapp.city_id.replace(")", "")
                 var data
@@ -78,10 +170,10 @@ Page {
                     myset.sync()
                 }
             }
+            mainapp.city_id = ""
             if (myset.value("hidelocal") == "true") {
                 hideLocalCity(local_city)
             }
-            mainapp.city_id = ""
         }
         if (status == PageStatus.Active) {
             // if the activation was started by the covers add function
@@ -218,6 +310,10 @@ Page {
                 onClicked: pageStack.push(Qt.resolvedUrl("SettingPage.qml"))
             }
             MenuItem {
+                text: qsTr("Custom city names")
+                onClicked: pageStack.push(Qt.resolvedUrl("Aliases.qml"))
+            }
+            MenuItem {
                 text: qsTr("Add city")
                 onClicked: pageStack.push(Qt.resolvedUrl("Timezone.qml"))
             }
@@ -233,7 +329,7 @@ Page {
             id: listCity
             width: parent.width
             height: parent.height
-            anchors.fill: parent
+            // anchors.fill: parent
             header: PageHeader {
                 width: listCity.width
                 title: "Worldclock"
@@ -250,12 +346,12 @@ Page {
             delegate: ListItem {
                 id: listCityItem
                 menu: contextMenu
-                ListView.onRemove: animateRemoval(listCityItem)
 
                 // helper function to remove current item
                 function remove() {
                     // run remove via a silica remorse item
                     remorseAction("Deleting", function () {
+                        var isReplaced = "false"
                         var myCities = myset.value("Cities").toString()
                         var myCitiesNew = myCities
                         if (myset.contains("Cities")) {
@@ -274,10 +370,15 @@ Page {
                                     myCitiesNew = myCitiesNew.replace(
                                                 /\,[\r\n]/g, "")
                                     myset.setValue("Cities", myCitiesNew)
+                                    isReplaced = "true"
                                 }
                             }
+                            if (isReplaced === "false") {
+                                banner.notify("Manage custom cities on other page")
+                            } else {
+                                listCity.model.remove(index)
+                            }
                         }
-                        listCity.model.remove(index)
                     })
                 }
                 // remorse item for all remorse actions
@@ -345,7 +446,7 @@ Page {
                     text: zoneUTC
                     font.pixelSize: Theme.fontSizeExtraSmall
                     color: (listCityItem.highlighted || listCityModel.get(
-                                index).zoneCountry == "Local time"
+                                index).zoneCountry === "Local time"
                             || listCityModel.get(index).zoneCity
                             == local_city) ? Theme.highlightColor : Theme.secondaryColor
                     width: dateLabel.width
@@ -397,60 +498,6 @@ Page {
                 }
             }
 
-            Component.onCompleted: {
-                var offset = new Date().toString().split(" ")[5].replace("GMT",
-                                                                         "UTC ")
-                offset = offset.substr(0, 7) + ":" + offset.substr(7)
-                offset = offset.replace("+0", "+")
-                offset = offset.replace("-0", "-")
-                offset = offset.replace(":00", "")
-                local_city = bar.launch("readlink /var/lib/timed/localtime")
-                var intPos = local_city.lastIndexOf("/")
-                // remove city to find continent
-                local_continent = local_city.substring(0, intPos)
-                // take last entry of remaining path
-                local_continent = local_continent.replace(/(.+)\//, "").replace(/(\r\n|\n|\r)/gm, "")
-                // city itself
-                local_city = local_city.replace(/(.+)\//, "").replace(
-                            /(\r\n|\n|\r)/gm, "")
-                // add city as localtime
-                appendList(local_datetime.local_time, local_city, "Local time",
-                           local_datetime.local_date,
-                           local_datetime.timezone + " (" + offset + ")", "",
-                           local_datetime.local_utc_offset)
-
-                if (myset.contains("Cities")) {
-                    var myCities = myset.value("Cities").toString()
-                    if (myCities != "") {
-                        var data
-                        myCities = myCities.split(",")
-                        for (var myCity in myCities) {
-                            data = timezones.readCityInfo(myCities[myCity],
-                                                          mainapp.timeFormat)
-                            data = data.split(';')
-                            var zoneTime = data[0]
-                            var zoneCity = data[1]
-                            var zoneCityFull = zoneCity
-                            for (var i = 0; i < 3; i++) {
-                                zoneCity = zoneCity.replace(/(.+)\//, "")
-                            }
-                            var zoneCountry = data[2]
-                            var zoneDate = data[3]
-                            var zoneUTC = data[4]
-                            var zoneSecs = data[5]
-
-                            appendList(zoneTime, zoneCity, zoneCountry,
-                                       zoneDate, zoneUTC,
-                                       zoneCityFull, zoneSecs)
-                        }
-                    }
-                }
-                timerclock.start()
-                if (myset.value("hidelocal") == "true") {
-                    hideLocalCity(local_city)
-                }
-                sortModel()
-            }
         }
     }
 }

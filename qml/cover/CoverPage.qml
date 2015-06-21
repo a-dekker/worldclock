@@ -66,6 +66,29 @@ CoverBackground {
                 }
             }
         }
+        // load alias values
+        // DB.readActiveAliases()
+        var customdata = mainapp.myAliases.split('\n')
+        for (var i = 0; i < customdata.length-1; i++) {
+            var myCity = customdata[i].split("|")[1]
+            data = timezones.readCityInfo(customdata[i].split("|")[0],
+                                          mainapp.timeFormat)
+            data = data.split(';')
+            var zoneTime = data[0]
+            var zoneCity = data[1]
+            var zoneCityFull = zoneCity
+            for (var x = 0; x < 3; x++) {
+                zoneCity = zoneCity.replace(/(.+)\//, "")
+            }
+            zoneCity = myCity
+            var zoneCountry = data[2]
+            var zoneDate = data[3]
+            var zoneUTC = data[4]
+            var zoneSecs = data[5]
+
+            appendCity(zoneTime, zoneCity, zoneSecs, zoneCityFull)
+        }
+
     }
 
     function updateTime() {

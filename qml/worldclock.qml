@@ -43,6 +43,7 @@ ApplicationWindow
     property bool coverAddZone: false
     property bool viewable: cover.status === Cover.Active || applicationActive
     property string timeFormat: '24'
+    property string myAliases
 
     initialPage: Component { MainPage { } }
 

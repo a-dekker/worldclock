@@ -97,7 +97,7 @@ Dialog {
                 width: parent.width
                 text: qsTr("Hide if current")
                 description: qsTr("Hide localtime if city is present and current")
-                checked: myset.value("hidelocal") == "true"
+                checked: myset.value("hidelocal") === "true"
             }
         }
     }

@@ -67,6 +67,7 @@ Page {
         SectionHeader {
             text: zoneCity.replace(/_/g, " ") + ", " + zoneCountry.replace(
                       /([a-z])([A-Z])/g, "$1 $2")
+            wrapMode: Text.Wrap
             Image {
                 height: 55
                 width: 95

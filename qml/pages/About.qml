@@ -34,9 +34,21 @@ Page {
                 font.pixelSize: Theme.fontSizeExtraLarge
                 anchors.horizontalCenter: parent.horizontalCenter
             }
-            Image {
+            Rectangle {
+                width: 80
+                height: width
+                radius: 100
                 anchors.horizontalCenter: parent.horizontalCenter
-                source: "/usr/share/icons/hicolor/86x86/apps/harbour-worldclock.png"
+                NumberAnimation on rotation
+                {
+                    from: 0
+                    to: 360
+                    duration: 5000
+                    loops: 1
+                }
+                Image {
+                   source: "/usr/share/icons/hicolor/86x86/apps/harbour-worldclock.png"
+                }
             }
             Label {
                 text: qsTr("Version") + " " + version
