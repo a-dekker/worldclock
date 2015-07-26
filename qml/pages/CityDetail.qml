@@ -77,7 +77,7 @@ Page {
         }
         Label {
             x: Theme.paddingLarge
-            text: "Timezone"
+            text: qsTr("Timezone")
         }
         Label {
             x: Theme.paddingLarge
@@ -87,7 +87,7 @@ Page {
         }
         Label {
             x: Theme.paddingLarge
-            text: "Zone time"
+            text: qsTr("Zone time")
         }
         Label {
             x: Theme.paddingLarge
@@ -97,7 +97,7 @@ Page {
         }
         Label {
             x: Theme.paddingLarge
-            text: "Local time"
+            text: qsTr("Local time")
         }
         Label {
             x: Theme.paddingLarge
@@ -107,17 +107,17 @@ Page {
         }
         Label {
             x: Theme.paddingLarge
-            text: "Time difference"
+            text: qsTr("Time difference")
         }
         Label {
             x: Theme.paddingLarge
             font.pixelSize: Theme.fontSizeSmall
             color: Theme.secondaryColor
-            text: zoneTimeDiff + " hour"
+            text: zoneTimeDiff + qsTr(" hour")
         }
         Label {
             x: Theme.paddingLarge
-            text: "Prev. daylight transition " + abbrevFromPrev
+            text: qsTr("Prev. daylight transition ") + abbrevFromPrev
         }
         Label {
             x: Theme.paddingLarge
@@ -133,7 +133,7 @@ Page {
         }
         Label {
             x: Theme.paddingLarge
-            text: "Next daylight transition " + abbrevToNext
+            text: qsTr("Next daylight transition ") + abbrevToNext
         }
         Label {
             x: Theme.paddingLarge

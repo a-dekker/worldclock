@@ -16,19 +16,12 @@ Dialog {
                                     })
     }
 
-    function trim(str) {
-        var newstr
-        newstr = str.replace(/^\s*/, "").replace(/\s*$/, "")
-        newstr = newstr.replace(/\s{2,}/, " ")
-        return newstr
-    }
-
     onStatusChanged: {
         if (status === PageStatus.Activating && mainapp.city_id !== "") {
             mainapp.city_id = mainapp.city_id.replace(/(.+)\(/, "")
             mainapp.city_id = mainapp.city_id.replace(")", "")
             var cityName = mainapp.city_id.replace(/.+\//, "")
-            cityName = cityName.replace("_", " ")
+            cityName = cityName.replace(/_/g, " ")
             if (isReplace === "true") {
                 customcitylist.model.setProperty(currIndex, "City", cityName)
                 customcitylist.model.setProperty(currIndex, "CityInfo",
@@ -45,6 +38,16 @@ Dialog {
         acceptText: qsTr("Save")
         cancelText: qsTr("Cancel")
     }
+
+    Image {
+        id: coverBgImage
+        anchors.fill: parent
+        fillMode: Image.PreserveAspectFit
+        source: "../images/earth.png"
+        horizontalAlignment: Image.AlignHCenter
+        verticalAlignment: Image.AlignVCenter
+    }
+
     SilicaListView {
         id: customcitylist
         VerticalScrollDecorator {
@@ -113,7 +116,7 @@ Dialog {
                     id: cityalias
                     font.pixelSize: Theme.fontSizeSmall
                     anchors.left: name.right
-                    placeholderText: qsTr('Alt. name')
+                    placeholderText: qsTr("Alt. name")
                     text: Alias
                     width: font.pixelSize * 7
                     horizontalAlignment: TextInput.AlignRight
@@ -158,13 +161,12 @@ Dialog {
             // first delete every Alias record
             mainapp.city_id = "fromaliases"
             DB.removeAllAliases()
-            // Then loop though current list and save
+            // Then loop through current list and save
             for (var i = 0; i < customcitylist.model.count; ++i) {
-                var trimmed_alias = trim(customcitylist.model.get(i).Alias)
                 if (customcitylist.model.get(i).Alias !== "") {
                     DB.writeAlias(customcitylist.model.get(i).CityInfo,
                                   customcitylist.model.get(i).City,
-                                  trimmed_alias,
+                                  customcitylist.model.get(i).Alias.trim(),
                                   customcitylist.model.get(i).Displayed)
                 }
             }

@@ -8,6 +8,33 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sat Jun 25 2015 Arno Dekker <jack.tar@example.com> 0.3-0
+- Harbour version
+
+* Sat Jun 20 2015 Arno Dekker <jack.tar@example.com> 0.2-3
+- Used favorite icons in custom city screen
+- Small change in about page
+
+* Sat Jun 6 2015 Arno Dekker <jack.tar@example.com> 0.2-2
+- Some additional flags
+- Added option to add custom cities
+
+* Sat May 9 2015 Arno Dekker <jack.tar@example.com> 0.2-1
+- Some additional flags
+- Added various sorts for citylist page
+- Added country names on citylist page
+
+* Sat Apr 25 2015 Arno Dekker <jack.tar@example.com> 0.2-0
+- Addressed some localtime sorting issues
+- Possible to get details on localtime
+
+* Thu Apr 23 2015 Arno Dekker <jack.tar@example.com> 0.1-15
+- fixed: forgot to delocalize localtime
+
+* Wed Apr 22 2015 Arno Dekker <jack.tar@example.com> 0.1-14
+- All date and time info in English to prevent text overlap and provide consistency
+- Replaced underscores in citylist with spaces
+
 * Sat Apr 18 2015 Kimmo Lindholm <kimmo@eke.fi> 0.1-13
 - Harbourized
 

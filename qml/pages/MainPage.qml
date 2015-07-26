@@ -95,7 +95,7 @@ Page {
             var zoneUTC = data[4]
             var zoneSecs = data[5]
 
-            appendList(zoneTime, zoneCity, zoneCountry,
+             appendList(zoneTime, zoneCity, zoneCountry,
                        zoneDate, zoneUTC,
                        zoneCityFull, zoneSecs)
         }
@@ -104,22 +104,22 @@ Page {
     Component.onCompleted: {
         DB.initializeDB()
         loadData()
+        sortModel()
         timerclock.start()
         if (myset.value("hidelocal") === "true") {
             hideLocalCity(local_city)
         }
-        sortModel()
     }
 
     onStatusChanged: {
-        if (status == PageStatus.Activating) {
+        if (status === PageStatus.Activating) {
             if (mainapp.city_id === "fromsettings") {
                 myset.sync() // else skrewed up??
                 sortModel()
                 mainapp.city_id = ""
             }
             if (mainapp.city_id === "fromaliases") {
-                // cleanup current listmodel
+                // accepted, cleanup current listmodel
                 listCityModel.clear()
                 loadData()
                 sortModel()
@@ -459,7 +459,7 @@ Page {
                     id: contextMenu
                     ContextMenu {
                         MenuItem {
-                            text: "Details"
+                            text: qsTr("Details")
                             onClicked: {
                                 if (listCityModel.get(
                                             index).zoneCountry == "Local time") {
@@ -475,7 +475,7 @@ Page {
                             }
                         }
                         MenuItem {
-                            text: "Remove"
+                            text: qsTr("Remove")
                             onClicked: {
                                 if (listCityModel.get(
                                             index).zoneCountry == "Local time") {
