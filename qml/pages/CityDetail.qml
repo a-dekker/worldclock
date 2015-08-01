@@ -47,6 +47,35 @@ Page {
         abbrevFromPrev = data[12]
         dstShiftTxtOld = data[13]
         dstShiftTxt = data[14]
+        zoneNextTransition = data[10]
+        // now some translation stuff, as I can't get it to work in worldclock.cpp
+        if (zonePreviousTransition === "none" ) {
+            zonePreviousTransition = qsTr("none")
+        }
+        if (zoneNextTransition === "none" ) {
+            zoneNextTransition = qsTr("none")
+        }
+        switch (dstShiftTxtOld) {
+            case "txt_clock_back_old":
+                dstShiftTxtOld = "(" + qsTr("the clock jumped one hour backward") + ")"
+                break
+            case "txt_clock_forw_old":
+                dstShiftTxtOld = "(" + qsTr("the clock jumped one hour forward") + ")"
+                break
+            default:
+                dstShiftTxtOld = ""
+        }
+        switch (dstShiftTxt) {
+            case "txt_clock_back":
+                dstShiftTxt = "(" + qsTr("the clock jumps one hour backward") + ")"
+                break
+            case "txt_clock_forw":
+                dstShiftTxt = "(" + qsTr("the clock jumps one hour forward") + ")"
+                break
+            default:
+                dstShiftTxt = ""
+        }
+
     }
 
     Component.onCompleted: {
@@ -113,11 +142,11 @@ Page {
             x: Theme.paddingLarge
             font.pixelSize: Theme.fontSizeSmall
             color: Theme.secondaryColor
-            text: zoneTimeDiff + qsTr(" hour")
+            text: zoneTimeDiff + " " + qsTr("hour")
         }
         Label {
             x: Theme.paddingLarge
-            text: qsTr("Prev. daylight transition ") + abbrevFromPrev
+            text: qsTr("Prev. daylight transition") + " " + abbrevFromPrev
         }
         Label {
             x: Theme.paddingLarge
@@ -133,7 +162,7 @@ Page {
         }
         Label {
             x: Theme.paddingLarge
-            text: qsTr("Next daylight transition ") + abbrevToNext
+            text: qsTr("Next daylight transition") + " " + abbrevToNext
         }
         Label {
             x: Theme.paddingLarge

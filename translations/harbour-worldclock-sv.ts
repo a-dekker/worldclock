@@ -60,44 +60,70 @@
 <context>
     <name>CityDetail</name>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="65"/>
+        <location filename="../qml/pages/CityDetail.qml" line="53"/>
+        <location filename="../qml/pages/CityDetail.qml" line="56"/>
+        <source>none</source>
+        <translation>ingen</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CityDetail.qml" line="60"/>
+        <source>the clock jumped one hour backward</source>
+        <translation>klockan flyttades tillbaka en timma</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CityDetail.qml" line="63"/>
+        <source>the clock jumped one hour forward</source>
+        <translation>klockan flyttades fram en timma</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CityDetail.qml" line="70"/>
+        <source>the clock jumps one hour backward</source>
+        <translation>klockan flyttas tillbaka en timma</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CityDetail.qml" line="73"/>
+        <source>the clock jumps one hour forward</source>
+        <translation>klockan flyttas fram en timma</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/CityDetail.qml" line="94"/>
         <source>Timezone details</source>
         <translation>Tidszondetaljer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="80"/>
+        <location filename="../qml/pages/CityDetail.qml" line="109"/>
         <source>Timezone</source>
         <translation>Tidszon</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="90"/>
+        <location filename="../qml/pages/CityDetail.qml" line="119"/>
         <source>Zone time</source>
         <translation>Zontid</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="100"/>
+        <location filename="../qml/pages/CityDetail.qml" line="129"/>
         <source>Local time</source>
         <translation>Lokal tid</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="110"/>
+        <location filename="../qml/pages/CityDetail.qml" line="139"/>
         <source>Time difference</source>
         <translation>Tidsskillnad</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="116"/>
-        <source> hour</source>
+        <location filename="../qml/pages/CityDetail.qml" line="145"/>
+        <source>hour</source>
         <translation>tim.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="120"/>
-        <source>Prev. daylight transition </source>
-        <translation>Föreg. dagsljusanpassn. </translation>
+        <location filename="../qml/pages/CityDetail.qml" line="149"/>
+        <source>Prev. daylight transition</source>
+        <translation>Föreg. dagsljusanpassn.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="136"/>
-        <source>Next daylight transition </source>
-        <translation>Nästa dagsljusanpassn. </translation>
+        <location filename="../qml/pages/CityDetail.qml" line="165"/>
+        <source>Next daylight transition</source>
+        <translation>Nästa dagsljusanpassn.</translation>
     </message>
 </context>
 <context>
@@ -136,78 +162,88 @@
 <context>
     <name>SettingPage</name>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="48"/>
+        <location filename="../qml/pages/SettingPage.qml" line="55"/>
         <source>Save</source>
         <translation>Spara</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="49"/>
+        <location filename="../qml/pages/SettingPage.qml" line="56"/>
         <source>Cancel</source>
         <translation>Avbryt</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="52"/>
+        <location filename="../qml/pages/SettingPage.qml" line="59"/>
         <source>Settings</source>
         <translation>Inställningar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="58"/>
+        <location filename="../qml/pages/SettingPage.qml" line="65"/>
         <source>Sort order</source>
         <translation>Sortering</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="59"/>
+        <location filename="../qml/pages/SettingPage.qml" line="66"/>
         <source>Sort order of personal list</source>
         <translation>Sorteringsordning för personlig lista</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="63"/>
+        <location filename="../qml/pages/SettingPage.qml" line="70"/>
         <source>None</source>
         <translation>Ingen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="66"/>
+        <location filename="../qml/pages/SettingPage.qml" line="73"/>
         <source>TimeZone</source>
         <translation>Tidszon</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="69"/>
-        <location filename="../qml/pages/SettingPage.qml" line="87"/>
+        <location filename="../qml/pages/SettingPage.qml" line="76"/>
+        <location filename="../qml/pages/SettingPage.qml" line="94"/>
         <source>City</source>
         <translation>Stad</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="76"/>
+        <location filename="../qml/pages/SettingPage.qml" line="83"/>
         <source>Sort order list</source>
         <translation>Sortering</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="77"/>
+        <location filename="../qml/pages/SettingPage.qml" line="84"/>
         <source>Sort order of complete citylist</source>
         <translation>Sortering för fullständig stadslista</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="84"/>
+        <location filename="../qml/pages/SettingPage.qml" line="91"/>
         <source>TimeZone/Continent/City</source>
         <translation>Tidszon/Kontinent/Stad</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="90"/>
+        <location filename="../qml/pages/SettingPage.qml" line="97"/>
         <source>Country</source>
         <translation>Land</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="98"/>
+        <location filename="../qml/pages/SettingPage.qml" line="105"/>
         <source>Hide if current</source>
         <translation>Dölj om aktuell</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="99"/>
+        <location filename="../qml/pages/SettingPage.qml" line="106"/>
         <source>Hide localtime if city is present and current</source>
         <translation>Dölj lokal tid om staden är aktuell</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="81"/>
+        <location filename="../qml/pages/SettingPage.qml" line="116"/>
+        <source>Language:</source>
+        <translation>Språk:</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/SettingPage.qml" line="226"/>
+        <source>Change of language will be active after restarting the application.</source>
+        <translation>Språkändringar kommer att aktiveras vid omstart av programmet.</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/SettingPage.qml" line="88"/>
         <source>Continent/City</source>
         <translation>Kontinent/stad</translation>
     </message>

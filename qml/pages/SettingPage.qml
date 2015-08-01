@@ -1,15 +1,22 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import harbour.worldclock.Settings 1.0
+import "../components"
+import "Vars.js" as GlobVars
 
 Dialog {
     id: page
     canAccept: true
 
+    property int langNbrToSave: -1
+
     onAccepted: {
         myset.setValue("sortorder", sorting.currentIndex)
         myset.setValue("sortorder_completeList", citylist_sorting.currentIndex)
         myset.setValue("hidelocal", localdisplay.checked)
+        // languagenumber is not index, but enum number!
+        if (langNbrToSave !== -1)
+            myset.setValue("language", langNbrToSave)
         myset.sync()
         mainapp.city_id = "fromsettings"
     }
@@ -98,6 +105,128 @@ Dialog {
                 text: qsTr("Hide if current")
                 description: qsTr("Hide localtime if city is present and current")
                 checked: myset.value("hidelocal") === "true"
+            }
+            Column {
+                width: parent.width
+                spacing: 0
+
+                ComboBox {
+                    id: language
+                    width: page.width
+                    label: qsTr("Language:")
+                    currentIndex: toCurrentIndex(myset.value("language"))
+                    menu: ContextMenu {
+                        // make sure it has the order in Vars.js
+                        MenuItem {
+                            text: "English/English"
+                        } // 0
+                        MenuItem {
+                            text: "Dutch/Nederlands"
+                        } // 1
+                        MenuItem {
+                            text: "Swedish/Svensk"
+                        } // 2
+                    }
+                    // The next two converter functions decouple the alphabetical language list
+                    // index from the internal settings index, which cannot be changed for legacy reasons
+                    function toCurrentIndex(value) {
+                        switch (parseInt(value)) {
+                        case Languages.SYSTEM_DEFAULT:
+                            return GlobVars.system_default
+                        case Languages.EN:
+                            // English
+                            return GlobVars.english
+                        case Languages.SV:
+                            // Swedish
+                            return GlobVars.swedish
+                        case Languages.FI:
+                            // Finnish
+                            return GlobVars.finnish
+                        case Languages.DE_DE:
+                            // German
+                            return GlobVars.german
+                        case Languages.CA:
+                            // Catalan
+                            return GlobVars.catalan
+                        case Languages.CS:
+                            // Czech
+                            return GlobVars.czech
+                        case Languages.DA:
+                            // Danish
+                            return GlobVars.danish
+                        case Languages.NL:
+                            // Dutch
+                            return GlobVars.dutch
+                        case Languages.ES:
+                            // Spanish
+                            return GlobVars.spanish
+                        case Languages.FR:
+                            // French
+                            return GlobVars.french
+                        case Languages.RU_RU:
+                            // Russian
+                            return GlobVars.russian
+                        case Languages.EL:
+                            // Greek
+                            return GlobVars.greek
+                        case Languages.TR_TR:
+                            // Turkish
+                            return GlobVars.turkish
+                        case Languages.PL:
+                            // Polish
+                            return GlobVars.polish
+                        default:
+                            return GlobVars.english
+                        }
+                    }
+
+                    function toSettingsIndex(value) {
+                        switch (value) {
+                        case GlobVars.system_default:
+                            return Languages.SYSTEM_DEFAULT
+                        case GlobVars.english:
+                            return Languages.EN // English
+                        case GlobVars.swedish:
+                            return Languages.SV // Swedish
+                        case GlobVars.finnish:
+                            return Languages.FI // Finnish
+                        case GlobVars.german:
+                            return Languages.DE_DE // German
+                        case GlobVars.catalan:
+                            return Languages.CA // Catalan
+                        case GlobVars.czech:
+                            return Languages.CS // Czech
+                        case GlobVars.dutch:
+                            return Languages.NL // Dutch
+                        case GlobVars.danish:
+                            return Languages.DA // Danish
+                        case GlobVars.spanish:
+                            return Languages.ES // Spanish
+                        case GlobVars.french:
+                            return Languages.FR // French
+                        case GlobVars.turkish:
+                            return Languages.TR_TR // Turkish
+                        case GlobVars.russian:
+                            return Languages.RU_RU // Russian
+                        case GlobVars.greek:
+                            return Languages.EL // Greek
+                        case GlobVars.polish:
+                            return Languages.PL // Polish
+                        default:
+                            return Languages.EN // English
+                        }
+                    }
+
+                    onCurrentIndexChanged: {
+                        langNbrToSave = toSettingsIndex(language.currentIndex)
+                    }
+                }
+
+                SilicaLabel {
+                    text: qsTr("Change of language will be active after restarting the application.")
+                    font.pixelSize: Theme.fontSizeExtraSmall
+                    color: Theme.secondaryColor
+                }
             }
         }
     }
