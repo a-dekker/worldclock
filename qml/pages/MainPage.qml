@@ -350,7 +350,7 @@ Page {
                 // helper function to remove current item
                 function remove() {
                     // run remove via a silica remorse item
-                    remorseAction("Deleting", function () {
+                    remorseAction(qsTr("Deleting"), function () {
                         var isReplaced = "false"
                         var myCities = myset.value("Cities").toString()
                         var myCitiesNew = myCities
@@ -374,7 +374,7 @@ Page {
                                 }
                             }
                             if (isReplaced === "false") {
-                                banner.notify("Manage custom cities on other page")
+                                banner.notify(qsTr("Manage custom cities on other page"))
                             } else {
                                 listCity.model.remove(index)
                             }

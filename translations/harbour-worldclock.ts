@@ -62,7 +62,7 @@
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="53"/>
         <location filename="../qml/pages/CityDetail.qml" line="56"/>
-        <source>none</source>
+        <source>None</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -146,6 +146,16 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="317"/>
         <source>Add city</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="353"/>
+        <source>Deleting</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="377"/>
+        <source>Manage custom cities on other page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

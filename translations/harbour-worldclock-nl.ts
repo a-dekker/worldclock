@@ -62,28 +62,28 @@
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="53"/>
         <location filename="../qml/pages/CityDetail.qml" line="56"/>
-        <source>none</source>
-        <translation>geen</translation>
+        <source>None</source>
+        <translation>Geen</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="60"/>
         <source>the clock jumped one hour backward</source>
-        <translation>de klok ging een uur terug</translation>
+        <translation>de klok ging één uur terug</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="63"/>
         <source>the clock jumped one hour forward</source>
-        <translation>de klok ging een uur vooruit</translation>
+        <translation>de klok ging één uur vooruit</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="70"/>
         <source>the clock jumps one hour backward</source>
-        <translation>de klok gaat een uur terug</translation>
+        <translation>de klok gaat één uur terug</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="73"/>
         <source>the clock jumps one hour forward</source>
-        <translation>de klok gaat een uur vooruit</translation>
+        <translation>de klok gaat één uur vooruit</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="94"/>
@@ -141,12 +141,22 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="313"/>
         <source>Custom city names</source>
-        <translation>Eigen wereldklok</translation>
+        <translation>Eigen wereldklokken</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="317"/>
         <source>Add city</source>
         <translation>Nieuwe wereldklok</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="353"/>
+        <source>Deleting</source>
+        <translation>Bezig met verwijderen</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="377"/>
+        <source>Manage custom cities on other page</source>
+        <translation>Beheer eigen wereldklokken op andere pagina</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="462"/>

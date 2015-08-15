@@ -54,7 +54,7 @@
     <message>
         <location filename="../qml/pages/Aliases.qml" line="140"/>
         <source>No custom city names defined. Press the plus button to add one.</source>
-        <translation>Inga anpassade namn definierade. Tryck på plusknappen för att lägga till ett.</translation>
+        <translation>Inga anpassade platser definierade. Tryck på plusknappen för att lägga till ett.</translation>
     </message>
 </context>
 <context>
@@ -62,8 +62,8 @@
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="53"/>
         <location filename="../qml/pages/CityDetail.qml" line="56"/>
-        <source>none</source>
-        <translation>ingen</translation>
+        <source>None</source>
+        <translation>Ingen</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="60"/>
@@ -141,12 +141,22 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="313"/>
         <source>Custom city names</source>
-        <translation>Anpassade stadsnamn</translation>
+        <translation>Anpassade platsnamn</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="317"/>
         <source>Add city</source>
         <translation>Lägg till stad</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="353"/>
+        <source>Deleting</source>
+        <translation>Tar bort</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="377"/>
+        <source>Manage custom cities on other page</source>
+        <translation>Hantera anpassade platser på annan sida</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="462"/>

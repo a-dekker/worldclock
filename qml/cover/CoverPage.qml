@@ -49,7 +49,8 @@ CoverBackground {
                 var data
                 myCities = myCities.split(",")
                 for (var myCity in myCities) {
-                    data = timezones.readCityInfo(myCities[myCity],mainapp.timeFormat)
+                    data = timezones.readCityInfo(myCities[myCity],
+                                                  mainapp.timeFormat)
                     data = data.split(';')
                     var zoneTime = data[0]
                     var zoneCity = data[1]
@@ -69,7 +70,7 @@ CoverBackground {
         // load alias values
         // DB.readActiveAliases()
         var customdata = mainapp.myAliases.split('\n')
-        for (var i = 0; i < customdata.length-1; i++) {
+        for (var i = 0; i < customdata.length - 1; i++) {
             var myCity = customdata[i].split("|")[1]
             data = timezones.readCityInfo(customdata[i].split("|")[0],
                                           mainapp.timeFormat)
@@ -88,13 +89,13 @@ CoverBackground {
 
             appendCity(zoneTime, zoneCity, zoneSecs, zoneCityFull)
         }
-
     }
 
     function updateTime() {
         var data
         for (var i = 0; i < cityListModel.count; ++i) {
-            data = timezones.readCityTime(cityListModel.get(i).zoneCityFull,mainapp.timeFormat)
+            data = timezones.readCityTime(cityListModel.get(i).zoneCityFull,
+                                          mainapp.timeFormat)
             data = data.split(';')
             var zoneTime = data[0]
             cityListModel.setProperty(i, "zoneTime", zoneTime)
@@ -164,6 +165,14 @@ CoverBackground {
             horizontalAlignment: Text.Center
             color: Theme.highlightColor
         }
+        Separator {
+            id: coverHeaderSeparator
+            color: Theme.primaryColor
+            width: parent.width
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: coverHeader.bottom
+            horizontalAlignment: Qt.AlignHCenter
+        }
 
         ListView {
             id: cityList
@@ -181,7 +190,7 @@ CoverBackground {
                 Label {
                     id: timeLabel
                     x: Theme.paddingSmall
-                    text: zoneTime.replace(" ","")
+                    text: zoneTime.replace(" ", "")
                     height: font.pixelSize + Theme.paddingSmall
                     anchors.verticalCenter: parent.verticalCenter
                     font.pixelSize: Theme.fontSizeSmall

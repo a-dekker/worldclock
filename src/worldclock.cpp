@@ -234,6 +234,13 @@ QString TimeZone::TimeZone::readCityInfo(const QByteArray &cityid, const QByteAr
     QDateTime zoneTime = QDateTime(QDate::currentDate(), QTime::currentTime(), zone).toLocalTime();
     QString abbreviation = zone.abbreviation(zoneTime);
     int offset = zone.offsetFromUtc(QDateTime::currentDateTime());
+    // try to make the date format look like ddd MMM d yyyy, but in localized order
+    QString dateFormat = "ddd " + QLocale().dateFormat(QLocale::ShortFormat);
+    dateFormat.replace("/", " ").replace("-", " ");
+    QRegExp rx("\\b(M){1,2}\\b");
+    dateFormat.replace(rx, "MMM");
+    QRegExp rx2("\\b(y){2}\\b");
+    dateFormat.replace(rx2, "yyyy");
     if (offset < 0)
         sign = "-";
     else
@@ -251,12 +258,12 @@ QString TimeZone::TimeZone::readCityInfo(const QByteArray &cityid, const QByteAr
     mytime = mytime.addSecs( offset );
     if (time_format == "24" ) {
         output += mytime.time().toString("hh:mm")+";"+cityid+";"+ QLocale::countryToString(zone.country()) \
-                  +";"+QLocale().toString(mytime.date(), "ddd MMM d yyyy")+";"+abbreviation \
+                  +";"+QLocale().toString(mytime.date(),dateFormat)+";"+abbreviation \
                   +" ("+timeoffset+");"+QString::number(offset/60);
     } else {
-        output += QLocale().toString(mytime.time(), "hh:mm ap")+";"+cityid+";"+ QLocale::countryToString(zone.country()) \
-                  +";"+QLocale().toString(mytime.date(), "ddd MMM d yyyy")+";"+abbreviation+" ("+timeoffset+");" \
-                  +QString::number(offset/60);
+        output += mytime.time().toString("hh:mm ap")+";"+cityid+";"+ QLocale::countryToString(zone.country()) \
+                  +";"+QLocale().toString(mytime.date(),dateFormat)+";"+abbreviation \
+                  +" ("+timeoffset+");"+QString::number(offset/60);
     }
     return output;
 }
@@ -270,10 +277,18 @@ QString TimeZone::TimeZone::readCityTime(const QByteArray &cityid, const QByteAr
     int offset = zone.offsetFromUtc(QDateTime::currentDateTime());
     mytime = mytime.toUTC();
     mytime = mytime.addSecs( offset );
+    // try to make the date format look like ddd MMM d yyyy, but in localized order
+    QString dateFormat = "ddd " + QLocale().dateFormat(QLocale::ShortFormat);
+    dateFormat.replace("/", " ").replace("-", " ");
+    QRegExp rx("\\b(M){1,2}\\b");
+    dateFormat.replace(rx, "MMM");
+    QRegExp rx2("\\b(y){2}\\b");
+    dateFormat.replace(rx2, "yyyy");
+    // qDebug() <<  dateFormat;
     if (time_format == "24") {
-        output += QLocale().toString(mytime.time(), "hh:mm")+';'+QLocale().toString(mytime.date(), "ddd MMM d yyyy");
+        output += QLocale().toString(mytime.time(), "hh:mm")+';'+QLocale().toString(mytime.date(),dateFormat).remove(".");
     } else {
-        output += QLocale().toString(mytime.time(), "hh:mm ap")+';'+QLocale().toString(mytime.date(), "ddd MMM d yyyy");
+        output += QLocale().toString(mytime.time(), "hh:mm ap")+';'+QLocale().toString(mytime.date(),dateFormat).remove(".");
     }
     return output;
 }
@@ -283,10 +298,17 @@ QString TimeZone::TimeZone::readLocalTime(const QByteArray &time_format)
     QLocale::setDefault(myLanguage());
     QString output;
     QDateTime mytime = QDateTime::currentDateTime();
+    // try to make the date format look like ddd MMM d yyyy, but in localized order
+    QString dateFormat = "ddd " + QLocale().dateFormat(QLocale::ShortFormat);
+    dateFormat.replace("/", " ").replace("-", " ");
+    QRegExp rx("\\b(M){1,2}\\b");
+    dateFormat.replace(rx, "MMM");
+    QRegExp rx2("\\b(y){2}\\b");
+    dateFormat.replace(rx2, "yyyy");
     if (time_format == "24") {
-        output += mytime.time().toString("hh:mm")+';'+QLocale().toString(mytime.date(), "ddd MMM d yyyy");
+        output += mytime.time().toString("hh:mm")+';'+QLocale().toString(mytime.date(), dateFormat);
     } else {
-        output += mytime.time().toString("hh:mm ap")+';'+QLocale().toString(mytime.date(), "ddd MMM d yyyy");
+        output += mytime.time().toString("hh:mm ap")+';'+QLocale().toString(mytime.date(), dateFormat);
     }
     return output;
 }
@@ -355,24 +377,35 @@ QString TimeZone::TimeZone::readCityDetails(const QByteArray &cityid, const QByt
 
     if (offset3.atUtc != QDateTime()) {
         abbrevToNext = "(" + abbreviation + "→" + abbrevToNext + ")";
+        // try to make the date format look like dddd MMM d yyyy hh:mm, but in localized order
+        QString dateFormat = "dddd " + QLocale().dateFormat(QLocale::ShortFormat) + " hh:mm";
+        dateFormat.replace("/", " ").replace("-", " ");
+        QRegExp rx("\\b(M){1,2}\\b");
+        dateFormat.replace(rx, "MMM");
+        QRegExp rx2("\\b(y){2}\\b");
+        dateFormat.replace(rx2, "yyyy");
+        QRegExp rx3("\\b(d){2}\\b");
+        dateFormat.replace(rx3, "d");
+        // qDebug() <<  dateFormat;
         if (time_format == "24") {
             if ( isDayLightTime ) {
                 if ( offset > 0) {
-                    previousTransition = QLocale().toString(offset2.atUtc,"dddd") + " " + QLocale().toString(offset2.atUtc.addSecs(offset-3600), QLocale::ShortFormat) + " ("+abbrevFromPrev+")";
+                    previousTransition = QLocale().toString(offset2.atUtc.addSecs(offset-3600), dateFormat).remove(".") + " ("+abbrevFromPrev+")";
                 } else {
-                    previousTransition = QLocale().toString(offset2.atUtc,"dddd") + " " + QLocale().toString(offset2.atUtc.addSecs(offset+3600), QLocale::ShortFormat) + " ("+abbrevFromPrev+")";
+                    previousTransition = QLocale().toString(offset2.atUtc.addSecs(offset+3600), dateFormat).remove(".") + " ("+abbrevFromPrev+")";
                 }
             } else {
                 if ( offset > 0) {
-                    previousTransition = QLocale().toString(offset2.atUtc,"dddd") + " " + QLocale().toString(offset2.atUtc.addSecs(offset+3600), QLocale::ShortFormat) + " ("+abbrevFromPrev+")";
+                    previousTransition = QLocale().toString(offset2.atUtc.addSecs(offset+3600), dateFormat).remove(".") + " ("+abbrevFromPrev+")";
                 } else {
-                    previousTransition = QLocale().toString(offset2.atUtc,"dddd") + " " + QLocale().toString(offset2.atUtc.addSecs(offset+3600), QLocale::ShortFormat) + " ("+abbrevFromPrev+")";
+                    previousTransition = QLocale().toString(offset2.atUtc.addSecs(offset+3600), dateFormat).remove(".") + " ("+abbrevFromPrev+")";
                 }
             }
-            nextTransition = QLocale().toString(offset3.atUtc,"dddd") + " " + QLocale().toString(offset3.atUtc.addSecs(offset), QLocale::ShortFormat) + " ("+abbreviation+")";
+            nextTransition = QLocale().toString(offset3.atUtc.addSecs(offset), dateFormat).remove(".") + " ("+abbreviation+")";
         } else {
-            previousTransition = QLocale().toString(offset2.atUtc,"dddd") + " " + QLocale().toString(offset2.atUtc, QLocale::ShortFormat) + " (UTC)";
-            nextTransition = QLocale().toString(offset3.atUtc,"dddd") + " " + QLocale().toString(offset3.atUtc, QLocale::ShortFormat) + " (UTC)";
+            dateFormat.replace("hh:mm","hh:mm ap");
+            previousTransition = QLocale().toString(offset2.atUtc, dateFormat).remove(".") + " (UTC)";
+            nextTransition = QLocale().toString(offset3.atUtc, dateFormat).remove(".") + " (UTC)";
         }
         if ( isDayLightTime ) {
             // we now are in DaylightTime, so we go one hour back
@@ -392,16 +425,16 @@ QString TimeZone::TimeZone::readCityDetails(const QByteArray &cityid, const QByt
     nextTransition[0] = nextTransition[0].toUpper();
 
     if (time_format == "24") {
-        output += mytime.time().toString("hh:mm")+" "+QLocale().toString(mytime.date(), QLocale::LongFormat) \
+        output += mytime.time().toString("hh:mm")+" - "+QLocale().toString(mytime.date(), QLocale::LongFormat) \
                   +";"+longname+" ("+abbreviation+")"+";"+QLocale::countryToString(zone.country())+";"+cityid \
-                  +";"+offsetname+";"+QTime::currentTime().toString("hh:mm")+" " \
+                  +";"+offsetname+";"+QTime::currentTime().toString("hh:mm")+" - " \
                   +QLocale().toString(QDate::currentDate(), QLocale::LongFormat)+";"+timeDiff+";" \
                   +hasDaylighttime+";"+isDaylighttime+";"+previousTransition+";"+nextTransition+";" \
                   +abbrevToNext+";"+abbrevFromPrev+';'+DST_shift_txt_old+';'+DST_shift_txt;
     } else {
-        output += QLocale().toString(mytime.time(), "hh:mm ap")+" "+QLocale().toString(mytime.date(), QLocale::LongFormat) \
+        output += QLocale().toString(mytime.time(), "hh:mm ap")+" - "+QLocale().toString(mytime.date(), QLocale::LongFormat) \
                   +";"+longname+" ("+abbreviation+")"+";"+QLocale::countryToString(zone.country())+";"+cityid \
-                  +";"+offsetname+";"+QLocale().toString(QTime::currentTime(), "hh:mm ap")+" " \
+                  +";"+offsetname+";"+QLocale().toString(QTime::currentTime(), "hh:mm ap")+" - " \
                   +QLocale().toString(QDate::currentDate(), QLocale::LongFormat)+";"+timeDiff+";" \
                   +hasDaylighttime+";"+isDaylighttime+";"+previousTransition+";"+nextTransition+";" \
                   +abbrevToNext+";"+abbrevFromPrev+";"+DST_shift_txt_old+';'+DST_shift_txt;
