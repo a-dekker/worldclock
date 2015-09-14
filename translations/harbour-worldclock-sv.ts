@@ -14,17 +14,17 @@
         <translation>Info</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="54"/>
+        <location filename="../qml/pages/About.qml" line="51"/>
         <source>Version</source>
         <translation>Version</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="59"/>
+        <location filename="../qml/pages/About.qml" line="56"/>
         <source>City times across the world</source>
         <translation>Stadstider världen runt</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="65"/>
+        <location filename="../qml/pages/About.qml" line="62"/>
         <source>Author</source>
         <translation>Utvecklare</translation>
     </message>
@@ -96,32 +96,32 @@
         <translation>Tidszon</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="119"/>
+        <location filename="../qml/pages/CityDetail.qml" line="121"/>
         <source>Zone time</source>
         <translation>Zontid</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="129"/>
+        <location filename="../qml/pages/CityDetail.qml" line="133"/>
         <source>Local time</source>
         <translation>Lokal tid</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="139"/>
+        <location filename="../qml/pages/CityDetail.qml" line="145"/>
         <source>Time difference</source>
         <translation>Tidsskillnad</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="145"/>
+        <location filename="../qml/pages/CityDetail.qml" line="151"/>
         <source>hour</source>
         <translation>tim.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="149"/>
+        <location filename="../qml/pages/CityDetail.qml" line="157"/>
         <source>Prev. daylight transition</source>
         <translation>Föreg. dagsljusanpassn.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="165"/>
+        <location filename="../qml/pages/CityDetail.qml" line="177"/>
         <source>Next daylight transition</source>
         <translation>Nästa dagsljusanpassn.</translation>
     </message>
@@ -129,44 +129,64 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="305"/>
+        <location filename="../qml/pages/MainPage.qml" line="151"/>
+        <source>City already added</source>
+        <translation>Platsen redan tillagd</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="321"/>
         <source>About</source>
         <translation>Om</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="309"/>
+        <location filename="../qml/pages/MainPage.qml" line="325"/>
         <source>Settings</source>
         <translation>Inställningar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="313"/>
+        <location filename="../qml/pages/MainPage.qml" line="329"/>
         <source>Custom city names</source>
         <translation>Anpassade platsnamn</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="317"/>
+        <location filename="../qml/pages/MainPage.qml" line="333"/>
         <source>Add city</source>
         <translation>Lägg till stad</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="353"/>
+        <location filename="../qml/pages/MainPage.qml" line="351"/>
+        <source>Worldclock</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="369"/>
         <source>Deleting</source>
         <translation>Tar bort</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="377"/>
+        <location filename="../qml/pages/MainPage.qml" line="394"/>
         <source>Manage custom cities on other page</source>
         <translation>Hantera anpassade platser på annan sida</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="462"/>
+        <location filename="../qml/pages/MainPage.qml" line="466"/>
+        <source>Local time</source>
+        <translation>Lokal tid</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="505"/>
         <source>Details</source>
         <translation>Detaljerat</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="478"/>
+        <location filename="../qml/pages/MainPage.qml" line="521"/>
         <source>Remove</source>
         <translation>Ta bort</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="527"/>
+        <source>Cannot remove Local time</source>
+        <translation>Kan inte ta bort lokal tid</translation>
     </message>
 </context>
 <context>
@@ -240,7 +260,7 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="106"/>
         <source>Hide localtime if city is present and current</source>
-        <translation>Dölj lokal tid om staden är aktuell</translation>
+        <translation>Dölj lokal tid om staden är tillagd och aktuell</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="116"/>
@@ -248,7 +268,7 @@
         <translation>Språk:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="226"/>
+        <location filename="../qml/pages/SettingPage.qml" line="232"/>
         <source>Change of language will be active after restarting the application.</source>
         <translation>Språkändringar kommer att aktiveras vid omstart av programmet.</translation>
     </message>

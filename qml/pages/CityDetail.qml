@@ -49,11 +49,11 @@ Page {
         dstShiftTxt = data[14]
         zoneNextTransition = data[10]
         // now some translation stuff, as I can't get it to work in worldclock.cpp
-        if (zonePreviousTransition === "none" ) {
-            zonePreviousTransition = qsTr("none")
+        if (zonePreviousTransition === "None" ) {
+            zonePreviousTransition = qsTr("None")
         }
-        if (zoneNextTransition === "none" ) {
-            zoneNextTransition = qsTr("none")
+        if (zoneNextTransition === "None" ) {
+            zoneNextTransition = qsTr("None")
         }
         switch (dstShiftTxtOld) {
             case "txt_clock_back_old":
@@ -94,8 +94,6 @@ Page {
             title: qsTr("Timezone details")
         }
         SectionHeader {
-            text: zoneCity.replace(/_/g, " ") + ", " + zoneCountry.replace(
-                      /([a-z])([A-Z])/g, "$1 $2")
             wrapMode: Text.Wrap
             Image {
                 height: 55
@@ -103,6 +101,8 @@ Page {
                 source: zoneCountry !== "" ? '../images/' + zoneCountry + '.png' : ""
                 anchors.leftMargin: Theme.paddingSmall
             }
+            text: zoneCity.replace(/_/g, " ") + ", " + zoneCountry.replace(
+                      /([a-z])([A-Z])/g, "$1 $2")
         }
         Label {
             x: Theme.paddingLarge
@@ -110,9 +110,11 @@ Page {
         }
         Label {
             x: Theme.paddingLarge
+            width: parent.width - Theme.paddingLarge
             font.pixelSize: Theme.fontSizeSmall
             color: Theme.secondaryColor
             text: zoneName
+            truncationMode: TruncationMode.Fade
         }
         Label {
             x: Theme.paddingLarge
@@ -123,6 +125,8 @@ Page {
             font.pixelSize: Theme.fontSizeSmall
             color: Theme.secondaryColor
             text: zoneDateTime
+            width: parent.width - Theme.paddingLarge
+            truncationMode: TruncationMode.Fade
         }
         Label {
             x: Theme.paddingLarge
@@ -133,6 +137,8 @@ Page {
             font.pixelSize: Theme.fontSizeSmall
             color: Theme.secondaryColor
             text: localDateTime
+            width: parent.width - Theme.paddingLarge
+            truncationMode: TruncationMode.Fade
         }
         Label {
             x: Theme.paddingLarge
@@ -146,6 +152,8 @@ Page {
         }
         Label {
             x: Theme.paddingLarge
+            width: parent.width - Theme.paddingLarge
+            truncationMode: TruncationMode.Fade
             text: qsTr("Prev. daylight transition") + " " + abbrevFromPrev
         }
         Label {
@@ -153,6 +161,8 @@ Page {
             font.pixelSize: Theme.fontSizeSmall
             color: Theme.secondaryColor
             text: zonePreviousTransition
+            width: parent.width - Theme.paddingLarge
+            truncationMode: TruncationMode.Fade
         }
         Label {
             x: Theme.paddingLarge
@@ -162,6 +172,8 @@ Page {
         }
         Label {
             x: Theme.paddingLarge
+            width: parent.width - Theme.paddingLarge
+            truncationMode: TruncationMode.Fade
             text: qsTr("Next daylight transition") + " " + abbrevToNext
         }
         Label {
@@ -169,6 +181,8 @@ Page {
             font.pixelSize: Theme.fontSizeSmall
             color: Theme.secondaryColor
             text: zoneNextTransition
+            width: parent.width - Theme.paddingLarge
+            truncationMode: TruncationMode.Fade
         }
         Label {
             x: Theme.paddingLarge

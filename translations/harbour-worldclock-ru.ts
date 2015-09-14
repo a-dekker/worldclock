@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="ru">
 <context>
     <name>About</name>
     <message>
         <location filename="../qml/pages/About.qml" line="19"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>О программе</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="22"/>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Информаци</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="51"/>
         <source>Version</source>
-        <translation type="unfinished"></translation>
+        <translation>Версия</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="56"/>
         <source>City times across the world</source>
-        <translation type="unfinished"></translation>
+        <translation>Время города по всему миру</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="62"/>
         <source>Author</source>
-        <translation type="unfinished"></translation>
+        <translation>Автор</translation>
     </message>
 </context>
 <context>
@@ -34,17 +34,17 @@
     <message>
         <location filename="../qml/pages/Aliases.qml" line="38"/>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="39"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Отменить</translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="78"/>
         <source>Deleting</source>
-        <translation type="unfinished"></translation>
+        <translation>Удаление</translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="119"/>
@@ -88,32 +88,32 @@
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="94"/>
         <source>Timezone details</source>
-        <translation type="unfinished"></translation>
+        <translation>Детали часового пояса</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="109"/>
         <source>Timezone</source>
-        <translation type="unfinished"></translation>
+        <translation>Часовой пояс</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="121"/>
         <source>Zone time</source>
-        <translation type="unfinished"></translation>
+        <translation>Поясное время</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="133"/>
         <source>Local time</source>
-        <translation type="unfinished"></translation>
+        <translation>Местное время</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="145"/>
         <source>Time difference</source>
-        <translation type="unfinished"></translation>
+        <translation>Разница во времени</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="151"/>
         <source>hour</source>
-        <translation type="unfinished"></translation>
+        <translation>час</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="157"/>
@@ -131,27 +131,27 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="151"/>
         <source>City already added</source>
-        <translation type="unfinished"></translation>
+        <translation>Город уже добавлен</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="321"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>О программе</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="325"/>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройки</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="329"/>
         <source>Custom city names</source>
-        <translation type="unfinished"></translation>
+        <translation>Пользовательское названия городов</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="333"/>
         <source>Add city</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить город</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="351"/>
@@ -161,7 +161,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="369"/>
         <source>Deleting</source>
-        <translation type="unfinished"></translation>
+        <translation>Удаление</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="394"/>
@@ -171,22 +171,22 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="466"/>
         <source>Local time</source>
-        <translation type="unfinished"></translation>
+        <translation>Местное время</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="505"/>
         <source>Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Детали</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="521"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="527"/>
         <source>Cannot remove Local time</source>
-        <translation type="unfinished"></translation>
+        <translation>Не могу удалить местное время</translation>
     </message>
 </context>
 <context>
@@ -194,22 +194,22 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="55"/>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="56"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Отменить</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="59"/>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройки</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="65"/>
         <source>Sort order</source>
-        <translation type="unfinished"></translation>
+        <translation>Порядок сортировки</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="66"/>
@@ -224,18 +224,18 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="73"/>
         <source>TimeZone</source>
-        <translation type="unfinished"></translation>
+        <translation>Часовой пояс</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="76"/>
         <location filename="../qml/pages/SettingPage.qml" line="94"/>
         <source>City</source>
-        <translation type="unfinished"></translation>
+        <translation>Город</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="83"/>
         <source>Sort order list</source>
-        <translation type="unfinished"></translation>
+        <translation>Порядок сортировки списка</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="84"/>
@@ -245,17 +245,17 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="91"/>
         <source>TimeZone/Continent/City</source>
-        <translation type="unfinished"></translation>
+        <translation>Часовой Пояс/Континент/Город</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="97"/>
         <source>Country</source>
-        <translation type="unfinished"></translation>
+        <translation>Страна</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="105"/>
         <source>Hide if current</source>
-        <translation type="unfinished"></translation>
+        <translation>Скрыть, если текущий</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="106"/>
@@ -265,17 +265,17 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="116"/>
         <source>Language:</source>
-        <translation type="unfinished"></translation>
+        <translation>Язык:</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="232"/>
         <source>Change of language will be active after restarting the application.</source>
-        <translation type="unfinished"></translation>
+        <translation>Для смены языка перезапустите программу</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="88"/>
         <source>Continent/City</source>
-        <translation type="unfinished"></translation>
+        <translation>Континент/Город</translation>
     </message>
 </context>
 <context>
@@ -283,7 +283,7 @@
     <message>
         <location filename="../qml/pages/Timezone.qml" line="39"/>
         <source>Select city</source>
-        <translation type="unfinished"></translation>
+        <translation>Выбрать город</translation>
     </message>
 </context>
 </TS>

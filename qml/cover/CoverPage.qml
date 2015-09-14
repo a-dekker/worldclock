@@ -164,7 +164,9 @@ CoverBackground {
             anchors.top: parent.top
             horizontalAlignment: Text.Center
             color: Theme.highlightColor
+            font.pixelSize: Theme.fontSizeSmall
         }
+
         Separator {
             id: coverHeaderSeparator
             color: Theme.primaryColor
@@ -190,7 +192,7 @@ CoverBackground {
                 Label {
                     id: timeLabel
                     x: Theme.paddingSmall
-                    text: zoneTime.replace(" ", "")
+                    text: zoneTime.replace(" ", "").substr(0, 7)
                     height: font.pixelSize + Theme.paddingSmall
                     anchors.verticalCenter: parent.verticalCenter
                     font.pixelSize: Theme.fontSizeSmall

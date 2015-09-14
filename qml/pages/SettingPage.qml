@@ -124,8 +124,14 @@ Dialog {
                             text: "Dutch/Nederlands"
                         } // 1
                         MenuItem {
-                            text: "Swedish/Svensk"
+                            text: "German/Deutsch"
                         } // 2
+                        MenuItem {
+                            text: "Russian/Русский"
+                        } // 3
+                        MenuItem {
+                            text: "Swedish/Svensk"
+                        } // 4
                     }
                     // The next two converter functions decouple the alphabetical language list
                     // index from the internal settings index, which cannot be changed for legacy reasons
@@ -142,7 +148,7 @@ Dialog {
                         case Languages.FI:
                             // Finnish
                             return GlobVars.finnish
-                        case Languages.DE_DE:
+                        case Languages.DE:
                             // German
                             return GlobVars.german
                         case Languages.CA:
@@ -163,7 +169,7 @@ Dialog {
                         case Languages.FR:
                             // French
                             return GlobVars.french
-                        case Languages.RU_RU:
+                        case Languages.RU:
                             // Russian
                             return GlobVars.russian
                         case Languages.EL:
@@ -191,7 +197,7 @@ Dialog {
                         case GlobVars.finnish:
                             return Languages.FI // Finnish
                         case GlobVars.german:
-                            return Languages.DE_DE // German
+                            return Languages.DE // German
                         case GlobVars.catalan:
                             return Languages.CA // Catalan
                         case GlobVars.czech:
@@ -207,7 +213,7 @@ Dialog {
                         case GlobVars.turkish:
                             return Languages.TR_TR // Turkish
                         case GlobVars.russian:
-                            return Languages.RU_RU // Russian
+                            return Languages.RU // Russian
                         case GlobVars.greek:
                             return Languages.EL // Greek
                         case GlobVars.polish:

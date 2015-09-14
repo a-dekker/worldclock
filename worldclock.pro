@@ -29,17 +29,34 @@ OTHER_FILES += qml/worldclock.qml \
     qml/pages/MainPage.qml \
     qml/pages/Timezone.qml \
     qml/components/CountryItem.qml \
+    qml/components/SilicaLabel.qml \
     qml/pages/CityDetail.qml \
     qml/pages/SettingPage.qml \
     qml/pages/Popup.qml \
-    qml/images/earth.png
+    qml/images/earth.png \
+    qml/pages/Aliases.qml \
+    qml/pages/Vars.js \
+    qml/localdb.js
 
 # to disable building translations every time, comment out the
 # following CONFIG line
 CONFIG += sailfishapp_i18n
+
+INSTALLS += translations
+
+TRANSLATIONS = translations/harbour-worldclock-sv.ts \
+               translations/harbour-worldclock-ru.ts \
+               translations/harbour-worldclock-de.ts \
+               translations/harbour-worldclock-nl.ts
+
 
 HEADERS += \
     src/worldclock.h \
     src/settings.h \
     src/osread.h
 
+# only include these files for translation:
+lupdate_only {
+    SOURCES = qml/*.qml \
+              qml/pages/*.qml
+}

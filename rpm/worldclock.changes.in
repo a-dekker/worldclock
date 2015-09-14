@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sat Sep 13 2015 Arno Dekker <jack.tar@example.com> 0.4-0
+- Added German and partly translated Russian
+
 * Sat Aug 15 2015 Arno Dekker <jack.tar@example.com> 0.3-2
 - Updates in languages
 - date formats further localized

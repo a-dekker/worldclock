@@ -28,8 +28,7 @@ Page {
     property string local_continent
 
     function loadData() {
-        var offset = new Date().toString().split(" ")[5].replace("GMT",
-                                                                 "UTC ")
+        var offset = new Date().toString().split(" ")[5].replace("GMT", "UTC ")
         offset = offset.substr(0, 7) + ":" + offset.substr(7)
         offset = offset.replace("+0", "+")
         offset = offset.replace("-0", "-")
@@ -39,12 +38,14 @@ Page {
         // remove city to find continent
         local_continent = local_city.substring(0, intPos)
         // take last entry of remaining path
-        local_continent = local_continent.replace(/(.+)\//, "").replace(/(\r\n|\n|\r)/gm, "")
+        local_continent = local_continent.replace(/(.+)\//,
+                                                  "").replace(/(\r\n|\n|\r)/gm,
+                                                              "")
         // city itself
-        local_city = local_city.replace(/(.+)\//, "").replace(
-                    /(\r\n|\n|\r)/gm, "")
+        local_city = local_city.replace(/(.+)\//,
+                                        "").replace(/(\r\n|\n|\r)/gm, "")
         // add city as localtime
-        appendList(local_datetime.local_time, local_city, "Local time",
+        appendList(local_datetime.local_time, local_city, "local_time",
                    local_datetime.local_date,
                    local_datetime.timezone + " (" + offset + ")", "",
                    local_datetime.local_utc_offset)
@@ -69,16 +70,15 @@ Page {
                     var zoneUTC = data[4]
                     var zoneSecs = data[5]
 
-                    appendList(zoneTime, zoneCity, zoneCountry,
-                               zoneDate, zoneUTC,
-                               zoneCityFull, zoneSecs)
+                    appendList(zoneTime, zoneCity, zoneCountry, zoneDate,
+                               zoneUTC, zoneCityFull, zoneSecs)
                 }
             }
         }
         // load alias values
         DB.readActiveAliases()
         var customdata = mainapp.myAliases.split('\n')
-        for (var i = 0; i < customdata.length-1; i++) {
+        for (var i = 0; i < customdata.length - 1; i++) {
             var myCity = customdata[i].split("|")[1]
             data = timezones.readCityInfo(customdata[i].split("|")[0],
                                           mainapp.timeFormat)
@@ -95,8 +95,7 @@ Page {
             var zoneUTC = data[4]
             var zoneSecs = data[5]
 
-             appendList(zoneTime, zoneCity, zoneCountry,
-                       zoneDate, zoneUTC,
+            appendList(zoneTime, zoneCity, zoneCountry, zoneDate, zoneUTC,
                        zoneCityFull, zoneSecs)
         }
     }
@@ -125,7 +124,7 @@ Page {
                 sortModel()
                 mainapp.city_id = ""
             }
-            if (mainapp.city_id !== "" ) {
+            if (mainapp.city_id !== "") {
                 mainapp.city_id = mainapp.city_id.replace(/(.+)\(/, "")
                 mainapp.city_id = mainapp.city_id.replace(")", "")
                 var data
@@ -149,7 +148,7 @@ Page {
                     allcities = allcities.split(",")
 
                     if (allcities.indexOf(mainapp.city_id) >= 0) {
-                        banner.notify("City already added")
+                        banner.notify(qsTr("City already added"))
                     } else {
                         appendList(zoneTime, zoneCity, zoneCountry, zoneDate,
                                    zoneUTC, zoneCityFull, zoneSecs)
@@ -188,7 +187,7 @@ Page {
     function updateTime() {
         var data
         for (var i = 0; i < listCityModel.count; ++i) {
-            if (listCityModel.get(i).zoneCountry == "Local time") {
+            if (listCityModel.get(i).zoneCountry == "local_time") {
                 data = timezones.readLocalTime(mainapp.timeFormat)
             } else {
                 data = timezones.readCityTime(listCityModel.get(
@@ -273,6 +272,23 @@ Page {
                              })
     }
 
+    function isLongAMPM() {
+        if (mainapp.timeFormat === "12") {
+            switch (parseInt(myset.value("language"))) {
+            case Languages.DE:
+                // German
+                return true
+            case Languages.RU:
+                // Russian
+                return true
+            default:
+                return false
+            }
+        } else {
+            return false
+        }
+    }
+
     QtObject {
         id: local_datetime
         property var locale: Qt.locale("en_US")
@@ -332,7 +348,7 @@ Page {
             // anchors.fill: parent
             header: PageHeader {
                 width: listCity.width
-                title: "Worldclock"
+                title: qsTr("Worldclock")
             }
             VerticalScrollDecorator {
                 VerticalScrollDecorator {
@@ -374,7 +390,8 @@ Page {
                                 }
                             }
                             if (isReplaced === "false") {
-                                banner.notify(qsTr("Manage custom cities on other page"))
+                                banner.notify(
+                                            qsTr("Manage custom cities on other page"))
                             } else {
                                 listCity.model.remove(index)
                             }
@@ -396,6 +413,29 @@ Page {
                 }
 
                 Label {
+                    id: timeLabel_split
+                    // append the listnames
+                    text: zoneTime.split(" ")[0]
+                    font.pixelSize: Theme.fontSizeMedium
+                    color: Theme.highlightColor
+                    width: parent.width - Theme.paddingLarge * 17
+                    x: Theme.paddingSmall
+                    font.bold: true
+                    opacity: (index & 1) ? 0.9 : 1
+                    visible: isLongAMPM()
+                }
+                Label {
+                    anchors.top: timeLabel_split.bottom
+                    text: zoneTime.replace(zoneTime.split(" ")[0], "")
+                    font.pixelSize: Theme.fontSizeExtraSmall
+                    color: Theme.highlightColor
+                    width: parent.width - Theme.paddingLarge * 17
+                    x: Theme.paddingSmall
+                    truncationMode: TruncationMode.Fade
+                    opacity: (index & 1) ? 0.9 : 1
+                    visible: isLongAMPM()
+                }
+                Label {
                     id: timeLabel
                     // append the listnames
                     text: zoneTime
@@ -410,6 +450,7 @@ Page {
                     verticalAlignment: Text.AlignVCenter
                     font.bold: true
                     opacity: (index & 1) ? 0.9 : 1
+                    visible: !isLongAMPM()
                 }
                 Label {
                     id: cityLabel
@@ -420,10 +461,12 @@ Page {
                 }
                 Label {
                     anchors.top: cityLabel.bottom
-                    text: zoneCountry.replace(/([a-z])([A-Z])/g, "$1 $2").substring(0,25)
+                    text: zoneCountry.replace(/([a-z])([A-Z])/g,
+                                              "$1 $2").substring(0, 25).replace(
+                              "local_time", qsTr("Local time"))
                     font.pixelSize: Theme.fontSizeExtraSmall
                     color: (listCityItem.highlighted || listCityModel.get(
-                                index).zoneCountry == "Local time"
+                                index).zoneCountry == "local_time"
                             || listCityModel.get(index).zoneCity
                             == local_city) ? Theme.highlightColor : Theme.secondaryColor
                     anchors.left: timeLabel.right
@@ -446,7 +489,7 @@ Page {
                     text: zoneUTC
                     font.pixelSize: Theme.fontSizeExtraSmall
                     color: (listCityItem.highlighted || listCityModel.get(
-                                index).zoneCountry === "Local time"
+                                index).zoneCountry === "local_time"
                             || listCityModel.get(index).zoneCity
                             == local_city) ? Theme.highlightColor : Theme.secondaryColor
                     width: dateLabel.width
@@ -462,7 +505,7 @@ Page {
                             text: qsTr("Details")
                             onClicked: {
                                 if (listCityModel.get(
-                                            index).zoneCountry == "Local time") {
+                                            index).zoneCountry == "local_time") {
                                     mainapp.city_id = local_continent + "/" + local_city
                                     pageStack.push(Qt.resolvedUrl(
                                                        "CityDetail.qml"))
@@ -478,9 +521,11 @@ Page {
                             text: qsTr("Remove")
                             onClicked: {
                                 if (listCityModel.get(
-                                            index).zoneCountry == "Local time") {
+                                            index).zoneCountry == "local_time") {
                                     hide()
-                                    banner.notify("Cannot remove Local time")
+                                    banner.notify(
+                                                qsTr(
+                                                    "Cannot remove Local time"))
                                 } else {
                                     remove()
                                 }
@@ -489,7 +534,7 @@ Page {
                     }
                 }
                 onClicked: {
-                    if (listCityModel.get(index).zoneCountry === "Local time") {
+                    if (listCityModel.get(index).zoneCountry === "local_time") {
                         mainapp.city_id = local_continent + "/" + local_city
                     } else {
                         mainapp.city_id = listCityModel.get(index).zoneCityFull
@@ -497,7 +542,6 @@ Page {
                     pageStack.push(Qt.resolvedUrl("CityDetail.qml"))
                 }
             }
-
         }
     }
 }

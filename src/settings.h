@@ -35,7 +35,9 @@ public:
     enum eLanguages {
         SYSTEM_DEFAULT = 0,
         EN,    // English
+        DE,    // German
         NL,    // Dutch
+        RU,    // Russian
         SV,    // Swedish
         INVALID
     };

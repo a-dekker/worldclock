@@ -46,7 +46,7 @@ Page {
             Binding {
                 target: page
                 property: "searchString"
-                value: searchField.text.toLowerCase().trim()
+                value: searchField.text.trim().toLowerCase()
             }
         }
     }
