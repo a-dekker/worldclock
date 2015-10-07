@@ -231,8 +231,15 @@ QString TimeZone::TimeZone::readAllCities()
         }
 
         const int delimiter = id.lastIndexOf('/');
+        int nbrSlashes = id.count("/");
         QString cityNameTr = id.mid(delimiter + 1).replace("_"," ");
         QString continentTr = id.mid(0, delimiter);
+        QString stateTr = "";
+        if ( nbrSlashes == 2) {
+            // eg (America/North Dakota/Beulah)
+            continentTr = id.mid(0, id.indexOf('/')); //first part
+            stateTr = id.mid(id.indexOf('/')+1, delimiter - continentTr.length() - 1 ); //second part
+        }
         if (!lines.isEmpty()) {
             int index = lines.indexOf(cityNameTr+';', 0, Qt::CaseInsensitive);
             if (index != -1) {
@@ -240,7 +247,14 @@ QString TimeZone::TimeZone::readAllCities()
             }
             index = lines.indexOf(continentTr+';', 0, Qt::CaseInsensitive);
             if (index != -1) {
-                continentTr =  lines.mid(index+continentTr.length()+1, lines.indexOf('\n',index) - lines.indexOf(';',index)-1);
+                continentTr = lines.mid(index+continentTr.length()+1, lines.indexOf('\n',index) - lines.indexOf(';',index)-1);
+            }
+            if (!stateTr.isEmpty()) {
+                index = lines.indexOf(stateTr+';', 0, Qt::CaseInsensitive);
+                if (index != -1) {
+                    stateTr =  lines.mid(index+stateTr.length()+1, lines.indexOf('\n',index) - lines.indexOf(';',index)-1);
+                }
+                continentTr = continentTr + "/" + stateTr;
             }
         }
         if (sortOrder == 1) {

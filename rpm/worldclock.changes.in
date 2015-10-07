@@ -8,6 +8,10 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Wed Oct 07 2015 Arno Dekker <jack.tar@example.com> 0.4-4
+- More russian translated
+- fixed some translation issues in citylist page
+
 * Wed Oct 07 2015 Arno Dekker <jack.tar@example.com> 0.4-3
 - Correct aliasname on coverpage restored
 

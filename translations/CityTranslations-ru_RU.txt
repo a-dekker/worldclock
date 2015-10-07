@@ -4,6 +4,7 @@ Addis Ababa;Аддис-Абеба
 Adelaide;Аделаида
 Afghanistan;Афганистан
 Africa;Африка
+Albania;Албания
 Albuquerque;Альбукерке
 Algeria;Алжир
 Algiers;Алжир
@@ -14,9 +15,11 @@ Amsterdam;Амстердам
 Anadyr;Анадырь
 Anchorage;Анкоридж
 Andorra;Андорра
+Angola;ангола
 Ankara;Анкара
 Ann Arbor;Энн-Арбор
 Antananarivo;Антананариву
+Antarctica;Антарктида
 Aqtau;Актау
 Argentina;Аргентина
 Aruba;Аруба
@@ -42,17 +45,21 @@ Barcelona;Барселона
 Beijing;Пекин
 Beirut;Бейрут
 Belarus;Белоруссия
+Belem;Белем
 Belfast;Белфаст
 Belgium;Бельгия
 Belgrade;Белград
 Belize;Белиз
 Belo Horizonte;Белу-Оризонте
+Benin;Бенин
 Berlin;Берлин
 Bermuda;Бермудские острова
 Beulah;Бьюла
 Black Rock City;Блэк Рок Сити
 Blantyre;Блантайр
+Bogota;Богота
 Bogotá;Богота
+Bolivia;Боливия
 Bosnia and Herzegowina;Босния и Герцеговина
 Boston;Бостон
 Botswana;Ботсвана
@@ -62,16 +69,20 @@ Bratislava;Братислава
 Brazil;Бразилия
 Brazzaville;Браззавиль
 Brisbane;Брисбен
+Brunei:Бруней
 Brussels;Брюссель
 Bucharest;Бухарест
 Budapest;Будапешт
 Buenos Aires;Буэнос-Айрес
 Bulgaria;Болгария
+Burkina Faso;Буркина-Фасо
+Burundi;Бурунди
 Cairo;Каир
 Calcutta;Калькутта
 Calgary;Калгари
 Cambodia;Камбоджа
 Cambridge;Кембридж
+Cameroon;Камерун
 Canada;Канада
 Canary;Канарские острова
 Canberra;Канберра
@@ -81,10 +92,12 @@ Caracas;Каракас
 Casablanca;Касабланка
 Cayman Islands;Каймановы острова
 Cayman Palms;Каймановы острова
+Chad;Чад
 Chicago;Чикаго
 Chihuahua;Чиуауа
 Chile;Чили
 China;Китай
+Chisinau;кишинев
 Chişinău;Кишинёв
 Cincinnati;Цинциннати
 Cleveland;Кливленд
@@ -98,7 +111,8 @@ Croatia;Хорватия
 Cuba;Куба
 Curacao;Кюрасао
 Curaçao;Кюрасао
-Czech Republic;
+Cyprus;кипр
+Czech Republic;Чехия
 Dakar;Дакар
 Dallas;Даллас
 Damascus;Дамаск
@@ -117,11 +131,14 @@ Dominica;Доминиканская республика
 Dominican Republic;Доминиканская Республика
 Dubai;Дубай
 Dublin;Дублин
+East Timor;Восточный Тимор
 Easter Island;Остров Пасхи
 Ecuador;Эквадор
 Edmonton;Эдмонтон
 Egypt;Египет
 El Salvador;Сальвадор
+Equatorial Guinea;экваториальная Гвинея
+Eritrea;Эритрея
 Estonia;Эстония
 Ethiopia;Эфиопия
 Europe;Европы
@@ -132,7 +149,10 @@ Fortaleza;Форталеза
 France;Франция
 Frankfurt;Франкфурт-на-Майне
 Freetown;Фритаун
+Gabon;Габон
 Gaborone;Габороне
+Galapagos;Галапагосские
+Gambia;Гамбия
 Gaza;Газа
 Germany;Германия
 Ghana;Гана
@@ -144,6 +164,7 @@ Grenada;Гренада
 Guam;Гуам
 Guangzhou;Гуанчжоу
 Guatemala;Гватемала
+Guernsey;шерстяная фуфайка
 Guinea;Гвинея
 Gurgaon;Гургаон
 Guyana;Гайана
@@ -157,6 +178,7 @@ Havana;Гавана
 Hebron;Хеврон
 Helsinki;Хельсинки
 Ho Chi Minh City;Хошимин
+Hobart;Хобарт
 Hong Kong;Гонконг
 Honolulu;Гонолулу
 Houston;Хьюстон
@@ -164,11 +186,13 @@ Hungary;Венгрия
 Hyderabad;Хайдарабад
 Iceland;Исландия
 India;Индия
+Indiana;ндиана
 Indianapolis;Индианаполис
 Indonesia;Индонезия
 Iran;Иран
 Iraq;Ирак
 Ireland;Ирландия
+Irkutsk;Иркутск
 Islamabad;Исламабад
 Isle of Man;Остров Мэн
 Israel;Израиль
@@ -177,14 +201,18 @@ Italy;Италия
 Ivory Coast;Кот-д'Ивуар
 Jacksonville;Джексонвилл
 Jakarta;Джакарта
+Jamaica;Ямайка
 Japan;Япония
 Jerusalem;Иерусалим
 Johannesburg;Йоханнесбург
 Jordan;Иордания
 Kabul;Кабул
+Kaliningrad;Калининград
+Kamchatka;Камчатка
 Kampala;Кампала
 Karachi;Карачи
 Kazakhstan;Казахстан
+Kentucky;Кентукки
 Kenya;Кения
 Khartoum;Хартум
 Kiev;Киев
@@ -201,6 +229,7 @@ Kuala Lumpur;Куала-Лумпур
 Kuwait City;Эль-Кувейт
 Kuwait;Кувейт
 Kyiv;Киев
+Kyrgyzstan;Киргизия
 Lagos;Лагос
 Lahore;Лахор
 Las Vegas;Лас-Вегас
@@ -209,6 +238,7 @@ Lebanon;Ливан
 Lesotho;Лесото
 Liberia;Либерия
 Libya;Ливия
+Liechtenstein;Лихтенштейн
 Lima;Лима
 Lisbon;Лиссабон
 Lithuania;Литва
@@ -226,6 +256,7 @@ Madrid;Мадрид
 Malawi;Малави
 Malaysia;Малайзия
 Maldives;Мальдивы
+Mali;Мали
 Malta;Мальта
 Managua;Манагуа
 Manchester;Манчестер
@@ -233,6 +264,7 @@ Manila;Манила
 Marengo;Маренго
 Martinique;Остров Мартиника
 Maseru;Масеру
+Mauritania;Мавритания
 Melbourne;Мельбурн
 Memphis;Мемфис
 Mendoza;Мендоса
@@ -249,19 +281,24 @@ Moldova;Республика Молдова
 Monaco;Монако
 Mongolia;Монголия
 Monrovia;Монровия
+Montenegro;черногория
 Monterrey;Монтеррей
 Montevideo;Монтевидео
 Montreal;Монреаль
+Montserrat;Монтсеррат
 Morocco;Марокко
 Moscow;Москва
 Mountain View;Маунтин-Вью
+Mozambique;Мозамбик
 Mumbai;Мумбай
 Munich;Мюнхен
 Muscat;Маскат
 Myanmar;Мьянма
 Nairobi;Найроби
+Namibia;Намибия
 Nashville;Нашвилл
 Nassau;Нассау
+Nepal;Непал
 Netherlands;Нидерланды
 New Caledonia;Новая Каледония
 New Orleans;Новый Орлеан
@@ -271,13 +308,17 @@ New York;Нью-Йорк
 New Zealand;Новая Зеландия
 Newfoundland;Ньюфаундленд
 Nicaragua;Никарагуа
+Niger;Нигер
 Nigeria;Нигерия
 North Korea;Корейская Народная Демократическая Республика
 Norway;Норвегия
 Nouméa;Нумеа
+Novokuznetsk;Новокузнецк
+Novosibirsk;Новосибирск
 Nuestra Señora de La Paz;Ла-Пас
 Oklahoma City;Оклахома-Сити
 Oman;Оман
+Omsk;Омск
 Osaka;Осака
 Oslo;Осло
 Ottawa;Оттава
@@ -312,6 +353,7 @@ Rangoon;Янгон
 Reno;Рино
 Republic of the Congo;Республика Конго
 Reston;Рестон
+Reykjavik;рейкьявик
 Reykjavík;Рейкьявик
 Riga;Рига
 Rio de Janeiro;Рио-де-Жанейро
@@ -322,7 +364,9 @@ Russia;Россия
 Rwanda;Руанда
 Sacramento;Сакраменто
 Saint Kitts and Nevis;Сент-Китс и Невис
+Sakhalin;Сахалин
 Salt Lake City;Солт-Лейк-Сити
+Samara;Самара
 Samoa;Самоа
 San Antonio;Сан-Антонио
 San Diego;Сан-Диего
@@ -347,10 +391,12 @@ Simferopol;Симферополь
 Singapore;Сингапур
 Skopje;Скопье
 Slovakia;Словакия
+Slovenia;Словения
 Sofia;София
 Somalia;Сомали
 South Africa;Южно-Африканская Республика
 South Korea;Республика Корея
+South Sudan;Южный Судан
 Spain;Испания
 Sri Lanka;Шри-Ланка
 St.Johns;Сент-Джонс
@@ -362,6 +408,7 @@ Sudan;Судан
 Suriname;Суринам
 Suva;Сува
 Svalbard and Jan Mayen;Шпицберген и Ян-Майен
+Swaziland;Свазиленд
 Sweden;Швеция
 Switzerland;Швейцария
 Sydney;Сидней
@@ -371,10 +418,12 @@ São Tomé and Príncipe;Сан-Томе и Принсипи
 São Tomé;Сан-Томе
 Taipei;Тайбэй
 Taiwan;Тайвань
+Tajikistan;Таджикистан
 Tallinn;Таллин
 Tanzania;Танзания
 Tehran;Тегеран
 Thailand;Таиланд
+Togo;Того
 Tokyo;Токио
 Toronto;Торонто
 Trinidad and Tobago;Тринидад и Тобаго
@@ -383,7 +432,6 @@ Tunis;Тунис
 Tunisia;Тунис
 Turkey;Турция
 Turks and Caicos Islands;Острова Теркс и Кайкос
-UTC;UTC (время по Гринвичу)
 Uganda;Уганда
 Ukraine;Украина
 Ulan Bator;Улан-Батор
@@ -393,6 +441,7 @@ United States;США
 Uruguay;Уругвай
 Vancouver;Ванкувер
 Vatican City State;Ватикан
+Vatican;Ватикан
 Venezuela;Венесуэла
 Vevay;Вевей
 Vienna;Вена
@@ -402,10 +451,13 @@ Vincennes;Винсенс
 Volgograd;Волгоград
 Warsaw;Варшава
 Washington D.C.;Вашингтон (округ Колумбия)
+Western Sahara;западная Сахара
 Winamac;Уинамак
 Winnipeg;Виннипег
 Wrocław;Вроцлав
 Yemen;Йемен
 Zagreb;Загреб
+Zambia;Замбия
+Zaporozhye;Запорожье
 Zimbabwe;Зимбабве
 Zurich;Цюрих
