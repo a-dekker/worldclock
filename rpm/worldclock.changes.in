@@ -8,7 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* Wed Oct 07 2015 Arno Dekker <jack.tar@example.com> 0.4-2
+* Wed Oct 07 2015 Arno Dekker <jack.tar@example.com> 0.4-3
+- Correct aliasname on coverpage restored
+
 - Small bugfixes
 - Added basic German and Russian geolocation translations
 

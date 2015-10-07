@@ -89,7 +89,7 @@ CoverBackground {
             var zoneSecs = data[5]
             var zoneCityTr = data[6]
 
-            appendCity(zoneTime, zoneCityTr, zoneSecs, zoneCityFull)
+            appendCity(zoneTime, zoneCity, zoneSecs, zoneCityFull)
         }
     }
 
