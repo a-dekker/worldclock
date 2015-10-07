@@ -90,7 +90,6 @@ Rome;Rom
 Russia;Ryssland
 Saint Kitts And Nevis;Saint Kitts och Nevis
 Saudi Arabia;Saudiarabien
-Seoul;Seoul
 Serbia;Serbien
 Slovakia;Slovakien
 South Africa;Sydafrika
@@ -110,7 +109,7 @@ Ukraine;Ukraina
 United Arab Emirates;Förenade Arabemiraten
 United Kingdom;Storbritannien
 United States;Förenta Staterna
-Vatican City;Vatikanstaten
+Vatican City State;Vatikanstaten
 Vienna;Wien
 Warsaw;Warszawa
 

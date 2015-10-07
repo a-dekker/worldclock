@@ -131,7 +131,7 @@
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="163"/>
         <source>Worldclock</source>
-        <translation type="unfinished"></translation>
+        <translation>Weltzeituhr</translation>
     </message>
 </context>
 <context>
@@ -164,7 +164,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="378"/>
         <source>Worldclock</source>
-        <translation type="unfinished"></translation>
+        <translation>Weltzeituhr</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="396"/>

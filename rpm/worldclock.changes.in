@@ -8,6 +8,10 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Wed Oct 07 2015 Arno Dekker <jack.tar@example.com> 0.4-2
+- Small bugfixes
+- Added basic German and Russian geolocation translations
+
 * Wed Oct 07 2015 Arno Dekker <jack.tar@example.com> 0.4-1
 - Language updates
 - Additional flags

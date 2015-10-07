@@ -155,7 +155,6 @@ United States Virgin Islands;Amerikaanse Maagdeneilanden
 United States;Verenigde Staten
 Uzbekistan;Oesbekistan
 Vatican City State;Vaticaanstad
-Vatican City;Vaticaanstad
 Vienna;Wenen
 Wallis And Futuna Islands;Wallis en Futuna
 Warsaw;Warschau

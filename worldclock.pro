@@ -37,6 +37,8 @@ OTHER_FILES += qml/worldclock.qml \
     qml/pages/Vars.js \
     qml/localdb.js \
     translations/CityTranslations-sv_SE.txt \
+    translations/CityTranslations-de_DE.txt \
+    translations/CityTranslations-ru_RU.txt \
     translations/CityTranslations-nl_NL.txt
 
 # to disable building translations every time, comment out the

@@ -231,7 +231,7 @@ QString TimeZone::TimeZone::readAllCities()
         }
 
         const int delimiter = id.lastIndexOf('/');
-        QString cityNameTr = id.mid(delimiter + 1);
+        QString cityNameTr = id.mid(delimiter + 1).replace("_"," ");
         QString continentTr = id.mid(0, delimiter);
         if (!lines.isEmpty()) {
             int index = lines.indexOf(cityNameTr+';', 0, Qt::CaseInsensitive);
@@ -329,8 +329,8 @@ QString TimeZone::TimeZone::readCityInfo(const QByteArray &cityid, const QByteAr
         myCountry = lines.mid(index+myCountry.length()+1, lines.indexOf('\n',index) - lines.indexOf(';',index)-1);
     }
     const int separator = cityid.lastIndexOf('/');
-    const QString cityName = cityid.mid(separator + 1);
-    index = lines.replace(" ","").indexOf(cityName+';', 0, Qt::CaseInsensitive);
+    const QString cityName = cityid.mid(separator + 1).replace("_"," ");
+    index = lines.indexOf(cityName+';', 0, Qt::CaseInsensitive);
     QString cityTr = cityName;
     if (index != -1) {
         cityTr = lines.mid(index+cityName.length()+1, lines.indexOf('\n',index) - lines.indexOf(';',index)-1);
@@ -524,12 +524,12 @@ QString TimeZone::TimeZone::readCityDetails(const QByteArray &cityid, const QByt
         myCountry = lines.mid(index+myCountry.length()+1, lines.indexOf('\n',index) - lines.indexOf(';',index)-1);
     }
     const int separator = cityid.lastIndexOf('/');
-    const QString cityName = cityid.mid(separator + 1);
+    const QString cityName = cityid.mid(separator + 1).replace("_", " ");
     QByteArray cityidTr = cityid;
-    index = lines.replace(" ","").indexOf(cityName+';', 0, Qt::CaseInsensitive);
+    index = lines.indexOf(cityName+';', 0, Qt::CaseInsensitive);
     if (index != -1) {
         QString myCity = lines.mid(index+cityName.length()+1, lines.indexOf('\n',index) - lines.indexOf(';',index)-1);
-        cityidTr.replace(cityName.toUtf8(),myCity.toUtf8());
+        cityidTr.replace(cityName.toUtf8().replace(" ","_"),myCity.toUtf8());
     }
 
     if (time_format == "24") {
