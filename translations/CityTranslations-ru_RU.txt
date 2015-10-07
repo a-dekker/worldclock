@@ -1,0 +1,411 @@
+Abidjan;Абиджан
+Accra;Аккра
+Addis Ababa;Аддис-Абеба
+Adelaide;Аделаида
+Afghanistan;Афганистан
+Africa;Африка
+Albuquerque;Альбукерке
+Algeria;Алжир
+Algiers;Алжир
+Almaty;Алма-Ата
+America;Америка
+Amman;Амман
+Amsterdam;Амстердам
+Anadyr;Анадырь
+Anchorage;Анкоридж
+Andorra;Андорра
+Ankara;Анкара
+Ann Arbor;Энн-Арбор
+Antananarivo;Антананариву
+Aqtau;Актау
+Argentina;Аргентина
+Aruba;Аруба
+Asia;Азия
+Asunción;Асунсьон
+Athens;Афины
+Atlanta;Атланта
+Auckland;Окленд
+Austin;Остин
+Australia;Австралия
+Austria;Австрия
+Azerbaijan;Азербайджан
+Baghdad;Багдад
+Bahamas;Багамские Острова
+Bahrain;Бахрейн
+Baku;Баку
+Baltimore;Балтимор
+Bangalore;Бангалор
+Bangkok;Бангкок
+Bangladesh;Бангладеш
+Barbados;Барбадос
+Barcelona;Барселона
+Beijing;Пекин
+Beirut;Бейрут
+Belarus;Белоруссия
+Belfast;Белфаст
+Belgium;Бельгия
+Belgrade;Белград
+Belize;Белиз
+Belo Horizonte;Белу-Оризонте
+Berlin;Берлин
+Bermuda;Бермудские острова
+Beulah;Бьюла
+Black Rock City;Блэк Рок Сити
+Blantyre;Блантайр
+Bogotá;Богота
+Bosnia and Herzegowina;Босния и Герцеговина
+Boston;Бостон
+Botswana;Ботсвана
+Boulder;Боулдер
+Brasília;Бразилиа
+Bratislava;Братислава
+Brazil;Бразилия
+Brazzaville;Браззавиль
+Brisbane;Брисбен
+Brussels;Брюссель
+Bucharest;Бухарест
+Budapest;Будапешт
+Buenos Aires;Буэнос-Айрес
+Bulgaria;Болгария
+Cairo;Каир
+Calcutta;Калькутта
+Calgary;Калгари
+Cambodia;Камбоджа
+Cambridge;Кембридж
+Canada;Канада
+Canary;Канарские острова
+Canberra;Канберра
+Cancún;Канкун
+Cape Town;Кейптаун
+Caracas;Каракас
+Casablanca;Касабланка
+Cayman Islands;Каймановы острова
+Cayman Palms;Каймановы острова
+Chicago;Чикаго
+Chihuahua;Чиуауа
+Chile;Чили
+China;Китай
+Chişinău;Кишинёв
+Cincinnati;Цинциннати
+Cleveland;Кливленд
+Colombia;Колумбия
+Colombo;Коломбо
+Columbus;Колумбус
+Conakry;Конакри
+Copenhagen;Копенгаген
+Costa Rica;Коста-Рика
+Croatia;Хорватия
+Cuba;Куба
+Curacao;Кюрасао
+Curaçao;Кюрасао
+Czech Republic;
+Dakar;Дакар
+Dallas;Даллас
+Damascus;Дамаск
+Dar es Salaam;Дар-эс-Салам
+Darwin;Дарвин
+Dawson Creek;Досон-Крик
+Delhi;Дели
+Democratic Republic of the Congo;Демократическая Республика Конго
+Denmark;Дания
+Denver;Денвер
+Detroit;Детройт
+Dhaka;Дакка
+Djibouti;Джибути
+Doha;Доха
+Dominica;Доминиканская республика
+Dominican Republic;Доминиканская Республика
+Dubai;Дубай
+Dublin;Дублин
+Easter Island;Остров Пасхи
+Ecuador;Эквадор
+Edmonton;Эдмонтон
+Egypt;Египет
+El Salvador;Сальвадор
+Estonia;Эстония
+Ethiopia;Эфиопия
+Europe;Европы
+Falkland Islands;Фолклендские острова
+Fiji;Фиджи
+Finland;Финляндия
+Fortaleza;Форталеза
+France;Франция
+Frankfurt;Франкфурт-на-Майне
+Freetown;Фритаун
+Gaborone;Габороне
+Gaza;Газа
+Germany;Германия
+Ghana;Гана
+Gibraltar;Гибралтар
+Grand Turk;Гранд-Тёрк
+Greece;Греция
+Greenland;Гренландия
+Grenada;Гренада
+Guam;Гуам
+Guangzhou;Гуанчжоу
+Guatemala;Гватемала
+Guinea;Гвинея
+Gurgaon;Гургаон
+Guyana;Гайана
+Haifa;Хайфа
+Haiti;Гаити
+Halifax;Галифакс
+Hamburg;Гамбург
+Hanoi;Ханой
+Harare;Хараре
+Havana;Гавана
+Hebron;Хеврон
+Helsinki;Хельсинки
+Ho Chi Minh City;Хошимин
+Hong Kong;Гонконг
+Honolulu;Гонолулу
+Houston;Хьюстон
+Hungary;Венгрия
+Hyderabad;Хайдарабад
+Iceland;Исландия
+India;Индия
+Indianapolis;Индианаполис
+Indonesia;Индонезия
+Iran;Иран
+Iraq;Ирак
+Ireland;Ирландия
+Islamabad;Исламабад
+Isle of Man;Остров Мэн
+Israel;Израиль
+Istanbul;Стамбул
+Italy;Италия
+Ivory Coast;Кот-д'Ивуар
+Jacksonville;Джексонвилл
+Jakarta;Джакарта
+Japan;Япония
+Jerusalem;Иерусалим
+Johannesburg;Йоханнесбург
+Jordan;Иордания
+Kabul;Кабул
+Kampala;Кампала
+Karachi;Карачи
+Kazakhstan;Казахстан
+Kenya;Кения
+Khartoum;Хартум
+Kiev;Киев
+Kigali;Кигали
+Kingston;Кингстон
+Kinshasa;Киншаса
+Kiribati;Кирибати
+Kiritimati;Остров Рождества (Киртимати)
+Kirkland;Киркленд
+Knox;Нокс
+Knoxville;Ноксвилл
+Kraków;Краков
+Kuala Lumpur;Куала-Лумпур
+Kuwait City;Эль-Кувейт
+Kuwait;Кувейт
+Kyiv;Киев
+Lagos;Лагос
+Lahore;Лахор
+Las Vegas;Лас-Вегас
+Latvia;Латвия
+Lebanon;Ливан
+Lesotho;Лесото
+Liberia;Либерия
+Libya;Ливия
+Lima;Лима
+Lisbon;Лиссабон
+Lithuania;Литва
+London;Лондон
+Longyearbyen;Лонгйир
+Los Angeles;Лос-Анджелес
+Louisville;Луисвилл
+Luxembourg;Люксембург
+Macao;Макао
+Macau;Макао
+Macedonia;Македония
+Madagascar;Мадагаскар
+Madison;Мэдисон
+Madrid;Мадрид
+Malawi;Малави
+Malaysia;Малайзия
+Maldives;Мальдивы
+Malta;Мальта
+Managua;Манагуа
+Manchester;Манчестер
+Manila;Манила
+Marengo;Маренго
+Martinique;Остров Мартиника
+Maseru;Масеру
+Melbourne;Мельбурн
+Memphis;Мемфис
+Mendoza;Мендоса
+Metlakatla;Метлакатла
+Mexico City;Мехико
+Mexico;Мексика
+Miami;Майами
+Milan;Милан
+Milwaukee;Милуоки
+Minneapolis;Миннеаполис
+Minsk;Минск
+Mogadishu;Могадишо
+Moldova;Республика Молдова
+Monaco;Монако
+Mongolia;Монголия
+Monrovia;Монровия
+Monterrey;Монтеррей
+Montevideo;Монтевидео
+Montreal;Монреаль
+Morocco;Марокко
+Moscow;Москва
+Mountain View;Маунтин-Вью
+Mumbai;Мумбай
+Munich;Мюнхен
+Muscat;Маскат
+Myanmar;Мьянма
+Nairobi;Найроби
+Nashville;Нашвилл
+Nassau;Нассау
+Netherlands;Нидерланды
+New Caledonia;Новая Каледония
+New Orleans;Новый Орлеан
+New Salem;Нью-Сейлем
+New South Wales;Новый Южный Уэльс
+New York;Нью-Йорк
+New Zealand;Новая Зеландия
+Newfoundland;Ньюфаундленд
+Nicaragua;Никарагуа
+Nigeria;Нигерия
+North Korea;Корейская Народная Демократическая Республика
+Norway;Норвегия
+Nouméa;Нумеа
+Nuestra Señora de La Paz;Ла-Пас
+Oklahoma City;Оклахома-Сити
+Oman;Оман
+Osaka;Осака
+Oslo;Осло
+Ottawa;Оттава
+Oulu;Оулу
+Pakistan;Пакистан
+Palestine;Палестина
+Panama;Панама
+Panamá;Панама
+Paraguay;Парагвай
+Paramaribo;Парамарибо
+Paris;Париж
+Perth;Перт
+Peru;Перу
+Petersburg;Санкт-Петербург
+Philadelphia;Филадельфия
+Philippines;Филиппины
+Phnom Penh;Пномпень
+Phoenix;Финикс
+Pittsburgh;Питсбург
+Poland;Польша
+Port au Prince;Порт-о-Пренс
+Port of Spain;Порт-оф-Спейн
+Portland;Портленд
+Portugal;Португалия
+Prague;Прага
+Puerto Rico;Пуэрто-Рико
+Pyongyang;Пхеньян
+Qatar;Катар
+Queensland;Квинсленд
+Quito;Кито
+Rangoon;Янгон
+Reno;Рино
+Republic of the Congo;Республика Конго
+Reston;Рестон
+Reykjavík;Рейкьявик
+Riga;Рига
+Rio de Janeiro;Рио-де-Жанейро
+Riyadh;Эр-Рияд
+Romania;Румыния
+Rome;Рим
+Russia;Россия
+Rwanda;Руанда
+Sacramento;Сакраменто
+Saint Kitts and Nevis;Сент-Китс и Невис
+Salt Lake City;Солт-Лейк-Сити
+Samoa;Самоа
+San Antonio;Сан-Антонио
+San Diego;Сан-Диего
+San Francisco;Сан-Франциско
+San José;Сан-Хосе
+San Juan;Сан-Хуан
+San Marino;Сан-Марино
+San Salvador;Сан-Сальвадор
+Sanaa;Сана
+Santiago;Сантьяго
+Santo Domingo;Санто-Доминго
+Sarajevo;Сараево
+Saskatchewan;Саскачеван
+Saudi Arabia;Саудовская Аравия
+Seattle;Сиэтл
+Senegal;Сенегал
+Seoul;Сеул
+Serbia;Сербия
+Shanghai;Шанхай
+Sierra Leone;Сьерра-Леоне
+Simferopol;Симферополь
+Singapore;Сингапур
+Skopje;Скопье
+Slovakia;Словакия
+Sofia;София
+Somalia;Сомали
+South Africa;Южно-Африканская Республика
+South Korea;Республика Корея
+Spain;Испания
+Sri Lanka;Шри-Ланка
+St.Johns;Сент-Джонс
+St.Kitts;Сент-Китс
+St.Louis;Сент-Луис
+Stanley;Стэнли
+Stockholm;Стокгольм
+Sudan;Судан
+Suriname;Суринам
+Suva;Сува
+Svalbard and Jan Mayen;Шпицберген и Ян-Майен
+Sweden;Швеция
+Switzerland;Швейцария
+Sydney;Сидней
+Syria;Сирия
+São Paulo;Сан-Паулу
+São Tomé and Príncipe;Сан-Томе и Принсипи
+São Tomé;Сан-Томе
+Taipei;Тайбэй
+Taiwan;Тайвань
+Tallinn;Таллин
+Tanzania;Танзания
+Tehran;Тегеран
+Thailand;Таиланд
+Tokyo;Токио
+Toronto;Торонто
+Trinidad and Tobago;Тринидад и Тобаго
+Tripoli;Триполи
+Tunis;Тунис
+Tunisia;Тунис
+Turkey;Турция
+Turks and Caicos Islands;Острова Теркс и Кайкос
+UTC;UTC (время по Гринвичу)
+Uganda;Уганда
+Ukraine;Украина
+Ulan Bator;Улан-Батор
+United Arab Emirates;Объединённые Арабские Эмираты
+United Kingdom;Великобритания
+United States;США
+Uruguay;Уругвай
+Vancouver;Ванкувер
+Vatican City State;Ватикан
+Venezuela;Венесуэла
+Vevay;Вевей
+Vienna;Вена
+Vietnam;Вьетнам
+Vilnius;Вильнюс
+Vincennes;Винсенс
+Volgograd;Волгоград
+Warsaw;Варшава
+Washington D.C.;Вашингтон (округ Колумбия)
+Winamac;Уинамак
+Winnipeg;Виннипег
+Wrocław;Вроцлав
+Yemen;Йемен
+Zagreb;Загреб
+Zimbabwe;Зимбабве
+Zurich;Цюрих

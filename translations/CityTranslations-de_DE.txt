@@ -1,0 +1,154 @@
+
+Addis Ababa;Addis Abeba
+Africa;Afrika
+Algeria;Algerien
+Algiers;Algier
+American Samoa;Amerikanische Samoa
+Aqtau;Aktau
+Argentina;Argentinien
+Armenia;Armenien
+Athens;Athen
+Australia;Australien
+Austria;Österreich
+Azerbaijan;Aserbaidschan
+Azia;Asien
+Baghdad;Bagdad
+Bangladesh;Bangladesch
+Beijing;Peking
+Belarus;Weißrussland
+Belgium;Belgien
+Belgrade;Belgrad
+Bosnia and Herzegowina;Bosnien und Herzegowina
+Brazil;Brasilien
+Brussels;Brüssel
+Bucharest;Bukarest
+Bulgaria;Bulgarien
+Cairo;Kairo
+Calcutta;Kalkutta
+Cambodia;Kambodscha
+Canada;Kanada
+Cape Town;Kapstadt
+Cayman Islands;Kaiman-Inseln
+Chile;Chili
+Christmas Island;
+Colombia;Kolumbien
+Copenhagen;Kopenhagen
+Croatia;Kroatien
+Cuba;Kuba
+Curacao;Curaçao
+Czech Republic;
+Damascus;Damaskus
+Democratic Republic of the Congo;Demokratische Republik Kongo
+Denmark;Dänemark
+Djibouti;Dschibuti
+Dominica;Dominika
+Dominican Republic;Dominikanische Republik
+East Timor;Ost-Timor
+Easter Island;Osterinsel
+Egypt;Ägypten
+Estonia;Estland
+Ethiopia;Äthiopien
+Europe;Europa
+Falkland Islands;Falklandinseln
+Fiji;Fidschi-Inseln
+Finland;Finnland
+France;Frankreich
+French Guiana;Französisch-Guayana
+French Polynesia;Französisch-Polynesien
+Germany;Deutschland
+Greece;Griechenland
+Greenland;Grönland
+Hong Kong;Hongkong
+Hungary;Ungarn
+Iceland;Island
+India;Indien
+Indonesia;Indonesien
+Iraq;Irak
+Ireland;Irland
+Italy;Italien
+Ivory Coast;Elfenbeinküste
+Jordan;Jordanien
+Karachi;Karatschi
+Kazakhstan;Kasachstan
+Kenya;Kenia
+Khartoum;Khartum
+Kiev;Kiew
+Kraków;Krakau
+Latvia;Lettland
+Lebanon;Libanon
+Libya;Libyen
+Lisbon;Lissabon
+Lithuania;Litauen
+Longyearbyen;Linguere
+Luxembourg;Luxemburg
+Macao;Makao
+Macau;Macao
+Macedonia;Mazedonien
+Madagascar;Madagaskar
+Maldives;Malediven
+Mexico;Mexiko
+Milan;Mailand
+Mirconesia;Mikronesien
+Mogadishu;Mogadischu
+Moldova;Moldavien
+Mongolia;Mongolie
+Morocco;Marokko
+Moscow;Moskau
+Munich;München
+Muscat;Maskat
+Netherlands;Niederlande
+New Caledonia;Neukaledonien
+New Zealand;Neuseeland
+Newfoundland;Neufundland
+North Korea;Nordkorea
+Norway;Norwegen
+Nuestra Señora de La Paz;La Paz
+Palestinian Territories;Palästinensische Gebiete
+Papua New Guinea;Papua-Neuguinea
+Philippines;Phillipinen
+Poland;Polen
+Port au Prince;Port-au-Prince
+Prague;Prag
+Qatar;Katar
+Republic of the Congo;Republik Kongo
+Riyadh;Riad
+Romania;Rumänien
+Rome;Rom
+Russia;Russland
+Rwanda;Ruanda
+Saint Kitts and Nevis;Saint Kitts und Nevis
+Sao Tome and Príncipe;São Tomé und Príncipe
+Sarajevo;Sarajewo
+Saudi Arabia;Saudi-Arabien
+Serbia;Serbien
+Singapore;Singapur
+Slovakia;Slowakei
+Solomon Islands;Salomon-Inseln
+South Africa;Südafrika
+South Korea;Südkorea
+South Sudan;Süd-Sudan
+Spain;Spanien
+Suriname;Surinam
+Svalbard and Jan Mayen;Spitzbergen und Jan Mayen Inseln
+Sweden;Schweden
+Switzerland;Schweiz
+Syria;Syrien
+Tanzania;Tansania
+Tehran;Teheran
+Tokyo;Tokio
+Trinidad and Tobago;Trinidad und Tobago
+Tripoli;Tripolis
+Tunisia;Tunesien
+Turkey;Türkei
+Turks and Caicos Islands;Turks- und Caicosinseln
+Ulan Bator;Ulaanbaatar
+United Arab Emirates;Vereinigte Arabische Emirate
+United Kingdom;Vereinigtes Königreich
+United States;Vereinigte Staaten von Amerika
+Vatican City State;Vatikanstadt
+Vienna;Wien
+Vilnius;Wilna
+Weihnachtsinsel;Weihnachtsinseln
+Wrocław;Breslau
+Yemen;Jemen
+Zimbabwe;Simbabwe
