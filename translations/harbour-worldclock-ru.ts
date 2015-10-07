@@ -11,7 +11,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="22"/>
         <source>Info</source>
-        <translation>Информаци</translation>
+        <translation>Информация</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="51"/>
@@ -54,137 +54,145 @@
     <message>
         <location filename="../qml/pages/Aliases.qml" line="140"/>
         <source>No custom city names defined. Press the plus button to add one.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не определены пользовательские названия городов. Нажмите кнопку &quot;+&quot;, чтобы добавить.</translation>
     </message>
 </context>
 <context>
     <name>CityDetail</name>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="53"/>
-        <location filename="../qml/pages/CityDetail.qml" line="56"/>
+        <location filename="../qml/pages/CityDetail.qml" line="54"/>
+        <location filename="../qml/pages/CityDetail.qml" line="57"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>Нет</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="60"/>
+        <location filename="../qml/pages/CityDetail.qml" line="61"/>
         <source>the clock jumped one hour backward</source>
-        <translation type="unfinished"></translation>
+        <translation>часы перевелись на один час назад</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="63"/>
+        <location filename="../qml/pages/CityDetail.qml" line="64"/>
         <source>the clock jumped one hour forward</source>
-        <translation type="unfinished"></translation>
+        <translation>часы перевелись на один час вперед</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="70"/>
+        <location filename="../qml/pages/CityDetail.qml" line="71"/>
         <source>the clock jumps one hour backward</source>
-        <translation type="unfinished"></translation>
+        <translation>часы перевелись на один час назад</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="73"/>
+        <location filename="../qml/pages/CityDetail.qml" line="74"/>
         <source>the clock jumps one hour forward</source>
-        <translation type="unfinished"></translation>
+        <translation>часы перевелись на один час вперед</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="94"/>
+        <location filename="../qml/pages/CityDetail.qml" line="95"/>
         <source>Timezone details</source>
         <translation>Детали часового пояса</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="109"/>
+        <location filename="../qml/pages/CityDetail.qml" line="110"/>
         <source>Timezone</source>
         <translation>Часовой пояс</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="121"/>
+        <location filename="../qml/pages/CityDetail.qml" line="122"/>
         <source>Zone time</source>
         <translation>Поясное время</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="133"/>
+        <location filename="../qml/pages/CityDetail.qml" line="134"/>
         <source>Local time</source>
         <translation>Местное время</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="145"/>
+        <location filename="../qml/pages/CityDetail.qml" line="146"/>
         <source>Time difference</source>
         <translation>Разница во времени</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="151"/>
+        <location filename="../qml/pages/CityDetail.qml" line="152"/>
         <source>hour</source>
         <translation>час</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="157"/>
+        <location filename="../qml/pages/CityDetail.qml" line="158"/>
         <source>Prev. daylight transition</source>
-        <translation type="unfinished"></translation>
+        <translation>Предыдущий дневной переход</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="177"/>
+        <location filename="../qml/pages/CityDetail.qml" line="178"/>
         <source>Next daylight transition</source>
+        <translation>Следующий дневной переход</translation>
+    </message>
+</context>
+<context>
+    <name>CoverPage</name>
+    <message>
+        <location filename="../qml/cover/CoverPage.qml" line="163"/>
+        <source>Worldclock</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="151"/>
+        <location filename="../qml/pages/MainPage.qml" line="149"/>
         <source>City already added</source>
         <translation>Город уже добавлен</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="321"/>
+        <location filename="../qml/pages/MainPage.qml" line="348"/>
         <source>About</source>
         <translation>О программе</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="325"/>
+        <location filename="../qml/pages/MainPage.qml" line="352"/>
         <source>Settings</source>
         <translation>Настройки</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="329"/>
+        <location filename="../qml/pages/MainPage.qml" line="356"/>
         <source>Custom city names</source>
-        <translation>Пользовательское названия городов</translation>
+        <translation>Пользовательские названия городов</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="333"/>
+        <location filename="../qml/pages/MainPage.qml" line="360"/>
         <source>Add city</source>
         <translation>Добавить город</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="351"/>
+        <location filename="../qml/pages/MainPage.qml" line="378"/>
         <source>Worldclock</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="369"/>
+        <location filename="../qml/pages/MainPage.qml" line="396"/>
         <source>Deleting</source>
         <translation>Удаление</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="394"/>
+        <location filename="../qml/pages/MainPage.qml" line="421"/>
         <source>Manage custom cities on other page</source>
-        <translation type="unfinished"></translation>
+        <translation>Управление пользовательскими города на другой странице</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="466"/>
+        <location filename="../qml/pages/MainPage.qml" line="495"/>
         <source>Local time</source>
         <translation>Местное время</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="505"/>
+        <location filename="../qml/pages/MainPage.qml" line="534"/>
         <source>Details</source>
         <translation>Детали</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="521"/>
+        <location filename="../qml/pages/MainPage.qml" line="550"/>
         <source>Remove</source>
         <translation>Удалить</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="527"/>
+        <location filename="../qml/pages/MainPage.qml" line="556"/>
         <source>Cannot remove Local time</source>
         <translation>Не могу удалить местное время</translation>
     </message>
@@ -214,12 +222,12 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="66"/>
         <source>Sort order of personal list</source>
-        <translation type="unfinished"></translation>
+        <translation>Порядок сортировки персонального списка</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="70"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>Нет</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="73"/>
@@ -240,7 +248,7 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="84"/>
         <source>Sort order of complete citylist</source>
-        <translation type="unfinished"></translation>
+        <translation>Порядок сортировки полного списка городов</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="91"/>
@@ -260,7 +268,7 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="106"/>
         <source>Hide localtime if city is present and current</source>
-        <translation type="unfinished"></translation>
+        <translation>Скрыть местное время,  если город присутствует и является текущим</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="116"/>
@@ -281,7 +289,7 @@
 <context>
     <name>Timezone</name>
     <message>
-        <location filename="../qml/pages/Timezone.qml" line="39"/>
+        <location filename="../qml/pages/Timezone.qml" line="40"/>
         <source>Select city</source>
         <translation>Выбрать город</translation>
     </message>

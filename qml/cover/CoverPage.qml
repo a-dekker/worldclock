@@ -27,10 +27,10 @@ CoverBackground {
     }
 
     // helper function to add cities to the list
-    function appendCity(zoneTime, zoneCity, zoneSecs, zoneCityFull) {
+    function appendCity(zoneTime, zoneCityTr, zoneSecs, zoneCityFull) {
         cityListModel.append({
                                  zoneTime: zoneTime,
-                                 zoneCity: zoneCity,
+                                 zoneCityTr: zoneCityTr,
                                  zoneSecs: zoneSecs,
                                  zoneCityFull: zoneCityFull
                              })
@@ -62,8 +62,9 @@ CoverBackground {
                     var zoneDate = data[3]
                     var zoneUTC = data[4]
                     var zoneSecs = data[5]
+                    var zoneCityTr = data[6]
 
-                    appendCity(zoneTime, zoneCity, zoneSecs, zoneCityFull)
+                    appendCity(zoneTime, zoneCityTr, zoneSecs, zoneCityFull)
                 }
             }
         }
@@ -86,8 +87,9 @@ CoverBackground {
             var zoneDate = data[3]
             var zoneUTC = data[4]
             var zoneSecs = data[5]
+            var zoneCityTr = data[6]
 
-            appendCity(zoneTime, zoneCity, zoneSecs, zoneCityFull)
+            appendCity(zoneTime, zoneCityTr, zoneSecs, zoneCityFull)
         }
     }
 
@@ -122,8 +124,8 @@ CoverBackground {
             // cityname based
             for (n = 0; n < cityListModel.count; n++)
                 for (i = n + 1; i < cityListModel.count; i++) {
-                    if (cityListModel.get(n).zoneCity > cityListModel.get(
-                                i).zoneCity) {
+                    if (cityListModel.get(n).zoneCityTr > cityListModel.get(
+                                i).zoneCityTr) {
                         cityListModel.move(i, n, 1)
                         n = 0
                     }
@@ -158,7 +160,7 @@ CoverBackground {
 
         Label {
             id: coverHeader
-            text: "Worldclock"
+            text: qsTr("Worldclock")
             width: parent.width - Theme.paddingLarge
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
@@ -199,7 +201,7 @@ CoverBackground {
                 }
                 Label {
                     id: cityLabel
-                    text: " " + zoneCity.replace(/_/g, " ")
+                    text: " " + zoneCityTr.replace(/_/g, " ")
                     anchors.left: timeLabel.right
                     font.pixelSize: Theme.fontSizeSmall
                 }

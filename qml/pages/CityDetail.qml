@@ -20,6 +20,7 @@ Page {
     property string abbrevFromPrev
     property string dstShiftTxtOld
     property string dstShiftTxt
+    property string countryTranslated
 
     TZ {
         id: timezones
@@ -47,7 +48,7 @@ Page {
         abbrevFromPrev = data[12]
         dstShiftTxtOld = data[13]
         dstShiftTxt = data[14]
-        zoneNextTransition = data[10]
+        countryTranslated = data[15]
         // now some translation stuff, as I can't get it to work in worldclock.cpp
         if (zonePreviousTransition === "None" ) {
             zonePreviousTransition = qsTr("None")
@@ -101,7 +102,7 @@ Page {
                 source: zoneCountry !== "" ? '../images/' + zoneCountry + '.png' : ""
                 anchors.leftMargin: Theme.paddingSmall
             }
-            text: zoneCity.replace(/_/g, " ") + ", " + zoneCountry.replace(
+            text: zoneCity.replace(/_/g, " ") + ", " + countryTranslated.replace(
                       /([a-z])([A-Z])/g, "$1 $2")
         }
         Label {

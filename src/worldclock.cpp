@@ -44,6 +44,8 @@ modification, are permitted provided that the following conditions are met:
 #include "settings.h"
 #include "osread.h"
 #include "worldclock.h"
+#include <fstream>
+#include <iostream>
 
 
 int main(int argc, char *argv[])
@@ -71,7 +73,7 @@ int main(int argc, char *argv[])
     qmlRegisterType<settingsPublic::Languages>("harbour.worldclock.Settings", 1, 0, "Languages");
 
     QString locale_appname = "harbour-worldclock-" + QLocale::system().name();
-    qDebug() << "Translations:" << SailfishApp::pathTo("translations").toLocalFile() + "/" + locale_appname + ".qm";
+    // qDebug() << "Translations:" << SailfishApp::pathTo("translations").toLocalFile() + "/" + locale_appname + ".qm";
     // Check if user has set language explicitly to be used in the app
     QString locale = QLocale::system().name();
 
@@ -146,6 +148,26 @@ QLocale myLanguage(void)
     return myLang;
 }
 
+QString cityTranslations(void)
+{
+    QLocale locale = myLanguage();
+    QString cityFile = SailfishApp::pathTo("translations/CityTranslations-"+locale.name()+".txt").toLocalFile();
+    QString lines;
+    QFile inFile(cityFile);
+    if (inFile.open(QIODevice::ReadOnly))
+    {
+        QTextStream in(&inFile);
+        while (!in.atEnd())
+        {
+            // Read file into memory
+            QString line = in.readLine();
+            lines += line + '\n';
+        }
+        inFile.close();
+    }
+    return lines;
+}
+
 TimeZone::TimeZone(QObject *parent) :
     QObject(parent)
 {
@@ -154,6 +176,9 @@ TimeZone::TimeZone(QObject *parent) :
 
 QString TimeZone::TimeZone::readAllCities()
 {
+    // get translation list
+    QString lines = cityTranslations();
+
     QSettings settings;
     int sortOrder = settings.value("sortorder_completeList", "").toInt();
     QList<QByteArray> ids =  QTimeZone::availableTimeZoneIds();
@@ -171,22 +196,20 @@ QString TimeZone::TimeZone::readAllCities()
         int offset = zone.offsetFromUtc(QDateTime::currentDateTime());
         QString countryName = QLocale::countryToString(zone.country());
         // insert space where appropriate. Can't be done in one regex replace?
-        QRegularExpression rx("([a-z])([A-Z]).+([a-z])([A-Z])");
+        QRegularExpression rx("([a-z])([A-Z])");
         QRegularExpressionMatch match = rx.match(countryName);
-        if (match.hasMatch()) {
-            QString lowerChar1 = match.captured(1);
-            QString upperChar1 = match.captured(2);
-            QString lowerChar2 = match.captured(3);
-            QString upperChar2 = match.captured(4);
-            countryName.replace(lowerChar1+upperChar1,lowerChar1 + " " + upperChar1);
-            countryName.replace(lowerChar2+upperChar2,lowerChar2 + " " + upperChar2);
+        for (int i = 1; i <= 6; i++) {
+            match = rx.match(countryName);
+            if (match.hasMatch()) {
+                QString lowerChar1 = match.captured(1);
+                QString upperChar1 = match.captured(2);
+                countryName.replace(lowerChar1+upperChar1,lowerChar1 + " " + upperChar1);
+            }
         }
-        QRegularExpression rx2("([a-z])([A-Z])");
-        match = rx2.match(countryName);
-        if (match.hasMatch()) {
-            QString lowerChar1 = match.captured(1);
-            QString upperChar1 = match.captured(2);
-            countryName.replace(lowerChar1+upperChar1,lowerChar1 + " " + upperChar1);
+        int index = lines.indexOf(countryName+';', 0, Qt::CaseInsensitive);
+        if (index != -1) {
+            // Replace countryName with translation
+            countryName = lines.mid(index+countryName.length()+1, lines.indexOf('\n',index) - lines.indexOf(';',index)-1);
         }
         if ( countryName == "Default") {
             // UTC name
@@ -207,17 +230,28 @@ QString TimeZone::TimeZone::readAllCities()
             timeoffset = QString("UTC %3:%4").arg(sign+QString::number(abs(offset)/3600)).arg(abs(minutes));
         }
 
+        const int delimiter = id.lastIndexOf('/');
+        QString cityNameTr = id.mid(delimiter + 1);
+        QString continentTr = id.mid(0, delimiter);
+        if (!lines.isEmpty()) {
+            int index = lines.indexOf(cityNameTr+';', 0, Qt::CaseInsensitive);
+            if (index != -1) {
+                cityNameTr = lines.mid(index+cityNameTr.length()+1, lines.indexOf('\n',index) - lines.indexOf(';',index)-1);
+            }
+            index = lines.indexOf(continentTr+';', 0, Qt::CaseInsensitive);
+            if (index != -1) {
+                continentTr =  lines.mid(index+continentTr.length()+1, lines.indexOf('\n',index) - lines.indexOf(';',index)-1);
+            }
+        }
         if (sortOrder == 1) {
             dummy_counter_for_sort ++;
-            map.insert(offset + dummy_counter_for_sort,timeoffset + " (" + id + ")" + countryName);
+            map.insert(offset + dummy_counter_for_sort,timeoffset + " (" + continentTr + "/" + cityNameTr + ")" + countryName + ";" + id);
         } else if (sortOrder == 2) {
-            const int separator = id.lastIndexOf('/');
-            const QString cityName = id.mid(separator + 1);
-            sorted_map.insert(cityName, timeoffset + " (" + id + ")" + countryName);
+            sorted_map.insert(cityNameTr, timeoffset + " (" + continentTr + "/" + cityNameTr + ")" + countryName + ";" + id);
         } else if (sortOrder == 3) {
-            sorted_map.insert(countryName, timeoffset + " (" + id + ")" + countryName);
+            sorted_map.insert(countryName, timeoffset + " (" + continentTr + "/" + cityNameTr + ")" + countryName + ";" + id);
         } else {
-            output += timeoffset + " (" + id + ")" + countryName + "\n";
+            output += timeoffset + " (" + continentTr + "/" + cityNameTr + ")" + countryName + ";" + id + "\n";
         }
 
     }
@@ -242,6 +276,9 @@ QString TimeZone::TimeZone::readAllCities()
 
 QString TimeZone::TimeZone::readCityInfo(const QByteArray &cityid, const QByteArray &time_format)
 {
+    // get translation list
+    QString lines = cityTranslations();
+
     QLocale::setDefault(myLanguage());
     QString output;
     QString sign;
@@ -272,14 +309,40 @@ QString TimeZone::TimeZone::readCityInfo(const QByteArray &cityid, const QByteAr
     QDateTime mytime = QDateTime::currentDateTime();
     mytime = mytime.toUTC();
     mytime = mytime.addSecs( offset );
+
+    QString myCountry = QLocale::countryToString(zone.country());
+    // insert space where appropriate. Can't be done in one regex replace?
+    QRegularExpression regx("([a-z])([A-Z])");
+    QRegularExpressionMatch match = regx.match(myCountry);
+    for (int i = 1; i <= 6; i++) {
+        match = regx.match(myCountry);
+        if (match.hasMatch()) {
+            QString lowerChar1 = match.captured(1);
+            QString upperChar1 = match.captured(2);
+            myCountry.replace(lowerChar1+upperChar1,lowerChar1 + " " + upperChar1);
+        }
+    }
+    int index = lines.indexOf(myCountry+';', 0, Qt::CaseInsensitive);
+    /* int index = lines.replace(" ","").indexOf(myCountry+';', 0, Qt::CaseInsensitive); */
+    if (index != -1) {
+        // Replace countryName with translation
+        myCountry = lines.mid(index+myCountry.length()+1, lines.indexOf('\n',index) - lines.indexOf(';',index)-1);
+    }
+    const int separator = cityid.lastIndexOf('/');
+    const QString cityName = cityid.mid(separator + 1);
+    index = lines.replace(" ","").indexOf(cityName+';', 0, Qt::CaseInsensitive);
+    QString cityTr = cityName;
+    if (index != -1) {
+        cityTr = lines.mid(index+cityName.length()+1, lines.indexOf('\n',index) - lines.indexOf(';',index)-1);
+    }
     if (time_format == "24" ) {
-        output += mytime.time().toString("hh:mm")+";"+cityid+";"+ QLocale::countryToString(zone.country()) \
+        output += mytime.time().toString("hh:mm")+";"+cityid+";"+ myCountry \
                   +";"+QLocale().toString(mytime.date(),dateFormat)+";"+abbreviation \
-                  +" ("+timeoffset+");"+QString::number(offset/60);
+                  +" ("+timeoffset+");"+QString::number(offset/60)+";"+cityTr;
     } else {
-        output += mytime.time().toString("hh:mm ap")+";"+cityid+";"+ QLocale::countryToString(zone.country()) \
+        output += mytime.time().toString("hh:mm ap")+";"+cityid+";"+ myCountry \
                   +";"+QLocale().toString(mytime.date(),dateFormat)+";"+abbreviation \
-                  +" ("+timeoffset+");"+QString::number(offset/60);
+                  +" ("+timeoffset+");"+QString::number(offset/60)+";"+cityTr;
     }
     return output;
 }
@@ -331,6 +394,9 @@ QString TimeZone::TimeZone::readLocalTime(const QByteArray &time_format)
 
 QString TimeZone::TimeZone::readCityDetails(const QByteArray &cityid, const QByteArray &time_format)
 {
+    // get translation list
+    QString lines = cityTranslations();
+
     QLocale::setDefault(myLanguage());
     QString output;
     QTimeZone zone = QTimeZone(cityid);
@@ -440,20 +506,46 @@ QString TimeZone::TimeZone::readCityDetails(const QByteArray &cityid, const QByt
     previousTransition[0] = previousTransition[0].toUpper();
     nextTransition[0] = nextTransition[0].toUpper();
 
+    // Replace countryName with translation
+    QString myCountry = QLocale::countryToString(zone.country());
+    // insert space where appropriate. Can't be done in one regex replace?
+    QRegularExpression regx("([a-z])([A-Z])");
+    QRegularExpressionMatch match = regx.match(myCountry);
+    for (int i = 1; i <= 6; i++) {
+        match = regx.match(myCountry);
+        if (match.hasMatch()) {
+            QString lowerChar1 = match.captured(1);
+            QString upperChar1 = match.captured(2);
+            myCountry.replace(lowerChar1+upperChar1,lowerChar1 + " " + upperChar1);
+        }
+    }
+    int index = lines.indexOf(myCountry+';', 0, Qt::CaseInsensitive);
+    if (index != -1) {
+        myCountry = lines.mid(index+myCountry.length()+1, lines.indexOf('\n',index) - lines.indexOf(';',index)-1);
+    }
+    const int separator = cityid.lastIndexOf('/');
+    const QString cityName = cityid.mid(separator + 1);
+    QByteArray cityidTr = cityid;
+    index = lines.replace(" ","").indexOf(cityName+';', 0, Qt::CaseInsensitive);
+    if (index != -1) {
+        QString myCity = lines.mid(index+cityName.length()+1, lines.indexOf('\n',index) - lines.indexOf(';',index)-1);
+        cityidTr.replace(cityName.toUtf8(),myCity.toUtf8());
+    }
+
     if (time_format == "24") {
         output += mytime.time().toString("hh:mm")+" - "+QLocale().toString(mytime.date(), QLocale::LongFormat) \
-                  +";"+longname+" ("+abbreviation+")"+";"+QLocale::countryToString(zone.country())+";"+cityid \
+                  +";"+longname+" ("+abbreviation+")"+";"+QLocale::countryToString(zone.country())+";"+cityidTr \
                   +";"+offsetname+";"+QTime::currentTime().toString("hh:mm")+" - " \
                   +QLocale().toString(QDate::currentDate(), QLocale::LongFormat)+";"+timeDiff+";" \
                   +hasDaylighttime+";"+isDaylighttime+";"+previousTransition+";"+nextTransition+";" \
-                  +abbrevToNext+";"+abbrevFromPrev+';'+DST_shift_txt_old+';'+DST_shift_txt;
+                  +abbrevToNext+";"+abbrevFromPrev+';'+DST_shift_txt_old+';'+DST_shift_txt+';'+myCountry;
     } else {
         output += QLocale().toString(mytime.time(), "hh:mm ap")+" - "+QLocale().toString(mytime.date(), QLocale::LongFormat) \
-                  +";"+longname+" ("+abbreviation+")"+";"+QLocale::countryToString(zone.country())+";"+cityid \
+                  +";"+longname+" ("+abbreviation+")"+";"+QLocale::countryToString(zone.country())+";"+cityidTr \
                   +";"+offsetname+";"+QLocale().toString(QTime::currentTime(), "hh:mm ap")+" - " \
                   +QLocale().toString(QDate::currentDate(), QLocale::LongFormat)+";"+timeDiff+";" \
                   +hasDaylighttime+";"+isDaylighttime+";"+previousTransition+";"+nextTransition+";" \
-                  +abbrevToNext+";"+abbrevFromPrev+";"+DST_shift_txt_old+';'+DST_shift_txt;
+                  +abbrevToNext+";"+abbrevFromPrev+";"+DST_shift_txt_old+';'+DST_shift_txt+';'+myCountry;
     }
     return output;
 }

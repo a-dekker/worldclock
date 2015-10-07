@@ -8,6 +8,12 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Wed Oct 07 2015 Arno Dekker <jack.tar@example.com> 0.4-1
+- Language updates
+- Additional flags
+- Switched to nemo notifications
+- Translation of cities/countries/continents added for Dutch and (basic) for Swedish
+
 * Sat Sep 13 2015 Arno Dekker <jack.tar@example.com> 0.4-0
 - Added German and partly translated Russian
 

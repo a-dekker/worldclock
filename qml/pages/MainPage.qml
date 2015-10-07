@@ -3,6 +3,7 @@ import Sailfish.Silica 1.0
 import harbour.worldclock.Launcher 1.0
 import harbour.worldclock.TimeZone 1.0
 import harbour.worldclock.Settings 1.0
+import org.nemomobile.notifications 1.0
 import "../localdb.js" as DB
 
 Page {
@@ -10,10 +11,6 @@ Page {
 
     RemorsePopup {
         id: remorse
-    }
-
-    Popup {
-        id: banner
     }
 
     App {
@@ -48,7 +45,7 @@ Page {
         appendList(local_datetime.local_time, local_city, "local_time",
                    local_datetime.local_date,
                    local_datetime.timezone + " (" + offset + ")", "",
-                   local_datetime.local_utc_offset)
+                   local_datetime.local_utc_offset,local_city)
 
         if (myset.contains("Cities")) {
             var myCities = myset.value("Cities").toString()
@@ -69,9 +66,10 @@ Page {
                     var zoneDate = data[3]
                     var zoneUTC = data[4]
                     var zoneSecs = data[5]
+                    var zoneCityTr = data[6]
 
                     appendList(zoneTime, zoneCity, zoneCountry, zoneDate,
-                               zoneUTC, zoneCityFull, zoneSecs)
+                               zoneUTC, zoneCityFull, zoneSecs, zoneCityTr, zoneCityTr)
                 }
             }
         }
@@ -90,13 +88,14 @@ Page {
                 zoneCity = zoneCity.replace(/(.+)\//, "")
             }
             zoneCity = myCity
+            zoneCityTr = myCity
             var zoneCountry = data[2]
             var zoneDate = data[3]
             var zoneUTC = data[4]
             var zoneSecs = data[5]
 
             appendList(zoneTime, zoneCity, zoneCountry, zoneDate, zoneUTC,
-                       zoneCityFull, zoneSecs)
+                       zoneCityFull, zoneSecs, zoneCityTr)
         }
     }
 
@@ -125,10 +124,8 @@ Page {
                 mainapp.city_id = ""
             }
             if (mainapp.city_id !== "") {
-                mainapp.city_id = mainapp.city_id.replace(/(.+)\(/, "")
-                mainapp.city_id = mainapp.city_id.replace(")", "")
-                var data
-                data = timezones.readCityInfo(mainapp.city_id,
+                // read info
+                var data = timezones.readCityInfo(mainapp.city_id,
                                               mainapp.timeFormat)
                 data = data.split(';')
                 var zoneTime = data[0]
@@ -141,6 +138,7 @@ Page {
                 var zoneDate = data[3]
                 var zoneUTC = data[4]
                 var zoneSecs = data[5]
+                var zoneCityTr = data[6]
 
                 var allcities
                 if (myset.contains("Cities")) {
@@ -148,10 +146,10 @@ Page {
                     allcities = allcities.split(",")
 
                     if (allcities.indexOf(mainapp.city_id) >= 0) {
-                        banner.notify(qsTr("City already added"))
+                        banner("ERROR", qsTr("City already added"))
                     } else {
                         appendList(zoneTime, zoneCity, zoneCountry, zoneDate,
-                                   zoneUTC, zoneCityFull, zoneSecs)
+                                   zoneUTC, zoneCityFull, zoneSecs, zoneCityTr)
                         if (allcities == "") {
                             allcities = mainapp.city_id
                         } else {
@@ -164,7 +162,7 @@ Page {
                 } else {
                     allcities = mainapp.city_id
                     appendList(zoneTime, zoneCity, zoneCountry, zoneDate,
-                               zoneUTC, zoneCityFull, zoneSecs)
+                               zoneUTC, zoneCityFull, zoneSecs, zoneCityTr)
                     myset.setValue("Cities", allcities)
                     myset.sync()
                 }
@@ -182,6 +180,34 @@ Page {
                 mainapp.coverAddZone = false
             }
         }
+    }
+
+    function banner(notificationType, message) {
+        notification.close()
+        var notificationCategory
+        switch(notificationType) {
+        case "OK":
+            notificationCategory = "x-jolla.store.sideloading-success"
+            break
+        case "INFO":
+            notificationCategory = "x-jolla.lipstick.credentials.needUpdate.notification"
+            break
+        case "WARNING":
+            notificationCategory = "x-jolla.store.error"
+            break
+        case "ERROR":
+            notificationCategory = "x-jolla.store.error"
+            break
+        }
+        notification.category = notificationCategory
+        notification.previewBody = message
+        notification.previewSummary = "Worldclock"
+        notification.publish()
+    }
+
+    Notification {
+        id: notification
+        itemCount: 1
     }
 
     function updateTime() {
@@ -260,7 +286,7 @@ Page {
     }
 
     // helper function to add lists to the list
-    function appendList(zoneTime, zoneCity, zoneCountry, zoneDate, zoneUTC, zoneCityFull, zoneSecs) {
+    function appendList(zoneTime, zoneCity, zoneCountry, zoneDate, zoneUTC, zoneCityFull, zoneSecs, zoneCityTr) {
         listCityModel.append({
                                  zoneTime: zoneTime,
                                  zoneCity: zoneCity,
@@ -268,7 +294,8 @@ Page {
                                  zoneDate: zoneDate,
                                  zoneUTC: zoneUTC,
                                  zoneCityFull: zoneCityFull,
-                                 zoneSecs: zoneSecs
+                                 zoneSecs: zoneSecs,
+                                 zoneCityTr: zoneCityTr
                              })
     }
 
@@ -390,7 +417,7 @@ Page {
                                 }
                             }
                             if (isReplaced === "false") {
-                                banner.notify(
+                                banner("WARNING",
                                             qsTr("Manage custom cities on other page"))
                             } else {
                                 listCity.model.remove(index)
@@ -454,15 +481,17 @@ Page {
                 }
                 Label {
                     id: cityLabel
-                    text: zoneCity.replace(/_/g, " ")
+                    text: zoneCityTr.replace(/_/g, " ")
                     width: parent.width - Theme.paddingLarge * 9
                     anchors.left: timeLabel.right
                     opacity: (index & 1) ? 0.9 : 1
                 }
                 Label {
                     anchors.top: cityLabel.bottom
-                    text: zoneCountry.replace(/([a-z])([A-Z])/g,
-                                              "$1 $2").substring(0, 25).replace(
+                    // text: zoneCountry.replace(/([a-z])([A-Z])/g,
+                    //                           "$1 $2").substring(0, 25).replace(
+                    //           "local_time", qsTr("Local time"))
+                    text: zoneCountry.substring(0, 25).replace(
                               "local_time", qsTr("Local time"))
                     font.pixelSize: Theme.fontSizeExtraSmall
                     color: (listCityItem.highlighted || listCityModel.get(
@@ -523,9 +552,8 @@ Page {
                                 if (listCityModel.get(
                                             index).zoneCountry == "local_time") {
                                     hide()
-                                    banner.notify(
-                                                qsTr(
-                                                    "Cannot remove Local time"))
+                                    banner( "ERROR",
+                                                qsTr("Cannot remove Local time"))
                                 } else {
                                     remove()
                                 }

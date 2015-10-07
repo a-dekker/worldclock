@@ -32,11 +32,12 @@ OTHER_FILES += qml/worldclock.qml \
     qml/components/SilicaLabel.qml \
     qml/pages/CityDetail.qml \
     qml/pages/SettingPage.qml \
-    qml/pages/Popup.qml \
     qml/images/earth.png \
     qml/pages/Aliases.qml \
     qml/pages/Vars.js \
-    qml/localdb.js
+    qml/localdb.js \
+    translations/CityTranslations-sv_SE.txt \
+    translations/CityTranslations-nl_NL.txt
 
 # to disable building translations every time, comment out the
 # following CONFIG line

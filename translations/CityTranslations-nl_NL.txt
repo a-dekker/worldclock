@@ -1,0 +1,163 @@
+Africa;Afrika
+Aland Islands;Åland Eilanden
+Algeria;Algerije
+Almaty;Alma-Ata (Almaty)
+America;Amerika
+American Samoa;Amerikaans-Samoa
+Argentina;Argentinië
+Armenia;Armenië
+Asia;Azië
+Athens;Athene
+Australia;Australië
+Austria;Oostenrijk
+Azerbaijan;Azerbeidzjan
+Baghdad;Bagdad
+Bahrain;Bahrein
+Baku;Bakoe
+Beirut;Beiroet
+Belarus;Wit-Rusland
+Belgium;België
+Belgrade;Belgrado
+Berlin;Berlijn
+Bosnia And Herzegowina;Bosnië-Herzegovina
+Brazil;Brazilië
+British Indian Ocean Territory;Brits Indische Oceaan Gebied
+British Virgin Islands;Britse Virgin Eilanden
+Brussels;Brussel
+Bucharest;Boekarest
+Budapest;Boedapest
+Bulgaria;Bulgarije
+Cambodia;Cambodja
+Cameroon;Kameroen
+Canary;Canarische Eilanden
+Cape Town;Kaapstad
+Cayman Islands;Kaaimaneilanden
+Central African Republic;Centraal Afrikaanse Republiek
+Chad;Tjaad
+Chile;Chili
+Chişinău;Chisinau
+Christmas Island;Kersteiland
+Cocos Islands;Cocoseilanden
+Comoros;Comoren
+Cook Islands;Cookeilanden
+Copenhagen;Kopenhagen
+Croatia;Kroatië
+Cura Sao;Curaçao
+Czech Republic;Tsjechië
+Democratic Republic of the Congo;Democratische Republiek Congo
+Denmark;Denemarken
+Dominican Republic;Dominicaanse Republiek
+East Timor;Oost Timor
+Easter Island;Paaseiland
+Easter;Paaseiland
+Egypt;Egypte
+Equatorial Guinea;Equatoriaal-Guinea
+Estonia;Estland
+Ethiopia;Ethiopië
+Europe;Europa
+Falkland Islands;Falklandeilanden
+France;Frankrijk
+French Guiana;Frans Guyana
+French Polynesia;Frans-Polynesië
+French Southern Territories;Franse geb. zuidelijke Indische Oceaan
+Georgia;Georgië
+Germany;Duitsland
+Greece;Griekenland
+Greenland;Groenland
+Haiti;Haïti
+Ho Chi Minh City;Ho Chi Minh-stad
+Hungary;Hongarije
+Iceland;IJsland
+Indonesia;Indonesië
+Iraq;Irak
+Ireland;Ierland
+Israel;Israël
+Italy;Italië
+Ivory Coast;Ivoorkust
+Jordan;Jordanië
+Kabul;Kaboel
+Kazakhstan;Kazachstan
+Kenya;Kenia
+Khartoum;Khartoem
+Kraków;Krakau
+Kuwait City;Koeweit Stad
+Kuwait;Koeweit
+Kyiv;Kiev
+Kyrgyzstan;Kirgizië
+Latvia;Letland
+Lebanon;Libanon
+Libya;Libië
+Lisbon;Lissabon
+Lithuania;Litouwen
+London;Londen
+Luxembourg;Luxemburg
+Macedonia;Macedonië
+Malaysia;Maleisië
+Maldives;Maldiven
+Marshall Islands;Marshalleilanden
+Mauritania;Mauritanië
+Mexico City;Mexico Stad
+Micronesia;Micronesië
+Milan;Milaan
+Moldova;Moldavië
+Mongolia;Mongolië
+Morocco;Marokko
+Moscow;Moskou
+Munich;München
+Netherlands;Nederland
+New Caledonia;Nieuw-Caledonië
+New South Wales;Nieuw-Zuid-Wales
+New Zealand;Nieuw-Zeeland
+Norfolk Island;Norfolkeiland
+North Korea;Noord-Korea
+Northern Mariana Islands;Noordelijke Marianen
+Norway;Noorwegen
+Palestinian Territories;Palestijnse gebieden
+Papua New Guinea;Papoea-Nieuw-Guinea
+Paris;Parijs
+Philippines;Filippijnen
+Poland;Polen
+Prague;Praag
+Republic of the Congo;Republiek Congo
+Reunion;Réunion
+Romania;Roemenië
+Russia;Rusland
+Saint Kitts and Nevis;Saint Kitts en Nevis
+Saudi Arabia;Saoedi-Arabië
+Seoul;Seoel
+Serbia;Servië
+Seychelles;Seychellen
+Slovakia;Slowakije
+Solomon Islands;Salomonseilanden
+Somalia;Somalië
+South Africa;Zuid-Afrika
+South Korea;Zuid-Korea
+South Sudan;Zuid Soedan
+Spain;Spanje
+Sudan;Soedan
+Svalbard and Jan Mayen;Svalbard en Jan Mayen
+Sweden;Zweden
+Switzerland;Zwitserland
+Syria;Syrië
+São Tomé and Príncipe;São Tomé en Príncipe
+Tehran;Teheran
+Tokyo;Tokio
+Trinidad And Tobago;Trinidad en Tobago
+Tunisia;Tunesië
+Turkey;Turkije
+Turks and Caicos Islands;Turks- en Caicoseilanden
+Uganda;Oeganda
+Ukraine;Oekraïne
+United Arab Emirates;Verenigde Arabische Emiraten
+United Kingdom;Verenigd Koninkrijk
+United States Minor Outlying Islands;Kleine afgelegen eilanden van de VS
+United States Virgin Islands;Amerikaanse Maagdeneilanden
+United States;Verenigde Staten
+Uzbekistan;Oesbekistan
+Vatican City State;Vaticaanstad
+Vatican City;Vaticaanstad
+Vienna;Wenen
+Wallis And Futuna Islands;Wallis en Futuna
+Warsaw;Warschau
+Western Sahara;Westelijke Sahara
+Yemen;Jemen

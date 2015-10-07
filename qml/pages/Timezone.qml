@@ -17,7 +17,8 @@ Page {
         data = data.split('\n')
         for (var i = 0; i < data.length; i++) {
             cityModel.append({
-                                 country: data[i].replace(/_/g, " ")
+                country: data[i].replace(/_/g, " ").replace(/\;.*/,''),
+                zoneInfo: data[i].replace(/(.+)\;/,'')
                              })
         }
     }
@@ -118,7 +119,8 @@ Page {
 
                 onClicked: {
                     searchField.text = ""
-                    mainapp.city_id = countryName.replace(/ \[(.+)\]/, "").replace(/ /g, "_")
+                    mainapp.city_id = zoneInfo.replace(/ /g, "_")
+                    // ex. Pacific/Rarotonga
                     pageStack.pop()
                 }
             }
