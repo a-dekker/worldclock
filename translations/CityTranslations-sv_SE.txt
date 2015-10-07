@@ -6,13 +6,13 @@ Aruba;Aruba
 Athens;Aten
 Australia;Australien
 Austria;Österrike
-Azerbaijan;Azerbadjan
+Azerbaijan;Azerbajdzjan
 Baghdad;Bagdad
 Beijing;Peking
 Belarus;Vitryssland
 Belgium;Belgien
 Belgrade;Belgrad
-Bosnia And Herzegowina;Bosnien Och Herzegovina
+Bosnia And Herzegowina;Bosnien-Hercegovina
 Brazil;Brasilien
 Brussels;Bryssel
 Bucharest;Bukarest
@@ -32,7 +32,7 @@ Czech Republic;Tjeckien
 Damascus;Damaskus
 Democratic Republic of the Congo;Demokratiska republiken Kongo
 Denmark;Danmark
-Dominica;Dominikanska republiken
+Dominica;Dominica
 Dominican Republic;Dominikanska Republiken
 Easter;Påskön
 Egypt;Egypten
@@ -88,9 +88,9 @@ Republic of the Congo;Republiken Kongo
 Romania;Rumänien
 Rome;Rom
 Russia;Ryssland
-Saint Kitts And Nevis;Saint Kitts Och Nevis
+Saint Kitts And Nevis;Saint Kitts och Nevis
 Saudi Arabia;Saudiarabien
-Seoul;Söul
+Seoul;Seoul
 Serbia;Serbien
 Slovakia;Slovakien
 South Africa;Sydafrika
@@ -102,10 +102,10 @@ Sweden;Sverige
 Switzerland;Schweiz
 Syria;Syrien
 São Tomé And Príncipe;São Tomé Och Príncipe
-Trinidad And Tobago;Trinidad Och Tobago
+Trinidad And Tobago;Trinidad och Tobago
 Tunisia;Tunisien
 Turkey;Turkiet
-Turks And Caicos Islands;Turks- Och Caicosöarna
+Turks And Caicos Islands;Turks- och Caicosöarna
 Ukraine;Ukraina
 United Arab Emirates;Förenade Arabemiraten
 United Kingdom;Storbritannien
@@ -113,3 +113,4 @@ United States;Förenta Staterna
 Vatican City;Vatikanstaten
 Vienna;Wien
 Warsaw;Warszawa
+
