@@ -137,62 +137,62 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="155"/>
+        <location filename="../qml/pages/MainPage.qml" line="156"/>
         <source>City already added</source>
         <translation>Город уже добавлен</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="354"/>
+        <location filename="../qml/pages/MainPage.qml" line="355"/>
         <source>About</source>
         <translation>О программе</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="358"/>
+        <location filename="../qml/pages/MainPage.qml" line="359"/>
         <source>Settings</source>
         <translation>Настройки</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="362"/>
+        <location filename="../qml/pages/MainPage.qml" line="363"/>
         <source>Custom city names</source>
         <translation>Пользовательские названия городов</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="366"/>
+        <location filename="../qml/pages/MainPage.qml" line="367"/>
         <source>Add city</source>
         <translation>Добавить город</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="384"/>
+        <location filename="../qml/pages/MainPage.qml" line="385"/>
         <source>Worldclock</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="402"/>
+        <location filename="../qml/pages/MainPage.qml" line="403"/>
         <source>Deleting</source>
         <translation>Удаление</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="427"/>
+        <location filename="../qml/pages/MainPage.qml" line="428"/>
         <source>Manage custom cities on other page</source>
         <translation>Управление пользовательскими города на другой странице</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="501"/>
+        <location filename="../qml/pages/MainPage.qml" line="502"/>
         <source>Local time</source>
         <translation>Местное время</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="540"/>
+        <location filename="../qml/pages/MainPage.qml" line="541"/>
         <source>Details</source>
         <translation>Детали</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="556"/>
+        <location filename="../qml/pages/MainPage.qml" line="557"/>
         <source>Remove</source>
         <translation>Удалить</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="562"/>
+        <location filename="../qml/pages/MainPage.qml" line="563"/>
         <source>Cannot remove Local time</source>
         <translation>Не могу удалить местное время</translation>
     </message>

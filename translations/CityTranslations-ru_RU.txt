@@ -422,6 +422,7 @@ Palestine;Палестина
 Palestinian Territories;территории Палестины
 Panama;Панама
 Panamá;Панама
+Papua New Guinea;Папуа - Новая Гвинея
 Paraguay;Парагвай
 Paramaribo;Парамарибо
 Paris;Париж
@@ -541,6 +542,7 @@ Togo;Того
 Tokelau;Токелау
 Tokyo;Токио
 Tonga;Тонга
+Tongatapu;Тонгатапу
 Toronto;Торонто
 Trinidad and Tobago;Тринидад и Тобаго
 Tripoli;Триполи

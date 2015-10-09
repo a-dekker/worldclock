@@ -22,6 +22,7 @@ Page {
     }
 
     property string local_city
+    property string local_city_tr
     property string local_continent
 
     function loadData() {
@@ -45,13 +46,13 @@ Page {
         var data = timezones.readCityInfo(local_continent+"/"+local_city,
         mainapp.timeFormat)
         data = data.split(';')
-       local_city = data[6]
+        local_city_tr = data[6]
 
         // add city as localtime
         appendList(local_datetime.local_time, local_city, "local_time",
                    local_datetime.local_date,
                    local_datetime.timezone + " (" + offset + ")", "",
-                   local_datetime.local_utc_offset,local_city)
+                   local_datetime.local_utc_offset, local_city_tr)
 
         if (myset.contains("Cities")) {
             var myCities = myset.value("Cities").toString()
