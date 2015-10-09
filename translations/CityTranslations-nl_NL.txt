@@ -104,6 +104,7 @@ Mongolia;Mongolië
 Morocco;Marokko
 Moscow;Moskou
 Munich;München
+Namibia;Namibië
 Netherlands;Nederland
 New Caledonia;Nieuw-Caledonië
 New South Wales;Nieuw-Zuid-Wales

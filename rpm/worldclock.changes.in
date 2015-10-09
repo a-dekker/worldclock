@@ -8,6 +8,11 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Wed Oct 07 2015 Arno Dekker <jack.tar@example.com> 0.4-5
+- More cities etc. translated in russian (thanks google-translate ;-)
+- Aliases page now also uses translated citynames
+- Local city name now also translated
+
 * Wed Oct 07 2015 Arno Dekker <jack.tar@example.com> 0.4-4
 - More russian translated
 - fixed some translation issues in citylist page

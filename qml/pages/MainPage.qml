@@ -41,6 +41,12 @@ Page {
         // city itself
         local_city = local_city.replace(/(.+)\//,
                                         "").replace(/(\r\n|\n|\r)/gm, "")
+        // Check if local city is translated
+        var data = timezones.readCityInfo(local_continent+"/"+local_city,
+        mainapp.timeFormat)
+        data = data.split(';')
+       local_city = data[6]
+
         // add city as localtime
         appendList(local_datetime.local_time, local_city, "local_time",
                    local_datetime.local_date,

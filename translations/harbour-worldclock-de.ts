@@ -32,27 +32,27 @@
 <context>
     <name>Aliases</name>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="38"/>
+        <location filename="../qml/pages/Aliases.qml" line="52"/>
         <source>Save</source>
         <translation>Speichern</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="39"/>
+        <location filename="../qml/pages/Aliases.qml" line="53"/>
         <source>Cancel</source>
         <translation>Abbrechen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="78"/>
+        <location filename="../qml/pages/Aliases.qml" line="100"/>
         <source>Deleting</source>
         <translation>Löschen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="119"/>
+        <location filename="../qml/pages/Aliases.qml" line="141"/>
         <source>Alt. name</source>
         <translation>Alt. Name</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="140"/>
+        <location filename="../qml/pages/Aliases.qml" line="162"/>
         <source>No custom city names defined. Press the plus button to add one.</source>
         <translation>Keine individuellen Städtenamen definiert. Drück den Plus-Button um einen hinzuzufügen.</translation>
     </message>
@@ -137,62 +137,62 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="149"/>
+        <location filename="../qml/pages/MainPage.qml" line="155"/>
         <source>City already added</source>
         <translation>Stadt bereits hinzugefügt</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="348"/>
+        <location filename="../qml/pages/MainPage.qml" line="354"/>
         <source>About</source>
         <translation>Über</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="352"/>
+        <location filename="../qml/pages/MainPage.qml" line="358"/>
         <source>Settings</source>
         <translation>Einstellungen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="356"/>
+        <location filename="../qml/pages/MainPage.qml" line="362"/>
         <source>Custom city names</source>
         <translation>Benutzerdefinierte Städtenamen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="360"/>
+        <location filename="../qml/pages/MainPage.qml" line="366"/>
         <source>Add city</source>
         <translation>Stadt hinzufügen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="378"/>
+        <location filename="../qml/pages/MainPage.qml" line="384"/>
         <source>Worldclock</source>
         <translation>Weltzeituhr</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="396"/>
+        <location filename="../qml/pages/MainPage.qml" line="402"/>
         <source>Deleting</source>
         <translation>Löschen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="421"/>
+        <location filename="../qml/pages/MainPage.qml" line="427"/>
         <source>Manage custom cities on other page</source>
         <translation>Benutzerdefinierte Städte auf anderer Seite verwalten</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="495"/>
+        <location filename="../qml/pages/MainPage.qml" line="501"/>
         <source>Local time</source>
         <translation>Lokalzeit</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="534"/>
+        <location filename="../qml/pages/MainPage.qml" line="540"/>
         <source>Details</source>
         <translation>Details</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="550"/>
+        <location filename="../qml/pages/MainPage.qml" line="556"/>
         <source>Remove</source>
         <translation>Entfernen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="556"/>
+        <location filename="../qml/pages/MainPage.qml" line="562"/>
         <source>Cannot remove Local time</source>
         <translation>Kann Lokalzeit nicht entfernen</translation>
     </message>

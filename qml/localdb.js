@@ -35,6 +35,7 @@ function readAliases() {
                     "SELECT * FROM city_aliases ORDER BY City COLLATE NOCASE;")
         for (var i = 0; i < result.rows.length; i++) {
             aliasesDialog.appendCustomCity(result.rows.item(i).City,
+                                           "",
                                            result.rows.item(i).CityInfo,
                                            result.rows.item(i).Alias,
                                            result.rows.item(i).Displayed)

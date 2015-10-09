@@ -1,12 +1,13 @@
-
 Addis Ababa;Addis Abeba
 Africa;Afrika
 Algeria;Algerien
 Algiers;Algier
+America;Amerika
 American Samoa;Amerikanische Samoa
 Aqtau;Aktau
 Argentina;Argentinien
 Armenia;Armenien
+Asia;Asien
 Athens;Athen
 Australia;Australien
 Austria;Österreich

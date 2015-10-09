@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import harbour.worldclock.TimeZone 1.0
 import "../localdb.js" as DB
 
 Dialog {
@@ -7,9 +8,14 @@ Dialog {
     property string isReplace: "false"
     property int currIndex: 0
 
-    function appendCustomCity(city, cityinfo, alias, displayed) {
+    TZ {
+        id: timezones
+    }
+
+    function appendCustomCity(city, citytr, cityinfo, alias, displayed) {
         customcitylist.model.append({
                                         City: city,
+                                        CityTr: citytr,
                                         CityInfo: cityinfo,
                                         Alias: alias,
                                         Displayed: displayed
@@ -18,16 +24,24 @@ Dialog {
 
     onStatusChanged: {
         if (status === PageStatus.Activating && mainapp.city_id !== "") {
+            // find possible translation
+            var data = timezones.readCityInfo(mainapp.city_id,
+            mainapp.timeFormat)
+            data = data.split(';')
+            var zoneCityTr = data[6]
+            // strip city info
             mainapp.city_id = mainapp.city_id.replace(/(.+)\(/, "")
             mainapp.city_id = mainapp.city_id.replace(")", "")
+            // extract cityname
             var cityName = mainapp.city_id.replace(/.+\//, "")
             cityName = cityName.replace(/_/g, " ")
             if (isReplace === "true") {
                 customcitylist.model.setProperty(currIndex, "City", cityName)
+                customcitylist.model.setProperty(currIndex, "CityTr", zoneCityTr)
                 customcitylist.model.setProperty(currIndex, "CityInfo",
                                                  mainapp.city_id)
             } else {
-                appendCustomCity(cityName, mainapp.city_id, "", "true")
+                appendCustomCity(cityName, zoneCityTr, mainapp.city_id, "", "true")
             }
             mainapp.city_id = ""
         }
@@ -63,6 +77,14 @@ Dialog {
 
         function loadcustomcitylist() {
             DB.readAliases()
+            // find and add translations from selected locale
+            for (var i = 0; i < customcitylist.model.count; ++i) {
+                var data = timezones.readCityInfo(customcitylist.model.get(i).CityInfo,
+                mainapp.timeFormat)
+                data = data.split(';')
+                var zoneCityTr = data[6]
+                customcitylist.model.setProperty(i, "CityTr", zoneCityTr)
+            }
         }
 
         Component.onCompleted: {
@@ -103,7 +125,7 @@ Dialog {
                 }
                 Button {
                     id: name
-                    text: City
+                    text: CityTr
                     anchors.left: do_display.right
                     //width: font.pixelSize * 8
                     onClicked: {
