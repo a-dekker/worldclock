@@ -177,7 +177,7 @@
         <translation>Hantera anpassade platser på annan sida</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="502"/>
+        <location filename="../qml/pages/MainPage.qml" line="501"/>
         <source>Local time</source>
         <translation>Lokal tid</translation>
     </message>

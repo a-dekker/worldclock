@@ -177,7 +177,7 @@
         <translation>Benutzerdefinierte Städte auf anderer Seite verwalten</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="502"/>
+        <location filename="../qml/pages/MainPage.qml" line="501"/>
         <source>Local time</source>
         <translation>Lokalzeit</translation>
     </message>

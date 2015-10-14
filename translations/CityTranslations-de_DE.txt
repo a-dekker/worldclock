@@ -31,13 +31,13 @@ Canada;Kanada
 Cape Town;Kapstadt
 Cayman Islands;Kaiman-Inseln
 Chile;Chili
-Christmas Island;
+Christmas Island;Weihnachtsinsel
 Colombia;Kolumbien
 Copenhagen;Kopenhagen
 Croatia;Kroatien
 Cuba;Kuba
 Curacao;Curaçao
-Czech Republic;
+Czech Republic;Tschechien
 Damascus;Damaskus
 Democratic Republic of the Congo;Demokratische Republik Kongo
 Denmark;Dänemark
@@ -149,7 +149,6 @@ United States;Vereinigte Staaten von Amerika
 Vatican City State;Vatikanstadt
 Vienna;Wien
 Vilnius;Wilna
-Weihnachtsinsel;Weihnachtsinseln
 Wrocław;Breslau
 Yemen;Jemen
 Zimbabwe;Simbabwe

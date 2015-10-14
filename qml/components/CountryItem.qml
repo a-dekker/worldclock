@@ -6,29 +6,30 @@ BackgroundItem {
     width: parent.width
     property alias countryName: countryName.text
 
-    VerticalScrollDecorator { }
+    VerticalScrollDecorator {
+    }
 
-    anchors{
+    anchors {
         left: parent.left
     }
 
-            Rectangle {
-                id: timeRect
-                width: parent.width
-                height: parent.height
-                color: Theme.primaryColor
-                opacity: 0.03
-                visible: !(index & 1)
-            }
+    Rectangle {
+        id: timeRect
+        width: parent.width
+        height: parent.height
+        color: Theme.primaryColor
+        opacity: 0.03
+        visible: !(index & 1)
+    }
     Label {
         id: countryName
         font.pixelSize: Theme.fontSizeSmall
-        // color: listItem.highlighted ? Theme.highlightColor : Theme.primaryColor
         anchors.verticalCenter: parent.verticalCenter
-        anchors.left: parent.left; anchors.leftMargin: 0
-        anchors.right: parent.right; anchors.rightMargin: Theme.paddingSmall
+        anchors.left: parent.left
+        anchors.leftMargin: 0
+        anchors.right: parent.right
+        anchors.rightMargin: Theme.paddingSmall
         truncationMode: TruncationMode.Fade
         opacity: (index & 1) ? 0.9 : 1
     }
-
 }

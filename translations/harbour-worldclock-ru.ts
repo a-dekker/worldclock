@@ -177,7 +177,7 @@
         <translation>Управление пользовательскими города на другой странице</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="502"/>
+        <location filename="../qml/pages/MainPage.qml" line="501"/>
         <source>Local time</source>
         <translation>Местное время</translation>
     </message>

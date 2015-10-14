@@ -1,5 +1,6 @@
 Africa;Afrika
 Aland Islands;Åland Eilanden
+Albania;Albanië
 Algeria;Algerije
 Almaty;Alma-Ata (Almaty)
 America;Amerika
@@ -21,7 +22,7 @@ Belgrade;Belgrado
 Berlin;Berlijn
 Bosnia And Herzegowina;Bosnië-Herzegovina
 Brazil;Brazilië
-British Indian Ocean Territory;Brits Indische Oceaan Gebied
+British Indian Ocean Territory;Brits Indische Oceaan gebied
 British Virgin Islands;Britse Virgin Eilanden
 Brussels;Brussel
 Bucharest;Boekarest
@@ -43,7 +44,9 @@ Cook Islands;Cookeilanden
 Copenhagen;Kopenhagen
 Croatia;Kroatië
 Cura Sao;Curaçao
+Curacao;Willemstad
 Czech Republic;Tsjechië
+Default;Standaard
 Democratic Republic of the Congo;Democratische Republiek Congo
 Denmark;Denemarken
 Dominican Republic;Dominicaanse Republiek
@@ -56,6 +59,7 @@ Estonia;Estland
 Ethiopia;Ethiopië
 Europe;Europa
 Falkland Islands;Falklandeilanden
+Faroe Islands;Faeröereilanden
 France;Frankrijk
 French Guiana;Frans Guyana
 French Polynesia;Frans-Polynesië
@@ -71,6 +75,7 @@ Iceland;IJsland
 Indonesia;Indonesië
 Iraq;Irak
 Ireland;Ierland
+Isle of Man;eiland Man
 Israel;Israël
 Italy;Italië
 Ivory Coast;Ivoorkust
@@ -123,25 +128,35 @@ Republic of the Congo;Republiek Congo
 Reunion;Réunion
 Romania;Roemenië
 Russia;Rusland
+Saint Barthelemy;Saint-Barthélemy
+Saint Helena;Sint-Helena
 Saint Kitts and Nevis;Saint Kitts en Nevis
+Saint Martin;Sint Maarten
+Saint Pierre And Miquelon;Saint Pierre en Miquelon
+Saint Vincent And The Grenadines;Saint Vincent en de Grenadines
+Sao Tome And Principe;Sao Tomé en Principe
+Sao Tome;Sao Tomé
 Saudi Arabia;Saoedi-Arabië
 Seoul;Seoel
 Serbia;Servië
 Seychelles;Seychellen
 Slovakia;Slowakije
+Slovenia;Slovenië
 Solomon Islands;Salomonseilanden
 Somalia;Somalië
 South Africa;Zuid-Afrika
+South Georgia;Zuid-Georgia
 South Korea;Zuid-Korea
 South Sudan;Zuid Soedan
 Spain;Spanje
 Sudan;Soedan
-Svalbard and Jan Mayen;Svalbard en Jan Mayen
+Svalbard and Jan Mayen Islands;Spitsbergen en Jan Mayen
 Sweden;Zweden
 Switzerland;Zwitserland
 Syria;Syrië
 São Tomé and Príncipe;São Tomé en Príncipe
 Tehran;Teheran
+Tirane;Tirana
 Tokyo;Tokio
 Trinidad And Tobago;Trinidad en Tobago
 Tunisia;Tunesië

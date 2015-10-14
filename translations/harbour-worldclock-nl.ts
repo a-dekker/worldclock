@@ -177,7 +177,7 @@
         <translation>Beheer eigen wereldklokken op andere pagina</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="502"/>
+        <location filename="../qml/pages/MainPage.qml" line="501"/>
         <source>Local time</source>
         <translation>Lokale tijd</translation>
     </message>

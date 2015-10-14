@@ -489,16 +489,15 @@ Page {
                 Label {
                     id: cityLabel
                     text: zoneCityTr.replace(/_/g, " ")
-                    width: parent.width - Theme.paddingLarge * 9
+                    width: parent.width - Theme.paddingLarge * 11
                     anchors.left: timeLabel.right
                     opacity: (index & 1) ? 0.9 : 1
+                    truncationMode: TruncationMode.Fade
                 }
                 Label {
+                    id: countryLabel
                     anchors.top: cityLabel.bottom
-                    // text: zoneCountry.replace(/([a-z])([A-Z])/g,
-                    //                           "$1 $2").substring(0, 25).replace(
-                    //           "local_time", qsTr("Local time"))
-                    text: zoneCountry.substring(0, 25).replace(
+                    text: zoneCountry.replace(
                               "local_time", qsTr("Local time"))
                     font.pixelSize: Theme.fontSizeExtraSmall
                     color: (listCityItem.highlighted || listCityModel.get(
@@ -506,6 +505,7 @@ Page {
                             || listCityModel.get(index).zoneCity
                             == local_city) ? Theme.highlightColor : Theme.secondaryColor
                     anchors.left: timeLabel.right
+                    width: parent.width - timeLabel.width - dateLabel.width - Theme.paddingSmall
                     truncationMode: TruncationMode.Fade
                     opacity: (index & 1) ? 0.9 : 1
                 }

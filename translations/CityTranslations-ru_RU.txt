@@ -1,9 +1,11 @@
+<F7>
 Abidjan;Абиджан
 Accra;Аккра
 Addis Ababa;Аддис-Абеба
 Adelaide;Аделаида
 Afghanistan;Афганистан
 Africa;Африка
+Aktobe;Актобе
 Albania;Албания
 Albuquerque;Альбукерке
 Algeria;Алжир
@@ -17,7 +19,6 @@ Anadyr;Анадырь
 Anchorage;Анкоридж
 Andorra;Андорра
 Angola;ангола
-Anguilla;Ангилья
 Anguilla;Ангилья
 Ankara;Анкара
 Ann Arbor;Энн-Арбор
@@ -43,6 +44,7 @@ Austin;Остин
 Australia;Австралия
 Austria;Австрия
 Azerbaijan;Азербайджан
+Azores;Азорские острова
 Baghdad;Багдад
 Bahamas;Багамские Острова
 Bahia Banderas;Bahia Бандерас
@@ -69,6 +71,7 @@ Benin;Бенин
 Berlin;Берлин
 Bermuda;Бермудские острова
 Beulah;Бьюла
+Bhutan;Бутан
 Bishkek;Бишкек
 Bissau;Бисау
 Black Rock City;Блэк Рок Сити
@@ -88,6 +91,7 @@ Bratislava;Братислава
 Brazil;Бразилия
 Brazzaville;Браззавиль
 Brisbane;Брисбен
+British Indian Ocean Territory;Британская территория в Индийском океане территория
 British Virgin Islands;Британские Виргинские острова
 Brunei:Бруней
 Brunei;Бруней
@@ -132,7 +136,6 @@ Chile;Чили
 China;Китай
 Chisinau;кишинев
 Chita;Чита
-Chişinău;Кишинёв
 Cincinnati;Цинциннати
 Cleveland;Кливленд
 Cocos Islands;Кокосовые острова
@@ -151,6 +154,7 @@ Cosos;Кокосовые
 Costa Rica;Коста-Рика
 Croatia;Хорватия
 Cuba;Куба
+Cura Sao;Кюрасао
 Curacao;Кюрасао
 Curaçao;Кюрасао
 Cyprus;кипр
@@ -191,6 +195,7 @@ Ethiopia;Эфиопия
 Europe;Европы
 Fakaofo;Факаофо
 Falkland Islands;Фолклендские острова
+Faroe Islands;Фарерские острова
 Fiji;Фиджи
 Finland;Финляндия
 Fortaleza;Форталеза
@@ -234,6 +239,7 @@ Helsinki;Хельсинки
 Ho Chi Minh City;Хошимин
 Ho Chi Minh;Хошимин
 Hobart;Хобарт
+Honduras;Гондурас
 Hong Kong;Гонконг
 Honolulu;Гонолулу
 Houston;Хьюстон
@@ -328,6 +334,7 @@ Madagascar;Мадагаскар
 Madeira;мадера
 Madison;Мэдисон
 Madrid;Мадрид
+Magadan;Магадан
 Makassar;Макассар
 Malabo;Малабо
 Malawi;Малави
@@ -340,6 +347,7 @@ Manchester;Манчестер
 Manila;Манила
 Maputo;Мапуту
 Marengo;Маренго
+Marshall Islands;Маршалловы острова
 Martinique;Остров Мартиника
 Maseru;Масеру
 Matamoros;Матаморос
@@ -361,9 +369,11 @@ Milan;Милан
 Milwaukee;Милуоки
 Minneapolis;Миннеаполис
 Minsk;Минск
+Miquelon;Микелон
 Mogadishu;Могадишо
 Moldova;Республика Молдова
 Monaco;Монако
+Moncton;Монктон
 Mongolia;Монголия
 Monrovia;Монровия
 Montenegro;черногория
@@ -401,8 +411,11 @@ Niger;Нигер
 Nigeria;Нигерия
 Nipigon;Нипигон
 Niue;Ниуэ
+Norfolk Island;Остров Норфолк
+Norfolk;Норфолк
 North Dakota;Северная Дакота
 North Korea;Корейская Народная Демократическая Республика
+Northern Mariana Islands;Северные Марианские острова
 Norway;Норвегия
 Nouméa;Нумеа
 Novokuznetsk;Новокузнецк
@@ -453,6 +466,7 @@ Rarotonga;раротонга
 Reno;Рино
 Republic of the Congo;Республика Конго
 Reston;Рестон
+Reunion;Реюньон
 Reykjavik;рейкьявик
 Reykjavík;Рейкьявик
 Riga;Рига
@@ -465,7 +479,9 @@ Russia;Россия
 Rwanda;Руанда
 Sacramento;Сакраменто
 Saint Helena;Остров Святой Елены
+Saint Helena;Остров Святой Елены
 Saint Kitts and Nevis;Сент-Китс и Невис
+Saint Pierre And Miquelon;Сен-Пьер и Микелон
 Saipan;Сайпан
 Sakhalin;Сахалин
 Salt Lake City;Солт-Лейк-Сити
@@ -484,7 +500,9 @@ San Salvador;Сан-Сальвадор
 Sanaa;Сана
 Santiago;Сантьяго
 Santo Domingo;Санто-Доминго
+Sao Tome and Principe;Сан-Томе Принсипи ан
 Sao Tome and Principe;Сан-Томе и Принсипи
+Sao Tome;Сан-Томе
 Sarajevo;Сараево
 Saskatchewan;Саскачеван
 Saudi Arabia;Саудовская Аравия
@@ -492,6 +510,7 @@ Seattle;Сиэтл
 Senegal;Сенегал
 Seoul;Сеул
 Serbia;Сербия
+Seychelles;Сейшельские
 Shanghai;Шанхай
 Sierra Leone;Сьерра-Леоне
 Simferopol;Симферополь
@@ -500,6 +519,7 @@ Skopje;Скопье
 Slovakia;Словакия
 Slovenia;Словения
 Sofia;София
+Solomon Islands;Соломоновы Острова
 Somalia;Сомали
 South Africa;Южно-Африканская Республика
 South Georgia;Южная Джорджия
@@ -516,6 +536,7 @@ Stockholm;Стокгольм
 Sudan;Судан
 Suriname;Суринам
 Suva;Сува
+Svalbard and Jan Mayen Islands;Шпицберген и Ян-Майен
 Svalbard and Jan Mayen;Шпицберген и Ян-Майен
 Swaziland;Свазиленд
 Sweden;Швеция
@@ -544,6 +565,7 @@ Tokyo;Токио
 Tonga;Тонга
 Tongatapu;Тонгатапу
 Toronto;Торонто
+Tortola;Тортола
 Trinidad and Tobago;Тринидад и Тобаго
 Tripoli;Триполи
 Tucuman;Тукуман
@@ -562,9 +584,11 @@ United Kingdom;Великобритания
 United States;США
 Uruguay;Уругвай
 Ushuaia;Ушуайя
+Uzbekistan;Узбекистан
 Uzhgorod;Ужгород
 Vaduz;Вадуц
 Vancouver;Ванкувер
+Vanuatu;Вануату
 Vatican City State;Ватикан
 Vatican;Ватикан
 Venezuela;Венесуэла
@@ -576,6 +600,7 @@ Vilnius;Вильнюс
 Vincennes;Винсенс
 Vladivostok;Владивосток
 Volgograd;Волгоград
+Wallis and Futuna Islands;Острова Уоллис и Футуна
 Warsaw;Варшава
 Washington D.C.;Вашингтон (округ Колумбия)
 Western Sahara;западная Сахара

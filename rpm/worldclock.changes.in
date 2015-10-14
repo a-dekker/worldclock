@@ -8,6 +8,11 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Tue Oct 13 2015 Arno Dekker <jack.tar@example.com> 0.4-7
+- And more geo names translated
+- Better trimming of long names in mainpage
+- Flags should be complete
+
 * Fri Oct 09 2015 Arno Dekker <jack.tar@example.com> 0.4-6
 - Still had to fix an issue with with local time translated
 
