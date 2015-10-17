@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sat Oct 17 2015 Arno Dekker <jack.tar@example.com> 0.5-0
+- Swiss made square
+
 * Tue Oct 13 2015 Arno Dekker <jack.tar@example.com> 0.4-7
 - And more geo names translated
 - Better trimming of long names in mainpage
