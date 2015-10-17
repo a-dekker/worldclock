@@ -206,8 +206,9 @@ QString TimeZone::TimeZone::readAllCities()
                 countryName.replace(lowerChar1+upperChar1,lowerChar1 + " " + upperChar1);
             }
         }
-        int index = lines.indexOf(countryName+';', 0, Qt::CaseInsensitive);
+        int index = lines.indexOf('\n'+countryName+';', 0, Qt::CaseInsensitive);
         if (index != -1) {
+            index++;
             // Replace countryName with translation
             countryName = lines.mid(index+countryName.length()+1, lines.indexOf('\n',index) - lines.indexOf(';',index)-1);
         }
@@ -336,17 +337,18 @@ QString TimeZone::TimeZone::readCityInfo(const QByteArray &cityid, const QByteAr
             myCountry.replace(lowerChar1+upperChar1,lowerChar1 + " " + upperChar1);
         }
     }
-    int index = lines.indexOf(myCountry+';', 0, Qt::CaseInsensitive);
-    /* int index = lines.replace(" ","").indexOf(myCountry+';', 0, Qt::CaseInsensitive); */
+    int index = lines.indexOf('\n'+myCountry+';', 0, Qt::CaseInsensitive);
     if (index != -1) {
+        index++;
         // Replace countryName with translation
         myCountry = lines.mid(index+myCountry.length()+1, lines.indexOf('\n',index) - lines.indexOf(';',index)-1);
     }
     const int separator = cityid.lastIndexOf('/');
     const QString cityName = cityid.mid(separator + 1).replace("_"," ");
-    index = lines.indexOf(cityName+';', 0, Qt::CaseInsensitive);
+    index = lines.indexOf("\n"+cityName+';', 0, Qt::CaseInsensitive);
     QString cityTr = cityName;
     if (index != -1) {
+        index++;
         cityTr = lines.mid(index+cityName.length()+1, lines.indexOf('\n',index) - lines.indexOf(';',index)-1);
     }
     if (time_format == "24" ) {
@@ -533,15 +535,17 @@ QString TimeZone::TimeZone::readCityDetails(const QByteArray &cityid, const QByt
             myCountry.replace(lowerChar1+upperChar1,lowerChar1 + " " + upperChar1);
         }
     }
-    int index = lines.indexOf(myCountry+';', 0, Qt::CaseInsensitive);
+    int index = lines.indexOf('\n'+myCountry+';', 0, Qt::CaseInsensitive);
     if (index != -1) {
+        index++;
         myCountry = lines.mid(index+myCountry.length()+1, lines.indexOf('\n',index) - lines.indexOf(';',index)-1);
     }
     const int separator = cityid.lastIndexOf('/');
     const QString cityName = cityid.mid(separator + 1).replace("_", " ");
     QByteArray cityidTr = cityid;
-    index = lines.indexOf(cityName+';', 0, Qt::CaseInsensitive);
+    index = lines.indexOf('\n'+cityName+';', 0, Qt::CaseInsensitive);
     if (index != -1) {
+        index++;
         QString myCity = lines.mid(index+cityName.length()+1, lines.indexOf('\n',index) - lines.indexOf(';',index)-1);
         cityidTr.replace(cityName.toUtf8().replace(" ","_"),myCity.toUtf8());
     }

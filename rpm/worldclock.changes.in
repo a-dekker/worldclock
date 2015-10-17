@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sat Oct 17 2015 Arno Dekker <jack.tar@example.com> 0.5-1
+- Small fix in country/city string translation matching
+
 * Sat Oct 17 2015 Arno Dekker <jack.tar@example.com> 0.5-0
 - Swiss flag made square
 
