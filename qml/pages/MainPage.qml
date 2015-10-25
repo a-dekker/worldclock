@@ -43,11 +43,14 @@ Page {
         local_city = local_city.replace(/(.+)\//,
                                         "").replace(/(\r\n|\n|\r)/gm, "")
         // Check if local city is translated
-        var data = timezones.readCityInfo(local_continent+"/"+local_city,
-        mainapp.timeFormat)
+        var data = timezones.readCityInfo(local_continent + "/" + local_city,
+                                          mainapp.timeFormat)
         data = data.split(';')
         local_city_tr = data[6]
 
+        mainapp.localContinent = local_continent
+        mainapp.localCity = local_city
+        mainapp.localCityTr = local_city_tr
         // add city as localtime
         appendList(local_datetime.local_time, local_city, "local_time",
                    local_datetime.local_date,
@@ -76,7 +79,8 @@ Page {
                     var zoneCityTr = data[6]
 
                     appendList(zoneTime, zoneCity, zoneCountry, zoneDate,
-                               zoneUTC, zoneCityFull, zoneSecs, zoneCityTr, zoneCityTr)
+                               zoneUTC, zoneCityFull, zoneSecs, zoneCityTr,
+                               zoneCityTr)
                 }
             }
         }
@@ -101,8 +105,14 @@ Page {
             var zoneUTC = data[4]
             var zoneSecs = data[5]
 
-            appendList(zoneTime, zoneCity, zoneCountry, zoneDate, zoneUTC,
-                       zoneCityFull, zoneSecs, zoneCityTr)
+            if (zoneCityFull === local_continent + "/" + local_city
+                    && myset.value("hidelocal") === "true") {
+                replaceLocalCity(zoneCity)
+            } else {
+                // local_continent
+                appendList(zoneTime, zoneCity, zoneCountry, zoneDate, zoneUTC,
+                           zoneCityFull, zoneSecs, zoneCityTr)
+            }
         }
     }
 
@@ -133,7 +143,7 @@ Page {
             if (mainapp.city_id !== "") {
                 // read info
                 var data = timezones.readCityInfo(mainapp.city_id,
-                                              mainapp.timeFormat)
+                                                  mainapp.timeFormat)
                 data = data.split(';')
                 var zoneTime = data[0]
                 var zoneCity = data[1]
@@ -192,7 +202,7 @@ Page {
     function banner(notificationType, message) {
         notification.close()
         var notificationCategory
-        switch(notificationType) {
+        switch (notificationType) {
         case "OK":
             notificationCategory = "x-jolla.store.sideloading-success"
             break
@@ -248,6 +258,14 @@ Page {
                             && listCityModel.get(i).zoneCityFull == "") {
                         listCityModel.remove(i)
                     }
+            }
+    }
+
+    function replaceLocalCity(aliasCity) {
+        var n
+        for (n = 0; n < listCityModel.count; n++)
+            if (listCityModel.get(n).zoneCity === local_city) {
+                listCityModel.setProperty(n, "zoneCityTr", aliasCity)
             }
     }
 
@@ -424,8 +442,8 @@ Page {
                                 }
                             }
                             if (isReplaced === "false") {
-                                banner("WARNING",
-                                            qsTr("Manage custom cities on other page"))
+                                banner("WARNING", qsTr(
+                                           "Manage custom cities on other page"))
                             } else {
                                 listCity.model.remove(index)
                             }
@@ -497,8 +515,7 @@ Page {
                 Label {
                     id: countryLabel
                     anchors.top: cityLabel.bottom
-                    text: zoneCountry.replace(
-                              "local_time", qsTr("Local time"))
+                    text: zoneCountry.replace("local_time", qsTr("Local time"))
                     font.pixelSize: Theme.fontSizeExtraSmall
                     color: (listCityItem.highlighted || listCityModel.get(
                                 index).zoneCountry == "local_time"
@@ -559,8 +576,8 @@ Page {
                                 if (listCityModel.get(
                                             index).zoneCountry == "local_time") {
                                     hide()
-                                    banner( "ERROR",
-                                                qsTr("Cannot remove Local time"))
+                                    banner("ERROR",
+                                           qsTr("Cannot remove Local time"))
                                 } else {
                                     remove()
                                 }

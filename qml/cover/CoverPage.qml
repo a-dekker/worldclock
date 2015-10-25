@@ -12,7 +12,6 @@ CoverBackground {
             anchors.fill: parent
             fillMode: Image.PreserveAspectFit
             source: "../images/earth.png"
-            // opacity: 0.2
             horizontalAlignment: Image.AlignHCenter
             verticalAlignment: Image.AlignVCenter
         }
@@ -39,6 +38,22 @@ CoverBackground {
     // helper function to wipe the city element
     function wipeCityList() {
         cityListModel.clear()
+    }
+
+    function replaceLocalCity(aliasCity) {
+        var n
+        var cityIsReplaced
+        for (n = 0; n < cityListModel.count; n++) {
+            if (cityListModel.get(n).zoneCityTr === mainapp.localCityTr) {
+                cityListModel.setProperty(n, "zoneCityTr", aliasCity)
+                cityIsReplaced = "true"
+            }
+        }
+        if  ( cityIsReplaced === "true") {
+            return true
+        } else {
+            return false
+        }
     }
 
     function loadCityList() {
@@ -68,8 +83,6 @@ CoverBackground {
                 }
             }
         }
-        // load alias values
-        // DB.readActiveAliases()
         var customdata = mainapp.myAliases.split('\n')
         for (var i = 0; i < customdata.length - 1; i++) {
             var myCity = customdata[i].split("|")[1]
@@ -89,7 +102,14 @@ CoverBackground {
             var zoneSecs = data[5]
             var zoneCityTr = data[6]
 
-            appendCity(zoneTime, zoneCity, zoneSecs, zoneCityFull)
+            if (zoneCityFull === mainapp.localContinent + "/" + mainapp.localCity
+                    && myset.value("hidelocal") === "true") {
+                if (!replaceLocalCity(zoneCity)) {
+                    appendCity(zoneTime, zoneCity, zoneSecs, zoneCityFull)
+                }
+            } else {
+                appendCity(zoneTime, zoneCity, zoneSecs, zoneCityFull)
+            }
         }
     }
 
@@ -181,9 +201,14 @@ CoverBackground {
         ListView {
             id: cityList
             anchors.top: coverHeader.bottom
-            height: 7 * (Theme.fontSizeSmall + Theme.paddingSmall) + 2
-            width: parent.width - Theme.paddingSmall
-            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.bottom: parent.bottom
+            anchors.topMargin: Theme.paddingSmall
+            anchors.leftMargin: Theme.paddingSmall
+            anchors.rightMargin: Theme.paddingSmall
+            anchors.bottomMargin: Theme.paddingLarge
+
             model: cityListModel
 
             delegate: Item {

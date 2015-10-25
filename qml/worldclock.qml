@@ -40,6 +40,9 @@ ApplicationWindow
     id: mainapp
     property string city_id: ''
     property string localTime: ''
+    property string localContinent: ''
+    property string localCity: ''
+    property string localCityTr: ''
     property bool coverAddZone: false
     property bool viewable: cover.status === Cover.Active || applicationActive
     property string timeFormat: '24'
