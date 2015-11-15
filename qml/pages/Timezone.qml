@@ -5,6 +5,8 @@ import "../components"
 
 Page {
     id: page
+    allowedOrientations: Orientation.Portrait | Orientation.Landscape
+                         | Orientation.LandscapeInverted
     property string searchString
 
     TZ {
@@ -92,6 +94,7 @@ Page {
         width: page.width
         height: page.height
         anchors.top: parent.top
+        x: isPortrait ? 0 : Theme.paddingMedium
 
         delegate: Item {
             id: cityListItem

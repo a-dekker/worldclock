@@ -32,6 +32,7 @@ Cambodia;Cambodja
 Cameroon;Kameroen
 Canary;Canarische Eilanden
 Cape Town;Kaapstad
+Cape Verde;Kaapverdië
 Cayman Islands;Kaaimaneilanden
 Central African Republic;Centraal Afrikaanse Republiek
 Chad;Tjaad
@@ -75,7 +76,7 @@ Iceland;IJsland
 Indonesia;Indonesië
 Iraq;Irak
 Ireland;Ierland
-Isle of Man;eiland Man
+Isle of Man;Eiland Man
 Israel;Israël
 Italy;Italië
 Ivory Coast;Ivoorkust
@@ -145,6 +146,7 @@ Slovenia;Slovenië
 Solomon Islands;Salomonseilanden
 Somalia;Somalië
 South Africa;Zuid-Afrika
+South Georgia And The South Sandwich Islands;Zuid-Georgia en de Zuidelijke Sandwicheilanden
 South Georgia;Zuid-Georgia
 South Korea;Zuid-Korea
 South Sudan;Zuid Soedan

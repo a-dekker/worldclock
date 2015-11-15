@@ -60,7 +60,7 @@ CoverBackground {
         wipeCityList()
         if (myset.contains("Cities")) {
             var myCities = myset.value("Cities").toString()
-            if (myCities != "") {
+            if (myCities !== "") {
                 var data
                 myCities = myCities.split(",")
                 for (var myCity in myCities) {
@@ -129,7 +129,7 @@ CoverBackground {
         // 0 = non;1 = time;2 = city
         var n
         var i
-        if (sortorder == 1) {
+        if (sortorder === "1") {
             // date/time based
             for (n = 0; n < cityListModel.count; n++)
                 for (i = n + 1; i < cityListModel.count; i++) {
@@ -140,7 +140,7 @@ CoverBackground {
                     }
                 }
         }
-        if (sortorder == 2) {
+        if (sortorder === "2") {
             // cityname based
             for (n = 0; n < cityListModel.count; n++)
                 for (i = n + 1; i < cityListModel.count; i++) {

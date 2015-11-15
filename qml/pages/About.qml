@@ -2,7 +2,8 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 Page {
-    id: page
+    id: aboutPage
+    allowedOrientations: Orientation.Portrait | Orientation.Landscape | Orientation.LandscapeInverted
     SilicaFlickable {
         anchors.fill: parent
         contentWidth: parent.width
@@ -20,12 +21,14 @@ Page {
             }
             SectionHeader {
                 text: qsTr("Info")
+                visible: isPortrait
             }
             Separator {
                 color: Theme.primaryColor
                 width: parent.width
                 anchors.horizontalCenter: parent.horizontalCenter
                 horizontalAlignment: Qt.AlignHCenter
+                visible: isPortrait
             }
             Label {
                 text: "Worldclock"
@@ -60,12 +63,14 @@ Page {
             }
             SectionHeader {
                 text: qsTr("Author")
+                visible: isPortrait
             }
             Separator {
                 color: Theme.primaryColor
                 width: parent.width
                 anchors.horizontalCenter: parent.horizontalCenter
                 horizontalAlignment: Qt.AlignHCenter
+                visible: isPortrait
             }
             Label {
                 text: "© Arno Dekker 2015"

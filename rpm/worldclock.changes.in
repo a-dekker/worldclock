@@ -8,6 +8,10 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sat Nov 15 2015 Arno Dekker <jack.tar@example.com> 0.6-0
+- Landscape support
+- Small corrections in Dutch translation
+
 * Sat Oct 17 2015 Arno Dekker <jack.tar@example.com> 0.5-2
 - Extra space for cities on coverpage
 - Alias name will overwrite local cityname if current and 'hide if current' is selected

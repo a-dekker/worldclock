@@ -8,6 +8,8 @@ import "../localdb.js" as DB
 
 Page {
     id: page
+    allowedOrientations: Orientation.Portrait | Orientation.Landscape
+                         | Orientation.LandscapeInverted
 
     RemorsePopup {
         id: remorse
@@ -59,7 +61,7 @@ Page {
 
         if (myset.contains("Cities")) {
             var myCities = myset.value("Cities").toString()
-            if (myCities != "") {
+            if (myCities !== "") {
                 var data
                 myCities = myCities.split(",")
                 for (var myCity in myCities) {
@@ -167,7 +169,7 @@ Page {
                     } else {
                         appendList(zoneTime, zoneCity, zoneCountry, zoneDate,
                                    zoneUTC, zoneCityFull, zoneSecs, zoneCityTr)
-                        if (allcities == "") {
+                        if (allcities === "") {
                             allcities = mainapp.city_id
                         } else {
                             allcities = allcities + ',' + mainapp.city_id
@@ -185,11 +187,11 @@ Page {
                 }
             }
             mainapp.city_id = ""
-            if (myset.value("hidelocal") == "true") {
+            if (myset.value("hidelocal") === "true") {
                 hideLocalCity(local_city)
             }
         }
-        if (status == PageStatus.Active) {
+        if (status === PageStatus.Active) {
             // if the activation was started by the covers add function
             if (mainapp.coverAddZone == true) {
                 pageStack.push(Qt.resolvedUrl("Timezone.qml"))
@@ -230,7 +232,7 @@ Page {
     function updateTime() {
         var data
         for (var i = 0; i < listCityModel.count; ++i) {
-            if (listCityModel.get(i).zoneCountry == "local_time") {
+            if (listCityModel.get(i).zoneCountry === "local_time") {
                 data = timezones.readLocalTime(mainapp.timeFormat)
             } else {
                 data = timezones.readCityTime(listCityModel.get(
@@ -251,11 +253,11 @@ Page {
         var n
         var i
         for (n = 0; n < listCityModel.count; n++)
-            if (listCityModel.get(n).zoneCity == currentCity
-                    && listCityModel.get(n).zoneCityFull != "") {
+            if (listCityModel.get(n).zoneCity === currentCity
+                    && listCityModel.get(n).zoneCityFull !== "") {
                 for (i = 0; i < listCityModel.count; i++)
-                    if (listCityModel.get(i).zoneCity == currentCity
-                            && listCityModel.get(i).zoneCityFull == "") {
+                    if (listCityModel.get(i).zoneCity === currentCity
+                            && listCityModel.get(i).zoneCityFull === "") {
                         listCityModel.remove(i)
                     }
             }
@@ -274,7 +276,7 @@ Page {
         // 0 = non;1 = time;2 = city
         var n
         var i
-        if (sortorder == 1) {
+        if (sortorder === "1") {
             // date/time based
             for (n = 0; n < listCityModel.count; n++)
                 for (i = n + 1; i < listCityModel.count; i++) {
@@ -285,7 +287,7 @@ Page {
                     }
                 }
         }
-        if (sortorder == 2) {
+        if (sortorder === "2") {
             // cityname based
             for (n = 0; n < listCityModel.count; n++)
                 for (i = n + 1; i < listCityModel.count; i++) {
@@ -494,9 +496,7 @@ Page {
                     font.pixelSize: mainapp.timeFormat
                                     == "24" ? Theme.fontSizeLarge : Theme.fontSizeMedium
                     color: Theme.highlightColor
-                    width: mainapp.timeFormat
-                           == "24" ? parent.width - Theme.paddingLarge
-                                     * 18 : parent.width - Theme.paddingLarge * 17
+                    width: isPortrait ? (mainapp.timeFormat === "24" ? parent.width - Theme.paddingLarge * 18 : parent.width - Theme.paddingLarge * 17) : (mainapp.timeFormat === "24" ? parent.width - Theme.paddingLarge * 35 : parent.width - Theme.paddingLarge * 33)
                     x: Theme.paddingSmall
                     anchors.verticalCenter: parent.verticalCenter
                     verticalAlignment: Text.AlignVCenter
@@ -518,9 +518,9 @@ Page {
                     text: zoneCountry.replace("local_time", qsTr("Local time"))
                     font.pixelSize: Theme.fontSizeExtraSmall
                     color: (listCityItem.highlighted || listCityModel.get(
-                                index).zoneCountry == "local_time"
+                                index).zoneCountry === "local_time"
                             || listCityModel.get(index).zoneCity
-                            == local_city) ? Theme.highlightColor : Theme.secondaryColor
+                            === local_city) ? Theme.highlightColor : Theme.secondaryColor
                     anchors.left: timeLabel.right
                     width: parent.width - timeLabel.width - dateLabel.width - Theme.paddingSmall
                     truncationMode: TruncationMode.Fade
@@ -544,7 +544,7 @@ Page {
                     color: (listCityItem.highlighted || listCityModel.get(
                                 index).zoneCountry === "local_time"
                             || listCityModel.get(index).zoneCity
-                            == local_city) ? Theme.highlightColor : Theme.secondaryColor
+                            === local_city) ? Theme.highlightColor : Theme.secondaryColor
                     width: dateLabel.width
                     anchors.left: cityLabel.right
                     anchors.rightMargin: Theme.paddingSmall
@@ -558,7 +558,7 @@ Page {
                             text: qsTr("Details")
                             onClicked: {
                                 if (listCityModel.get(
-                                            index).zoneCountry == "local_time") {
+                                            index).zoneCountry === "local_time") {
                                     mainapp.city_id = local_continent + "/" + local_city
                                     pageStack.push(Qt.resolvedUrl(
                                                        "CityDetail.qml"))
@@ -574,7 +574,7 @@ Page {
                             text: qsTr("Remove")
                             onClicked: {
                                 if (listCityModel.get(
-                                            index).zoneCountry == "local_time") {
+                                            index).zoneCountry === "local_time") {
                                     hide()
                                     banner("ERROR",
                                            qsTr("Cannot remove Local time"))

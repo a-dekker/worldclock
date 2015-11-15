@@ -5,6 +5,8 @@ import "../localdb.js" as DB
 
 Dialog {
     id: aliasesDialog
+    allowedOrientations: Orientation.Portrait | Orientation.Landscape
+                         | Orientation.LandscapeInverted
     property string isReplace: "false"
     property int currIndex: 0
 
@@ -26,7 +28,7 @@ Dialog {
         if (status === PageStatus.Activating && mainapp.city_id !== "") {
             // find possible translation
             var data = timezones.readCityInfo(mainapp.city_id,
-            mainapp.timeFormat)
+                                              mainapp.timeFormat)
             data = data.split(';')
             var zoneCityTr = data[6]
             // strip city info
@@ -37,11 +39,13 @@ Dialog {
             cityName = cityName.replace(/_/g, " ")
             if (isReplace === "true") {
                 customcitylist.model.setProperty(currIndex, "City", cityName)
-                customcitylist.model.setProperty(currIndex, "CityTr", zoneCityTr)
+                customcitylist.model.setProperty(currIndex, "CityTr",
+                                                 zoneCityTr)
                 customcitylist.model.setProperty(currIndex, "CityInfo",
                                                  mainapp.city_id)
             } else {
-                appendCustomCity(cityName, zoneCityTr, mainapp.city_id, "", "true")
+                appendCustomCity(cityName, zoneCityTr, mainapp.city_id,
+                                 "", "true")
             }
             mainapp.city_id = ""
         }
@@ -64,23 +68,25 @@ Dialog {
 
     SilicaListView {
         id: customcitylist
+        anchors.leftMargin: Theme.paddingSmall
+        anchors.rightMargin: Theme.paddingSmall
+        width: parent.width
+        x: isPortrait ? 0 : Theme.paddingMedium
+        y: header.height + Theme.paddingMedium
+        contentHeight: customcitylist.count * Theme.itemSizeSmall
+        height: parent.height - (header.height + Theme.paddingMedium + addButton.height)
         VerticalScrollDecorator {
         }
         model: ListModel {
         }
-        anchors.leftMargin: Theme.paddingSmall
-        anchors.rightMargin: Theme.paddingSmall
-        width: parent.width
-        y: header.height + Theme.paddingMedium
-        contentHeight: customcitylist.count * Theme.itemSizeSmall
-        height: parent.height - (header.height + Theme.paddingMedium + addButton.height)
 
         function loadcustomcitylist() {
             DB.readAliases()
             // find and add translations from selected locale
             for (var i = 0; i < customcitylist.model.count; ++i) {
-                var data = timezones.readCityInfo(customcitylist.model.get(i).CityInfo,
-                mainapp.timeFormat)
+                var data = timezones.readCityInfo(customcitylist.model.get(
+                                                      i).CityInfo,
+                                                  mainapp.timeFormat)
                 data = data.split(';')
                 var zoneCityTr = data[6]
                 customcitylist.model.setProperty(i, "CityTr", zoneCityTr)
@@ -123,10 +129,19 @@ Dialog {
                     }
                     highlighted: down
                 }
+                Rectangle {
+                    id: littleSpace
+                    anchors.left: do_display.right
+                    // some whitespace
+                    width: Theme.paddingMedium
+                    height: 1
+                    opacity: 0
+                    visible: isLandscape
+                }
                 Button {
                     id: name
                     text: CityTr
-                    anchors.left: do_display.right
+                    anchors.left: isPortrait ? do_display.right : littleSpace.right
                     //width: font.pixelSize * 8
                     onClicked: {
                         pageStack.push(Qt.resolvedUrl("Timezone.qml"))
@@ -140,7 +155,7 @@ Dialog {
                     anchors.left: name.right
                     placeholderText: qsTr("Alt. name")
                     text: Alias
-                    width: font.pixelSize * 7
+                    width: isPortrait ? font.pixelSize * 7 : font.pixelSize * 20
                     horizontalAlignment: TextInput.AlignRight
                     maximumLength: 18
                     onTextChanged: {
@@ -148,6 +163,7 @@ Dialog {
                     }
                 }
                 IconButton {
+                    id: trashIcon
                     anchors.left: cityalias.right
                     icon.source: 'image://theme/icon-m-delete'
                     onClicked: remove()

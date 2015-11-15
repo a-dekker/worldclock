@@ -4,6 +4,8 @@ import harbour.worldclock.TimeZone 1.0
 
 Page {
     id: cityDetailPage
+    allowedOrientations: Orientation.Portrait | Orientation.Landscape
+                         | Orientation.LandscapeInverted
 
     property string zoneDateTime
     property string zoneName
@@ -85,6 +87,14 @@ Page {
 
     // Place our content in a Column.  The PageHeader is always placed at the top
     // of the page, followed by our content.
+    SilicaFlickable {
+        anchors.fill: parent
+        contentWidth: parent.width
+        contentHeight: column.height
+
+        VerticalScrollDecorator {
+        }
+
     Column {
         id: column
         width: cityDetailPage.width
@@ -192,4 +202,5 @@ Page {
             text: dstShiftTxt
         }
     }
+}
 }

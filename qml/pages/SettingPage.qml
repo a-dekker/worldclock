@@ -5,7 +5,9 @@ import "../components"
 import "Vars.js" as GlobVars
 
 Dialog {
-    id: page
+    id: settingsPage
+    allowedOrientations: Orientation.Portrait | Orientation.Landscape
+                         | Orientation.LandscapeInverted
     canAccept: true
 
     property int langNbrToSave: -1
@@ -48,7 +50,7 @@ Dialog {
 
         Column {
             id: col
-            spacing: Theme.paddingLarge
+            spacing: isPortrait ? Theme.paddingLarge : Theme.paddingMedium
             width: parent.width
             DialogHeader {
 
@@ -57,6 +59,7 @@ Dialog {
             }
             SectionHeader {
                 text: qsTr("Settings")
+                visible: isPortrait
             }
 
             ComboBox {
@@ -112,7 +115,7 @@ Dialog {
 
                 ComboBox {
                     id: language
-                    width: page.width
+                    width: settingsPage.width
                     label: qsTr("Language:")
                     currentIndex: toCurrentIndex(myset.value("language"))
                     menu: ContextMenu {
@@ -229,7 +232,8 @@ Dialog {
                 }
 
                 SilicaLabel {
-                    text: qsTr("Change of language will be active after restarting the application.")
+                    text: qsTr(
+                              "Change of language will be active after restarting the application.")
                     font.pixelSize: Theme.fontSizeExtraSmall
                     color: Theme.secondaryColor
                 }
