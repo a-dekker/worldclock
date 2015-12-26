@@ -32,27 +32,27 @@
 <context>
     <name>Aliases</name>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="56"/>
+        <location filename="../qml/pages/Aliases.qml" line="62"/>
         <source>Save</source>
         <translation>Spara</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="57"/>
+        <location filename="../qml/pages/Aliases.qml" line="63"/>
         <source>Cancel</source>
         <translation>Avbryt</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="106"/>
+        <location filename="../qml/pages/Aliases.qml" line="125"/>
         <source>Deleting</source>
         <translation>Tar bort</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="156"/>
+        <location filename="../qml/pages/Aliases.qml" line="179"/>
         <source>Alt. name</source>
         <translation>Alt. namn</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="178"/>
+        <location filename="../qml/pages/Aliases.qml" line="201"/>
         <source>No custom city names defined. Press the plus button to add one.</source>
         <translation>Inga anpassade platser definierade. Tryck på plusknappen för att lägga till ett.</translation>
     </message>
@@ -137,62 +137,62 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="168"/>
+        <location filename="../qml/pages/MainPage.qml" line="146"/>
         <source>City already added</source>
         <translation>Platsen redan tillagd</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="375"/>
+        <location filename="../qml/pages/MainPage.qml" line="384"/>
         <source>About</source>
         <translation>Om</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="379"/>
+        <location filename="../qml/pages/MainPage.qml" line="388"/>
         <source>Settings</source>
         <translation>Inställningar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="383"/>
+        <location filename="../qml/pages/MainPage.qml" line="392"/>
         <source>Custom city names</source>
         <translation>Anpassade platsnamn</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="387"/>
+        <location filename="../qml/pages/MainPage.qml" line="396"/>
         <source>Add city</source>
         <translation>Lägg till stad</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="405"/>
+        <location filename="../qml/pages/MainPage.qml" line="434"/>
         <source>Worldclock</source>
         <translation>Worldclock</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="423"/>
+        <location filename="../qml/pages/MainPage.qml" line="452"/>
         <source>Deleting</source>
         <translation>Tar bort</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="447"/>
+        <location filename="../qml/pages/MainPage.qml" line="476"/>
         <source>Manage custom cities on other page</source>
         <translation>Hantera anpassade platser på annan sida</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="518"/>
+        <location filename="../qml/pages/MainPage.qml" line="547"/>
         <source>Local time</source>
         <translation>Lokal tid</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="558"/>
+        <location filename="../qml/pages/MainPage.qml" line="587"/>
         <source>Details</source>
         <translation>Detaljerat</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="574"/>
+        <location filename="../qml/pages/MainPage.qml" line="603"/>
         <source>Remove</source>
         <translation>Ta bort</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="580"/>
+        <location filename="../qml/pages/MainPage.qml" line="609"/>
         <source>Cannot remove Local time</source>
         <translation>Kan inte ta bort lokal tid</translation>
     </message>
@@ -200,88 +200,108 @@
 <context>
     <name>SettingPage</name>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="57"/>
+        <location filename="../qml/pages/SettingPage.qml" line="58"/>
         <source>Save</source>
         <translation>Spara</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="58"/>
+        <location filename="../qml/pages/SettingPage.qml" line="59"/>
         <source>Cancel</source>
         <translation>Avbryt</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="61"/>
+        <location filename="../qml/pages/SettingPage.qml" line="62"/>
         <source>Settings</source>
         <translation>Inställningar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="68"/>
+        <location filename="../qml/pages/SettingPage.qml" line="69"/>
         <source>Sort order</source>
         <translation>Sortering</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="69"/>
+        <location filename="../qml/pages/SettingPage.qml" line="70"/>
         <source>Sort order of personal list</source>
         <translation>Sorteringsordning för personlig lista</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="73"/>
+        <location filename="../qml/pages/SettingPage.qml" line="74"/>
         <source>None</source>
         <translation>Ingen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="76"/>
+        <location filename="../qml/pages/SettingPage.qml" line="77"/>
         <source>TimeZone</source>
         <translation>Tidszon</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="79"/>
-        <location filename="../qml/pages/SettingPage.qml" line="97"/>
+        <location filename="../qml/pages/SettingPage.qml" line="80"/>
+        <location filename="../qml/pages/SettingPage.qml" line="98"/>
         <source>City</source>
         <translation>Stad</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="86"/>
+        <location filename="../qml/pages/SettingPage.qml" line="87"/>
         <source>Sort order list</source>
         <translation>Sortering</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="87"/>
+        <location filename="../qml/pages/SettingPage.qml" line="88"/>
         <source>Sort order of complete citylist</source>
         <translation>Sortering för fullständig stadslista</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="94"/>
+        <location filename="../qml/pages/SettingPage.qml" line="95"/>
         <source>TimeZone/Continent/City</source>
         <translation>Tidszon/Kontinent/Stad</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="100"/>
+        <location filename="../qml/pages/SettingPage.qml" line="101"/>
         <source>Country</source>
         <translation>Land</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="108"/>
+        <location filename="../qml/pages/SettingPage.qml" line="109"/>
         <source>Hide if current</source>
         <translation>Dölj om aktuell</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="109"/>
+        <location filename="../qml/pages/SettingPage.qml" line="110"/>
         <source>Hide localtime if city is present and current</source>
         <translation>Dölj lokal tid om staden är tillagd och aktuell</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="119"/>
+        <location filename="../qml/pages/SettingPage.qml" line="120"/>
         <source>Language:</source>
         <translation>Språk:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="235"/>
+        <location filename="../qml/pages/SettingPage.qml" line="236"/>
         <source>Change of language will be active after restarting the application.</source>
         <translation>Språkändringar kommer att aktiveras vid omstart av programmet.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="91"/>
+        <location filename="../qml/pages/SettingPage.qml" line="244"/>
+        <source>Worldclock pick screen</source>
+        <translation>Worldclock välj skärm</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/SettingPage.qml" line="245"/>
+        <source>Choose screentype used for selecting a worldclock</source>
+        <translation>Välj skärmtyp för att välja ett världsur</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/SettingPage.qml" line="249"/>
+        <source>Custom</source>
+        <translation>Anpassad</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/SettingPage.qml" line="252"/>
+        <source>Sailfish</source>
+        <translation>Sailfish</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/SettingPage.qml" line="92"/>
         <source>Continent/City</source>
         <translation>Kontinent/stad</translation>
     </message>

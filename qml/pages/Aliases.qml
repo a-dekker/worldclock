@@ -1,5 +1,7 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import Sailfish.Timezone 1.0
+import harbour.worldclock.Settings 1.0
 import harbour.worldclock.TimeZone 1.0
 import "../localdb.js" as DB
 
@@ -12,6 +14,10 @@ Dialog {
 
     TZ {
         id: timezones
+    }
+
+    MySettings {
+        id: myset
     }
 
     function appendCustomCity(city, citytr, cityinfo, alias, displayed) {
@@ -93,6 +99,19 @@ Dialog {
             }
         }
 
+        Component {
+            id: timezonePickerComponent
+            TimezonePicker {
+                onTimezoneClicked: {
+                    console.log(name);
+                    if(name !== "") {
+                        mainapp.city_id = name
+                    }
+                    pageStack.pop();
+                }
+            }
+        }
+
         Component.onCompleted: {
             loadcustomcitylist()
         }
@@ -144,7 +163,11 @@ Dialog {
                     anchors.left: isPortrait ? do_display.right : littleSpace.right
                     //width: font.pixelSize * 8
                     onClicked: {
-                        pageStack.push(Qt.resolvedUrl("Timezone.qml"))
+                        if (myset.value("city_pickertype","0") === "0") {
+                            pageStack.push(Qt.resolvedUrl("Timezone.qml"))
+                        } else {
+                            pageStack.push(timezonePickerComponent)
+                        }
                         isReplace = "true"
                         currIndex = index
                     }
@@ -186,7 +209,11 @@ Dialog {
         icon.source: 'image://theme/icon-m-add'
         visible: customcitylist.count < 20
         onClicked: {
-            pageStack.push(Qt.resolvedUrl("Timezone.qml"))
+            if (myset.value("city_pickertype","0") === "0") {
+                pageStack.push(Qt.resolvedUrl("Timezone.qml"))
+            } else {
+                pageStack.push(timezonePickerComponent);
+            }
             isReplace = "false"
             customcitylist.positionViewAtEnd()
         }

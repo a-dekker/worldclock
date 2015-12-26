@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sat Dec 25 2015 Arno Dekker <jack.tar@example.com> 0.6-1
+- Option to switch between custom and Sailfish worldclock list
+
 * Sat Nov 15 2015 Arno Dekker <jack.tar@example.com> 0.6-0
 - Landscape support
 - Small corrections in Dutch translation

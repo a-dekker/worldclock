@@ -16,6 +16,7 @@ Dialog {
         myset.setValue("sortorder", sorting.currentIndex)
         myset.setValue("sortorder_completeList", citylist_sorting.currentIndex)
         myset.setValue("hidelocal", localdisplay.checked)
+        myset.setValue("city_pickertype", cityPicker.currentIndex)
         // languagenumber is not index, but enum number!
         if (langNbrToSave !== -1)
             myset.setValue("language", langNbrToSave)
@@ -236,6 +237,21 @@ Dialog {
                               "Change of language will be active after restarting the application.")
                     font.pixelSize: Theme.fontSizeExtraSmall
                     color: Theme.secondaryColor
+                }
+                ComboBox {
+                    id: cityPicker
+                    width: parent.width
+                    label: qsTr("Worldclock pick screen") + ":"
+                    description: qsTr("Choose screentype used for selecting a worldclock")
+                    currentIndex: myset.value("city_pickertype")
+                    menu: ContextMenu {
+                        MenuItem {
+                            text: qsTr("Custom") // 0
+                        }
+                        MenuItem {
+                            text: qsTr("Sailfish") // 1
+                        }
+                    }
                 }
             }
         }

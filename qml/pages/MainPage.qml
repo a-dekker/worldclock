@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import Sailfish.Timezone 1.0
 import harbour.worldclock.Launcher 1.0
 import harbour.worldclock.TimeZone 1.0
 import harbour.worldclock.Settings 1.0
@@ -118,30 +119,7 @@ Page {
         }
     }
 
-    Component.onCompleted: {
-        DB.initializeDB()
-        loadData()
-        sortModel()
-        timerclock.start()
-        if (myset.value("hidelocal") === "true") {
-            hideLocalCity(local_city)
-        }
-    }
-
-    onStatusChanged: {
-        if (status === PageStatus.Activating) {
-            if (mainapp.city_id === "fromsettings") {
-                myset.sync() // else skrewed up??
-                sortModel()
-                mainapp.city_id = ""
-            }
-            if (mainapp.city_id === "fromaliases") {
-                // accepted, cleanup current listmodel
-                listCityModel.clear()
-                loadData()
-                sortModel()
-                mainapp.city_id = ""
-            }
+    function storeCity() {
             if (mainapp.city_id !== "") {
                 // read info
                 var data = timezones.readCityInfo(mainapp.city_id,
@@ -186,6 +164,33 @@ Page {
                     myset.sync()
                 }
             }
+        }
+
+    Component.onCompleted: {
+        DB.initializeDB()
+        loadData()
+        sortModel()
+        timerclock.start()
+        if (myset.value("hidelocal") === "true") {
+            hideLocalCity(local_city)
+        }
+    }
+
+    onStatusChanged: {
+        if (status === PageStatus.Activating) {
+            if (mainapp.city_id === "fromsettings") {
+                myset.sync() // else skrewed up??
+                sortModel()
+                mainapp.city_id = ""
+            }
+            if (mainapp.city_id === "fromaliases") {
+                // accepted, cleanup current listmodel
+                listCityModel.clear()
+                loadData()
+                sortModel()
+                mainapp.city_id = ""
+            }
+            storeCity()
             mainapp.city_id = ""
             if (myset.value("hidelocal") === "true") {
                 hideLocalCity(local_city)
@@ -194,7 +199,11 @@ Page {
         if (status === PageStatus.Active) {
             // if the activation was started by the covers add function
             if (mainapp.coverAddZone == true) {
-                pageStack.push(Qt.resolvedUrl("Timezone.qml"))
+                if (myset.value("city_pickertype","0") === "0") {
+                    onClicked: pageStack.push(Qt.resolvedUrl("Timezone.qml"))
+                } else {
+                    pageStack.push(timezonePickerComponent)
+                }
                 pageStack.completeAnimation()
                 mainapp.coverAddZone = false
             }
@@ -385,7 +394,27 @@ Page {
             }
             MenuItem {
                 text: qsTr("Add city")
-                onClicked: pageStack.push(Qt.resolvedUrl("Timezone.qml"))
+                onClicked:
+                if (myset.value("city_pickertype","0") === "0") {
+                    onClicked: pageStack.push(Qt.resolvedUrl("Timezone.qml"))
+                } else {
+                    pageStack.push(timezonePickerComponent)
+                }
+            }
+        }
+
+        Component {
+            id: timezonePickerComponent
+            TimezonePicker {
+                onTimezoneClicked: {
+                    console.log(name)
+                    if(name !== "") {
+                        mainapp.city_id = name
+                        storeCity()
+                        mainapp.city_id = ""
+                    }
+                    pageStack.pop()
+                }
             }
         }
 
