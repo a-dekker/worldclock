@@ -7,9 +7,6 @@ BackgroundItem {
     property alias countryName: countryName.text
     property string countryNameOrg: countryOrg
 
-    VerticalScrollDecorator {
-    }
-
     anchors {
         left: parent.left
     }
@@ -32,6 +29,8 @@ BackgroundItem {
     }
     Label {
         id: countryName
+        textFormat: Text.StyledText
+        color: background.down ? Theme.highlightColor : Theme.primaryColor
         font.pixelSize: Theme.fontSizeSmall
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: isPortrait ? parent.left : countryFlag.right

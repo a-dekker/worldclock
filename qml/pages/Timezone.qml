@@ -89,6 +89,7 @@ Page {
 
     SilicaListView {
         id: cityList
+        focus: true
         model: cityModel
         header: Item {
             id: header
@@ -101,30 +102,44 @@ Page {
         anchors.top: parent.top
         x: isPortrait ? 0 : Theme.paddingMedium
 
+        Connections {
+            target: searchField.activeFocus ? cityList : null
+            ignoreUnknownSignals: true
+            onContentYChanged: {
+                if (cityList.contentY > (Screen.height / 2)) {
+                    searchField.focus = false
+                }
+            }
+        }
+
         delegate: Item {
             id: cityListItem
 
+            // heigth is performance bottleneck
             height: contentItem.visible ? contentItem.height : 0
             width: ListView.view.width
 
-            function containString(countryName) {
-                var retVal = false
-                if (searchString.length > 0) {
-                    retVal = retVal || countryName.toLowerCase().indexOf(
-                                searchString) !== -1
-                    return retVal
+            function findString(mycountry) {
+                if (searchString.length === 0) {
+                    return mycountry
+                }
+                var regexp = new RegExp('\\b' + searchString, 'i')
+                if (regexp.test(mycountry)) {
+                    return Theme.highlightText(mycountry, regexp, Theme.highlightColor)
                 } else {
-                    return true
+                    // record not in search result
+                    return "X"
                 }
             }
+
             CountryItem {
                 id: contentItem
                 width: parent.width
-                countryName: country
+                countryName: findString(country)
                 countryNameOrg: countryOrg
                 anchors.leftMargin: Theme.paddingSmall
 
-                visible: containString(countryName)
+                visible: countryName !== "X"
 
                 onClicked: {
                     searchField.text = ""
@@ -134,5 +149,6 @@ Page {
                 }
             }
         }
+         VerticalScrollDecorator {}
     }
 }

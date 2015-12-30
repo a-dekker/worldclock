@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Wed Dec 30 2015 Arno Dekker <jack.tar@example.com> 0.6-3
+- Highlight matched substring in custom list of all cities
+
 * Wed Dec 30 2015 Arno Dekker <jack.tar@example.com> 0.6-2
 - Various small fixes
 - Added flags on screens in landscape view
