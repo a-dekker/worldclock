@@ -179,3 +179,4 @@ Wallis And Futuna Islands;Wallis en Futuna
 Warsaw;Warschau
 Western Sahara;Westelijke Sahara
 Yemen;Jemen
+Zurich;Zürich

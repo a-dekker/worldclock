@@ -8,6 +8,10 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Wed Dec 30 2015 Arno Dekker <jack.tar@example.com> 0.6-2
+- Various small fixes
+- Added flags on screens in landscape view
+
 * Sat Dec 25 2015 Arno Dekker <jack.tar@example.com> 0.6-1
 - Option to switch between custom and Sailfish worldclock list
 

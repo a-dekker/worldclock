@@ -50,6 +50,7 @@ Page {
                                           mainapp.timeFormat)
         data = data.split(';')
         local_city_tr = data[6]
+        zoneCountryOrg = data[7]
 
         mainapp.localContinent = local_continent
         mainapp.localCity = local_city
@@ -58,7 +59,8 @@ Page {
         appendList(local_datetime.local_time, local_city, "local_time",
                    local_datetime.local_date,
                    local_datetime.timezone + " (" + offset + ")", "",
-                   local_datetime.local_utc_offset, local_city_tr)
+                   local_datetime.local_utc_offset, local_city_tr,
+                   zoneCountryOrg)
 
         if (myset.contains("Cities")) {
             var myCities = myset.value("Cities").toString()
@@ -80,10 +82,11 @@ Page {
                     var zoneUTC = data[4]
                     var zoneSecs = data[5]
                     var zoneCityTr = data[6]
+                    var zoneCountryOrg = data[7]
 
                     appendList(zoneTime, zoneCity, zoneCountry, zoneDate,
                                zoneUTC, zoneCityFull, zoneSecs, zoneCityTr,
-                               zoneCityTr)
+                               zoneCountryOrg)
                 }
             }
         }
@@ -107,6 +110,7 @@ Page {
             var zoneDate = data[3]
             var zoneUTC = data[4]
             var zoneSecs = data[5]
+            var zoneCountryOrg = data[7]
 
             if (zoneCityFull === local_continent + "/" + local_city
                     && myset.value("hidelocal") === "true") {
@@ -114,57 +118,59 @@ Page {
             } else {
                 // local_continent
                 appendList(zoneTime, zoneCity, zoneCountry, zoneDate, zoneUTC,
-                           zoneCityFull, zoneSecs, zoneCityTr)
+                           zoneCityFull, zoneSecs, zoneCityTr, zoneCountryOrg)
             }
         }
     }
 
     function storeCity() {
-            if (mainapp.city_id !== "") {
-                // read info
-                var data = timezones.readCityInfo(mainapp.city_id,
-                                                  mainapp.timeFormat)
-                data = data.split(';')
-                var zoneTime = data[0]
-                var zoneCity = data[1]
-                var zoneCityFull = zoneCity
-                for (var i = 0; i < 3; i++) {
-                    zoneCity = zoneCity.replace(/(.+)\//, "")
-                }
-                var zoneCountry = data[2]
-                var zoneDate = data[3]
-                var zoneUTC = data[4]
-                var zoneSecs = data[5]
-                var zoneCityTr = data[6]
+        if (mainapp.city_id !== "") {
+            // read info
+            var data = timezones.readCityInfo(mainapp.city_id,
+                                              mainapp.timeFormat)
+            data = data.split(';')
+            var zoneTime = data[0]
+            var zoneCity = data[1]
+            var zoneCityFull = zoneCity
+            for (var i = 0; i < 3; i++) {
+                zoneCity = zoneCity.replace(/(.+)\//, "")
+            }
+            var zoneCountry = data[2]
+            var zoneDate = data[3]
+            var zoneUTC = data[4]
+            var zoneSecs = data[5]
+            var zoneCityTr = data[6]
+            var zoneCountryOrg = data[7]
 
-                var allcities
-                if (myset.contains("Cities")) {
-                    allcities = myset.value("Cities").toString()
-                    allcities = allcities.split(",")
+            var allcities
+            if (myset.contains("Cities")) {
+                allcities = myset.value("Cities").toString()
+                allcities = allcities.split(",")
 
-                    if (allcities.indexOf(mainapp.city_id) >= 0) {
-                        banner("ERROR", qsTr("City already added"))
-                    } else {
-                        appendList(zoneTime, zoneCity, zoneCountry, zoneDate,
-                                   zoneUTC, zoneCityFull, zoneSecs, zoneCityTr)
-                        if (allcities === "") {
-                            allcities = mainapp.city_id
-                        } else {
-                            allcities = allcities + ',' + mainapp.city_id
-                        }
-                        myset.setValue("Cities", allcities)
-                        myset.sync()
-                        sortModel()
-                    }
+                if (allcities.indexOf(mainapp.city_id) >= 0) {
+                    banner("ERROR", qsTr("City already added"))
                 } else {
-                    allcities = mainapp.city_id
                     appendList(zoneTime, zoneCity, zoneCountry, zoneDate,
-                               zoneUTC, zoneCityFull, zoneSecs, zoneCityTr)
+                               zoneUTC, zoneCityFull, zoneSecs, zoneCityTr,
+                               zoneCountryOrg)
+                    if (allcities === "") {
+                        allcities = mainapp.city_id
+                    } else {
+                        allcities = allcities + ',' + mainapp.city_id
+                    }
                     myset.setValue("Cities", allcities)
                     myset.sync()
+                    sortModel()
                 }
+            } else {
+                allcities = mainapp.city_id
+                appendList(zoneTime, zoneCity, zoneCountry, zoneDate, zoneUTC,
+                           zoneCityFull, zoneSecs, zoneCityTr)
+                myset.setValue("Cities", allcities)
+                myset.sync()
             }
         }
+    }
 
     Component.onCompleted: {
         DB.initializeDB()
@@ -199,7 +205,7 @@ Page {
         if (status === PageStatus.Active) {
             // if the activation was started by the covers add function
             if (mainapp.coverAddZone == true) {
-                if (myset.value("city_pickertype","0") === "0") {
+                if (myset.value("city_pickertype", "0") === "0") {
                     onClicked: pageStack.push(Qt.resolvedUrl("Timezone.qml"))
                 } else {
                     pageStack.push(timezonePickerComponent)
@@ -322,7 +328,7 @@ Page {
     }
 
     // helper function to add lists to the list
-    function appendList(zoneTime, zoneCity, zoneCountry, zoneDate, zoneUTC, zoneCityFull, zoneSecs, zoneCityTr) {
+    function appendList(zoneTime, zoneCity, zoneCountry, zoneDate, zoneUTC, zoneCityFull, zoneSecs, zoneCityTr, zoneCountryOrg) {
         listCityModel.append({
                                  zoneTime: zoneTime,
                                  zoneCity: zoneCity,
@@ -331,7 +337,8 @@ Page {
                                  zoneUTC: zoneUTC,
                                  zoneCityFull: zoneCityFull,
                                  zoneSecs: zoneSecs,
-                                 zoneCityTr: zoneCityTr
+                                 zoneCityTr: zoneCityTr,
+                                 zoneCountryOrg: zoneCountryOrg
                              })
     }
 
@@ -394,12 +401,12 @@ Page {
             }
             MenuItem {
                 text: qsTr("Add city")
-                onClicked:
-                if (myset.value("city_pickertype","0") === "0") {
-                    onClicked: pageStack.push(Qt.resolvedUrl("Timezone.qml"))
-                } else {
-                    pageStack.push(timezonePickerComponent)
-                }
+                onClicked: if (myset.value("city_pickertype", "0") === "0") {
+                               onClicked: pageStack.push(Qt.resolvedUrl(
+                                                             "Timezone.qml"))
+                           } else {
+                               pageStack.push(timezonePickerComponent)
+                           }
             }
         }
 
@@ -408,7 +415,7 @@ Page {
             TimezonePicker {
                 onTimezoneClicked: {
                     console.log(name)
-                    if(name !== "") {
+                    if (name !== "") {
                         mainapp.city_id = name
                         storeCity()
                         mainapp.city_id = ""
@@ -533,11 +540,29 @@ Page {
                     opacity: (index & 1) ? 0.9 : 1
                     visible: !isLongAMPM()
                 }
+                Image {
+                    id: countryFlag
+                    anchors.left: timeLabel.right
+                    anchors.verticalCenter: parent.verticalCenter
+                    height: 41
+                    width: 71
+                    source: zoneCountryOrg !== "" ? '../images/' + zoneCountryOrg + '.png' : ""
+                    visible: isLandscape
+                }
+                Rectangle {
+                    // some whitespace
+                    id: extraImgSpace
+                    width: Theme.paddingMedium
+                    anchors.left: countryFlag.right
+                    height: 1
+                    opacity: 0
+                    visible: isLandscape
+                }
                 Label {
                     id: cityLabel
                     text: zoneCityTr.replace(/_/g, " ")
                     width: parent.width - Theme.paddingLarge * 11
-                    anchors.left: timeLabel.right
+                    anchors.left: isPortrait ? timeLabel.right : extraImgSpace.right
                     opacity: (index & 1) ? 0.9 : 1
                     truncationMode: TruncationMode.Fade
                 }
@@ -550,7 +575,7 @@ Page {
                                 index).zoneCountry === "local_time"
                             || listCityModel.get(index).zoneCity
                             === local_city) ? Theme.highlightColor : Theme.secondaryColor
-                    anchors.left: timeLabel.right
+                    anchors.left: isPortrait ? timeLabel.right : extraImgSpace.right
                     width: parent.width - timeLabel.width - dateLabel.width - Theme.paddingSmall
                     truncationMode: TruncationMode.Fade
                     opacity: (index & 1) ? 0.9 : 1
@@ -559,8 +584,11 @@ Page {
                     id: dateLabel
                     text: zoneDate
                     font.pixelSize: Theme.fontSizeExtraSmall
-                    width: parent.width - (timeLabel.width + cityLabel.width + 2
-                                           * Theme.paddingSmall)
+                    width: isPortrait ? parent.width - (timeLabel.width + cityLabel.width + 2
+                                                        * Theme.paddingSmall) : parent.width
+                                        - (timeLabel.width + cityLabel.width + 2
+                                           * Theme.paddingSmall + extraImgSpace.width
+                                           + countryFlag.width)
                     anchors.left: cityLabel.right
                     anchors.rightMargin: Theme.paddingSmall
                     horizontalAlignment: Text.AlignRight

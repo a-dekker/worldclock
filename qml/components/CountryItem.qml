@@ -5,6 +5,7 @@ BackgroundItem {
     id: background
     width: parent.width
     property alias countryName: countryName.text
+    property string countryNameOrg: countryOrg
 
     VerticalScrollDecorator {
     }
@@ -21,12 +22,20 @@ BackgroundItem {
         opacity: 0.03
         visible: !(index & 1)
     }
+    Image {
+        id: countryFlag
+        anchors.verticalCenter: parent.verticalCenter
+        height: 41
+        width: 71
+        source: countryOrg !== "" ? '../images/' + countryOrg + '.png' : ""
+        visible: isLandscape
+    }
     Label {
         id: countryName
         font.pixelSize: Theme.fontSizeSmall
         anchors.verticalCenter: parent.verticalCenter
-        anchors.left: parent.left
-        anchors.leftMargin: 0
+        anchors.left: isPortrait ? parent.left : countryFlag.right
+        anchors.leftMargin: isPortrait ? 0 : Theme.paddingSmall
         anchors.right: parent.right
         anchors.rightMargin: Theme.paddingSmall
         truncationMode: TruncationMode.Fade

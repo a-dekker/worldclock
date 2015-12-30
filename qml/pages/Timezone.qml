@@ -19,8 +19,13 @@ Page {
         data = data.split('\n')
         for (var i = 0; i < data.length; i++) {
             cityModel.append({
-                country: data[i].replace(/_/g, " ").replace(/\;.*/,''),
-                zoneInfo: data[i].replace(/(.+)\;/,'')
+                                 country: data[i].replace(/_/g,
+                                                          " ").replace(/\;.*/,
+                                                                       ''),
+                                 zoneInfo: data[i].replace(/(.+)\]\;/,
+                                                           '').replace(/\;.*/,
+                                                                       ''),
+                                 countryOrg: data[i].replace(/(.+)\;/, '')
                              })
         }
     }
@@ -55,8 +60,8 @@ Page {
     }
 
     /**************************************************************************
-    * Header for section
-    *************************************************************************/
+     * Header for section
+     *************************************************************************/
     Component {
         id: sectionHeading
         Rectangle {
@@ -116,6 +121,7 @@ Page {
                 id: contentItem
                 width: parent.width
                 countryName: country
+                countryNameOrg: countryOrg
                 anchors.leftMargin: Theme.paddingSmall
 
                 visible: containString(countryName)

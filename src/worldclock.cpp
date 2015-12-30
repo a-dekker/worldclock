@@ -195,6 +195,7 @@ QString TimeZone::TimeZone::readAllCities()
         QDateTime zoneTime = QDateTime(QDate::currentDate(), QTime::currentTime(), zone).toLocalTime();
         int offset = zone.offsetFromUtc(QDateTime::currentDateTime());
         QString countryName = QLocale::countryToString(zone.country());
+        QString countryNameOrg = countryName;
         // insert space where appropriate. Can't be done in one regex replace?
         QRegularExpression rx("([a-z])([A-Z])");
         QRegularExpressionMatch match = rx.match(countryName);
@@ -260,13 +261,13 @@ QString TimeZone::TimeZone::readAllCities()
         }
         if (sortOrder == 1) {
             dummy_counter_for_sort ++;
-            map.insert(offset + dummy_counter_for_sort,timeoffset + " (" + continentTr + "/" + cityNameTr + ")" + countryName + ";" + id);
+            map.insert(offset + dummy_counter_for_sort,timeoffset + " (" + continentTr + "/" + cityNameTr + ")" + countryName + ";" + id + ";" + countryNameOrg);
         } else if (sortOrder == 2) {
-            sorted_map.insert(cityNameTr, timeoffset + " (" + continentTr + "/" + cityNameTr + ")" + countryName + ";" + id);
+            sorted_map.insert(cityNameTr, timeoffset + " (" + continentTr + "/" + cityNameTr + ")" + countryName + ";" + id + ";" + countryNameOrg);
         } else if (sortOrder == 3) {
-            sorted_map.insert(countryName, timeoffset + " (" + continentTr + "/" + cityNameTr + ")" + countryName + ";" + id);
+            sorted_map.insert(countryName, timeoffset + " (" + continentTr + "/" + cityNameTr + ")" + countryName + ";" + id + ";" + countryNameOrg);
         } else {
-            output += timeoffset + " (" + continentTr + "/" + cityNameTr + ")" + countryName + ";" + id + "\n";
+            output += timeoffset + " (" + continentTr + "/" + cityNameTr + ")" + countryName + ";" + id +  + ";" + countryNameOrg + "\n";
         }
 
     }
@@ -326,6 +327,7 @@ QString TimeZone::TimeZone::readCityInfo(const QByteArray &cityid, const QByteAr
     mytime = mytime.addSecs( offset );
 
     QString myCountry = QLocale::countryToString(zone.country());
+    QString myCountryOrg = myCountry;
     // insert space where appropriate. Can't be done in one regex replace?
     QRegularExpression regx("([a-z])([A-Z])");
     QRegularExpressionMatch match = regx.match(myCountry);
@@ -354,11 +356,11 @@ QString TimeZone::TimeZone::readCityInfo(const QByteArray &cityid, const QByteAr
     if (time_format == "24" ) {
         output += mytime.time().toString("hh:mm")+";"+cityid+";"+ myCountry \
                   +";"+QLocale().toString(mytime.date(),dateFormat)+";"+abbreviation \
-                  +" ("+timeoffset+");"+QString::number(offset/60)+";"+cityTr;
+                  +" ("+timeoffset+");"+QString::number(offset/60)+";"+cityTr+";"+myCountryOrg;
     } else {
         output += mytime.time().toString("hh:mm ap")+";"+cityid+";"+ myCountry \
                   +";"+QLocale().toString(mytime.date(),dateFormat)+";"+abbreviation \
-                  +" ("+timeoffset+");"+QString::number(offset/60)+";"+cityTr;
+                  +" ("+timeoffset+");"+QString::number(offset/60)+";"+cityTr+";"+myCountryOrg;
     }
     return output;
 }

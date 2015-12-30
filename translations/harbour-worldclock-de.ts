@@ -137,62 +137,62 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="146"/>
+        <location filename="../qml/pages/MainPage.qml" line="151"/>
         <source>City already added</source>
         <translation>Stadt bereits hinzugefügt</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="384"/>
+        <location filename="../qml/pages/MainPage.qml" line="391"/>
         <source>About</source>
         <translation>Über</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="388"/>
+        <location filename="../qml/pages/MainPage.qml" line="395"/>
         <source>Settings</source>
         <translation>Einstellungen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="392"/>
+        <location filename="../qml/pages/MainPage.qml" line="399"/>
         <source>Custom city names</source>
         <translation>Benutzerdefinierte Städtenamen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="396"/>
+        <location filename="../qml/pages/MainPage.qml" line="403"/>
         <source>Add city</source>
         <translation>Stadt hinzufügen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="434"/>
+        <location filename="../qml/pages/MainPage.qml" line="441"/>
         <source>Worldclock</source>
         <translation>Weltzeituhr</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="452"/>
+        <location filename="../qml/pages/MainPage.qml" line="459"/>
         <source>Deleting</source>
         <translation>Löschen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="476"/>
+        <location filename="../qml/pages/MainPage.qml" line="483"/>
         <source>Manage custom cities on other page</source>
         <translation>Benutzerdefinierte Städte auf anderer Seite verwalten</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="547"/>
+        <location filename="../qml/pages/MainPage.qml" line="572"/>
         <source>Local time</source>
         <translation>Lokalzeit</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="587"/>
+        <location filename="../qml/pages/MainPage.qml" line="615"/>
         <source>Details</source>
         <translation>Details</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="603"/>
+        <location filename="../qml/pages/MainPage.qml" line="631"/>
         <source>Remove</source>
         <translation>Entfernen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="609"/>
+        <location filename="../qml/pages/MainPage.qml" line="637"/>
         <source>Cannot remove Local time</source>
         <translation>Kann Lokalzeit nicht entfernen</translation>
     </message>
@@ -283,22 +283,22 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="244"/>
         <source>Worldclock pick screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Weltzeituhrauswahl</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="245"/>
         <source>Choose screentype used for selecting a worldclock</source>
-        <translation type="unfinished"></translation>
+        <translation>Wähle die Darstellungsart für die Auswahl einer Weltzeituhr</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="249"/>
         <source>Custom</source>
-        <translation type="unfinished"></translation>
+        <translation>Benutzerdefiniert</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="252"/>
         <source>Sailfish</source>
-        <translation type="unfinished"></translation>
+        <translation>Sailfish</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="92"/>
@@ -309,7 +309,7 @@
 <context>
     <name>Timezone</name>
     <message>
-        <location filename="../qml/pages/Timezone.qml" line="42"/>
+        <location filename="../qml/pages/Timezone.qml" line="47"/>
         <source>Select city</source>
         <translation>Stadt auswählen</translation>
     </message>
