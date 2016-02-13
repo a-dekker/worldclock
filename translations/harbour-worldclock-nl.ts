@@ -276,27 +276,27 @@
         <translation>Taal:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="236"/>
+        <location filename="../qml/pages/SettingPage.qml" line="239"/>
         <source>Change of language will be active after restarting the application.</source>
         <translation>Taal aanpassing zal actief worden na het herstarten van de applicatie.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="244"/>
+        <location filename="../qml/pages/SettingPage.qml" line="247"/>
         <source>Worldclock pick screen</source>
         <translation>Wereldklok selecteer scherm</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="245"/>
+        <location filename="../qml/pages/SettingPage.qml" line="248"/>
         <source>Choose screentype used for selecting a worldclock</source>
         <translation>Kies een schermtype voor het selecteren van een wereldklok</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="249"/>
+        <location filename="../qml/pages/SettingPage.qml" line="252"/>
         <source>Custom</source>
         <translation>Eigen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="252"/>
+        <location filename="../qml/pages/SettingPage.qml" line="255"/>
         <source>Sailfish</source>
         <translation>Sailfish</translation>
     </message>

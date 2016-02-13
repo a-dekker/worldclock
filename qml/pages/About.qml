@@ -73,7 +73,7 @@ Page {
                 visible: isPortrait
             }
             Label {
-                text: "© Arno Dekker 2015"
+                text: "© Arno Dekker 2015, 2016"
                 anchors.horizontalCenter: parent.horizontalCenter
             }
             Label {

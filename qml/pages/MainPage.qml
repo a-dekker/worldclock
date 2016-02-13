@@ -456,7 +456,7 @@ Page {
                 // helper function to remove current item
                 function remove() {
                     // run remove via a silica remorse item
-                    remorseAction(qsTr("Deleting"), function () {
+                    remorseAction(qsTr("Deleting") + " '" + listCityModel.get(index).zoneCityTr + "'", function () {
                         var isReplaced = "false"
                         var myCities = myset.value("Cities").toString()
                         var myCitiesNew = myCities

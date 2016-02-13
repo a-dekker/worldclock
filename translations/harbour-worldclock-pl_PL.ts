@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="pl_PL">
 <context>
     <name>About</name>
     <message>
         <location filename="../qml/pages/About.qml" line="20"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>O programie</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="23"/>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Informacja</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="54"/>
         <source>Version</source>
-        <translation type="unfinished"></translation>
+        <translation>Wersja</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="59"/>
@@ -26,7 +26,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="65"/>
         <source>Author</source>
-        <translation type="unfinished"></translation>
+        <translation>Autor</translation>
     </message>
 </context>
 <context>
@@ -34,17 +34,17 @@
     <message>
         <location filename="../qml/pages/Aliases.qml" line="62"/>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>Zapisz</translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="63"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Anuluj</translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="125"/>
         <source>Deleting</source>
-        <translation type="unfinished"></translation>
+        <translation>Usuwanie</translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="179"/>
@@ -88,7 +88,7 @@
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="105"/>
         <source>Timezone details</source>
-        <translation type="unfinished"></translation>
+        <translation>Szczegóły strefy czasowej</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="120"/>
@@ -98,12 +98,12 @@
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="132"/>
         <source>Zone time</source>
-        <translation type="unfinished"></translation>
+        <translation>Strefa czasowa</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="144"/>
         <source>Local time</source>
-        <translation type="unfinished"></translation>
+        <translation>Czas lokalny</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="156"/>
@@ -113,7 +113,7 @@
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="162"/>
         <source>hour</source>
-        <translation type="unfinished"></translation>
+        <translation>godzina</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="168"/>
@@ -131,7 +131,7 @@
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="183"/>
         <source>Worldclock</source>
-        <translation type="unfinished"></translation>
+        <translation>Zegar światowy</translation>
     </message>
 </context>
 <context>
@@ -139,17 +139,17 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="151"/>
         <source>City already added</source>
-        <translation type="unfinished"></translation>
+        <translation>Dodane miasta</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="391"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>O programie</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="395"/>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Ustawienia</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="399"/>
@@ -159,17 +159,17 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="403"/>
         <source>Add city</source>
-        <translation type="unfinished"></translation>
+        <translation>Dodaj miasto</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="441"/>
         <source>Worldclock</source>
-        <translation type="unfinished"></translation>
+        <translation>Zegar światowy</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="459"/>
         <source>Deleting</source>
-        <translation type="unfinished"></translation>
+        <translation>Usuwanie</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="483"/>
@@ -179,17 +179,17 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="572"/>
         <source>Local time</source>
-        <translation type="unfinished"></translation>
+        <translation>czas lokalny</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="615"/>
         <source>Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Szczegóły</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="631"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Usuń</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="637"/>
@@ -202,17 +202,17 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="58"/>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>Zapisz</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="59"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Anuluj</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="62"/>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Ustawienia</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="69"/>
@@ -258,7 +258,7 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="101"/>
         <source>Country</source>
-        <translation type="unfinished"></translation>
+        <translation>Państwo</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="109"/>
@@ -273,7 +273,7 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="120"/>
         <source>Language:</source>
-        <translation type="unfinished"></translation>
+        <translation>Język:</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="239"/>
@@ -298,12 +298,12 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="255"/>
         <source>Sailfish</source>
-        <translation type="unfinished"></translation>
+        <translation>Sailfish</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="92"/>
         <source>Continent/City</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontynent/Miasto</translation>
     </message>
 </context>
 <context>
@@ -311,7 +311,7 @@
     <message>
         <location filename="../qml/pages/Timezone.qml" line="47"/>
         <source>Select city</source>
-        <translation type="unfinished"></translation>
+        <translation>Wybierz miasto</translation>
     </message>
 </context>
 </TS>

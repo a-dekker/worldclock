@@ -37,6 +37,7 @@ public:
         EN,    // English
         DE,    // German
         NL,    // Dutch
+        PL_PL,    // Polish
         RU,    // Russian
         SV,    // Swedish
         INVALID

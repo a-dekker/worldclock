@@ -131,11 +131,14 @@ Dialog {
                             text: "German/Deutsch"
                         } // 2
                         MenuItem {
-                            text: "Russian/Русский"
+                            text: "Polish/Polski"
                         } // 3
                         MenuItem {
-                            text: "Swedish/Svensk"
+                            text: "Russian/Русский"
                         } // 4
+                        MenuItem {
+                            text: "Swedish/Svensk"
+                        } // 5
                     }
                     // The next two converter functions decouple the alphabetical language list
                     // index from the internal settings index, which cannot be changed for legacy reasons
@@ -182,7 +185,7 @@ Dialog {
                         case Languages.TR_TR:
                             // Turkish
                             return GlobVars.turkish
-                        case Languages.PL:
+                        case Languages.PL_PL:
                             // Polish
                             return GlobVars.polish
                         default:
@@ -221,7 +224,7 @@ Dialog {
                         case GlobVars.greek:
                             return Languages.EL // Greek
                         case GlobVars.polish:
-                            return Languages.PL // Polish
+                            return Languages.PL_PL // Polish
                         default:
                             return Languages.EN // English
                         }

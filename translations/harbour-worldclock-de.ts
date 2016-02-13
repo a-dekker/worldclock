@@ -276,27 +276,27 @@
         <translation>Sprache:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="236"/>
+        <location filename="../qml/pages/SettingPage.qml" line="239"/>
         <source>Change of language will be active after restarting the application.</source>
         <translation>Die Änderung der Sprache wird erst nach dem Neustart der Anwendung aktiv sein.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="244"/>
+        <location filename="../qml/pages/SettingPage.qml" line="247"/>
         <source>Worldclock pick screen</source>
         <translation>Weltzeituhrauswahl</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="245"/>
+        <location filename="../qml/pages/SettingPage.qml" line="248"/>
         <source>Choose screentype used for selecting a worldclock</source>
         <translation>Wähle die Darstellungsart für die Auswahl einer Weltzeituhr</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="249"/>
+        <location filename="../qml/pages/SettingPage.qml" line="252"/>
         <source>Custom</source>
         <translation>Benutzerdefiniert</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="252"/>
+        <location filename="../qml/pages/SettingPage.qml" line="255"/>
         <source>Sailfish</source>
         <translation>Sailfish</translation>
     </message>

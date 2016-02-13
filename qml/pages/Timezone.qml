@@ -115,7 +115,7 @@ Page {
         delegate: Item {
             id: cityListItem
 
-            // heigth is performance bottleneck
+            // height is performance bottleneck
             height: contentItem.visible ? contentItem.height : 0
             width: ListView.view.width
 
