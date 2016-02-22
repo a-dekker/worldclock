@@ -8,6 +8,12 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sat Feb 20 2016 Arno Dekker <jack.tar@example.com> 0.7-0
+- Search field sticky on top
+
+* Sat Feb 13 2016 Arno Dekker <jack.tar@example.com> 0.6-4
+- Added partly translated Polish language
+
 * Wed Dec 30 2015 Arno Dekker <jack.tar@example.com> 0.6-3
 - Highlight matched substring in custom list of all cities
 

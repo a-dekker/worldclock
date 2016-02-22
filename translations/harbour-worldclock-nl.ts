@@ -309,7 +309,7 @@
 <context>
     <name>Timezone</name>
     <message>
-        <location filename="../qml/pages/Timezone.qml" line="47"/>
+        <location filename="../qml/pages/Timezone.qml" line="43"/>
         <source>Select city</source>
         <translation>Stad zoeken</translation>
     </message>

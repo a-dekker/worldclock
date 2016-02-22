@@ -38,24 +38,25 @@ Page {
         id: cityModel
     }
 
-    Column {
-        id: headerContainer
-
+    PageHeader {
+        id: pageHeader
+        title: qsTr("Select city")
+        anchors.top: parent.top
         width: page.width
+    }
 
-        PageHeader {
-            title: qsTr("Select city")
+    SearchField {
+        id: searchField
+        anchors.top: pageHeader.bottom
+        width: parent.width
+        EnterKey.onClicked: {
+            searchField.focus = false
         }
 
-        SearchField {
-            id: searchField
-            width: parent.width
-
-            Binding {
-                target: page
-                property: "searchString"
-                value: searchField.text.trim().toLowerCase()
-            }
+        Binding {
+            target: page
+            property: "searchString"
+            value: searchField.text.trim().toLowerCase()
         }
     }
 
@@ -91,15 +92,17 @@ Page {
         id: cityList
         focus: true
         model: cityModel
+        clip: true
         header: Item {
             id: header
-            width: headerContainer.width
-            height: headerContainer.height
-            Component.onCompleted: headerContainer.parent = header
+            width: pageHeader.width
+            height: pageHeader.height
+            Component.onCompleted: pageHeader.parent = header
         }
         width: page.width
         height: page.height
-        anchors.top: parent.top
+        anchors.top: searchField.bottom
+        anchors.bottom: parent.bottom
         x: isPortrait ? 0 : Theme.paddingMedium
 
         Connections {
@@ -125,7 +128,8 @@ Page {
                 }
                 var regexp = new RegExp('\\b' + searchString, 'i')
                 if (regexp.test(mycountry)) {
-                    return Theme.highlightText(mycountry, regexp, Theme.highlightColor)
+                    return Theme.highlightText(mycountry, regexp,
+                                               Theme.highlightColor)
                 } else {
                     // record not in search result
                     return "X"
@@ -149,6 +153,6 @@ Page {
                 }
             }
         }
-         VerticalScrollDecorator {}
+        VerticalScrollDecorator {}
     }
 }
