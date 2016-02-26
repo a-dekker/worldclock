@@ -276,27 +276,27 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="239"/>
+        <location filename="../qml/pages/SettingPage.qml" line="242"/>
         <source>Change of language will be active after restarting the application.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="247"/>
+        <location filename="../qml/pages/SettingPage.qml" line="250"/>
         <source>Worldclock pick screen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="248"/>
+        <location filename="../qml/pages/SettingPage.qml" line="251"/>
         <source>Choose screentype used for selecting a worldclock</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="252"/>
+        <location filename="../qml/pages/SettingPage.qml" line="255"/>
         <source>Custom</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="255"/>
+        <location filename="../qml/pages/SettingPage.qml" line="258"/>
         <source>Sailfish</source>
         <translation type="unfinished"></translation>
     </message>

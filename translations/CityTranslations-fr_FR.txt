@@ -1,0 +1,337 @@
+Abidjan;Abidjan
+Accra;Accra
+Addis Ababa;Addis-Abeba
+Adelaide;Adélaïde
+Afghanistan;Afghanistan
+Africa;Afrique
+Albuquerque;Albuquerque
+Algeria;Algérie
+Algiers;Alger
+America;Amérique
+Andorra;Andorre
+Ankara;Ankara
+Ann Arbor;Ann Arbor
+Antananarivo;Tananarive
+Antarctica;Antarctique
+Aqtau;Aktaou
+Argentina;Argentine
+Asia;Asie
+Asunción;Asuncion
+Athens;Athènes
+Australia;Australie
+Australia;Australie
+Austria;Autriche
+Azerbaijan;Azerbaïdjan
+Baghdad;Bagdad
+Bahamas;Bahamas
+Bahrain;Bahreïn
+Baku;Bakou
+Baltimore;Baltimore
+Bangalore;Bangalore
+Bangkok;Bangkok
+Barbados;Barbade
+Barcelona;Barcelone
+Beijing;Pékin
+Beirut;Beyrouth
+Belarus;Biélorussie
+Belfast;Belfast
+Belgium;Belgique
+Belgrade;Belgrade
+Belize;Belize
+Belo Horizonte;Belo Horizonte
+Berlin;Berlin
+Bermuda;Bermudes
+Beulah;Beulah
+Bogotá;Bogota
+Bosnia and Herzegovina;Bosnie-Herzégovine
+Botswana;Botswana
+Brasília;Brasilia
+Bratislava;Bratislava
+Brazil;Brésil
+Brisbane;Brisbane
+Brussels;Bruxelles
+Bucharest;Bucarest
+Budapest;Budapest
+Buenos Aires;Buenos Aires
+Bulgaria;Bulgarie
+Cairo;Le Caire
+Calcutta;Calcutta
+Calgary;Calgary
+Cambodia;Cambodge
+Canary;Canaries
+Canberra;Canberra
+Cancun;Cancún
+Cape Town;Le Cap
+Caracas;Caracas
+Cayman Islands;Îles Caïmans
+Cayman Palms;Cayman Palms
+Chihuahua;Chihuahua
+Chile;Chili
+China;Chine
+Chişinău;Chişinău
+Christmas Island;L'île de noël
+Cincinnati;Cincinnati
+Cleveland;Cleveland
+Colombia;Colombie
+Colombo;Colombo
+Columbus;Columbus
+Conakry;Conakry
+Copenhagen;Copenhague
+Costa Rica;Costa Rica
+Croatia;Croatie
+Cura Sao;Curaçao
+Curacao;Curaçao
+Czech Republic;République tchèque
+Dakar;Dakar
+Dallas;Dallas
+Damascus;Damas
+Dar es Salaam;Dar es Salaam
+Darwin;Darwin
+Dawson Creek;Dawson Creek
+Democratic Republic of the Congo;République Démocratique du Congo
+Denmark;Danemark
+Detroit;Détroit
+Dhaka;Dhaka
+Djibouti;Djibouti
+Doha;Doha
+Dominica;Dominique
+Dominican Republic;République Dominicaine
+Dubai;Dubaï
+Dublin;Dublin
+East Timor;Timor oriental
+Easter Island;Île de Pâques
+Ecuador;Équateur
+Edmonton;Edmonton
+Egypt;Égypte
+El Salvador;Salvador
+Equatorial Guinea;Guinée Équatoriale
+Estonia;Estonie
+Ethiopia;Éthiopie
+Falkland Islands;Îles Malouines
+Fiji;Îles Fidji
+Finland;Finlande
+Fortaleza;Fortaleza
+Frankfurt;Francfort
+Freetown;Freetown
+French Polynesia;Polynésie française
+French Southern Territories;Terres australes françaises
+Gaborone;Gaborone
+Germany;Allemagne
+Gibraltar;Gibraltar
+Grand Turk;Grand Turk
+Greece;Grèce
+Greenland;Groenland
+Grenada;Grenade
+Guam;Guam
+Guinea;Guinée
+Guyana;Guyana
+Haifa;Haïfa
+Haiti;Haïti
+Hamburg;Hambourg
+Hanoi;Hanoï
+Harare;Harare
+Havana;La Havane
+Hebron;Hebron
+Helsinki;Helsinki
+Ho Chi Minh City;Hô-Chi-Minh-Ville
+Hong Kong;Hong Kong
+Honolulu;Honolulu
+Houston;Houston
+Hungary;Hongrie
+Hyderabad;Hyderabad
+Iceland;Islande
+India;Inde
+Indian;Indien
+Indianapolis;Indianapolis
+Indonesia;Indonésie
+Iran;Iran
+Iraq;Irak
+Ireland;Irlande
+Islamabad;Islamabad
+Isle of Man;Île de Man
+Israel;Israël
+Italy;Italie
+Ivory Coast;Côte d'Ivoire
+Jacksonville;Jacksonville
+Japan;Japon
+Jerusalem;Jérusalem
+Johannesburg;Johannesburg
+Jordan;Jordanie
+Kabul;Kaboul
+Kampala;Kampala
+Karachi;Karachi
+Kenya;Kenya
+Khartoum;Khartoum
+Kigali;Kigali
+Kingston;Kingston
+Kinshasa;Kinshasa
+Krakow;Cracovie
+Kuala Lumpur;Kuala Lumpur
+Kuwait City;Koweït
+Kuwait;Koweït
+Kyiv;Kiev
+Lagos;Lagos
+Lahore;Lahore
+Las Vegas;Las Vegas
+Latvia;Lettonie
+Lebanon;Liban
+Lesotho;Lesotho
+Liberia;Liberia
+Libya;Libye
+Lima;Lima
+Lisbon;Lisbonne
+Lithuania;Lituanie
+London;Londres
+Longyearbyen;Longyearbyen
+Los Angeles;Los Angeles
+Louisville;Louisville
+Lower Princes;Princes Inférieurs
+Luxembourg;Luxembourg
+Macao;Macao
+Macau;Macao
+Macedonia;Macédoine
+Madagascar;Madagascar
+Madison;Madison
+Madrid;Madrid
+Malaysia;Malaisie
+Maldives;Maldives
+Malta;Malte
+Manchester;Manchester
+Manila;Manille
+Marengo;Marengo
+Marshall Islands;Iles Marshall
+Martinique;Martinique
+Maseru;Maseru
+Melbourne;Melbourne
+Memphis;Memphis
+Mendoza;Mendoza
+Metlakatla;Metlakatla
+Mexico City;Mexico
+Mexico;Mexique
+Milan;Milan
+Milwaukee;Milwaukee
+Minneapolis;Minneapolis
+Minsk;Minsk
+Mogadishu;Mogadiscio
+Moldova;Moldavie
+Monaco;Monaco
+Mongolia;Mongolie
+Monrovia;Monrovia
+Monterrey;Monterrey
+Montevideo;Montevideo
+Montreal;Montréal
+Morocco;Maroc
+Mumbai;Bombay
+Munich;Munich
+Muscat;Mascate
+Myanmar;Myanmar
+Netherlands;Pays-Bas
+New Caledonia;Nouvelle-Calédonie
+New Orleans;La Nouvelle-Orléans
+New Salem;New Salem
+New South Wales;Nouvelle-Galles du Sud
+New Zealand;Nouvelle-Zélande
+Newfoundland;Terre-Neuve
+Nigeria;Nigeria
+North Korea;Corée du Nord
+Norway;Norvège
+Nouméa;Nouméa
+Nuestra Señora de La Paz;La Paz
+Ottawa;Ottawa
+Oulu;Oulu
+Pacific;Pacifique
+Pakistan;Pakistan
+Palestinian Territories;Territoires palestiniens
+Panama;Panama
+Panamá;Panama
+Paramaribo;Paramaribo
+Peru;Pérou
+Philadelphia;Philadelphie
+Philippines;Philippines
+Phnom Penh;Phnom Penh
+Pittsburgh;Pittsburgh
+Poland;Pologne
+Port au Prince;Port-au-Prince
+Port of Spain;Port-d'Espagne
+Portland;Portland
+Portugal;Portugal
+Puerto Rico;Porto Rico
+Pyongyang;Pyongyang
+Qatar;Qatar
+Quito;Quito
+Rangoon;Rangoon
+Reno;Reno
+Republic of the Congo;République du Congo
+Reston;Reston
+Reunion;Réunion
+Reykjavík;Reykjavík
+Rio de Janeiro;Rio de Janeiro
+Riyadh;Riyad
+Romania;Roumanie
+Russia;Russie
+Sacramento;Sacramento
+Saint Kitts and Nevis;Saint-Christophe-et-Niévès
+Saint Vincent And The Grenadines;Saint-Vincent-et-les-Grenadines
+Salt Lake City;Salt Lake City
+San Antonio;San Antonio
+San José;San José
+San Juan;San Juan
+San Marino;Saint-Marin
+San Salvador;San Salvador
+Santo Domingo;Saint-Domingue
+Saudi Arabia;Arabie saoudite
+Senegal;Sénégal
+Seoul;Séoul
+Serbia;Serbie
+Shanghai;Shanghai
+Sierra Leone;Sierra Leone
+Simferopol;Simferopol
+Singapore;Singapour
+Slovakia;Slovaquie
+Somalia;Somalie
+South Africa;Afrique du Sud
+South Georgia And The South Sandwich Island;Géorgie du Sud et l'île sandwich sud
+South Korea;Corée du Sud
+South Sudan;Soudan du sud
+Spain;Espagne
+Sri Lanka;Sri Lanka
+St.Johns;Saint John's
+St.Kitts;Saint Kitts
+St.Louis;Saint-Louis
+Stanley;Stanley
+Stockholm;Stockholm
+Sudan;Soudan
+Svalbard And Jan Mayen Islands;îles Svalbard et Jan Mayen
+Svalbard and Jan Mayen;Svalbard et Jan Mayen
+Sweden;Suède
+Switzerland;Suisse
+Syria;Syrie
+São Paulo;São Paulo
+São Tomé and Príncipe;Sao Tomé-et-Principe
+São Tomé;São Tomé
+Taiwan;Taïwan
+Tanzania;Tanzanie
+Tehran;Téhéran
+Thailand;Thaïlande
+Tokyo;Tokyo
+Trinidad and Tobago;Trinité-et-Tobago
+Tunisia;Tunisie
+Turkey;Turquie
+Turkmenistan;Turkménistan
+Turks and Caicos Islands;Îles Turques-et-Caïques
+Uganda;Ouganda
+Ulan Bator;Oulan-Bator
+United Arab Emirates;Émirats arabes unis
+United Kingdom;Royaume-Uni
+United States Minor Outlying Islands;Îles mineures éloignées des États-Unis
+United States Virgin Islands;Îles Vierges américaines
+United States;États-Unis d'Amérique
+Uruguay;Uruguay
+Vatican City;Vatican
+Venezuela;Vénézuela
+Vienna;Vienne
+Vietnam;Viêt Nam
+Vilnius;Vilnius
+Wallis and Futuna Islands;Wallis-et-Futuna de
+Warsaw;Varsovie
+Yemen;Yémen

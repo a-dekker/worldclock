@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sat Feb 20 2016 Arno Dekker <jack.tar@example.com> 0.8-0
+- Added French language
+
 * Sat Feb 20 2016 Arno Dekker <jack.tar@example.com> 0.7-0
 - Search field sticky on top
 

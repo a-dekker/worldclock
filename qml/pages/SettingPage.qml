@@ -128,17 +128,20 @@ Dialog {
                             text: "Dutch/Nederlands"
                         } // 1
                         MenuItem {
-                            text: "German/Deutsch"
+                            text: "French/Français"
                         } // 2
                         MenuItem {
-                            text: "Polish/Polski"
+                            text: "German/Deutsch"
                         } // 3
                         MenuItem {
-                            text: "Russian/Русский"
+                            text: "Polish/Polski"
                         } // 4
                         MenuItem {
-                            text: "Swedish/Svensk"
+                            text: "Russian/Русский"
                         } // 5
+                        MenuItem {
+                            text: "Swedish/Svensk"
+                        } // 6
                     }
                     // The next two converter functions decouple the alphabetical language list
                     // index from the internal settings index, which cannot be changed for legacy reasons
@@ -173,7 +176,7 @@ Dialog {
                         case Languages.ES:
                             // Spanish
                             return GlobVars.spanish
-                        case Languages.FR:
+                        case Languages.FR_FR:
                             // French
                             return GlobVars.french
                         case Languages.RU:
@@ -216,7 +219,7 @@ Dialog {
                         case GlobVars.spanish:
                             return Languages.ES // Spanish
                         case GlobVars.french:
-                            return Languages.FR // French
+                            return Languages.FR_FR // French
                         case GlobVars.turkish:
                             return Languages.TR_TR // Turkish
                         case GlobVars.russian:
