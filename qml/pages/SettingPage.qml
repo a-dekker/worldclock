@@ -134,14 +134,17 @@ Dialog {
                             text: "German/Deutsch"
                         } // 3
                         MenuItem {
-                            text: "Polish/Polski"
+                            text: "Hungarian/Magyar"
                         } // 4
                         MenuItem {
-                            text: "Russian/Русский"
+                            text: "Polish/Polski"
                         } // 5
                         MenuItem {
-                            text: "Swedish/Svensk"
+                            text: "Russian/Русский"
                         } // 6
+                        MenuItem {
+                            text: "Swedish/Svensk"
+                        } // 7
                     }
                     // The next two converter functions decouple the alphabetical language list
                     // index from the internal settings index, which cannot be changed for legacy reasons
@@ -191,6 +194,9 @@ Dialog {
                         case Languages.PL_PL:
                             // Polish
                             return GlobVars.polish
+                        case Languages.HU_HU:
+                            // Hungarian
+                            return GlobVars.hungarian
                         default:
                             return GlobVars.english
                         }
@@ -228,6 +234,8 @@ Dialog {
                             return Languages.EL // Greek
                         case GlobVars.polish:
                             return Languages.PL_PL // Polish
+                        case GlobVars.hungarian:
+                            return Languages.HU_HU // Hungarian
                         default:
                             return Languages.EN // English
                         }

@@ -37,6 +37,7 @@ public:
         EN,    // English
         DE,    // German
         NL,    // Dutch
+        HU_HU, // Hungarian
         PL_PL, // Polish
         FR_FR, // French
         RU,    // Russian

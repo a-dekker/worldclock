@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ru">
+<TS version="2.1" language="hu_HU">
 <context>
     <name>About</name>
     <message>
         <location filename="../qml/pages/About.qml" line="20"/>
         <source>About</source>
-        <translation>О программе</translation>
+        <translation>Névjegy</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="23"/>
         <source>Info</source>
-        <translation>Информация</translation>
+        <translation>Infó</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="54"/>
         <source>Version</source>
-        <translation>Версия</translation>
+        <translation>Verzió</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="59"/>
         <source>City times across the world</source>
-        <translation>Время города по всему миру</translation>
+        <translation>A pontos idő világszerte</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="65"/>
         <source>Author</source>
-        <translation>Автор</translation>
+        <translation>Szerző</translation>
     </message>
 </context>
 <context>
@@ -34,27 +34,27 @@
     <message>
         <location filename="../qml/pages/Aliases.qml" line="62"/>
         <source>Save</source>
-        <translation>Сохранить</translation>
+        <translation>Mentés</translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="63"/>
         <source>Cancel</source>
-        <translation>Отменить</translation>
+        <translation>Mégsem</translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="125"/>
         <source>Deleting</source>
-        <translation>Удаление</translation>
+        <translation>Törlés</translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="179"/>
         <source>Alt. name</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt. név</translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="201"/>
         <source>No custom city names defined. Press the plus button to add one.</source>
-        <translation>Не определены пользовательские названия городов. Нажмите кнопку &quot;+&quot;, чтобы добавить.</translation>
+        <translation>Nincs egyedi városnév létrehozva. A hozzáadáshoz nyomd meg a + gombot.</translation>
     </message>
 </context>
 <context>
@@ -63,67 +63,67 @@
         <location filename="../qml/pages/CityDetail.qml" line="56"/>
         <location filename="../qml/pages/CityDetail.qml" line="59"/>
         <source>None</source>
-        <translation>Нет</translation>
+        <translation>Nincs</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="63"/>
         <source>the clock jumped one hour backward</source>
-        <translation>часы перевелись на один час назад</translation>
+        <translation>Visszaállítva egy órával</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="66"/>
         <source>the clock jumped one hour forward</source>
-        <translation>часы перевелись на один час вперед</translation>
+        <translation>Előre állítva egy órával</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="73"/>
         <source>the clock jumps one hour backward</source>
-        <translation>часы перевелись на один час назад</translation>
+        <translation>Vissza fog állni egy órával</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="76"/>
         <source>the clock jumps one hour forward</source>
-        <translation>часы перевелись на один час вперед</translation>
+        <translation>Előre fog állni egy órával</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="105"/>
         <source>Timezone details</source>
-        <translation>Детали часового пояса</translation>
+        <translation>Időzóna részletei</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="120"/>
         <source>Timezone</source>
-        <translation>Часовой пояс</translation>
+        <translation>Időzóna</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="132"/>
         <source>Zone time</source>
-        <translation>Поясное время</translation>
+        <translation>Zóna idő</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="144"/>
         <source>Local time</source>
-        <translation>Местное время</translation>
+        <translation>Helyi idő</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="156"/>
         <source>Time difference</source>
-        <translation>Разница во времени</translation>
+        <translation>Idő különbség</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="162"/>
         <source>hour</source>
-        <translation>час</translation>
+        <translation>óra</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="168"/>
         <source>Prev. daylight transition</source>
-        <translation>Предыдущий дневной переход</translation>
+        <translation>Előző óraátállítás</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="188"/>
         <source>Next daylight transition</source>
-        <translation>Следующий дневной переход</translation>
+        <translation>Következő óraátállítás</translation>
     </message>
 </context>
 <context>
@@ -131,7 +131,7 @@
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="183"/>
         <source>Worldclock</source>
-        <translation type="unfinished"></translation>
+        <translation>Világóra</translation>
     </message>
 </context>
 <context>
@@ -139,62 +139,62 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="151"/>
         <source>City already added</source>
-        <translation>Город уже добавлен</translation>
+        <translation>A város már hozzáadva</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="391"/>
         <source>About</source>
-        <translation>О программе</translation>
+        <translation>Névjegy</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="395"/>
         <source>Settings</source>
-        <translation>Настройки</translation>
+        <translation>Beállítások</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="399"/>
         <source>Custom city names</source>
-        <translation>Пользовательские названия городов</translation>
+        <translation>Egyedi városnevek</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="403"/>
         <source>Add city</source>
-        <translation>Добавить город</translation>
+        <translation>Város hozzáadása</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="441"/>
         <source>Worldclock</source>
-        <translation type="unfinished"></translation>
+        <translation>Világóra</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="459"/>
         <source>Deleting</source>
-        <translation>Удаление</translation>
+        <translation>Törlés</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="483"/>
         <source>Manage custom cities on other page</source>
-        <translation>Управление пользовательскими города на другой странице</translation>
+        <translation>Az egyedi városok kezelése új lapon</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="572"/>
         <source>Local time</source>
-        <translation>Местное время</translation>
+        <translation>Helyi idő</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="615"/>
         <source>Details</source>
-        <translation>Детали</translation>
+        <translation>Részletek</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="631"/>
         <source>Remove</source>
-        <translation>Удалить</translation>
+        <translation>Eltávolít</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="637"/>
         <source>Cannot remove Local time</source>
-        <translation>Не могу удалить местное время</translation>
+        <translation>A helyi idő nem eltávolítható.</translation>
     </message>
 </context>
 <context>
@@ -202,108 +202,108 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="58"/>
         <source>Save</source>
-        <translation>Сохранить</translation>
+        <translation>Mentés</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="59"/>
         <source>Cancel</source>
-        <translation>Отменить</translation>
+        <translation>Mégsem</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="62"/>
         <source>Settings</source>
-        <translation>Настройки</translation>
+        <translation>Beállítások</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="69"/>
         <source>Sort order</source>
-        <translation>Порядок сортировки</translation>
+        <translation>Sorrend</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="70"/>
         <source>Sort order of personal list</source>
-        <translation>Порядок сортировки персонального списка</translation>
+        <translation>Saját lista rendezése</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="74"/>
         <source>None</source>
-        <translation>Нет</translation>
+        <translation>Nincs</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="77"/>
         <source>TimeZone</source>
-        <translation>Часовой пояс</translation>
+        <translation>Időzóna</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="80"/>
         <location filename="../qml/pages/SettingPage.qml" line="98"/>
         <source>City</source>
-        <translation>Город</translation>
+        <translation>Város</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="87"/>
         <source>Sort order list</source>
-        <translation>Порядок сортировки списка</translation>
+        <translation>Lista rendezése</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="88"/>
         <source>Sort order of complete citylist</source>
-        <translation>Порядок сортировки полного списка городов</translation>
+        <translation>Teljes városlista rendezése</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="95"/>
         <source>TimeZone/Continent/City</source>
-        <translation>Часовой Пояс/Континент/Город</translation>
+        <translation>Időzóna/Kontinens/Város</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="101"/>
         <source>Country</source>
-        <translation>Страна</translation>
+        <translation>Ország</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="109"/>
         <source>Hide if current</source>
-        <translation>Скрыть, если текущий</translation>
+        <translation>Jelenlegi elrejtése</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="110"/>
         <source>Hide localtime if city is present and current</source>
-        <translation>Скрыть местное время,  если город присутствует и является текущим</translation>
+        <translation>Város elrejtése a jelenlegi idő esetén</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="120"/>
         <source>Language:</source>
-        <translation>Язык:</translation>
+        <translation>Nyelv:</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="250"/>
         <source>Change of language will be active after restarting the application.</source>
-        <translation>Для смены языка перезапустите программу</translation>
+        <translation>Az új nyelvi beállítás az alkalmazás újraindítása után aktiválódik.</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="258"/>
         <source>Worldclock pick screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Világóra választó képernyő</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="259"/>
         <source>Choose screentype used for selecting a worldclock</source>
-        <translation type="unfinished"></translation>
+        <translation>Válaszd ki a képernyő stílust</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="263"/>
         <source>Custom</source>
-        <translation type="unfinished"></translation>
+        <translation>Egyedi</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="266"/>
         <source>Sailfish</source>
-        <translation type="unfinished"></translation>
+        <translation>Sailfish</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="92"/>
         <source>Continent/City</source>
-        <translation>Континент/Город</translation>
+        <translation>Kontinens/Város</translation>
     </message>
 </context>
 <context>
@@ -311,7 +311,7 @@
     <message>
         <location filename="../qml/pages/Timezone.qml" line="43"/>
         <source>Select city</source>
-        <translation>Выбрать город</translation>
+        <translation>Válassz várost</translation>
     </message>
 </context>
 </TS>

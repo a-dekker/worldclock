@@ -1,0 +1,300 @@
+Addis Ababa;Addisz-Abeba
+Afghanistan;Afganisztán
+Africa;Afrika
+Aland Islands;Aland-szigetek
+Algeria;Algéria
+Algiers;Algír
+Almaty;Almaty
+America;Amerika
+American Samoa;Amerikai Szamoa
+Amsterdam;Amszterdam
+Anadyr;Anadyr
+Anchorage;Anchorage
+Antananarivo;Antananarivo
+Antarctica;Antarktisz
+Antigua and Barbuda;Antigua és Barbuda
+Aqtau;Aqtau
+Argentina;Argentína
+Armenia;Örményország
+Aruba;Aruba
+Asia;Ázsia
+Asunción;Asunción
+Athens;Athén
+Australia;Ausztrália
+Australia;Ausztrália
+Austria;Ausztria
+Azerbaijan;Azerbajdzsán
+Baghdad;Bagdad
+Bahamas;Bahamák
+Bahrain;Bahrain
+Baku;Baku
+Bangalore;Bangalore
+Bangkok;Bangkok
+Bangladesh;Banglades
+Barbados;Barbados
+Beijing;Peking
+Beirut;Bejrút
+Belarus;Fehéroroszország
+Belfast;Belfast
+Belgrade;Belgrád
+Belize;Belize
+Belo Horizonte;Belo Horizonte
+Berlin;Berlin
+Beulah;Beulah
+Black Rock City;Black Rock City
+Blantyre;Blantyre
+Bosnia and Herzegowina;Bosznia-Hercegovina
+Brasília;Brasília
+Bratislava;Pozsony
+Brazil;Brazília
+Brazzaville;Brazzaville
+Brisbane;Brisbane
+British Indian Ocean Territory;Brit Indiai-óceáni terület
+British Virgin Islands;Brit Virgin szigetek
+Brussels;Brüsszel
+Bucharest;Bukarest
+Bulgaria;Bulgária
+Cairo;Kairó
+Calcutta;Kalkutta
+Cambodia;Kambodzsa
+Cambridge;Cambridge
+Cameroon;Kamerun
+Canada;Kanada
+Cancún;Cancún
+Cape Town;Fokváros
+Cape Verde;Zöld-Fok
+Caracas;Caracas
+Cayman Islands;Kajmán-szigetek
+Cayman Palms;Cayman Palms
+Chihuahua;Chihuahua
+China;Kína
+Chişinău;Chişinău
+Christmas Island;karácson
+Cincinnati;Cincinnati
+Cleveland;Cleveland
+Cocos Islands;Kókusz-Szigetek
+Colombia;Kolumbia
+Colombo;Colombo
+Columbus;Columbus
+Conakry;Conakry
+Congo Kinshasa;kongó Kinshasa
+Cook Islands;cook-szigetek
+Copenhagen;Koppenhága
+Croatia;Horvátország
+Cuba;Kuba
+Cura Sao;Curaçao
+Curaçao;Curaçao
+Czech Republic;Cseh Köztársaság
+Dakar;Dakar
+Damascus;Damaszkusz
+Delhi;Delhi
+Democratic Republic of the Congo;Kongói demokratikus köztársaság
+Denmark;Dánia
+Dhaka;Dakka
+Djibouti;Dzsibuti
+Doha;Doha
+Dominica;Dominika
+Dominican Republic;Dominikai Köztársaság
+Easter Island;Húsvét-sziget
+Edmonton;Edmonton
+Egypt;Egyiptom
+Equatorial Guinea;Egyenlítői-Guinea
+Estonia;Észtország
+Ethiopia;Etiópia
+Europe;Európa
+Falkland Islands;Falkland-szigetek
+Faroe Islands;Faroe Szigetek
+Fiji;Fidzsi
+Finland;Finnország
+France;Franciaország
+French Guiana;Francia Guyana
+French Polynesia;Francia Polinézia
+Georgia;Grúzia
+Germany;Németország
+Ghana;Ghána
+Gibraltar;Gibraltár
+Greece;Görögország
+Greenland;Grönland
+Guernsey;Guernsey-sziget
+Havana;Havanna
+Ho Chi Minh City;Ho Si Minh-város
+Hungary;Magyarország
+Hyderabad;Haidarábád
+Iceland;Izland
+Indian;Indián
+Indonesia;Indonézia
+Iran;Irán
+Iraq;Irak
+Ireland;Írország
+Islamabad;Iszlámábád
+Isle of Man;Man sziget
+Israel;Izrael
+Istanbul;Isztambul
+Italy;Olaszország
+Ivory Coast;Elefántcsontpart
+Jakarta;Jakarta
+Japan;Japán
+Jerusalem;Jeruzsálem
+Jordan;Jordánia
+Karachi;Karacsi
+Kazakhstan;Kazahsztán
+Khartoum;Kartúm
+Kiev;Kijev
+Kigali;Kigali
+Kingston;Kingston
+Kinshasa;Kinshasa
+Knox;Knox
+Knoxville;Knoxville
+Kraków;Krakkó
+Kuwait City;Kuvaitváros
+Kuwait;Kuvait
+Kyiv;Kijev
+Lagos;Lagos
+Lahore;Lahor
+Latvia;Lettország
+Lebanon;Libanon
+Liberia;Libéria
+Libia;Líbia
+Libya;Líbia
+Lisbon;Lisszabon
+Lithuania;Litvánia
+Longyearbyen;Longyearbyen
+Luxembourg;Luxemburg
+Macao;Makaó
+Macau;Makaó
+Macedonia;Macedónia
+Madagascar;Madagaszkár
+Madison;Madison
+Malawi;Malawi
+Malaysia;Malajzia
+Maldives;Maldív-szigetek
+Malta;Málta
+Manchester;Manchester
+Marshall Islands;Marshall-szigetek
+Maseru;Maseru
+Mauritania;Mauritánia
+Metlakatla;Metlakatla
+Mexico City;Mexikóváros
+Mexico;Mexikó
+Micronesia;Mikronézia
+Milan;Milánó
+Milwaukee;Milwaukee
+Minsk;Minszk
+Mongolia;Mongólia
+Monrovia;Monrovia
+Morocco;Marokkó
+Moscow;Moszkva
+Mountain View;Mountain View
+Mozambique;Mozambik
+Munich;München
+Muscat;Maszkat
+Myanmar;Mianmar
+Namibia;Namíbia
+Netherlands;Hollandia
+New Caledonia;Új-Kaledónia
+New Salem;New Salem
+New South Wales;Új-Dél-Wales
+New Zealand;Új-Zéland
+Newfoundland;Új-Fundland
+Nicaragua;Nicaragua
+Nigeria;Nigéria
+Norfolk islands;Norfolk-szigetek
+North Korea;Észak-Korea
+Northern Mariana Islands;Északi-Mariana-szigetek
+Norway;Norvégia
+Nouméa;Nouméa
+Nuestra Señora de La Paz;Nuestra Señora de La Paz
+Oman;Omán
+Osaka;Oszaka
+Ottawa;Ottawa
+Oulu;Oulu
+Pacific;Csendes
+Pakistan;Pakisztán
+Palestine;Palesztina
+Panamá;Panama
+Papua New Guinea;Pápua Új-Guinea
+Paramaribo;Paramaribo
+Paris;Párizs
+Philippines;Fülöp-szigetek
+Phnom Penh;Phnompen
+Poland;Lengyelország
+Port au Prince;Port au Prince
+Portugal;Portugália
+Prague;Prága
+Pyongyang;Phenjan
+Qatar;Katar
+Republic of the Congo;Kongói Köztársaság
+Reykjavík;Reykjavík
+Rio de Janeiro;Rio de Janeiro
+Riyadh;Rijád
+Romania;Románia
+Rome;Róma
+Russia;Oroszország
+Rwanda;Ruanda
+Saint Kitts and Nevis;Saint Kitts és Nevis
+Saint Vincent And The Grenadines;Saint Vincent és a Grenadine-szigetek
+Salt Lake City;Salt Lake City
+Samoa;Szamoa
+San Antonio;San Antonio
+Sarajevo;Szarajevó
+Saskatchewan;Saskatchewan
+Saudi Arabia;Szaúd-Arábia
+Senegal;Szenegál
+Seoul;Szöul
+Serbia;Szerbia
+Shanghai;Sanghaj
+Simferopol;Szimferopol
+Singapore;Szingapúr
+Skopje;Szkopje
+Slovakia;Szlovákia
+Slovenia;Szlovénia
+Sofia;Szófia
+Solomon Islands;Salamon-szigetek
+Somalia;Szomália
+South Africa;Dél-Afrika
+South Georgia And The South Sandwich Islands;Dél-Georgia és a Déli-Sandwich-szigetek
+South Korea;Dél-Korea
+South Sudan;dél-Szudán
+Spain;Spanyolország
+Sri Lanka;Sri Lanka
+St.Louis;St.Louis
+Stockholm;Stockholm
+Sudan;Szudán
+Suva;Suva
+Svalbard And Jan Mayen Islands;Svalbard és Jan Mayen-szigetek
+Svalbard and Jan Mayen;Spitzbergák és Jan Mayen-sziget
+Swaziland;Szváziföld
+Sweden;Svédország
+Switzerland;Svájc
+Syria;Szíria
+São Paulo;São Paulo
+São Tomé and Príncipe;São Tomé és Príncipe
+São Tomé;São Tomé
+Taipei;Tajpej
+Taiwan;Tajvan
+Tanzania;Tanzánia
+Tehran;Teherán
+Thailand;Thaiföld
+Tokyo;Tokió
+Trinidad and Tobago;Trinidad és Tobago
+Tunis;Tunisz
+Tunisia;Tunézia
+Turkey;Törökország
+Turks and Caicos Islands;Turks- és Caicos-szigetek
+Ukraine;Ukrajna
+Ulan Bator;Ulánbátor
+United Arab Emirates;Egyesült Arab Emirátusok
+United Kingdom;Egyesült Királyság
+United States Minor Outlying Islands;Az Amerikai Egyesült Államok külső szigetei
+United States Virgin Islands;Amerikai Virgin-szigetek
+United States;Egyesült Államok
+Vatican City State;Vatikán
+Vatican City;Vatikánváros
+Vienna;Bécs
+Wallis and Futuna Islands;Wallis és Futuna
+Warsaw;Varsó
+Western Sahara;nyugati Szahara
+Wrocław;Wrocław
+Yemen;Jemen
+Zagreb;Zágráb
+Zurich;Zürich

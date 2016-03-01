@@ -99,6 +99,10 @@ int main(int argc, char *argv[])
         case settingsPublic::Languages::RU:
             translator.load("harbour-worldclock-ru.qm", SailfishApp::pathTo(QString("translations")).toLocalFile());
             break;
+        // Hungarian
+        case settingsPublic::Languages::HU_HU:
+            translator.load("harbour-worldclock-hu_HU.qm", SailfishApp::pathTo(QString("translations")).toLocalFile());
+            break;
         // Polish
         case settingsPublic::Languages::PL_PL:
             translator.load("harbour-worldclock-pl_PL.qm", SailfishApp::pathTo(QString("translations")).toLocalFile());
@@ -149,6 +153,9 @@ QLocale myLanguage(void)
         myLang = QLocale( QLocale::Russian, QLocale::Russia );
         break;
     // Polish
+    case settingsPublic::Languages::HU_HU:
+        myLang = QLocale( QLocale::Hungarian, QLocale::Hungary );
+        break;
     case settingsPublic::Languages::PL_PL:
         myLang = QLocale( QLocale::Polish, QLocale::Poland );
         break;

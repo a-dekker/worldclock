@@ -41,6 +41,7 @@ OTHER_FILES += qml/worldclock.qml \
     translations/CityTranslations-ru_RU.txt \
     translations/CityTranslations-pl_PL.txt \
     translations/CityTranslations-fr_FR.txt \
+    translations/CityTranslations-hu_HU.txt \
     translations/CityTranslations-nl_NL.txt
 
 # to disable building translations every time, comment out the
@@ -54,6 +55,7 @@ TRANSLATIONS = translations/harbour-worldclock-sv.ts \
                translations/harbour-worldclock-pl_PL.ts \
                translations/harbour-worldclock-de.ts \
                translations/harbour-worldclock-fr_FR.ts \
+               translations/harbour-worldclock-hu_HU.ts \
                translations/harbour-worldclock-nl.ts
 
 
