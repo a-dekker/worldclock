@@ -72,7 +72,7 @@ int main(int argc, char *argv[])
     qmlRegisterType<Settings>("harbour.worldclock.Settings", 1 , 0 , "MySettings");
     qmlRegisterType<settingsPublic::Languages>("harbour.worldclock.Settings", 1, 0, "Languages");
 
-    QString locale_appname = "harbour-worldclock-" + QLocale::system().name();
+    // QString locale_appname = "harbour-worldclock-" + QLocale::system().name();
     // qDebug() << "Translations:" << SailfishApp::pathTo("translations").toLocalFile() + "/" + locale_appname + ".qm";
     // Check if user has set language explicitly to be used in the app
     QString locale = QLocale::system().name();

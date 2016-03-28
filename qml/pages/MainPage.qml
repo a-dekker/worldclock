@@ -11,6 +11,8 @@ Page {
     id: page
     allowedOrientations: Orientation.Portrait | Orientation.Landscape
                          | Orientation.LandscapeInverted
+    property bool largeScreen: Screen.sizeCategory === Screen.Large ||
+                               Screen.sizeCategory === Screen.ExtraLarge
 
     RemorsePopup {
         id: remorse
@@ -379,6 +381,7 @@ Page {
         source: "../images/earth.png"
         horizontalAlignment: Image.AlignHCenter
         verticalAlignment: Image.AlignVCenter
+        opacity: largeScreen ? 0.5 : 1
     }
 
     // To enable PullDownMenu, place our content in a SilicaFlickable
@@ -532,7 +535,7 @@ Page {
                     font.pixelSize: mainapp.timeFormat
                                     == "24" ? Theme.fontSizeLarge : Theme.fontSizeMedium
                     color: Theme.highlightColor
-                    width: isPortrait ? (mainapp.timeFormat === "24" ? parent.width - Theme.paddingLarge * 18 : parent.width - Theme.paddingLarge * 17) : (mainapp.timeFormat === "24" ? parent.width - Theme.paddingLarge * 35 : parent.width - Theme.paddingLarge * 33)
+                    width: isPortrait ? (mainapp.timeFormat === "24" ? (largeScreen ? parent.width - Theme.paddingLarge * 34: parent.width - Theme.paddingLarge * 18) : (largeScreen ? parent.width - Theme.paddingLarge * 32 : parent.width - Theme.paddingLarge * 17)) : (mainapp.timeFormat === "24" ? (largeScreen ? parent.width - Theme.paddingLarge * 47 : parent.width - Theme.paddingLarge * 35) : (largeScreen ? parent.width - Theme.paddingLarge * 45 : parent.width - Theme.paddingLarge * 33))
                     x: Theme.paddingSmall
                     anchors.verticalCenter: parent.verticalCenter
                     verticalAlignment: Text.AlignVCenter
@@ -544,10 +547,10 @@ Page {
                     id: countryFlag
                     anchors.left: timeLabel.right
                     anchors.verticalCenter: parent.verticalCenter
-                    height: 41
-                    width: 71
+                    height: largeScreen ? 82 : 41
+                    width: largeScreen  ? 142 : 71
                     source: zoneCountryOrg !== "" ? '../images/' + zoneCountryOrg + '.png' : ""
-                    visible: isLandscape
+                    visible: isLandscape || largeScreen
                 }
                 Rectangle {
                     // some whitespace
@@ -556,13 +559,13 @@ Page {
                     anchors.left: countryFlag.right
                     height: 1
                     opacity: 0
-                    visible: isLandscape
+                    visible: isLandscape || largeScreen
                 }
                 Label {
                     id: cityLabel
                     text: zoneCityTr.replace(/_/g, " ")
                     width: parent.width - Theme.paddingLarge * 11
-                    anchors.left: isPortrait ? timeLabel.right : extraImgSpace.right
+                    anchors.left: isPortrait && !largeScreen ? timeLabel.right : extraImgSpace.right
                     opacity: (index & 1) ? 0.9 : 1
                     truncationMode: TruncationMode.Fade
                 }
@@ -575,7 +578,7 @@ Page {
                                 index).zoneCountry === "local_time"
                             || listCityModel.get(index).zoneCity
                             === local_city) ? Theme.highlightColor : Theme.secondaryColor
-                    anchors.left: isPortrait ? timeLabel.right : extraImgSpace.right
+                    anchors.left: isPortrait && !largeScreen ? timeLabel.right : extraImgSpace.right
                     width: parent.width - timeLabel.width - dateLabel.width - Theme.paddingSmall
                     truncationMode: TruncationMode.Fade
                     opacity: (index & 1) ? 0.9 : 1
@@ -584,8 +587,9 @@ Page {
                     id: dateLabel
                     text: zoneDate
                     font.pixelSize: Theme.fontSizeExtraSmall
-                    width: isPortrait ? parent.width - (timeLabel.width + cityLabel.width + 2
-                                                        * Theme.paddingSmall) : parent.width
+                    width: isPortrait ? parent.width - (largeScreen ? (countryFlag.width + extraImgSpace.width + timeLabel.width + cityLabel.width + 2
+                                                        * Theme.paddingSmall) : (timeLabel.width + cityLabel.width + 2
+                                                        * Theme.paddingSmall)) : parent.width
                                         - (timeLabel.width + cityLabel.width + 2
                                            * Theme.paddingSmall + extraImgSpace.width
                                            + countryFlag.width)

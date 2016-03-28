@@ -24,7 +24,6 @@ OTHER_FILES += qml/worldclock.qml \
     rpm/worldclock.spec \
     translations/*.ts \
     harbour-worldclock.desktop \
-    harbour-worldclock.png \
     qml/pages/About.qml \
     qml/pages/MainPage.qml \
     qml/pages/Timezone.qml \
@@ -43,6 +42,20 @@ OTHER_FILES += qml/worldclock.qml \
     translations/CityTranslations-fr_FR.txt \
     translations/CityTranslations-hu_HU.txt \
     translations/CityTranslations-nl_NL.txt
+
+icon86.files += icons/86x86/harbour-worldclock.png
+icon86.path = /usr/share/icons/hicolor/86x86/apps
+
+icon108.files += icons/108x108/harbour-worldclock.png
+icon108.path = /usr/share/icons/hicolor/108x108/apps
+
+icon128.files += icons/128x128/harbour-worldclock.png
+icon128.path = /usr/share/icons/hicolor/128x128/apps
+
+icon256.files += icons/256x256/harbour-worldclock.png
+icon256.path = /usr/share/icons/hicolor/256x256/apps
+
+INSTALLS += icon86 icon108 icon128 icon256
 
 # to disable building translations every time, comment out the
 # following CONFIG line

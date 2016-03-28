@@ -6,7 +6,8 @@ Page {
     id: cityDetailPage
     allowedOrientations: Orientation.Portrait | Orientation.Landscape
                          | Orientation.LandscapeInverted
-
+    property bool largeScreen: Screen.sizeCategory === Screen.Large ||
+                               Screen.sizeCategory === Screen.ExtraLarge
     property string zoneDateTime
     property string zoneName
     property string zoneCountry
@@ -95,112 +96,110 @@ Page {
         VerticalScrollDecorator {
         }
 
-    Column {
-        id: column
-        width: cityDetailPage.width
-        // set spacing considering the width/height ratio
-        spacing: cityDetailPage.height / cityDetailPage.width
-                 > 1.6 ? Theme.paddingMedium : Theme.paddingSmall
-        PageHeader {
-            title: qsTr("Timezone details")
-        }
-        SectionHeader {
-            wrapMode: Text.Wrap
-            Image {
-                height: 55
-                width: 95
-                source: zoneCountry !== "" ? '../images/' + zoneCountry + '.png' : ""
-                anchors.leftMargin: Theme.paddingSmall
+        Column {
+            id: column
+            width: cityDetailPage.width
+            spacing: largeScreen ? Theme.paddingMedium : Theme.paddingSmall
+            PageHeader {
+                title: qsTr("Timezone details")
             }
-            text: zoneCity.replace(/_/g, " ") + ", " + countryTranslated.replace(
-                      /([a-z])([A-Z])/g, "$1 $2")
-        }
-        Label {
-            x: Theme.paddingLarge
-            text: qsTr("Timezone")
-        }
-        Label {
-            x: Theme.paddingLarge
-            width: parent.width - Theme.paddingLarge
-            font.pixelSize: Theme.fontSizeSmall
-            color: Theme.secondaryColor
-            text: zoneName
-            truncationMode: TruncationMode.Fade
-        }
-        Label {
-            x: Theme.paddingLarge
-            text: qsTr("Zone time")
-        }
-        Label {
-            x: Theme.paddingLarge
-            font.pixelSize: Theme.fontSizeSmall
-            color: Theme.secondaryColor
-            text: zoneDateTime
-            width: parent.width - Theme.paddingLarge
-            truncationMode: TruncationMode.Fade
-        }
-        Label {
-            x: Theme.paddingLarge
-            text: qsTr("Local time")
-        }
-        Label {
-            x: Theme.paddingLarge
-            font.pixelSize: Theme.fontSizeSmall
-            color: Theme.secondaryColor
-            text: localDateTime
-            width: parent.width - Theme.paddingLarge
-            truncationMode: TruncationMode.Fade
-        }
-        Label {
-            x: Theme.paddingLarge
-            text: qsTr("Time difference")
-        }
-        Label {
-            x: Theme.paddingLarge
-            font.pixelSize: Theme.fontSizeSmall
-            color: Theme.secondaryColor
-            text: zoneTimeDiff + " " + qsTr("hour")
-        }
-        Label {
-            x: Theme.paddingLarge
-            width: parent.width - Theme.paddingLarge
-            truncationMode: TruncationMode.Fade
-            text: qsTr("Prev. daylight transition") + " " + abbrevFromPrev
-        }
-        Label {
-            x: Theme.paddingLarge
-            font.pixelSize: Theme.fontSizeSmall
-            color: Theme.secondaryColor
-            text: zonePreviousTransition
-            width: parent.width - Theme.paddingLarge
-            truncationMode: TruncationMode.Fade
-        }
-        Label {
-            x: Theme.paddingLarge
-            font.pixelSize: Theme.fontSizeExtraSmall
-            color: Theme.secondaryColor
-            text: dstShiftTxtOld
-        }
-        Label {
-            x: Theme.paddingLarge
-            width: parent.width - Theme.paddingLarge
-            truncationMode: TruncationMode.Fade
-            text: qsTr("Next daylight transition") + " " + abbrevToNext
-        }
-        Label {
-            x: Theme.paddingLarge
-            font.pixelSize: Theme.fontSizeSmall
-            color: Theme.secondaryColor
-            text: zoneNextTransition
-            width: parent.width - Theme.paddingLarge
-            truncationMode: TruncationMode.Fade
-        }
-        Label {
-            x: Theme.paddingLarge
-            font.pixelSize: Theme.fontSizeExtraSmall
-            color: Theme.secondaryColor
-            text: dstShiftTxt
+            SectionHeader {
+                wrapMode: Text.Wrap
+                Image {
+                    height: largeScreen ? 100 : 55
+                    width: largeScreen ? 180 : 95
+                    source: zoneCountry !== "" ? '../images/' + zoneCountry + '.png' : ""
+                    anchors.leftMargin: Theme.paddingSmall
+                }
+                text: zoneCity.replace(/_/g, " ") + ", " + countryTranslated.replace(
+                          /([a-z])([A-Z])/g, "$1 $2")
+            }
+            Label {
+                x: Theme.paddingLarge
+                text: qsTr("Timezone")
+            }
+            Label {
+                x: Theme.paddingLarge
+                width: parent.width - Theme.paddingLarge
+                font.pixelSize: Theme.fontSizeSmall
+                color: Theme.secondaryColor
+                text: zoneName
+                truncationMode: TruncationMode.Fade
+            }
+            Label {
+                x: Theme.paddingLarge
+                text: qsTr("Zone time")
+            }
+            Label {
+                x: Theme.paddingLarge
+                font.pixelSize: Theme.fontSizeSmall
+                color: Theme.secondaryColor
+                text: zoneDateTime
+                width: parent.width - Theme.paddingLarge
+                truncationMode: TruncationMode.Fade
+            }
+            Label {
+                x: Theme.paddingLarge
+                text: qsTr("Local time")
+            }
+            Label {
+                x: Theme.paddingLarge
+                font.pixelSize: Theme.fontSizeSmall
+                color: Theme.secondaryColor
+                text: localDateTime
+                width: parent.width - Theme.paddingLarge
+                truncationMode: TruncationMode.Fade
+            }
+            Label {
+                x: Theme.paddingLarge
+                text: qsTr("Time difference")
+            }
+            Label {
+                x: Theme.paddingLarge
+                font.pixelSize: Theme.fontSizeSmall
+                color: Theme.secondaryColor
+                text: zoneTimeDiff + " " + qsTr("hour")
+            }
+            Label {
+                x: Theme.paddingLarge
+                width: parent.width - Theme.paddingLarge
+                truncationMode: TruncationMode.Fade
+                text: qsTr("Prev. daylight transition") + " " + abbrevFromPrev
+            }
+            Label {
+                x: Theme.paddingLarge
+                font.pixelSize: Theme.fontSizeSmall
+                color: Theme.secondaryColor
+                text: zonePreviousTransition
+                width: parent.width - Theme.paddingLarge
+                truncationMode: TruncationMode.Fade
+            }
+            Label {
+                x: Theme.paddingLarge
+                font.pixelSize: Theme.fontSizeExtraSmall
+                color: Theme.secondaryColor
+                text: dstShiftTxtOld
+            }
+            Label {
+                x: Theme.paddingLarge
+                width: parent.width - Theme.paddingLarge
+                truncationMode: TruncationMode.Fade
+                text: qsTr("Next daylight transition") + " " + abbrevToNext
+            }
+            Label {
+                x: Theme.paddingLarge
+                font.pixelSize: Theme.fontSizeSmall
+                color: Theme.secondaryColor
+                text: zoneNextTransition
+                width: parent.width - Theme.paddingLarge
+                truncationMode: TruncationMode.Fade
+            }
+            Label {
+                x: Theme.paddingLarge
+                font.pixelSize: Theme.fontSizeExtraSmall
+                color: Theme.secondaryColor
+                text: dstShiftTxt
+            }
         }
     }
-}
 }

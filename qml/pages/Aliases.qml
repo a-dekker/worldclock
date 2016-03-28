@@ -9,6 +9,8 @@ Dialog {
     id: aliasesDialog
     allowedOrientations: Orientation.Portrait | Orientation.Landscape
                          | Orientation.LandscapeInverted
+    property bool largeScreen: Screen.sizeCategory === Screen.Large
+                               || Screen.sizeCategory === Screen.ExtraLarge
     property string isReplace: "false"
     property int currIndex: 0
 
@@ -70,6 +72,7 @@ Dialog {
         source: "../images/earth.png"
         horizontalAlignment: Image.AlignHCenter
         verticalAlignment: Image.AlignVCenter
+        opacity: largeScreen ? 0.5 : 1
     }
 
     SilicaListView {
@@ -103,11 +106,11 @@ Dialog {
             id: timezonePickerComponent
             TimezonePicker {
                 onTimezoneClicked: {
-                    console.log(name);
-                    if(name !== "") {
+                    console.log(name)
+                    if (name !== "") {
                         mainapp.city_id = name
                     }
-                    pageStack.pop();
+                    pageStack.pop()
                 }
             }
         }
@@ -152,18 +155,19 @@ Dialog {
                     id: littleSpace
                     anchors.left: do_display.right
                     // some whitespace
-                    width: Theme.paddingMedium
+                    width: largeScreen ? Theme.paddingLarge : Theme.paddingMedium
                     height: 1
                     opacity: 0
-                    visible: isLandscape
+                    visible: isLandscape || largeScreen
                 }
                 Button {
                     id: name
                     text: CityTr
-                    anchors.left: isPortrait ? do_display.right : littleSpace.right
+                    anchors.left: isPortrait
+                                  && !largeScreen ? do_display.right : littleSpace.right
                     //width: font.pixelSize * 8
                     onClicked: {
-                        if (myset.value("city_pickertype","0") === "0") {
+                        if (myset.value("city_pickertype", "0") === "0") {
                             pageStack.push(Qt.resolvedUrl("Timezone.qml"))
                         } else {
                             pageStack.push(timezonePickerComponent)
@@ -178,11 +182,14 @@ Dialog {
                     anchors.left: name.right
                     placeholderText: qsTr("Alt. name")
                     text: Alias
-                    width: isPortrait ? font.pixelSize * 7 : font.pixelSize * 20
+                    width: isPortrait ? (largeScreen ? font.pixelSize * 18 : font.pixelSize * 7) : (largeScreen ? font.pixelSize * 30 : font.pixelSize * 20)
                     horizontalAlignment: TextInput.AlignRight
                     maximumLength: 18
                     onTextChanged: {
                         customcitylist.model.setProperty(index, 'Alias', text)
+                    }
+                    EnterKey.onClicked: {
+                        cityalias.focus = false
                     }
                 }
                 IconButton {
@@ -206,13 +213,13 @@ Dialog {
         anchors.top: customcitylist.bottom
         anchors.right: customcitylist.right
         anchors.rightMargin: Theme.paddingMedium
-        icon.source: 'image://theme/icon-m-add'
+        icon.source: largeScreen ? 'image://theme/icon-l-add' : 'image://theme/icon-m-add'
         visible: customcitylist.count < 20
         onClicked: {
-            if (myset.value("city_pickertype","0") === "0") {
+            if (myset.value("city_pickertype", "0") === "0") {
                 pageStack.push(Qt.resolvedUrl("Timezone.qml"))
             } else {
-                pageStack.push(timezonePickerComponent);
+                pageStack.push(timezonePickerComponent)
             }
             isReplace = "false"
             customcitylist.positionViewAtEnd()

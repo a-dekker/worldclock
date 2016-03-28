@@ -4,27 +4,27 @@
 <context>
     <name>About</name>
     <message>
-        <location filename="../qml/pages/About.qml" line="20"/>
+        <location filename="../qml/pages/About.qml" line="23"/>
         <source>About</source>
         <translation>À propos</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="23"/>
+        <location filename="../qml/pages/About.qml" line="26"/>
         <source>Info</source>
         <translation>Infos</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="54"/>
+        <location filename="../qml/pages/About.qml" line="58"/>
         <source>Version</source>
         <translation>Version</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="59"/>
+        <location filename="../qml/pages/About.qml" line="63"/>
         <source>City times across the world</source>
         <translation>Heure des villes à travers le monde</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="65"/>
+        <location filename="../qml/pages/About.qml" line="69"/>
         <source>Author</source>
         <translation>Auteur</translation>
     </message>
@@ -32,96 +32,96 @@
 <context>
     <name>Aliases</name>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="62"/>
+        <location filename="../qml/pages/Aliases.qml" line="64"/>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation type="unfinished">Sauvegarder</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="63"/>
+        <location filename="../qml/pages/Aliases.qml" line="65"/>
         <source>Cancel</source>
-        <translation>Annuler</translation>
+        <translation type="unfinished">Annuler</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="125"/>
+        <location filename="../qml/pages/Aliases.qml" line="128"/>
         <source>Deleting</source>
-        <translation>Suppression</translation>
+        <translation type="unfinished">Suppression en cours</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="179"/>
+        <location filename="../qml/pages/Aliases.qml" line="182"/>
         <source>Alt. name</source>
-        <translation>Nom alternatif</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="201"/>
+        <location filename="../qml/pages/Aliases.qml" line="207"/>
         <source>No custom city names defined. Press the plus button to add one.</source>
-        <translation>Aucune ville n&apos;a été créée. Appuyez sur le bouton &quot;plus&quot; pour en ajouter une.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CityDetail</name>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="56"/>
-        <location filename="../qml/pages/CityDetail.qml" line="59"/>
+        <location filename="../qml/pages/CityDetail.qml" line="57"/>
+        <location filename="../qml/pages/CityDetail.qml" line="60"/>
         <source>None</source>
         <translation>Aucun</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="63"/>
+        <location filename="../qml/pages/CityDetail.qml" line="64"/>
         <source>the clock jumped one hour backward</source>
         <translation>l&apos;horloge a été reculée d&apos;une heure</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="66"/>
+        <location filename="../qml/pages/CityDetail.qml" line="67"/>
         <source>the clock jumped one hour forward</source>
         <translation>l&apos;horloge a été avancée d&apos;une heure</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="73"/>
+        <location filename="../qml/pages/CityDetail.qml" line="74"/>
         <source>the clock jumps one hour backward</source>
         <translation>l&apos;horloge sera reculée d&apos;une heure</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="76"/>
+        <location filename="../qml/pages/CityDetail.qml" line="77"/>
         <source>the clock jumps one hour forward</source>
         <translation>l&apos;horloge sera avancée d&apos;une heure</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="105"/>
+        <location filename="../qml/pages/CityDetail.qml" line="104"/>
         <source>Timezone details</source>
         <translation>Détails du fuseau horaire</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="120"/>
+        <location filename="../qml/pages/CityDetail.qml" line="119"/>
         <source>Timezone</source>
         <translation>Fuseau horaire</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="132"/>
+        <location filename="../qml/pages/CityDetail.qml" line="131"/>
         <source>Zone time</source>
         <translation>Heure du fuseau</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="144"/>
+        <location filename="../qml/pages/CityDetail.qml" line="143"/>
         <source>Local time</source>
         <translation>Heure locale</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="156"/>
+        <location filename="../qml/pages/CityDetail.qml" line="155"/>
         <source>Time difference</source>
         <translation>Décalage horaire</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="162"/>
+        <location filename="../qml/pages/CityDetail.qml" line="161"/>
         <source>hour</source>
         <translation>heure(s)</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="168"/>
+        <location filename="../qml/pages/CityDetail.qml" line="167"/>
         <source>Prev. daylight transition</source>
         <translation>Dernier changem. d&apos;heure</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="188"/>
+        <location filename="../qml/pages/CityDetail.qml" line="187"/>
         <source>Next daylight transition</source>
         <translation>Prochain changem. d&apos;heure</translation>
     </message>
@@ -137,62 +137,62 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="151"/>
+        <location filename="../qml/pages/MainPage.qml" line="153"/>
         <source>City already added</source>
         <translation>Ville déjà ajoutée</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="391"/>
+        <location filename="../qml/pages/MainPage.qml" line="394"/>
         <source>About</source>
         <translation>À propos</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="395"/>
+        <location filename="../qml/pages/MainPage.qml" line="398"/>
         <source>Settings</source>
         <translation>Paramètres</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="399"/>
+        <location filename="../qml/pages/MainPage.qml" line="402"/>
         <source>Custom city names</source>
         <translation>Création de ville</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="403"/>
+        <location filename="../qml/pages/MainPage.qml" line="406"/>
         <source>Add city</source>
         <translation>Ajouter ville</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="441"/>
+        <location filename="../qml/pages/MainPage.qml" line="444"/>
         <source>Worldclock</source>
         <translation>Worldclock</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="459"/>
+        <location filename="../qml/pages/MainPage.qml" line="462"/>
         <source>Deleting</source>
         <translation>Suppression en cours</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="483"/>
+        <location filename="../qml/pages/MainPage.qml" line="486"/>
         <source>Manage custom cities on other page</source>
         <translation>Gérez les villes créées sur l&apos;écran dédié</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="572"/>
+        <location filename="../qml/pages/MainPage.qml" line="575"/>
         <source>Local time</source>
         <translation>Heure locale</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="615"/>
+        <location filename="../qml/pages/MainPage.qml" line="619"/>
         <source>Details</source>
         <translation>Détails</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="631"/>
+        <location filename="../qml/pages/MainPage.qml" line="635"/>
         <source>Remove</source>
         <translation>Supprimer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="637"/>
+        <location filename="../qml/pages/MainPage.qml" line="641"/>
         <source>Cannot remove Local time</source>
         <translation>Impossible de supprimer l&apos;heure locale</translation>
     </message>
@@ -200,108 +200,108 @@
 <context>
     <name>SettingPage</name>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="58"/>
+        <location filename="../qml/pages/SettingPage.qml" line="61"/>
         <source>Save</source>
         <translation>Sauvegarder</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="59"/>
+        <location filename="../qml/pages/SettingPage.qml" line="62"/>
         <source>Cancel</source>
         <translation>Annuler</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="62"/>
+        <location filename="../qml/pages/SettingPage.qml" line="65"/>
         <source>Settings</source>
         <translation>Paramètres</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="69"/>
+        <location filename="../qml/pages/SettingPage.qml" line="72"/>
         <source>Sort order</source>
         <translation>Ordre liste perso</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="70"/>
+        <location filename="../qml/pages/SettingPage.qml" line="73"/>
         <source>Sort order of personal list</source>
         <translation>Ordre d&apos;affichage de la liste de villes personnelle</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="74"/>
+        <location filename="../qml/pages/SettingPage.qml" line="77"/>
         <source>None</source>
         <translation>Aucun</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="77"/>
+        <location filename="../qml/pages/SettingPage.qml" line="80"/>
         <source>TimeZone</source>
         <translation>Fuseau Horaire</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="80"/>
-        <location filename="../qml/pages/SettingPage.qml" line="98"/>
+        <location filename="../qml/pages/SettingPage.qml" line="83"/>
+        <location filename="../qml/pages/SettingPage.qml" line="101"/>
         <source>City</source>
         <translation>Ville</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="87"/>
+        <location filename="../qml/pages/SettingPage.qml" line="90"/>
         <source>Sort order list</source>
         <translation>Ordre liste complète</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="88"/>
+        <location filename="../qml/pages/SettingPage.qml" line="91"/>
         <source>Sort order of complete citylist</source>
         <translation>Ordre d&apos;affichage de la liste de villes complète</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="95"/>
+        <location filename="../qml/pages/SettingPage.qml" line="98"/>
         <source>TimeZone/Continent/City</source>
         <translation>Fuseau Horaire/Continent/Ville</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="101"/>
+        <location filename="../qml/pages/SettingPage.qml" line="104"/>
         <source>Country</source>
         <translation>Pays</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="109"/>
+        <location filename="../qml/pages/SettingPage.qml" line="112"/>
         <source>Hide if current</source>
         <translation>Cacher heure locale</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="110"/>
+        <location filename="../qml/pages/SettingPage.qml" line="113"/>
         <source>Hide localtime if city is present and current</source>
         <translation>Cacher l&apos;heure locale si la ville est déjà présente</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="120"/>
+        <location filename="../qml/pages/SettingPage.qml" line="123"/>
         <source>Language:</source>
         <translation>Langue :</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="250"/>
+        <location filename="../qml/pages/SettingPage.qml" line="253"/>
         <source>Change of language will be active after restarting the application.</source>
         <translation>La langue sera changée au redémarrage de l&apos;application.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="258"/>
+        <location filename="../qml/pages/SettingPage.qml" line="261"/>
         <source>Worldclock pick screen</source>
         <translation>Écran de sélection d&apos;heures</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="259"/>
+        <location filename="../qml/pages/SettingPage.qml" line="262"/>
         <source>Choose screentype used for selecting a worldclock</source>
         <translation>Choisir comment afficher l&apos;écran de sélection d&apos;heures</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="263"/>
+        <location filename="../qml/pages/SettingPage.qml" line="266"/>
         <source>Custom</source>
         <translation>Personnalisé</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="266"/>
+        <location filename="../qml/pages/SettingPage.qml" line="269"/>
         <source>Sailfish</source>
         <translation>Sailfish</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="92"/>
+        <location filename="../qml/pages/SettingPage.qml" line="95"/>
         <source>Continent/City</source>
         <translation>Continent/Ville</translation>
     </message>
@@ -309,7 +309,7 @@
 <context>
     <name>Timezone</name>
     <message>
-        <location filename="../qml/pages/Timezone.qml" line="43"/>
+        <location filename="../qml/pages/Timezone.qml" line="45"/>
         <source>Select city</source>
         <translation>Choisir ville</translation>
     </message>

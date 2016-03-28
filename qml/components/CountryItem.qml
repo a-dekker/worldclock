@@ -6,6 +6,8 @@ BackgroundItem {
     width: parent.width
     property alias countryName: countryName.text
     property string countryNameOrg: countryOrg
+    property bool largeScreen: Screen.sizeCategory === Screen.Large ||
+                               Screen.sizeCategory === Screen.ExtraLarge
 
     anchors {
         left: parent.left
@@ -25,7 +27,7 @@ BackgroundItem {
         height: 41
         width: 71
         source: countryOrg !== "" ? '../images/' + countryOrg + '.png' : ""
-        visible: isLandscape
+        visible: isLandscape || largeScreen
     }
     Label {
         id: countryName
@@ -33,8 +35,8 @@ BackgroundItem {
         color: background.down ? Theme.highlightColor : Theme.primaryColor
         font.pixelSize: Theme.fontSizeSmall
         anchors.verticalCenter: parent.verticalCenter
-        anchors.left: isPortrait ? parent.left : countryFlag.right
-        anchors.leftMargin: isPortrait ? 0 : Theme.paddingSmall
+        anchors.left: isPortrait && !largeScreen ? parent.left : countryFlag.right
+        anchors.leftMargin: isPortrait && !largeScreen ? 0 : Theme.paddingSmall
         anchors.right: parent.right
         anchors.rightMargin: Theme.paddingSmall
         truncationMode: TruncationMode.Fade
