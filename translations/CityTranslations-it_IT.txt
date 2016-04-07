@@ -1,0 +1,161 @@
+Africa;Africa
+Aland Island;isola aland
+Algiers;Algeri
+American Samoa;Samoa americane
+Antarctica;Antartide
+Asunción;Asuncion
+Athens;Atene
+Azerbaijan;Azerbaigian
+Bahrain;Bahrein
+Baltimore;Baltimora
+Barcelona;Barcellona
+Beijing;Pechino
+Belarus;Bielorussia
+Belgium;Belgio
+Belgrade;Belgrado
+Berlin;Berlino
+Bogota;Bogotà
+Bosnia and Herzegowina;Bosnia ed Eerzegovina
+Brazil;Brasile
+British Indian Ocean Territory;Territorio britannico dell'Oceano Indiano
+British Virgin Islands;Isole Vergini Britanniche
+Brussels;Bruxelles
+Bucharest;Bucarest
+Cairo;Il Cairo
+Cambodia;Cambogia
+Cameroon;Camerun
+Canary;Canarie
+Cape Town;Città del Capo
+Cayman Islands;Isole Cayman
+Central African Republic;Repubblica Centrafricana
+Chile;Cile
+China;Cina
+Christmas Islands;Isole Natale
+Cook Islands;Isole Cook
+Croatia;Croazia
+Cura Sao;Curaçao
+Czech Republic;Repubblica ceca
+Damascus;Damasco
+Democratic Republic of the Congo;Repubblica democratica del Congo
+Denmark;Danimarca
+Djibouti;Gibuti
+Dominican Republic;Repubblica Dominicana
+Dublin;Dublino
+East Timor;Timor Est
+Easter Island;Isola di Pasqua
+Egypt;Egitto
+Falkland Islands;Isole Falkland
+Faroe Islands;Isole Faroe
+Finland;Finlandia
+France;Francia
+Frankfurt;Fancoforte
+French Polynesia;Polinesia francese
+French Southern Territories;territori meridionali francesi
+Germany;Germania
+Greece;Grecia
+Greenland;Groenlandia
+Guangzhou;Canton
+Hamburg;Amburgo
+Havana;L'Avana
+Ho Chi Minh City;Ho Chi Minh
+Hungary;Ungheria
+Iceland;Islanda
+Indian;Indiano
+Ireland;Irlanda
+Isle of Man;Isola di Man
+Israel;Israele
+Italy;Italia
+Ivory Coast;Costa d'Avorio
+Jakarta;Giacarta
+Japan;Giappone
+Jerusalem;Gerusalemme
+Jordan;Giordania
+Kazakhstan;Kazakistan
+Khartoum;Khartum
+Kiritimati;Isola Christmas
+Kraków;Cracovia
+Kuwait City;Città del Kuwait
+Kyiv;Kiev
+Latvia;Lettonia
+Lebanon;Libano
+Libya;Libia
+Lisbon;Lisbona
+Lithuania;Lituania
+London;Londra
+Luxembourg;Lussemburgo
+Macau;Macao
+Malaysia;Malesia
+Maldives;Maldive
+Marshall Islands;Isole Marshall
+Martinique;Martinica
+Mexico City;Città del Messico
+Mexico;Messico
+Milan;Milano
+Mogadishu;Mogadiscio
+Moldova;Moldavia
+Morocco;Marocco
+Moscow;Mosca
+Munich;Monaco
+Muscat;Muscate
+Myanmar;Birmania
+Netherlands;Paesi Bassi
+New Caledonia;Nuova Caledonia
+New South Wales;Nuovo Galles del Sud
+New Zealand;Nuova Zelanda
+Newfoundland;Terranova
+Norfolk Island;isola Norfolk
+North Korea;Corea del Nord
+Northern Mariana Islands;Isole Marianne settentrionali
+Norway;Norvegia
+Nuestra Señora de La Paz;La Paz
+Pacific;Pacifico
+Palestine;Palestina
+Palestinian Territories;territori palestinesi
+Papua New Guinea;Papua Nuova Guinea
+Paris;Parigi
+Peru;Perù
+Philippines;Filippine
+Poland;Polonia
+Portugal;Portogallo
+Prague;Praga
+Puerto Rico;Porto Rico
+Republic of the Congo;Repubblica del Congo
+Rome;Roma
+Saint Kitts and Nevis;Saint Kitts e Nevis
+Saint Vincent And The Grenadines;Saint Vincent e Grenadine
+Sao Paulo;San Paolo
+Sao Tome and Príncipe;São Tomé e Príncipe
+Saudi Arabia;Arabia Saudita
+Simferopol;Sinferopoli
+Slovakia;Slovacchia
+Solomon Islands;Isole Salomone
+South Africa;Sudafrica
+South Georgia And The South Sandwich Islands;Georgia del Sud e isole Sandwich del Sud
+South Georgia;Georgia del Sud
+South Korea;Corea del Sud
+South Sudan;Sudan del Sud
+Spain;Spagna
+Stockholm;Stoccolma
+Svalbard And Jan Mayen Islands;Svalbard e Jan Mayen
+Sweden;Svezia
+Switzerland;Svizzera
+Syria;Siria
+Tehran;Teheran
+Thailand;Thailandia
+Trinidad and Tobago;Trinidad e Tobago
+Tunis;Tunisi
+Turkey;Turchia
+Turks and Caicos Islands;Isole di Turks e Caicos
+Ukraine;Ucraina
+United Arab Emirates;Emirati Arabi Uniti
+United Kingdom;Regno Unito
+United States Minor Outlying Islands;Isole minori esterne degli Stati Uniti d'America
+United States Virgin Islands;Stati Uniti Isole Vergini
+United States;Stati Uniti d'America
+Vatican City State;Città del Vaticano
+Vatican;Vaticano
+Wallis and Futuna Islands;Isole Wallis e Futuna
+Warsaw;Varsavia
+Washington D.C.;Washington
+Zagreb;Zagabria
+Zurich;Zurigo

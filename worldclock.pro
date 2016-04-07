@@ -41,6 +41,8 @@ OTHER_FILES += qml/worldclock.qml \
     translations/CityTranslations-pl_PL.txt \
     translations/CityTranslations-fr_FR.txt \
     translations/CityTranslations-hu_HU.txt \
+    translations/CityTranslations-it_IT.txt \
+    translations/CityTranslations-el_GR.txt \
     translations/CityTranslations-nl_NL.txt
 
 icon86.files += icons/86x86/harbour-worldclock.png
@@ -69,6 +71,8 @@ TRANSLATIONS = translations/harbour-worldclock-sv.ts \
                translations/harbour-worldclock-de.ts \
                translations/harbour-worldclock-fr_FR.ts \
                translations/harbour-worldclock-hu_HU.ts \
+               translations/harbour-worldclock-it.ts \
+               translations/harbour-worldclock-el.ts \
                translations/harbour-worldclock-nl.ts
 
 

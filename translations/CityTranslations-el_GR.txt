@@ -1,0 +1,548 @@
+Abidjan;Αμπιτζάν
+Accra;Άκκρα
+Addis Ababa;Αντίς Αμπέμπα
+Adelaide;Αδελαΐδα
+Afghanistan;Αφγανιστάν
+Africa;Αφρική
+Aland Islands;Άλαντ νησιά
+Albania;Αλβανία
+Albuquerque;Αλμπουκέρκη
+Algeria;Αλγερία
+Algiers;Αλγέρι
+Almaty;Αλμάτι
+America;Αμερική
+Amman;Αμμάν
+Amsterdam;Άμστερνταμ
+Anadyr;Ανάντιρ
+Anchorage;Ανκορέιτζ
+Andorra;Ανδόρρα
+Angola;Αγκόλα
+Anguilla;χέλι
+Ankara;Άγκυρα
+Ann Arbor;Ανν Άρμπορ
+Antananarivo;Ανταναναρίβο
+Antarctica;Ανταρκτική
+Antigua And Barbuda;Αντίγκουα και Μπαρμπούντα
+Apia;Απία
+Aqtau;Ακτό
+Arctic;Αρκτικός
+Argentina;Αργεντινή
+Armenia;Αρμενία
+Aruba;Αρούμπα
+Ashgabat;Ασγκαμπάτ
+Asia;Ασία
+Asuncion;Ασουνσιόν
+Athens;Αθήνα
+Atlanta;Ατλάντα
+Atlantic;Ατλαντικού
+Auckland;Ώκλαντ
+Austin;Ώστιν
+Australia;Αυστραλία
+Austria;Αυστρία
+Azerbaijan;Αζερμπαιτζάν
+Azores;Αζόρες
+Baghdad;Βαγδάτη
+Bahamas;Μπαχάμες
+Bahrain;Μπαχρέιν
+Baku;Μπακού
+Baltimore;Βαλτιμόρη
+Bamako;Μπαμάκο
+Bangalore;Μπανγκαλόρ
+Bangkok;Μπανγκόκ
+Bangladesh;Μπανγκλαντές
+Bangui;Μπανγκούι
+Barbados;Μπαρμπάντος
+Barcelona;Βαρκελώνη
+Beijing;Πεκίνο
+Beirut;Βηρυτός
+Belarus;Λευκορωσία
+Belfast;Μπέλφαστ
+Belgium;Βέλγιο
+Belgrade;Βελιγράδι
+Belize;Μπελίζ
+Belo Horizonte;Μπέλο Οριζόντε
+Benin;Μπενίν
+Berlin;Βερολίνο
+Bermuda;Βερμούδες
+Beulah;Beulah
+Bhutan;Μπουτάν
+Bishkek;Μπισκέκ
+Black Rock City;Black Rock City
+Blantyre;Μπλαντάιρ
+Boa Vista;Μπόα Βίστα
+Bogota;Μπογκοτά
+Bolivia;Βολιβία
+Bosnia And Herzegowina;Βοσνία και Ερζεγοβίνη
+Boston;Βοστώνη
+Botswana;Μποτσουάνα
+Boulder;Μπούλντερ
+Brasília;Μπραζίλια
+Bratislava;Μπρατισλάβα
+Brazil;Βραζιλία
+Brazzaville;Μπραζαβίλ
+Brisbane;Μπρίσμπεϊν
+British Indian Ocean Territory;Βρετανικό Έδαφος Ινδικού Ωκεανού
+Brunei;Μπρουνέι
+Brussels;Βρυξέλλες
+Bucharest;Βουκουρέστι
+Budapest;Βουδαπέστη
+Buenos Aires;Μπουένος Άιρες
+Bulgaria;Βουλγαρία
+Burkina Faso;Μπουρκίνα Φάσο
+Burundi;Μπουρούντι
+Cairo;Κάιρο
+Calcutta;Καλκούτα
+Calgary;Κάλγκαρι
+Cambodia;Καμπότζη
+Cambridge;Κέιμπριτζ
+Cameroon;Καμερούν
+Campo Grande;Κάμπο Γκράντε
+Canada;Καναδάς
+Canary;Canary
+Canberra;Καμπέρα
+Cancun;Κανκούν
+Cancún;Κανκούν
+Cape Town;Κέιπ Τάουν
+Cape Verde;Πράσινο Ακρωτήριο
+Caracas;Καράκας
+Casablanca;Καζαμπλάνκα
+Cayman Islands;Νήσοι Κέιμαν
+Cayman Palms;Cayman Palms
+Central African Republic;Δημοκρατία Κεντρικής Αφρικής
+Chicago;Σικάγο
+Chihuahua;Τσιουάουα
+Chile;Χιλή
+China;Κίνα
+Chisinau;Κισινάου
+Chişinău;Κισινάου
+Christmas Islands;Νήσος των Χριστουγέννων
+Christmas;Χριστούγεννα
+Cincinnati;Σινσινάτι
+Cleveland;Κλίβελαντ
+Colombia;Κολομβία
+Colombo;Κολόμπο
+Columbus;Κολόμπους
+Comoros;Κομόρες
+Conakry;Κονακρί
+Congo Brazzaville;Κονγκό-Μπραζαβίλ
+Congo Kinshasa;Κονγκό Κινσάσα
+Cook Islands;νησιά Κουκ
+Copenhagen;Κοπεγχάγη
+Cordoba;Κόρδοβα
+Costa Rica;Κόστα Ρίκα
+Croatia;Κροατία
+Cuba;Κούβα
+Curacao;Κουρασάο
+Curaçao;Κουρασάο
+Cyprus;Κύπρος
+Czech Republic;Τσεχία
+Dakar;Ντακάρ
+Dallas;Ντάλας
+Damascus;Δαμασκός
+Dar es Salaam;Νταρ ες Σαλάμ
+Darwin;Ντάργουιν
+Dawson Creek;Ντόσον Κρικ
+Delhi;Δελχί
+Democratic Republic of the Congo;Λαϊκή Δημοκρατία του Κονγκό
+Denmark;Δανία
+Denver;Ντένβερ
+Detroit;Ντιτρόιτ
+Dhaka;Ντάκα
+Djibouti;Τζιμπουτί
+Doha;Ντόχα
+Dominica;Δομινίκα
+Dominican Republic;Δομινικανή Δημοκρατία
+Dubai;Ντουμπάι
+Dublin;Δουβλίνο
+East Timor;Ανατολικό Τιμόρ
+Easter Island;Νησί του Πάσχα
+Easter;Πάσχα
+Ecuador;Εκουαδόρ
+Edmonton;Έντμοντον
+Egypt;Αίγυπτος
+El Salvador;Ελ Σαλβαδόρ
+Eritrea;Ερυθραία
+Estonia;Εσθονία
+Ethiopia;Αιθιοπία
+Europe;Ευρώπη
+Fakaofo;Φακαόφο
+Falkland Islands;Νήσοι Φώκλαντ
+Faroe Islands;Νήσοι Φερόες
+Faroe;Φερόε
+Fiji;Φίτζι
+Finland;Φινλανδία
+Fortaleza;Φορταλέζα
+France;Γαλλία
+Frankfurt;Φρανκφούρτη
+Freetown;Φρίταουν
+French Guiana;Γαλλική Γουιάνα
+French Polynesia;Γαλλική Πολυνησία
+French Southern Territories;Γαλλικά Νότια Εδάφη
+Gabon;Γκαμπόν
+Gaborone;Γκαμπορόνε
+Galapagos;Γκαλαπάγκος
+Gambia;Γκάμπια
+Gaza;Γάζα
+Georgia;Γεωργία
+Germany;Γερμανία
+Ghana;Γκάνα
+Gibraltar;Γιβραλτάρ
+Grand Turk;Grand Turk
+Greece;Ελλάδα
+Greenland;Γροιλανδία
+Grenada;Γρενάδα
+Guadeloupe;Γουαδελούπη
+Guam;Γκουάμ
+Guangzhou;Κουανγκτσόου
+Guatemala;Γουατεμάλα
+Guernsey;Γκέρνσεϊ
+Guinea Bissau;Μπισσάου Γουινέα
+Guinea;Γουινέα
+Gurgaon;Γκουργκάον
+Guyana;Γουιάνα
+Haifa;Χάιφα
+Haiti;Αϊτή
+Halifax;Χάλιφαξ
+Hamburg;Αμβούργο
+Hanoi;Ανόι
+Harare;Χαράρε
+Havana;Αβάνα
+Hebron;Χεβρώνα
+Helsinki;Ελσίνκι
+Ho Chi Minh City;Χο Τσι Μιν
+Ho Chi Minh;Χο Τσι Μινχ
+Hobart;Χόμπαρτ
+Hong Kong;Χονγκ Κονγκ
+Honolulu;Χονολουλού
+Houston;Χιούστον
+Hungary;Ουγγαρία
+Hyderabad;Χαϊντεραμπάντ
+Iceland;Ισλανδία
+India;Ινδία
+Indian;Ινδικός
+Indiana;Ιντιάνα
+Indianapolis;Ιντιανάπολις
+Indonesia;Ινδονησία
+Iran;Ιράν
+Iraq;Ιράκ
+Ireland;Ιρλανδία
+Islamabad;Ισλαμαμπάντ
+Isle of Man;Νήσος του Μαν
+Israel;Ισραήλ
+Istanbul;Κωνσταντινούπολη
+Italy;Ιταλία
+Ivory Coast;Ακτή Ελεφαντοστού
+Jacksonville;Τζάκσονβιλ
+Jakarta;Τζακάρτα
+Jamaica;Ιαμαϊκή
+Japan;Ιαπωνία
+Jersey;Φανέλα
+Jerusalem;Ιερουσαλήμ
+Johannesburg;Γιοχάνεσμπουργκ
+Jordan;Ιορδανία
+Kabul;Καμπούλ
+Kampala;Καμπάλα
+Karachi;Καράτσι
+Kazakhstan;Καζακστάν
+Kenya;Κένυα
+Khartoum;Χαρτούμ
+Kiev;Κίεβο
+Kigali;Κιγκάλι
+Kingston;Κίνγκστον
+Kinshasa;Κινσάσα
+Kiribati;Κιριμπάτι
+Kiritimati;Κιριτιμάτι
+Kirkland;Kirkland
+Knox;Νοξ
+Knoxville;Νόξβιλ
+Kraków;Κρακοβία
+Kuala Lumpur;Κουάλα Λουμπούρ
+Kuwait City;Πόλη του Κουβέιτ
+Kuwait;Κουβέιτ
+Kyiv;Κίεβο
+Kyrgyzstan;Κιργιστάν
+Lagos;Λάγος
+Lahore;Λαχόρη
+Laos;Λάος
+Las Vegas;Λας Βέγκας
+Latvia;Λετονία
+Lebanon;Λίβανος
+Lesotho;Λεσότο
+Liberia;Λιβερία
+Libreville;Λιμπρεβίλ
+Libya;Λιβύη
+Liechtenstein;Λιχτενστάιν
+Lima;Λίμα
+Lisbon;Λισαβόνα
+Lithuania;Λιθουανία
+Ljubljana;Λιουμπλιάνα
+Lome;Λομέ
+London;Λονδίνο
+Longyearbyen;Λονγκιαρμπίεν
+Los Angeles;Λος Άντζελες
+Louisville;Λούισβιλ
+Luanda;Λουάντα
+Lubumbashi;Λουμπουμπάσι
+Lusaka;Λουσάκα
+Luxembourg;Λουξεμβούργο
+Macao;Μακάου
+Macau;Μακάου
+Macedonia;πρώην Γιουγκοσλαβική Δημοκρατία της Μακεδονίας
+Madagascar;Μαδαγασκάρη
+Madeira;Μαδέρα
+Madison;Μάντισον
+Madrid;Μαδρίτη
+Magadan;Μαγκαντάν
+Malabo;Μαλάμπο
+Malawi;Μαλάουϊ
+Malaysia;Μαλαισία
+Maldives;Μαλβίδες
+Mali;Μάλι
+Malta;Μάλτα
+Managua;Μανάγουα
+Manchester;Μάντσεστερ
+Manila;Μανίλα
+Maputo;Μαπούτο
+Marengo;Marengo
+Marshall Islands;νησιά Μάρσαλ
+Martinique;Μαρτινίκα
+Maseru;Μαζέρου
+Mauritania;Μαυριτανία
+Mauritius;Μαυρίκιος
+Mayotte;Μαγιότ
+Mbabane;Μπαμπάνε
+Melbourne;Μελβούρνη
+Memphis;Μέμφις
+Mendoza;Μεντόσα
+Metlakatla;Metlakatla
+Mexico City;Πόλη του Μεξικού
+Mexico;Μεξικό
+Miami;Μαϊάμι
+Micronesia;Μικρονησία
+Milan;Μιλάνο
+Milwaukee;Μιλγουόκι
+Minneapolis;Μινεάπολη
+Minsk;Μινσκ
+Miquelon;Μικελόν
+Mogadishu;Μογκαντίσου
+Moldova;Μολδαβία
+Monaco;Μονακό
+Mongolia;Μογγολία
+Monrovia;Μονρόβια
+Montenegro;Μαυροβούνιο
+Monterrey;Μοντερρέι
+Montevideo;Μοντεβιδέο
+Montreal;Μόντρεαλ
+Montserrat;Μοντσεράτ
+Morocco;Μαρόκο
+Moscow;Μόσχα
+Mozambique;Μοζαμβίκη
+Mumbai;Μουμπάι
+Munich;Μόναχο
+Muscat;Μουσκάτ
+Myanmar;Μιανμάρ
+Nairobi;Ναϊρόμπι
+Namibia;Ναμίμπια
+Nashville;Νάσβιλ
+Nassau;Νασσάου
+Nauru;Ναουρού
+Ndjamena;Ντζαμένα
+Netherlands;Ολλανδία
+New Caledonia;Νέα Καληδονία
+New Orleans;Νέα Ορλεάνη
+New Salem;New Salem
+New South Wales;Νέα Νότια Ουαλία
+New York;Νέα Υόρκη
+New Zealand;Νέα Ζηλανδία
+Newfoundland;Νέα Γη
+Niamey;Νιαμέι
+Nicaragua;Νικαράγουα
+Nicosia;Λευκωσία
+Niger;Νίγηρας
+Nigeria;Νιγηρία
+Norfolk Islands;Νόρφολκ νησιά
+North Korea;Βόρεια Κορέα
+Northern Mariana Islands;Νησιά Βόρειες Μαριάννες
+Norway;Νορβηγία
+Nouakchott;Νουαξότ
+Nouméa;Νουμεά
+Novosibirsk;Νοβοσιμπίρσκ
+Oklahoma City;Οκλαχόμα Σίτι
+Oman;Ομάν
+Osaka;Οσάκα
+Oslo;Όσλο
+Ottawa;Οττάβα
+Oulu;Όουλου
+Pacific;Ειρηνικός
+Pakistan;Πακιστάν
+Palau;Παλάου
+Palestine;Παλαιστίνη
+Panama;Παναμάς
+Panamá;Παναμάς
+Papua New Guinea;Παπούα Νέα Γουινέα
+Paraguay;Παραγουάη
+Paramaribo;Παραμαρίμπο
+Paris;Παρίσι
+Perth;Περθ
+Peru;Περού
+Petersburg;Αγία Πετρούπολη
+Philadelphia;Φιλαδέλφεια
+Philippines;Φιλιππίνες
+Phnom Penh;Πνομ Πεν
+Phoenix;Φοίνιξ
+Pitcairn;Πίτκερν
+Pittsburgh;Πίτσμπεργκ
+Poland;Πολωνία
+Port au Prince;Πορτ-ο-Πρενς
+Port of Spain;Πορτ-οφ-Σπέιν
+Portland;Πόρτλαντ
+Portugal;Πορτογαλία
+Prague;Πράγα
+Puerto Rico;Πουέρτο Ρίκο
+Pyongyang;Πιονγιάνγκ
+Qatar;Κατάρ
+Queensland;Κουίνσλαντ
+Quito;Κίτο
+Rangoon;Ρανγκούν
+Rarotonga;Ραροτόνγκα
+Recife;Ρεσίφε
+Reno;Ρίνο
+Republic of the Congo;Δημοκρατία του Κονγκό
+Reston;Reston
+Reunion;Επανένωση
+Reykjavik;Ρέικιαβικ
+Reykjavík;Ρέικιαβικ
+Riga;Ρίγα
+Rio de Janeiro;Ρίο ντε Τζανέιρο
+Riyadh;Ριάντ
+Romania;Ρουμανία
+Rome;Ρώμη
+Russia;Ρωσία
+Rwanda;Ρουάντα
+Sacramento;Σακραμέντο
+Saint Helena;Αγία Ελένη
+Saint Kitts and Nevis;Άγιος Χριστόφορος και Νέβις
+Saipan;Σαϊπάν
+Sakhalin;Σαχαλίνη
+Salt Lake City;Σολτ Λέικ Σίτι
+Salta;Σάλτα
+Samara;Σαμαρά
+Samoa;Σαμόα
+San Antonio;Σαν Αντόνιο
+San Diego;Σαν Ντιέγκο
+San Francisco;Σαν Φρανσίσκο
+San José;Σαν Χοσέ
+San Juan;Σαν Χουάν
+San Marino;Σαν Μαρίνο
+San Salvador;Σαν Σαλβαντόρ
+Sanaa;Σαναά
+Santiago;Σαντιάγο
+Santo Domingo;Σάντο Ντομίγκο
+Sao Paulo;Σάο Πάολο
+Sao Tome;Σάο Τομέ
+Sarajevo;Σαράγεβο
+Saskatchewan;Σασκάτσουαν
+Saudi Arabia;Σαουδική Αραβία
+Seattle;Σιάτλ
+Senegal;Σενεγάλη
+Seoul;Σεούλ
+Serbia;Σερβία
+Seychelles;Σεϋχέλλες
+Shanghai;Σαγκάη
+Sierra Leone;Σιέρα Λεόνε
+Simferopol;Συμφερόπολη
+Singapore;Σιγκαπούρη
+Sint Maarten;Άγιος Μαρτίνος
+Skopje;Σκόπια
+Slovakia;Σλοβακία
+Slovenia;Σλοβενία
+Sofia;Σόφια
+Solomon Islands;νησιά Σολομώντα
+Somalia;Σομαλία
+South Africa;Νότιος Αφρική
+South Korea;Νότια Κορέα
+South Sudan;Νότιο Σουδάν
+Spain;Ισπανία
+Sri Lanka;Σρι Λάνκα
+St Helena;Αγία Ελένη
+St Vincent And The Grenadines;Άγιος Βικέντιος και Γρεναδίνες
+St.Johns;Άγιος Ιωάννης Νέας Γης
+St.Kitts;Άγιος Χριστόφορος
+St.Louis;Σαιντ Λούις
+Stanley;Στάνλεϋ
+Stockholm;Στοκχόλμη
+Sudan;Σουδάν
+Suriname;Σουρινάμ
+Suva;Σούβα
+Svalbard And Jan Mayen Islands;Νήσοι Σβάλμπαρντ και Γιαν Μαγιέν
+Svalbard and Jan Mayen;Νήσοι Σβάλμπαρντ και Γιαν Μάγιεν
+Swaziland;Σουαζιλάνδη
+Sweden;Σουηδία
+Switzerland;Ελβετία
+Sydney;Σίδνεϊ
+Syria;Συρία
+São Paulo;Σάο Πάολο
+São Tomé and Príncipe;Σάο Τομέ και Πρίνσιπε
+São Tomé;Σάο Τομέ
+Tahiti;Ταϊτή
+Taipei;Ταϊπέι
+Taiwan;Ταϊβάν
+Tajikistan;Τατζικιστάν
+Tallinn;Ταλίν
+Tanzania;Τανζανία
+Tarawa;Ταράουα
+Tashkent;Τασκένδη
+Tbilisi;Τιφλίδα
+Tehran;Τεχεράνη
+Thailand;Ταϊλάνδη
+Thunder Bay;Θάντερ Μπέι
+Tirane;Τιράνα
+Togo;Να πάω
+Tokelau;Τοκελάου
+Tokyo;Τόκιο
+Tonga;Τόνγκα
+Toronto;Τορόντο
+Trinidad and Tobago;Τρινιντάντ και Τομπάγκο
+Tripoli;Τρίπολη
+Tunis;Τύνιδα
+Tunisia;Τυνησία
+Turkey;Τουρκία
+Turkmenistan;Τουρκμενιστάν
+Turks and Caicos Islands;Τερκς και Κέικος
+Uganda;Ουγκάντα
+Ukraine;Ουκρανία
+Ulaanbaatar;Ουλάν Μπατόρ
+Ulan Bator;Ουλάν Μπατόρ
+United Arab Emirates;Ηνωμένα Αραβικά Εμιράτα
+United Kingdom;Ενωμένο Βασίλειο
+United States Minor Outlying Islands;Απομακρυσμένες Νησίδες των Ηνωμένων Πολιτειών
+United States Virgin Islands;Ηνωμένες Πολιτείες Παρθένοι Νήσοι
+United States;Ηνωμένες Πολιτείες Αμερικής
+Uruguay;Ουρουγουάη
+Uzbekistan;Ουζμπεκιστάν
+Vaduz;Βαντούζ
+Vancouver;Βανκούβερ
+Vatican City State;Πόλη του Βατικανού
+Vatican City;Βατικανό
+Vatican;Βατικανό
+Venezuela;Βενεζουέλα
+Vevay;Vevay
+Vienna;Βιέννη
+Vietnam;Βιετνάμ
+Vilnius;Βίλνιους
+Vincennes;Βενσέν
+Vladivostok;Βλαδιβοστόκ
+Wallis And Futuna Islands;Ουόλις και Φουτούνα
+Warsaw;Βαρσοβία
+Washington D.C.;Ουάσινγκτον, Π.Κ.
+Western Sahara;δυτική Σαχάρα
+Winamac;Winamac
+Windhoek;Βίντχουκ
+Winnipeg;ΓουίνιπεγκΣιάτλ
+Wrocław;Βρότσλαφ
+Yakutsk;Γιακούτσκ
+Yemen;Υεμένη
+Zagreb;Ζάγκρεμπ
+Zambia;Ζάμπια
+Zimbabwe;Ζιμπάμπουε
+Zurich;Ζυρίχη

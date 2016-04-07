@@ -4,27 +4,27 @@
 <context>
     <name>About</name>
     <message>
-        <location filename="../qml/pages/About.qml" line="23"/>
+        <location filename="../qml/pages/About.qml" line="24"/>
         <source>About</source>
         <translation>À propos</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="26"/>
+        <location filename="../qml/pages/About.qml" line="27"/>
         <source>Info</source>
         <translation>Infos</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="58"/>
+        <location filename="../qml/pages/About.qml" line="59"/>
         <source>Version</source>
         <translation>Version</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="63"/>
+        <location filename="../qml/pages/About.qml" line="64"/>
         <source>City times across the world</source>
         <translation>Heure des villes à travers le monde</translation>
     </message>
     <message>
-        <location filename="../qml/pages/About.qml" line="69"/>
+        <location filename="../qml/pages/About.qml" line="70"/>
         <source>Author</source>
         <translation>Auteur</translation>
     </message>
@@ -47,12 +47,12 @@
         <translation type="unfinished">Suppression en cours</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="182"/>
+        <location filename="../qml/pages/Aliases.qml" line="183"/>
         <source>Alt. name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="207"/>
+        <location filename="../qml/pages/Aliases.qml" line="208"/>
         <source>No custom city names defined. Press the plus button to add one.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -276,27 +276,27 @@
         <translation>Langue :</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="253"/>
+        <location filename="../qml/pages/SettingPage.qml" line="264"/>
         <source>Change of language will be active after restarting the application.</source>
         <translation>La langue sera changée au redémarrage de l&apos;application.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="261"/>
+        <location filename="../qml/pages/SettingPage.qml" line="272"/>
         <source>Worldclock pick screen</source>
         <translation>Écran de sélection d&apos;heures</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="262"/>
+        <location filename="../qml/pages/SettingPage.qml" line="273"/>
         <source>Choose screentype used for selecting a worldclock</source>
         <translation>Choisir comment afficher l&apos;écran de sélection d&apos;heures</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="266"/>
+        <location filename="../qml/pages/SettingPage.qml" line="277"/>
         <source>Custom</source>
         <translation>Personnalisé</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="269"/>
+        <location filename="../qml/pages/SettingPage.qml" line="280"/>
         <source>Sailfish</source>
         <translation>Sailfish</translation>
     </message>

@@ -137,17 +137,23 @@ Dialog {
                             text: "German/Deutsch"
                         } // 3
                         MenuItem {
-                            text: "Hungarian/Magyar"
+                            text: "Greek/ελληνικά"
                         } // 4
                         MenuItem {
-                            text: "Polish/Polski"
+                            text: "Hungarian/Magyar"
                         } // 5
                         MenuItem {
-                            text: "Russian/Русский"
+                            text: "Italian/Italiano"
                         } // 6
                         MenuItem {
-                            text: "Swedish/Svensk"
+                            text: "Polish/Polski"
                         } // 7
+                        MenuItem {
+                            text: "Russian/Русский"
+                        } // 8
+                        MenuItem {
+                            text: "Swedish/Svensk"
+                        } // 9
                     }
                     // The next two converter functions decouple the alphabetical language list
                     // index from the internal settings index, which cannot be changed for legacy reasons
@@ -200,6 +206,9 @@ Dialog {
                         case Languages.HU_HU:
                             // Hungarian
                             return GlobVars.hungarian
+                        case Languages.IT:
+                            // Italian
+                            return GlobVars.italian
                         default:
                             return GlobVars.english
                         }
@@ -239,6 +248,8 @@ Dialog {
                             return Languages.PL_PL // Polish
                         case GlobVars.hungarian:
                             return Languages.HU_HU // Hungarian
+                        case GlobVars.italian:
+                            return Languages.IT // Italian
                         default:
                             return Languages.EN // English
                         }

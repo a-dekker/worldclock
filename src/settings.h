@@ -42,6 +42,8 @@ public:
         FR_FR, // French
         RU,    // Russian
         SV,    // Swedish
+        IT,    // Italian
+        EL,    // Greek
         INVALID
     };
 };
