@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sun Apr 10 2016 Arno Dekker <jack.tar@example.com> 0.8-3
+- Added supplemental country info on details page
+
 * Tue Mar 1 2016 Arno Dekker <jack.tar@example.com> 0.8-2
 - Added Greek and Italian language
 

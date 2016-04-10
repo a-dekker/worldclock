@@ -1,6 +1,7 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import harbour.worldclock.TimeZone 1.0
+import "../localdb.js" as DB
 
 Page {
     id: cityDetailPage
@@ -24,6 +25,13 @@ Page {
     property string dstShiftTxtOld
     property string dstShiftTxt
     property string countryTranslated
+    property string countryInf
+    property string currency3pos
+    property string currency
+    property string countrcode_tel
+    property string iso2pos
+    property string iso3pos
+    property string wwwExt
 
     TZ {
         id: timezones
@@ -79,11 +87,23 @@ Page {
             default:
                 dstShiftTxt = ""
         }
+    }
 
+    function get_country_details() {
+        var countryInf = DB.getCountryInfo(zoneCountry)
+        // JPY|Yen|81|JP|JPN|.jp
+        countryInf = countryInf.split('|')
+        currency3pos = countryInf[0]
+        currency = countryInf[1]
+        countrcode_tel = countryInf[2]
+        iso2pos = countryInf[3]
+        iso3pos = countryInf[4]
+        wwwExt = countryInf[5]
     }
 
     Component.onCompleted: {
         get_city_details(mainapp.city_id)
+        get_country_details()
     }
 
     // Place our content in a Column.  The PageHeader is always placed at the top
@@ -199,6 +219,85 @@ Page {
                 font.pixelSize: Theme.fontSizeExtraSmall
                 color: Theme.secondaryColor
                 text: dstShiftTxt
+            }
+            Separator {
+                color: Theme.primaryColor
+                width: parent.width
+                anchors.horizontalCenter: parent.horizontalCenter
+                horizontalAlignment: Qt.AlignHCenter
+                visible: iso3pos !== ""
+            }
+            Row {
+                id: isoInfo
+                x: Theme.paddingLarge
+                width: parent.width - Theme.paddingLarge
+                spacing: 10
+                visible: iso3pos !== ""
+                Image {
+                    id: isoIcon
+                    source: "../images/iso-icon.png"
+                    height: largeScreen ? 80 : 40
+                    width: largeScreen ? 80 : 40
+                }
+                Label {
+                    id: isoTxt
+                    x: Theme.paddingLarge
+                    font.pixelSize: largeScreen ? Theme.fontSizeMedium : Theme.fontSizeSmall
+                    text: iso3pos + '/' + iso2pos
+                    width: (parent.width / 3) * 0.95
+                }
+                Image {
+                    x: parent.width / 2
+                    id: wwwIcon
+                    source: "../images/www-icon.png"
+                    height: largeScreen ? 80 : 40
+                    width: largeScreen ? 80 : 40
+                }
+                Label {
+                    id: wwwTxt
+                    x: Theme.paddingLarge
+                    font.pixelSize: largeScreen ? Theme.fontSizeMedium : Theme.fontSizeSmall
+                    text: wwwExt
+                    width: (parent.width / 3) * 0.95
+                }
+            }
+            Row {
+                id: phoneCoinInfo
+                x: Theme.paddingLarge
+                width: parent.width - Theme.paddingLarge
+                spacing: 10
+                Image {
+                    id: countryCode
+                    source: "image://theme/icon-l-answer"
+                    height: largeScreen ? 80 : 40
+                    width: largeScreen ? 80 : 40
+                    visible: countrcode_tel !== ""
+                }
+                Label {
+                    id: countryCodeTxt
+                    x: Theme.paddingLarge
+                    font.pixelSize: largeScreen ? Theme.fontSizeMedium : Theme.fontSizeSmall
+                    text: countrcode_tel
+                    visible: countrcode_tel !== ""
+                    truncationMode: TruncationMode.Fade
+                    width: (parent.width / 3) * 0.95
+                }
+                Image {
+                    id: currencyIcon
+                    source: "../images/coin-icon.png"
+                    height: largeScreen ? 80 : 40
+                    width: largeScreen ? 80 : 40
+                    visible: currency !== ""
+                }
+                Label {
+                    id: currencyTxt
+                    x: Theme.paddingLarge
+                    font.pixelSize: largeScreen ? Theme.fontSizeMedium : Theme.fontSizeSmall
+                    text: currency + " (" + currency3pos + ")"
+                    visible: currency !== ""
+                    truncationMode: TruncationMode.Fade
+                    width: (parent.width / 2.4)
+                }
             }
         }
     }

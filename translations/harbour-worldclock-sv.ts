@@ -60,68 +60,68 @@
 <context>
     <name>CityDetail</name>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="57"/>
-        <location filename="../qml/pages/CityDetail.qml" line="60"/>
+        <location filename="../qml/pages/CityDetail.qml" line="65"/>
+        <location filename="../qml/pages/CityDetail.qml" line="68"/>
         <source>None</source>
         <translation>Ingen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="64"/>
+        <location filename="../qml/pages/CityDetail.qml" line="72"/>
         <source>the clock jumped one hour backward</source>
         <translation>klockan flyttades tillbaka en timma</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="67"/>
+        <location filename="../qml/pages/CityDetail.qml" line="75"/>
         <source>the clock jumped one hour forward</source>
         <translation>klockan flyttades fram en timma</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="74"/>
+        <location filename="../qml/pages/CityDetail.qml" line="82"/>
         <source>the clock jumps one hour backward</source>
         <translation>klockan flyttas tillbaka en timma</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="77"/>
+        <location filename="../qml/pages/CityDetail.qml" line="85"/>
         <source>the clock jumps one hour forward</source>
         <translation>klockan flyttas fram en timma</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="104"/>
+        <location filename="../qml/pages/CityDetail.qml" line="124"/>
         <source>Timezone details</source>
         <translation>Tidszondetaljer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="119"/>
+        <location filename="../qml/pages/CityDetail.qml" line="139"/>
         <source>Timezone</source>
         <translation>Tidszon</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="131"/>
+        <location filename="../qml/pages/CityDetail.qml" line="151"/>
         <source>Zone time</source>
         <translation>Zontid</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="143"/>
+        <location filename="../qml/pages/CityDetail.qml" line="163"/>
         <source>Local time</source>
         <translation>Lokal tid</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="155"/>
+        <location filename="../qml/pages/CityDetail.qml" line="175"/>
         <source>Time difference</source>
         <translation>Tidsskillnad</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="161"/>
+        <location filename="../qml/pages/CityDetail.qml" line="181"/>
         <source>hour</source>
         <translation>tim.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="167"/>
+        <location filename="../qml/pages/CityDetail.qml" line="187"/>
         <source>Prev. daylight transition</source>
         <translation>Föreg. dagsljusanpassn.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="187"/>
+        <location filename="../qml/pages/CityDetail.qml" line="207"/>
         <source>Next daylight transition</source>
         <translation>Nästa dagsljusanpassn.</translation>
     </message>
@@ -312,6 +312,14 @@
         <location filename="../qml/pages/Timezone.qml" line="45"/>
         <source>Select city</source>
         <translation>Välj stad</translation>
+    </message>
+</context>
+<context>
+    <name>localdb</name>
+    <message>
+        <location filename="../qml/localdb.js" line="564"/>
+        <source>Unknown</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

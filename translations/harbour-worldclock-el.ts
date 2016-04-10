@@ -60,68 +60,68 @@
 <context>
     <name>CityDetail</name>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="57"/>
-        <location filename="../qml/pages/CityDetail.qml" line="60"/>
+        <location filename="../qml/pages/CityDetail.qml" line="65"/>
+        <location filename="../qml/pages/CityDetail.qml" line="68"/>
         <source>None</source>
         <translation>Ουδεμία</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="64"/>
+        <location filename="../qml/pages/CityDetail.qml" line="72"/>
         <source>the clock jumped one hour backward</source>
         <translation>το ρολόι γύρισε σε μια ώρα πίσω</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="67"/>
+        <location filename="../qml/pages/CityDetail.qml" line="75"/>
         <source>the clock jumped one hour forward</source>
         <translation>το ρολόι γύρισε μια ώρα μπροστά</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="74"/>
+        <location filename="../qml/pages/CityDetail.qml" line="82"/>
         <source>the clock jumps one hour backward</source>
         <translation>το ρολόι θα γυρίσει μια ώρα πίσω</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="77"/>
+        <location filename="../qml/pages/CityDetail.qml" line="85"/>
         <source>the clock jumps one hour forward</source>
         <translation>το ρολόι θα γυρίσει μια ώρα μπροστά</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="104"/>
+        <location filename="../qml/pages/CityDetail.qml" line="124"/>
         <source>Timezone details</source>
         <translation>Λεπτομέρειες ωρολογιακής ζώνης</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="119"/>
+        <location filename="../qml/pages/CityDetail.qml" line="139"/>
         <source>Timezone</source>
         <translation>Ωρολογιακή ζώνη</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="131"/>
+        <location filename="../qml/pages/CityDetail.qml" line="151"/>
         <source>Zone time</source>
         <translation>Ζώνη ώρας</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="143"/>
+        <location filename="../qml/pages/CityDetail.qml" line="163"/>
         <source>Local time</source>
         <translation>Τοπική ώρα</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="155"/>
+        <location filename="../qml/pages/CityDetail.qml" line="175"/>
         <source>Time difference</source>
         <translation>Διαφορά ώρας</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="161"/>
+        <location filename="../qml/pages/CityDetail.qml" line="181"/>
         <source>hour</source>
         <translation>ώρα</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="167"/>
+        <location filename="../qml/pages/CityDetail.qml" line="187"/>
         <source>Prev. daylight transition</source>
         <translation>Προηγούμενη αλλαγή θερινής ώρας</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="187"/>
+        <location filename="../qml/pages/CityDetail.qml" line="207"/>
         <source>Next daylight transition</source>
         <translation>Επόμενη αλλαγή θερινής ώρας</translation>
     </message>
@@ -312,6 +312,14 @@
         <location filename="../qml/pages/Timezone.qml" line="45"/>
         <source>Select city</source>
         <translation>Επιλογή της πόλης</translation>
+    </message>
+</context>
+<context>
+    <name>localdb</name>
+    <message>
+        <location filename="../qml/localdb.js" line="564"/>
+        <source>Unknown</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

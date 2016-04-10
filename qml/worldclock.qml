@@ -30,10 +30,9 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import harbour.worldclock.Launcher 1.0
 import "pages"
 import "cover"
-import harbour.worldclock.Launcher 1.0
-
 
 ApplicationWindow
 {
