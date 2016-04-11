@@ -129,7 +129,7 @@ Page {
                 if (searchString.length === 0) {
                     return mycountry
                 }
-                var regexp = new RegExp('\\b' + searchString, 'i')
+                var regexp = new RegExp('(^| |/|\\[|\\(|-)' + searchString.replace(/\+/g,'\\+'), 'i')
                 if (regexp.test(mycountry)) {
                     return Theme.highlightText(mycountry, regexp,
                                                Theme.highlightColor)
