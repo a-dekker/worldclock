@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Mon Apr 11 2016 Arno Dekker <jack.tar@example.com> 0.8-5
+- Added Arabic
+
 * Mon Apr 11 2016 Arno Dekker <jack.tar@example.com> 0.8-4
 - Fixed search function for non latin languages
 

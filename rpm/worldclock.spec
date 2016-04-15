@@ -14,7 +14,7 @@ Name:       harbour-worldclock
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    Show city times
 Version:    0.8
-Release:    4
+Release:    5
 Group:      Qt/Qt
 License:    LICENSE
 URL:        https://github.com/a-dekker/worldclock
@@ -61,6 +61,7 @@ cp /home/src1/worldclock/translations/CityTranslations-it_IT.txt %{buildroot}/us
 cp /home/src1/worldclock/translations/CityTranslations-el_GR.txt %{buildroot}/usr/share/harbour-worldclock/translations
 cp /home/src1/worldclock/translations/CityTranslations-fr_FR.txt %{buildroot}/usr/share/harbour-worldclock/translations
 cp /home/src1/worldclock/translations/CityTranslations-ru_RU.txt %{buildroot}/usr/share/harbour-worldclock/translations
+cp /home/src1/worldclock/translations/CityTranslations-ar_EG.txt %{buildroot}/usr/share/harbour-worldclock/translations
 
 # >> install post
 # << install post

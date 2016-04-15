@@ -127,6 +127,7 @@ Poland;Polen
 Prague;Praag
 Republic of the Congo;Republiek Congo
 Reunion;Réunion
+Riyadh:Riyad
 Romania;Roemenië
 Russia;Rusland
 Saint Barthelemy;Saint-Barthélemy

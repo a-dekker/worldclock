@@ -128,32 +128,35 @@ Dialog {
                             text: "English/English"
                         } // 0
                         MenuItem {
-                            text: "Dutch/Nederlands"
+                            text: "Arabic/العربية"
                         } // 1
                         MenuItem {
-                            text: "French/Français"
+                            text: "Dutch/Nederlands"
                         } // 2
                         MenuItem {
-                            text: "German/Deutsch"
+                            text: "French/Français"
                         } // 3
                         MenuItem {
-                            text: "Greek/ελληνικά"
+                            text: "German/Deutsch"
                         } // 4
                         MenuItem {
-                            text: "Hungarian/Magyar"
+                            text: "Greek/ελληνικά"
                         } // 5
                         MenuItem {
-                            text: "Italian/Italiano"
-                        } // 6
-                        MenuItem {
-                            text: "Polish/Polski"
+                            text: "Hungarian/Magyar"
                         } // 7
                         MenuItem {
-                            text: "Russian/Русский"
+                            text: "Italian/Italiano"
                         } // 8
                         MenuItem {
-                            text: "Swedish/Svensk"
+                            text: "Polish/Polski"
+                        } // 8
+                        MenuItem {
+                            text: "Russian/Русский"
                         } // 9
+                        MenuItem {
+                            text: "Swedish/Svensk"
+                        } // 10
                     }
                     // The next two converter functions decouple the alphabetical language list
                     // index from the internal settings index, which cannot be changed for legacy reasons
@@ -197,6 +200,9 @@ Dialog {
                         case Languages.EL:
                             // Greek
                             return GlobVars.greek
+                        case Languages.AR:
+                            // Arabic
+                            return GlobVars.arabic
                         case Languages.TR_TR:
                             // Turkish
                             return GlobVars.turkish
@@ -244,6 +250,8 @@ Dialog {
                             return Languages.RU // Russian
                         case GlobVars.greek:
                             return Languages.EL // Greek
+                        case GlobVars.arabic:
+                            return Languages.AR // Arabic
                         case GlobVars.polish:
                             return Languages.PL_PL // Polish
                         case GlobVars.hungarian:

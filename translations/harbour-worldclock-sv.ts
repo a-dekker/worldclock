@@ -276,27 +276,27 @@
         <translation>Språk:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="264"/>
+        <location filename="../qml/pages/SettingPage.qml" line="272"/>
         <source>Change of language will be active after restarting the application.</source>
         <translation>Språkändringar kommer att aktiveras vid omstart av programmet.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="272"/>
+        <location filename="../qml/pages/SettingPage.qml" line="280"/>
         <source>Worldclock pick screen</source>
         <translation>Worldclock välj skärm</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="273"/>
+        <location filename="../qml/pages/SettingPage.qml" line="281"/>
         <source>Choose screentype used for selecting a worldclock</source>
         <translation>Välj skärmtyp för att välja ett världsur</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="277"/>
+        <location filename="../qml/pages/SettingPage.qml" line="285"/>
         <source>Custom</source>
         <translation>Anpassad</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="280"/>
+        <location filename="../qml/pages/SettingPage.qml" line="288"/>
         <source>Sailfish</source>
         <translation>Sailfish</translation>
     </message>

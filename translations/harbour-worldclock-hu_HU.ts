@@ -276,27 +276,27 @@
         <translation>Nyelv:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="264"/>
+        <location filename="../qml/pages/SettingPage.qml" line="272"/>
         <source>Change of language will be active after restarting the application.</source>
         <translation>Az új nyelvi beállítás az alkalmazás újraindítása után aktiválódik.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="272"/>
+        <location filename="../qml/pages/SettingPage.qml" line="280"/>
         <source>Worldclock pick screen</source>
         <translation>Világóra választó képernyő</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="273"/>
+        <location filename="../qml/pages/SettingPage.qml" line="281"/>
         <source>Choose screentype used for selecting a worldclock</source>
         <translation>Válaszd ki a képernyő stílust</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="277"/>
+        <location filename="../qml/pages/SettingPage.qml" line="285"/>
         <source>Custom</source>
         <translation>Egyedi</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="280"/>
+        <location filename="../qml/pages/SettingPage.qml" line="288"/>
         <source>Sailfish</source>
         <translation>Sailfish</translation>
     </message>

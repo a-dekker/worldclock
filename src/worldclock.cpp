@@ -119,6 +119,10 @@ int main(int argc, char *argv[])
         case settingsPublic::Languages::EL:
             translator.load("harbour-worldclock-el.qm", SailfishApp::pathTo(QString("translations")).toLocalFile());
             break;
+        // Arabic
+        case settingsPublic::Languages::AR:
+            translator.load("harbour-worldclock-ar.qm", SailfishApp::pathTo(QString("translations")).toLocalFile());
+            break;
         // English
         default:
             translator.load("harbour-worldclock.qm", SailfishApp::pathTo(QString("translations")).toLocalFile());
@@ -174,6 +178,10 @@ QLocale myLanguage(void)
     // Greek
     case settingsPublic::Languages::EL:
         myLang = QLocale( QLocale::Greek, QLocale::Greece );
+        break;
+    // Arabic
+    case settingsPublic::Languages::AR:
+        myLang = QLocale( QLocale::Arabic, QLocale::Egypt );
         break;
     // English
     default:
