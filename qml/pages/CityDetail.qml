@@ -221,10 +221,11 @@ Page {
                 text: dstShiftTxt
             }
             Separator {
+                x: Theme.paddingLarge
                 color: Theme.primaryColor
                 width: parent.width
-                anchors.horizontalCenter: parent.horizontalCenter
-                horizontalAlignment: Qt.AlignHCenter
+                // anchors.horizontalCenter: parent.horizontalCenter
+                // horizontalAlignment: Qt.AlignHCenter
                 visible: iso3pos !== ""
             }
             Row {

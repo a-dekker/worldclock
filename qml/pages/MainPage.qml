@@ -361,6 +361,16 @@ Page {
         }
     }
 
+    function isArabic() {
+        // as it from right to left we use another width for fading
+        switch (parseInt(myset.value("language"))) {
+            case Languages.AR:
+               return true
+            default:
+                return false
+        }
+    }
+
     QtObject {
         id: local_datetime
         property var locale: Qt.locale("en_US")
@@ -564,7 +574,7 @@ Page {
                 Label {
                     id: cityLabel
                     text: zoneCityTr.replace(/_/g, " ")
-                    width: parent.width - Theme.paddingLarge * 11
+                    width: isPortrait ? parent.width * (isArabic() ? 0.40 : 0.50) : parent.width * 0.50
                     anchors.left: isPortrait && !largeScreen ? timeLabel.right : extraImgSpace.right
                     opacity: (index & 1) ? 0.9 : 1
                     truncationMode: TruncationMode.Fade
@@ -579,7 +589,7 @@ Page {
                             || listCityModel.get(index).zoneCity
                             === local_city) ? Theme.highlightColor : Theme.secondaryColor
                     anchors.left: isPortrait && !largeScreen ? timeLabel.right : extraImgSpace.right
-                    width: parent.width - timeLabel.width - dateLabel.width - Theme.paddingSmall
+                    width: isPortrait ? parent.width * (isArabic() ? 0.40 : 0.55) : parent.width * 0.50
                     truncationMode: TruncationMode.Fade
                     opacity: (index & 1) ? 0.9 : 1
                 }

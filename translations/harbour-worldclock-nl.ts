@@ -142,57 +142,57 @@
         <translation>Stad is al toegevoegd</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="394"/>
+        <location filename="../qml/pages/MainPage.qml" line="404"/>
         <source>About</source>
         <translation>Over</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="398"/>
+        <location filename="../qml/pages/MainPage.qml" line="408"/>
         <source>Settings</source>
         <translation>Instellingen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="402"/>
+        <location filename="../qml/pages/MainPage.qml" line="412"/>
         <source>Custom city names</source>
         <translation>Eigen wereldklokken</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="406"/>
+        <location filename="../qml/pages/MainPage.qml" line="416"/>
         <source>Add city</source>
         <translation>Nieuwe wereldklok</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="444"/>
+        <location filename="../qml/pages/MainPage.qml" line="454"/>
         <source>Worldclock</source>
         <translation>Wereldklok</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="462"/>
+        <location filename="../qml/pages/MainPage.qml" line="472"/>
         <source>Deleting</source>
         <translation>Bezig met verwijderen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="486"/>
+        <location filename="../qml/pages/MainPage.qml" line="496"/>
         <source>Manage custom cities on other page</source>
         <translation>Beheer eigen wereldklokken op andere pagina</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="575"/>
+        <location filename="../qml/pages/MainPage.qml" line="585"/>
         <source>Local time</source>
         <translation>Lokale tijd</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="619"/>
+        <location filename="../qml/pages/MainPage.qml" line="629"/>
         <source>Details</source>
         <translation>Details</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="635"/>
+        <location filename="../qml/pages/MainPage.qml" line="645"/>
         <source>Remove</source>
         <translation>Verwijderen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="641"/>
+        <location filename="../qml/pages/MainPage.qml" line="651"/>
         <source>Cannot remove Local time</source>
         <translation>Lokale tijd kan niet worden verwijderd</translation>
     </message>

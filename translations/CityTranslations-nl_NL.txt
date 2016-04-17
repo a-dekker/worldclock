@@ -9,6 +9,7 @@ Argentina;Argentinië
 Armenia;Armenië
 Asia;Azië
 Athens;Athene
+Atlantic;Atlantisch
 Australia;Australië
 Austria;Oostenrijk
 Azerbaijan;Azerbeidzjan
@@ -73,6 +74,7 @@ Haiti;Haïti
 Ho Chi Minh City;Ho Chi Minh-stad
 Hungary;Hongarije
 Iceland;IJsland
+Indian;Indisch
 Indonesia;Indonesië
 Iraq;Irak
 Ireland;Ierland
@@ -119,6 +121,7 @@ Norfolk Island;Norfolkeiland
 North Korea;Noord-Korea
 Northern Mariana Islands;Noordelijke Marianen
 Norway;Noorwegen
+Pacific;Pacifisch
 Palestinian Territories;Palestijnse gebieden
 Papua New Guinea;Papoea-Nieuw-Guinea
 Paris;Parijs

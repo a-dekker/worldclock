@@ -1,0 +1,616 @@
+Abidjan;أبيدجان
+Accra;أكرا
+Addis Ababa;أديس أبابا
+Adelaide;أديليد
+Afghanistan;أفغانستان
+Africa;أفريقيا
+Aktobe;أكتوبي
+Albania;ألبانيا
+Albuquerque;ألباكركي
+Algeria;الجزائر
+Algiers;الجزائر
+Almaty;ألماتي
+America;أمريكا
+American Samoa;ساموا الأمريكية
+Amman;عمان
+Amsterdam;أمستردام
+Anadyr;أنادير
+Anchorage;أنكوريج
+Andorra;أندورا
+Angola;أنغولا
+Anguilla;أنغويلا
+Ankara;أنقرة
+Ann Arbor;آن آربر
+Antananarivo;أنتاناناريفو
+Antarctica;القارة القطبية الجنوبية
+Antigua and Barbuda;أنتيغوا و باربودا
+Antigua;أنتيغوا
+Apia;أبيا
+Aqtau;أكتاو
+Argentina;الأرجنتين
+Armenia;أرمينيا
+Aruba;أروبا
+Ashgabat;عشق آباد
+Asia;آسيا
+Asmara;أسمرة
+Asuncion;أسونسيون
+Asunción;أسونسيون
+Athens;أثينا
+Atlanta;أتلانتا
+Atlantic;الأطلسي
+Auckland;أوكلاند
+Austin;أوستن
+Australia;أستراليا
+Austria;النمسا
+Azerbaijan;أذربيجان
+Azores;الأزور
+Baghdad;بغداد
+Bahamas;باهاماس
+Bahia Banderas;بهيا بانديراس
+Bahrain;البحرين
+Baku;باكو
+Baltimore;بالتيمور
+Bamako;باماكو
+Bangalore;بنغالور
+Bangkok;بانكوك
+Bangladesh;بنغلاديش
+Bangui;بانغي
+Barbados;باربادوس
+Barcelona;برشلونة
+Beijing;بكين
+Beirut;بيروت
+Belarus;روسيا البيضاء
+Belem;بليم
+Belfast;بلفاست
+Belgium;بلجيكا
+Belgrade;بلغراد
+Belize;بليز
+Belo Horizonte;بيلو هوريزونتي
+Benin;بنين
+Berlin;برلين
+Bermuda;برمودا
+Beulah;بيولا
+Bhutan;بوتان
+Bishkek;بيشكك
+Bissau;بيساو
+Black Rock City;مدينة بلاك روك
+Blantyre;بلانتاير
+Boa Vista;بوا فيستا
+Bogota;بوغوتا
+Bogotá;بوغوتا
+Boise;بويسي
+Bolivia;بوليفيا
+Bonaire;بونير
+Bosnia and Herzegowina;البوسنة والهرسك
+Boston;بوسطن
+Botswana;بوتسوانا
+Boulder;جلمود
+Brasília;برازيليا
+Bratislava;براتيسلافا
+Brazil;البرازيل
+Brazzaville;برازافيل
+Brisbane;بريزبن
+British Indian Ocean Territory;إقليم المحيط الهندي البريطاني
+British Virgin Islands;جزر العذراء البريطانية
+Brunei:بروناي
+Brunei;بروناي
+Brussels;بروكسل
+Bucharest;بوخارست
+Budapest;بودابست
+Buenos Aires;بوينس آيرس
+Bujumbura;بوجومبورا
+Bulgaria;بلغاريا
+Burkina Faso;لوركينا فاسو
+Burundi;بوروندي
+Cairo;القاهرة
+Calcutta;كلكتا
+Calgary;كالغاري
+Cambodia;كمبوديا
+Cambridge Bay;خليج كامبرديج
+Cambridge;كامبريدج
+Cameroon;الكاميرون
+Canada;كندا
+Canary;جزر الكناري
+Canberra;كانبرا
+Cancun;كانكون
+Cancún;كانكون
+Cape Town;كيب تاون
+Cape Verde;الرأس الأخضر
+Caracas;كاراكاس
+Casablanca;الدار البيضاء
+Catamarca;كاتاماركا
+Catamarca;كاتاماركا
+Cayenne;كايين
+Cayman Islands;جزر كايمان
+Cayman Islands;جزر كايمان
+Cayman;كايمان
+Center;مركز
+Central African Republic;جمهورية أفريقيا الوسطى
+Ceuta;سبتة
+Chad;تشاد
+Chagos;تشاغوس
+Chicago;شيكاغو
+Chihuahua;شيواوا
+Chile;تشيلي
+China;الصين
+Chisinau;كيشيناو
+Chita;تشيتا
+Cincinnati;سينسيناتي
+Cleveland;كليفلاند
+Cocos Islands;جزر كوكوس
+Colombia;كولومبيا
+Colombo;كولمبو
+Columbus;كولومبوس
+Comoro;كومورو
+Comoros;جزر القمر
+Conakry;كوناكري
+Congo Brazzaville;جمهورية الكونغو
+Congo Kinshasa;جمهورية الكونغو الديمقراطية
+Cook Islands;جزر كوك
+Copenhagen;كوبنهاغن
+Cordoba;قرطبة
+Cosos;كوكوس
+Costa Rica;كوستاريكا
+Croatia;كرواتيا
+Cuba;كوبا
+Cura Sao;كوراساو
+Curacao;كوراساو
+Curaçao;كوراساو
+Cyprus;قبرص
+Czech Republic;جمهورية التشيك
+Dakar;داكار
+Dallas;دالاس
+Damascus;دمشق
+Dar es Salaam;دار السلام
+Darwin;داروين
+Dawson Creek;دوسن كريك
+Dawson;دوسن
+Delhi;دلهي
+Democratic Republic of the Congo;جمهورية الكونغو الديمقراطية
+Denmark;الدنمارك
+Denver;دنفر
+Detroit;ديترويت
+Dhaka;دكا
+Djibouti;جيبوتي
+Doha;الدوحة
+Dominica;دومينيكا
+Dominican Republic;جمهورية الدومينيكان
+Douala;دوالا
+Dubai;دبي
+Dublin;دبلن
+DumontDUrville;دومون دو أورفيل
+East Timor;تيمور الشرقية
+Easter Island;جزيرة القيامة
+Ecuador;الإكوادور
+Edmonton;إدمونتون
+Egypt;مصر
+Eirunepe;إيرونيبي
+El Aaiun;العيون
+El Salvador;السلفادور
+Equatorial Guinea;غينيا الاستوائية
+Eritrea;إريتريا
+Estonia;إستونيا
+Ethiopia;إثيوبيا
+Europe;أوروبا
+Fakaofo;فاكاوفو
+Falkland Islands;جزر فوكلاند
+Faroe Islands;جزر فارو
+Fiji;فيجي
+Finland;فنلندا
+Fortaleza;فورتاليزا
+France;فرنسا
+Frankfurt;فرانكفورت
+Freetown;فريتاون
+French Polynesia;بولينزيا الفرنسية
+Gabon;الغابون
+Gaborone;غابورون
+Galapagos;غالاباغوس
+Gambia;غامبيا
+Gaza;غزة
+Georgia;جورجيا
+Germany;ألمانيا
+Ghana;غانا
+Gibraltar;جبل طارق
+Grand Turk;جراند ترك
+Greece;اليونان
+Greenland;جرينلاند
+Grenada;غرينادا
+Guadalcanal;جوادالكانال
+Guadeloupe;غوادلوب
+Guam;غوام
+Guangzhou;غوانزو
+Guatemala;غواتيمالا
+Guayaquil;غواياكيل
+Guernsey;غيرنزي
+Guinea Bissau;غينيا بيساو
+Guinea;غينيا
+Gurgaon;جورجاون
+Guyana;غيانا
+Haifa;حيفا
+Haiti;هايتي
+Halifax;هاليفاكس
+Hamburg;هامبورغ
+Hanoi;هانوي
+Harare;هراري
+Havana;هافانا
+Helsinki;هلسنكي
+Ho Chi Minh City;مدينة هو تشي منه
+Ho Chi Minh;هو تشي منه
+Hobart;هوبارت
+Honduras;هندوراس
+Hong Kong;هونغ كونغ
+Honolulu;هونولولو
+Houston;هيوستن
+Hungary;المجر
+Hyderabad;حيدر آباد
+Iceland;آيسلندا
+Ikaluit;إيكالويت
+India;الهند
+Indiana;إنديانا
+Indianapolis;إنديانابوليس
+Indonesia;إندونيسيا
+Iran;إيران
+Iraq;العراق
+Ireland;أيرلندا
+Irkutsk;إيركوتسك
+Islamabad;إسلام آباد
+Isle of Man;جزيرة مان
+Israel;إسرائيل
+Istanbul;إسطنبول
+Italy;إيطاليا
+Ivory Coast;ساحل العاج
+Jacksonville;جاكسونفيل
+Jakarta;جاكرتا
+Jamaica;جامايكا
+Japan;اليابان
+Jersey;جيرزي
+Jerusalem;القدس
+Johannesburg;جوهانسبرغ
+Jordan;الأردن
+Jujuy;خوخوي
+Kabul;كابل
+Kaliningrad;كالينينغراد
+Kamchatka;كامشاتكا
+Kampala;كامبالا
+Karachi;كراتشي
+Kathmandu;كاتماندو
+Kazakhstan;كازاخستان
+Kentucky;كنتاكي
+Kenya;كينيا
+Kerguelen;كيرغولين
+Khandyga;خانديغا
+Khartoum;الخرطوم
+Kiev;كييف
+Kigali;كيغالي
+Kingston;كينغستون
+Kinshasa;كينشاسا
+Kiribati;كيريباتي
+Kiritimati;كيريتيماس
+Kirkland;كيركلاند
+Knox;كنوكس
+Knoxville;نوكسفيل
+Kolkata;كلكتا
+Kraków;كراكوف
+Krasnoyarsk;كراسنويارسك
+Kuala Lumpur;كوالالمبور
+Kuching;كوتشينغ
+Kuwait City;مدينة الكويت
+Kuwait;الكويت
+Kyiv;كييف
+Kyrgyzstan;قيرغيزستان
+La Rioja;لا ريوخا
+Lagos;لاغوس
+Lahore;لاهور
+Laos;لاوس
+Las Vegas;لاس فيغاس
+Latvia;لاتفيا
+Lebanon;لبنان
+Lesotho;ليسوتو
+Liberia;ليبيريا
+Libreville;ليبرفيل
+Libya;ليبيا
+Liechtenstein;ليختنشتاين
+Lima;ليما
+Lindeman;ليندمان
+Lisbon;لشبونة
+Lithuania;ليتوانيا
+Ljubljana;ليوبليانا
+Lome;لومي
+London;لندن
+Longyearbyen;لونغياربين
+Los Angeles;لوس أنجلوس
+Louisville;لويفيل
+Lower Princess;لوير برينسيس
+Luanda;لواندا
+Lubumbashi;لوبومباشي
+Lusaka;لوساكا
+Luxembourg;لوكسمبورغ
+Macao;ماكاو
+Macau;ماكاو
+Macedonia;مقدونيا
+Madagascar;مدغشقر
+Madeira;ماديرا
+Madison;ماديسن
+Madrid;مدريد
+Magadan;ماغادان
+Makassar;ماكاسار
+Malabo;مالابو
+Malawi;مالاوي
+Malaysia;ماليزيا
+Maldives;المالديف
+Mali;مالي
+Malta;مالطا
+Managua;ماناغوا
+Manchester;مانشستر
+Manila;مانيلا
+Maputo;مابوتو
+Marengo;مارينغو
+Marshall Islands;جزر مارشال
+Martinique;مارتينيك
+Maseru;ماسيرو
+Matamoros;ماتاموروس
+Mauritania;موريتانيا
+Mauritius;موريشيوس
+Mayotte;مايوت
+Mazatlan;مازاتلان
+Melbourne;ملبورن
+Memphis;ممفيس
+Mendoza;مندوزا
+Merida;ماردة
+Metlakatla;ميتلاكاتلا
+Mexico City;مدينة مكسيكو
+Mexico;المكسيك
+Miami;ميامي
+Micronesia;ميكرونيسيا
+Midway;ميدواي
+Milan;ميلان
+Milwaukee;ميلواكي
+Minneapolis;مينيابولس
+Minsk;مينسك
+Miquelon;ميكلون
+Mogadishu;مقديشو
+Moldova;مولدوفا
+Monaco;موناكو
+Moncton;مونكتون
+Mongolia;منغوليا
+Monrovia;مونروفيا
+Montenegro;الجبل الأسود
+Monterrey;مونتيري
+Montevideo;مونتفيدو
+Montreal;مونتريال
+Montserrat;مونتسرات
+Morocco;المغرب
+Moscow;موسكو
+Mountain View;ماونتن فيو
+Mozambique;موزمبيق
+Mumbai;مومباي
+Munich;ميونخ
+Muscat;مسقط
+Myanmar;ميانمار
+Nairobi;نيروبي
+Namibia;ناميبيا
+Nashville;ناشفيل
+Nassau;ناساو
+Nauru;ناورو
+Ndjamena;انجمينا
+Nepal;نيبال
+Netherlands;هولندا
+New Caledonia;كاليدونيا الجديدة
+New Orleans;نيو أورلينز
+New Salem;نيو سالم
+New South Wales;نيوساوث ويلز
+New York;نيويورك
+New Zealand;نيوزيلندا
+Newfoundland;نيوفاوندلاند
+Niamey;نيامي
+Nicaragua;نيكاراغوا
+Nicosia;نيقوسيا
+Niger;النيجر
+Nigeria;نيجيريا
+Nipigon;نيبيجون
+Niue;نييوي
+Norfolk Island;جزيرة نورفولك
+Norfolk;نورفولك
+North Dakota;داكوتا الشمالية
+North Korea;كوريا الشمالية
+Northern Mariana Islands;جزر ماريانا الشمالية
+Norway;النرويج
+Nouméa;نوميا
+Novokuznetsk;نوفوكوزنتسك
+Novosibirsk;نوفوسيبيرسك
+Nuestra Señora de La Paz;لاباز
+Oklahoma City;أوكلاهوما سيتي
+Oman;عمان
+Omsk;أومسك
+Osaka;أوساكا
+Oslo;أوسلو
+Ottawa;أوتاوا
+Oulu;أولو
+Pago Pago;باغو باغو
+Pakistan;باكستان
+Palau;بالاو
+Palestine;فلسطين
+Palestinian Territories;الأراضي الفلسطينية
+Panama;بنما
+Panamá;بنما
+Papua New Guinea;بابوا غينيا الجديدة
+Paraguay;باراغواي
+Paramaribo;باراماريبو
+Paris;باريس
+Perth;برث
+Peru;بيرو
+Petersburg;بطرسبورغ
+Philadelphia;فيلادلفيا
+Philippines;الفلبين
+Phnom Penh;بنوم بن
+Phoenix;فينيكس
+Pittsburgh;بيتسبرغ
+Podgorica;بودغوريتسا
+Poland;بولندا
+Port au Prince;بورت أو برانس
+Port of Spain;بورت أوف سبين
+Port-au-Prince;بورت أو برانس
+Portland;بورتلاند
+Porto Velho;بورتو فاليو
+Portugal;البرتغال
+Prague;براغ
+Puerto Rico;بورتوريكو
+Pyongyang;بيونغيانغ
+Qatar;قطر
+Queensland;كوينزلاند
+Quito;كيتو
+Rangoon;يانغون
+Rarotonga;راروتونغا
+Reno;رينو
+Republic of the Congo;جمهورية الكونغو
+Reston;ريستون
+Reunion;ريونيون
+Reykjavik;ريكيافيك
+Reykjavík;ريكيافيك
+Riga;ريغا
+Rio Gallegos;يو غاليغوس
+Rio de Janeiro;ريو دي جانيرو
+Riyadh;الرياض
+Romania;رومانيا
+Rome;روما
+Russia;روسيا
+Rwanda;رواندا
+Sacramento;ساكرامنتو
+Saint Helena;سانت هيلينا
+Saint Helena;سانت هيلينا
+Saint Kitts and Nevis;سانت كيتس ونيفيس
+Saint Pierre And Miquelon;سان بيير وميكلون
+Saipan;سايبان
+Sakhalin;سخالين
+Salt Lake City;سالت ليك سيتي
+Salta;سالتا
+Samara;سامارا
+Samarkand;سمرقند
+Samoa;ساموا
+San Antonio;سان أنطونيو
+San Diego;سان دييغو
+San Francisco;سان فرانشسكو
+San José;سان خوسيه
+San Juan;سان خوان
+San Luis;سان لويس
+San Marino;سان مارينو
+San Salvador;سان سلفادور
+Sanaa;صنعاء
+Santiago;سانتياغو
+Santo Domingo;سانتو دومينغو
+Sao Tome and Principe;ساو تومي وبرينسيب
+Sao Tome and Principe;ساو تومي وبرينسيب
+Sao Tome;ساو تومي
+Sarajevo;سراييفو
+Saskatchewan;ساسكاتشوان
+Saudi Arabia;السعودية
+Seattle;سياتل
+Senegal;السنغال
+Seoul;سيؤول
+Serbia;صربيا
+Seychelles;سيشل
+Shanghai;شانغهاي
+Sierra Leone;سيراليون
+Simferopol;سيمفروبول
+Singapore;سنغافورة
+Skopje;سكوبيه
+Slovakia;سلوفاكيا
+Slovenia;سلوفينيا
+Sofia;صوفيا
+Solomon Islands;جزر سليمان
+Somalia;الصومال
+South Africa;جنوب أفريقيا
+South Georgia;جورجيا الجنوبية
+South Korea;كوريا الجنوبية
+South Sudan;جنوب السودان
+Spain;إسبانيا
+Srednekolymsk;سريدنكوليمسك
+Sri Lanka;سريلانكا
+St.Johns;سانت جونز
+St.Kitts;سانت كيتس
+St.Louis;سانت لويس
+Stanley;ستانلي
+Stockholm;ستوكهولم
+Sudan;السودان
+Suriname;سورينام
+Suva;سوفا
+Svalbard and Jan Mayen Islands;جزر سفالبارد ويان ماين
+Svalbard and Jan Mayen;سفالبارد ويان ماين
+Swaziland;سوازيلاند
+Sweden;السويد
+Switzerland;سويسرا
+Sydney;سيدني
+Syria;سوريا
+São Paulo;ساو باولو
+São Tomé and Príncipe;ساو تومي وبرينسيب
+São Tomé;ساو تومي
+Tahiti;تاهيتي
+Taipei;تايبيه
+Taiwan;تايوان
+Tajikistan;طاجيكستان
+Tallinn;تالين
+Tanzania;تنزانيا
+Tarawa;تاراوا
+Tashkent;طشقند
+Tbilisi;تبليسي
+Tehran;طهران
+Thailand;تايلاند
+Thimphu;تيمفو
+Tijuana;تيخوانا
+Togo;توغو
+Tokelau;توكيلاو
+Tokyo;طوكيو
+Tonga;تونغا
+Tongatapu;تونغاتابو
+Toronto;تورونتو
+Tortola;تورتولا
+Trinidad and Tobago;ترينيداد وتوباغو
+Tripoli;طرابلس
+Tucuman;توكومان
+Tunis;تونس
+Tunisia;تونس
+Turkey;تركيا
+Turkmenistan;تركمانستان
+Turks and Caicos Islands;جزر توركس وكايكوس
+Tuvalu;توفالو
+Uganda;أوغندا
+Ukraine;أوكرانيا
+Ulaanbaatar;أولان باتور
+Ulan Bator;أولان باتور
+United Arab Emirates;الإمارات العربية المتحدة
+United Kingdom;المملكة المتحدة
+United States;الولايات المتحدة
+Uruguay;الأوروغواي
+Ushuaia;أوشوايا
+Ust-Nera;أوست نيرا
+Uzbekistan;أوزباكستان
+Uzhgorod;أوجهورود
+Vaduz;فادوز
+Vancouver;فانكوفر
+Vanuatu;فانواتو
+Vatican City State;الفاتيكان
+Vatican;الفاتيكان
+Venezuela;فنزويلا
+Vevay;فيفاي
+Vienna;فيينا
+Vientiane;فيينتيان
+Vietnam;فيتنام
+Vilnius;فيلنيوس
+Vincennes;فانسان
+Vladivostok;فلاديفوستوك
+Volgograd;فولغوغراد
+Wallis and Futuna Islands;جزر والس وفوتونا
+Warsaw;وارسو
+Washington D.C.;واشنطن العاصمة
+Western Sahara;الصحراء الغربية
+Winamac;ويناماك
+Winnipeg;وينيبيغ
+Wrocław;فروتسواف
+Yakutsk;ياكوتسك
+Yekaterinburg;يكاترينبورغ
+Yemen;اليمن
+Zagreb;زغرب
+Zambia;زامبيا
+Zaporozhye;زاباروجيا
+Zimbabwe;زيمبابوي
+Zurich;زيورخ
