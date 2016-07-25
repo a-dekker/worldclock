@@ -42,17 +42,17 @@
         <translation>Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="128"/>
+        <location filename="../qml/pages/Aliases.qml" line="129"/>
         <source>Deleting</source>
         <translation>Διαγραφή</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="183"/>
+        <location filename="../qml/pages/Aliases.qml" line="184"/>
         <source>Alt. name</source>
         <translation>Εναλλακτικό όνομα</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="208"/>
+        <location filename="../qml/pages/Aliases.qml" line="209"/>
         <source>No custom city names defined. Press the plus button to add one.</source>
         <translation>Δεν έχουν οριστεί προσαρμοσμένες ονομασίες πόλεων. Πατήστε στο κουμπί με τον συν για να προσθέσετε μια.</translation>
     </message>
@@ -91,37 +91,41 @@
         <translation>Λεπτομέρειες ωρολογιακής ζώνης</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="139"/>
+        <location filename="../qml/pages/CityDetail.qml" line="140"/>
         <source>Timezone</source>
         <translation>Ωρολογιακή ζώνη</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="151"/>
+        <location filename="../qml/pages/CityDetail.qml" line="144"/>
+        <location filename="../qml/pages/CityDetail.qml" line="170"/>
         <source>Zone time</source>
         <translation>Ζώνη ώρας</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="163"/>
+        <location filename="../qml/pages/CityDetail.qml" line="186"/>
         <source>Local time</source>
         <translation>Τοπική ώρα</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="175"/>
+        <location filename="../qml/pages/CityDetail.qml" line="189"/>
+        <location filename="../qml/pages/CityDetail.qml" line="213"/>
         <source>Time difference</source>
         <translation>Διαφορά ώρας</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="181"/>
+        <location filename="../qml/pages/CityDetail.qml" line="206"/>
+        <location filename="../qml/pages/CityDetail.qml" line="220"/>
         <source>hour</source>
         <translation>ώρα</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="187"/>
+        <location filename="../qml/pages/CityDetail.qml" line="228"/>
         <source>Prev. daylight transition</source>
         <translation>Προηγούμενη αλλαγή θερινής ώρας</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="207"/>
+        <location filename="../qml/pages/CityDetail.qml" line="232"/>
+        <location filename="../qml/pages/CityDetail.qml" line="276"/>
         <source>Next daylight transition</source>
         <translation>Επόμενη αλλαγή θερινής ώρας</translation>
     </message>
@@ -281,22 +285,22 @@
         <translation>Η αλλαγή της γλώσσας θα λάβει χώρα μετά την επανεκκίνηση της εφαρμογής.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="280"/>
+        <location filename="../qml/pages/SettingPage.qml" line="281"/>
         <source>Worldclock pick screen</source>
         <translation>Οθόνη επιλογής ώρας</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="281"/>
+        <location filename="../qml/pages/SettingPage.qml" line="282"/>
         <source>Choose screentype used for selecting a worldclock</source>
         <translation>Επιλέξτε τον τύπο της οθόνης για την επιλογή της ώρας</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="285"/>
+        <location filename="../qml/pages/SettingPage.qml" line="286"/>
         <source>Custom</source>
         <translation>Προσαρμοσμένο</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="288"/>
+        <location filename="../qml/pages/SettingPage.qml" line="289"/>
         <source>Sailfish</source>
         <translation>Sailfish</translation>
     </message>

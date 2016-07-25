@@ -1,6 +1,6 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import Sailfish.Timezone 1.0
+import Sailfish.Timezone 1.0 // not_allowed_in_store
 import harbour.worldclock.Settings 1.0
 import harbour.worldclock.TimeZone 1.0
 import "../localdb.js" as DB
@@ -102,6 +102,7 @@ Dialog {
             }
         }
 
+         // not_allowed_in_store
         Component {
             id: timezonePickerComponent
             TimezonePicker {
@@ -170,7 +171,7 @@ Dialog {
                         if (myset.value("city_pickertype", "0") === "0") {
                             pageStack.push(Qt.resolvedUrl("Timezone.qml"))
                         } else {
-                            pageStack.push(timezonePickerComponent)
+                            pageStack.push(timezonePickerComponent) // not_allowed_in_store
                         }
                         isReplace = "true"
                         currIndex = index
@@ -219,7 +220,7 @@ Dialog {
             if (myset.value("city_pickertype", "0") === "0") {
                 pageStack.push(Qt.resolvedUrl("Timezone.qml"))
             } else {
-                pageStack.push(timezonePickerComponent)
+                pageStack.push(timezonePickerComponent) // not_allowed_in_store
             }
             isReplace = "false"
             customcitylist.positionViewAtEnd()

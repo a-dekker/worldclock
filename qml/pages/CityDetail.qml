@@ -134,21 +134,41 @@ Page {
                 text: zoneCity.replace(/_/g, " ") + ", " + countryTranslated.replace(
                           /([a-z])([A-Z])/g, "$1 $2")
             }
-            Label {
+            Row {
                 x: Theme.paddingLarge
-                text: qsTr("Timezone")
+                Label {
+                    text: qsTr("Timezone")
+                    width: isPortrait ? column.width - Theme.paddingLarge : (column.width / 2 - Theme.paddingLarge)
+                }
+                Label {
+                    text: qsTr("Zone time")
+                    width: column.width / 2
+                    visible: isLandscape
+                }
+            }
+            Row {
+                x: Theme.paddingLarge
+                Label {
+                    width: isPortrait ? column.width - Theme.paddingLarge : (column.width / 2 - Theme.paddingLarge)
+                    font.pixelSize: Theme.fontSizeSmall
+                    color: Theme.secondaryColor
+                    text: zoneName
+                    truncationMode: TruncationMode.Fade
+                }
+                Label {
+                    font.pixelSize: Theme.fontSizeSmall
+                    color: Theme.secondaryColor
+                    text: zoneDateTime
+                    width: column.width / 2
+                    truncationMode: TruncationMode.Fade
+                    visible: isLandscape
+                }
             }
             Label {
-                x: Theme.paddingLarge
-                width: parent.width - Theme.paddingLarge
-                font.pixelSize: Theme.fontSizeSmall
-                color: Theme.secondaryColor
-                text: zoneName
-                truncationMode: TruncationMode.Fade
-            }
-            Label {
+                width: isPortrait ? column.width - Theme.paddingLarge : (column.width / 2)
                 x: Theme.paddingLarge
                 text: qsTr("Zone time")
+                visible: isPortrait
             }
             Label {
                 x: Theme.paddingLarge
@@ -157,54 +177,104 @@ Page {
                 text: zoneDateTime
                 width: parent.width - Theme.paddingLarge
                 truncationMode: TruncationMode.Fade
+                visible: isPortrait
             }
-            Label {
+            Row {
                 x: Theme.paddingLarge
-                text: qsTr("Local time")
+                Label {
+                    width: isPortrait ? column.width - Theme.paddingLarge : (column.width / 2 - Theme.paddingLarge)
+                    text: qsTr("Local time")
+                }
+                Label {
+                    text: qsTr("Time difference")
+                    width: column.width / 2
+                    visible: isLandscape
+                }
             }
-            Label {
+            Row {
                 x: Theme.paddingLarge
-                font.pixelSize: Theme.fontSizeSmall
-                color: Theme.secondaryColor
-                text: localDateTime
-                width: parent.width - Theme.paddingLarge
-                truncationMode: TruncationMode.Fade
+                Label {
+                    font.pixelSize: Theme.fontSizeSmall
+                    color: Theme.secondaryColor
+                    text: localDateTime
+                    width: isPortrait ? column.width - Theme.paddingLarge : (column.width / 2 - Theme.paddingLarge)
+                    truncationMode: TruncationMode.Fade
+                }
+                Label {
+                    font.pixelSize: Theme.fontSizeSmall
+                    color: Theme.secondaryColor
+                    text: zoneTimeDiff + " " + qsTr("hour")
+                    width: column.width / 2
+                    visible: isLandscape
+                }
             }
             Label {
                 x: Theme.paddingLarge
                 text: qsTr("Time difference")
+                visible: isPortrait
             }
             Label {
                 x: Theme.paddingLarge
                 font.pixelSize: Theme.fontSizeSmall
                 color: Theme.secondaryColor
                 text: zoneTimeDiff + " " + qsTr("hour")
+                visible: isPortrait
             }
-            Label {
+            Row {
                 x: Theme.paddingLarge
-                width: parent.width - Theme.paddingLarge
-                truncationMode: TruncationMode.Fade
-                text: qsTr("Prev. daylight transition") + " " + abbrevFromPrev
+                Label {
+                    truncationMode: TruncationMode.Fade
+                    width: isPortrait ? column.width - Theme.paddingLarge : (column.width / 2 - Theme.paddingLarge)
+                    text: qsTr("Prev. daylight transition") + " " + abbrevFromPrev
+                }
+                Label {
+                    truncationMode: TruncationMode.Fade
+                    text: qsTr("Next daylight transition") + " " + abbrevToNext
+                    width: column.width / 2
+                    visible: isLandscape
+                }
             }
-            Label {
+            Row {
                 x: Theme.paddingLarge
-                font.pixelSize: Theme.fontSizeSmall
-                color: Theme.secondaryColor
-                text: zonePreviousTransition
-                width: parent.width - Theme.paddingLarge
-                truncationMode: TruncationMode.Fade
+                Label {
+                    font.pixelSize: Theme.fontSizeSmall
+                    color: Theme.secondaryColor
+                    text: zonePreviousTransition
+                    width: isPortrait ? column.width - Theme.paddingLarge : (column.width / 2 - Theme.paddingLarge)
+                    truncationMode: TruncationMode.Fade
+                }
+                Label {
+                    font.pixelSize: Theme.fontSizeSmall
+                    color: Theme.secondaryColor
+                    text: zoneNextTransition
+                    width: column.width / 2
+                    truncationMode: TruncationMode.Fade
+                    visible: isLandscape
+                }
             }
-            Label {
+            Row {
                 x: Theme.paddingLarge
-                font.pixelSize: Theme.fontSizeExtraSmall
-                color: Theme.secondaryColor
-                text: dstShiftTxtOld
+                Label {
+                    width: isPortrait ? column.width - Theme.paddingLarge : (column.width / 2 - Theme.paddingLarge)
+                    font.pixelSize: Theme.fontSizeExtraSmall
+                    color: Theme.secondaryColor
+                    text: dstShiftTxtOld
+                    visible: dstShiftTxtOld !== ""
+                }
+                Label {
+                    font.pixelSize: Theme.fontSizeExtraSmall
+                    color: Theme.secondaryColor
+                    text: dstShiftTxt
+                    width: column.width / 2
+                    visible: isLandscape && dstShiftTxt !== ""
+                }
             }
             Label {
                 x: Theme.paddingLarge
                 width: parent.width - Theme.paddingLarge
                 truncationMode: TruncationMode.Fade
                 text: qsTr("Next daylight transition") + " " + abbrevToNext
+                visible: isPortrait
             }
             Label {
                 x: Theme.paddingLarge
@@ -213,19 +283,19 @@ Page {
                 text: zoneNextTransition
                 width: parent.width - Theme.paddingLarge
                 truncationMode: TruncationMode.Fade
+                visible: isPortrait
             }
             Label {
                 x: Theme.paddingLarge
                 font.pixelSize: Theme.fontSizeExtraSmall
                 color: Theme.secondaryColor
                 text: dstShiftTxt
+                visible: isPortrait && dstShiftTxt !== ""
             }
             Separator {
                 x: Theme.paddingLarge
                 color: Theme.primaryColor
                 width: parent.width
-                // anchors.horizontalCenter: parent.horizontalCenter
-                // horizontalAlignment: Qt.AlignHCenter
                 visible: iso3pos !== ""
             }
             Row {
@@ -245,7 +315,7 @@ Page {
                     x: Theme.paddingLarge
                     font.pixelSize: largeScreen ? Theme.fontSizeMedium : Theme.fontSizeSmall
                     text: iso3pos + '/' + iso2pos
-                    width: (parent.width / 3) * 0.95
+                    width: isPortrait ? (parent.width / 3) * 0.95 : (parent.width / 6) * 0.95
                 }
                 Image {
                     x: parent.width / 2
@@ -259,7 +329,34 @@ Page {
                     x: Theme.paddingLarge
                     font.pixelSize: largeScreen ? Theme.fontSizeMedium : Theme.fontSizeSmall
                     text: wwwExt
-                    width: (parent.width / 3) * 0.95
+                    width: isPortrait ? (parent.width / 3) * 0.95 : (parent.width / 6) * 0.95
+                }
+                Image {
+                    source: "image://theme/icon-l-answer"
+                    height: largeScreen ? 80 : 40
+                    width: largeScreen ? 80 : 40
+                    visible: countrcode_tel !== "" && isLandscape
+                }
+                Label {
+                    x: Theme.paddingLarge
+                    font.pixelSize: largeScreen ? Theme.fontSizeMedium : Theme.fontSizeSmall
+                    text: countrcode_tel
+                    visible: countrcode_tel !== "" && isLandscape
+                    truncationMode: TruncationMode.Fade
+                    width: isPortrait ? (parent.width / 3) * 0.95 : (parent.width / 6) * 0.95
+                }
+                Image {
+                    source: "../images/coin-icon.png"
+                    height: largeScreen ? 80 : 40
+                    width: largeScreen ? 80 : 40
+                    visible: currency !== "" && isLandscape
+                }
+                Label {
+                    x: Theme.paddingLarge
+                    font.pixelSize: largeScreen ? Theme.fontSizeMedium : Theme.fontSizeSmall
+                    text: currency + " (" + currency3pos + ")"
+                    visible: currency !== "" && isLandscape
+                    width: isPortrait ? (parent.width / 3) * 0.95 : (parent.width / 6) * 0.95
                 }
             }
             Row {
@@ -272,14 +369,14 @@ Page {
                     source: "image://theme/icon-l-answer"
                     height: largeScreen ? 80 : 40
                     width: largeScreen ? 80 : 40
-                    visible: countrcode_tel !== ""
+                    visible: countrcode_tel !== "" && isPortrait
                 }
                 Label {
                     id: countryCodeTxt
                     x: Theme.paddingLarge
                     font.pixelSize: largeScreen ? Theme.fontSizeMedium : Theme.fontSizeSmall
                     text: countrcode_tel
-                    visible: countrcode_tel !== ""
+                    visible: countrcode_tel !== "" && isPortrait
                     truncationMode: TruncationMode.Fade
                     width: (parent.width / 3) * 0.95
                 }
@@ -288,14 +385,14 @@ Page {
                     source: "../images/coin-icon.png"
                     height: largeScreen ? 80 : 40
                     width: largeScreen ? 80 : 40
-                    visible: currency !== ""
+                    visible: currency !== "" && isPortrait
                 }
                 Label {
                     id: currencyTxt
                     x: Theme.paddingLarge
                     font.pixelSize: largeScreen ? Theme.fontSizeMedium : Theme.fontSizeSmall
                     text: currency + " (" + currency3pos + ")"
-                    visible: currency !== ""
+                    visible: currency !== "" && isPortrait
                     truncationMode: TruncationMode.Fade
                     width: (parent.width / 2.4)
                 }

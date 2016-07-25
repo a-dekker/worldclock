@@ -34,27 +34,27 @@
     <message>
         <location filename="../qml/pages/Aliases.qml" line="64"/>
         <source>Save</source>
-        <translation type="unfinished">Spara</translation>
+        <translation>Spara</translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="65"/>
         <source>Cancel</source>
-        <translation type="unfinished">Avbryt</translation>
+        <translation>Avbryt</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="128"/>
+        <location filename="../qml/pages/Aliases.qml" line="129"/>
         <source>Deleting</source>
-        <translation type="unfinished">Tar bort</translation>
+        <translation>Tar bort</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="183"/>
+        <location filename="../qml/pages/Aliases.qml" line="184"/>
         <source>Alt. name</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt. namn</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="208"/>
+        <location filename="../qml/pages/Aliases.qml" line="209"/>
         <source>No custom city names defined. Press the plus button to add one.</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga anpassade platser definierade. Tryck på plusknappen för att lägga till ett.</translation>
     </message>
 </context>
 <context>
@@ -91,37 +91,41 @@
         <translation>Tidszondetaljer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="139"/>
+        <location filename="../qml/pages/CityDetail.qml" line="140"/>
         <source>Timezone</source>
         <translation>Tidszon</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="151"/>
+        <location filename="../qml/pages/CityDetail.qml" line="144"/>
+        <location filename="../qml/pages/CityDetail.qml" line="170"/>
         <source>Zone time</source>
         <translation>Zontid</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="163"/>
+        <location filename="../qml/pages/CityDetail.qml" line="186"/>
         <source>Local time</source>
         <translation>Lokal tid</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="175"/>
+        <location filename="../qml/pages/CityDetail.qml" line="189"/>
+        <location filename="../qml/pages/CityDetail.qml" line="213"/>
         <source>Time difference</source>
         <translation>Tidsskillnad</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="181"/>
+        <location filename="../qml/pages/CityDetail.qml" line="206"/>
+        <location filename="../qml/pages/CityDetail.qml" line="220"/>
         <source>hour</source>
         <translation>tim.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="187"/>
+        <location filename="../qml/pages/CityDetail.qml" line="228"/>
         <source>Prev. daylight transition</source>
         <translation>Föreg. dagsljusanpassn.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="207"/>
+        <location filename="../qml/pages/CityDetail.qml" line="232"/>
+        <location filename="../qml/pages/CityDetail.qml" line="276"/>
         <source>Next daylight transition</source>
         <translation>Nästa dagsljusanpassn.</translation>
     </message>
@@ -281,22 +285,22 @@
         <translation>Språkändringar kommer att aktiveras vid omstart av programmet.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="280"/>
+        <location filename="../qml/pages/SettingPage.qml" line="281"/>
         <source>Worldclock pick screen</source>
         <translation>Worldclock välj skärm</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="281"/>
+        <location filename="../qml/pages/SettingPage.qml" line="282"/>
         <source>Choose screentype used for selecting a worldclock</source>
         <translation>Välj skärmtyp för att välja ett världsur</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="285"/>
+        <location filename="../qml/pages/SettingPage.qml" line="286"/>
         <source>Custom</source>
         <translation>Anpassad</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="288"/>
+        <location filename="../qml/pages/SettingPage.qml" line="289"/>
         <source>Sailfish</source>
         <translation>Sailfish</translation>
     </message>

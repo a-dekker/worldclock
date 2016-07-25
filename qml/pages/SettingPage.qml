@@ -18,7 +18,7 @@ Dialog {
         myset.setValue("sortorder", sorting.currentIndex)
         myset.setValue("sortorder_completeList", citylist_sorting.currentIndex)
         myset.setValue("hidelocal", localdisplay.checked)
-        myset.setValue("city_pickertype", cityPicker.currentIndex)
+        myset.setValue("city_pickertype", cityPicker.currentIndex) // not_allowed_in_store
         // languagenumber is not index, but enum number!
         if (langNbrToSave !== -1)
             myset.setValue("language", langNbrToSave)
@@ -274,6 +274,7 @@ Dialog {
                     font.pixelSize: Theme.fontSizeExtraSmall
                     color: Theme.secondaryColor
                 }
+                // not_allowed_in_store
                 ComboBox {
                     id: cityPicker
                     width: parent.width

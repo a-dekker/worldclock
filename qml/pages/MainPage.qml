@@ -1,6 +1,6 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import Sailfish.Timezone 1.0
+import Sailfish.Timezone 1.0 // not_allowed_in_store
 import harbour.worldclock.Launcher 1.0
 import harbour.worldclock.TimeZone 1.0
 import harbour.worldclock.Settings 1.0
@@ -210,7 +210,7 @@ Page {
                 if (myset.value("city_pickertype", "0") === "0") {
                     onClicked: pageStack.push(Qt.resolvedUrl("Timezone.qml"))
                 } else {
-                    pageStack.push(timezonePickerComponent)
+                    pageStack.push(timezonePickerComponent) // not_allowed_in_store
                 }
                 pageStack.completeAnimation()
                 mainapp.coverAddZone = false
@@ -418,11 +418,11 @@ Page {
                                onClicked: pageStack.push(Qt.resolvedUrl(
                                                              "Timezone.qml"))
                            } else {
-                               pageStack.push(timezonePickerComponent)
+                               pageStack.push(timezonePickerComponent) // not_allowed_in_store
                            }
             }
         }
-
+        // not_allowed_in_store
         Component {
             id: timezonePickerComponent
             TimezonePicker {

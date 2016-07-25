@@ -42,17 +42,17 @@
         <translation>Annulla</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="128"/>
+        <location filename="../qml/pages/Aliases.qml" line="129"/>
         <source>Deleting</source>
         <translation>Eliminazione</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="183"/>
+        <location filename="../qml/pages/Aliases.qml" line="184"/>
         <source>Alt. name</source>
         <translation>Nome alt.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="208"/>
+        <location filename="../qml/pages/Aliases.qml" line="209"/>
         <source>No custom city names defined. Press the plus button to add one.</source>
         <translation>Nessun nome di città personalizzato definito. Premi + per aggiungerne.</translation>
     </message>
@@ -91,37 +91,41 @@
         <translation>Dettagli fuso orario</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="139"/>
+        <location filename="../qml/pages/CityDetail.qml" line="140"/>
         <source>Timezone</source>
         <translation>Fuso orario</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="151"/>
+        <location filename="../qml/pages/CityDetail.qml" line="144"/>
+        <location filename="../qml/pages/CityDetail.qml" line="170"/>
         <source>Zone time</source>
         <translation>Ora di zona</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="163"/>
+        <location filename="../qml/pages/CityDetail.qml" line="186"/>
         <source>Local time</source>
         <translation>Ora locale</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="175"/>
+        <location filename="../qml/pages/CityDetail.qml" line="189"/>
+        <location filename="../qml/pages/CityDetail.qml" line="213"/>
         <source>Time difference</source>
         <translation>Differenza</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="181"/>
+        <location filename="../qml/pages/CityDetail.qml" line="206"/>
+        <location filename="../qml/pages/CityDetail.qml" line="220"/>
         <source>hour</source>
         <translation>ora</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="187"/>
+        <location filename="../qml/pages/CityDetail.qml" line="228"/>
         <source>Prev. daylight transition</source>
         <translation>Transizione diurna prec.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="207"/>
+        <location filename="../qml/pages/CityDetail.qml" line="232"/>
+        <location filename="../qml/pages/CityDetail.qml" line="276"/>
         <source>Next daylight transition</source>
         <translation>Transizione diurna succ.</translation>
     </message>
@@ -281,22 +285,22 @@
         <translation>La modifica della lingua sarà effettiva dopo il riavvio dell&apos;applicazione.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="280"/>
+        <location filename="../qml/pages/SettingPage.qml" line="281"/>
         <source>Worldclock pick screen</source>
         <translation>Schermata selezione ora</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="281"/>
+        <location filename="../qml/pages/SettingPage.qml" line="282"/>
         <source>Choose screentype used for selecting a worldclock</source>
         <translation>Scegli il tipo di schermata per la selezione dell&apos;ora</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="285"/>
+        <location filename="../qml/pages/SettingPage.qml" line="286"/>
         <source>Custom</source>
         <translation>Personalizzata</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="288"/>
+        <location filename="../qml/pages/SettingPage.qml" line="289"/>
         <source>Sailfish</source>
         <translation>Sailfish</translation>
     </message>

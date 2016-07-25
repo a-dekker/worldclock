@@ -34,25 +34,25 @@
     <message>
         <location filename="../qml/pages/Aliases.qml" line="64"/>
         <source>Save</source>
-        <translation type="unfinished">Zapisz</translation>
+        <translation>Zapisz</translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="65"/>
         <source>Cancel</source>
-        <translation type="unfinished">Anuluj</translation>
+        <translation>Anuluj</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="128"/>
+        <location filename="../qml/pages/Aliases.qml" line="129"/>
         <source>Deleting</source>
-        <translation type="unfinished">Usuwanie</translation>
+        <translation>Usuwanie</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="183"/>
+        <location filename="../qml/pages/Aliases.qml" line="184"/>
         <source>Alt. name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="208"/>
+        <location filename="../qml/pages/Aliases.qml" line="209"/>
         <source>No custom city names defined. Press the plus button to add one.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -63,7 +63,7 @@
         <location filename="../qml/pages/CityDetail.qml" line="65"/>
         <location filename="../qml/pages/CityDetail.qml" line="68"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Żaden</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="72"/>
@@ -91,37 +91,41 @@
         <translation>Szczegóły strefy czasowej</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="139"/>
+        <location filename="../qml/pages/CityDetail.qml" line="140"/>
         <source>Timezone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="151"/>
+        <location filename="../qml/pages/CityDetail.qml" line="144"/>
+        <location filename="../qml/pages/CityDetail.qml" line="170"/>
         <source>Zone time</source>
         <translation>Strefa czasowa</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="163"/>
+        <location filename="../qml/pages/CityDetail.qml" line="186"/>
         <source>Local time</source>
         <translation>Czas lokalny</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="175"/>
+        <location filename="../qml/pages/CityDetail.qml" line="189"/>
+        <location filename="../qml/pages/CityDetail.qml" line="213"/>
         <source>Time difference</source>
-        <translation type="unfinished"></translation>
+        <translation>Różnica czasu</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="181"/>
+        <location filename="../qml/pages/CityDetail.qml" line="206"/>
+        <location filename="../qml/pages/CityDetail.qml" line="220"/>
         <source>hour</source>
         <translation>godzina</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="187"/>
+        <location filename="../qml/pages/CityDetail.qml" line="228"/>
         <source>Prev. daylight transition</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="207"/>
+        <location filename="../qml/pages/CityDetail.qml" line="232"/>
+        <location filename="../qml/pages/CityDetail.qml" line="276"/>
         <source>Next daylight transition</source>
         <translation type="unfinished"></translation>
     </message>
@@ -217,7 +221,7 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="72"/>
         <source>Sort order</source>
-        <translation type="unfinished"></translation>
+        <translation>Kolejność sortowania</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="73"/>
@@ -227,33 +231,33 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="77"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>Żaden</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="80"/>
         <source>TimeZone</source>
-        <translation type="unfinished"></translation>
+        <translation>Strefa czasowa</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="83"/>
         <location filename="../qml/pages/SettingPage.qml" line="101"/>
         <source>City</source>
-        <translation type="unfinished"></translation>
+        <translation>Miasto</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="90"/>
         <source>Sort order list</source>
-        <translation type="unfinished"></translation>
+        <translation>Kolejność sortowania listy</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="91"/>
         <source>Sort order of complete citylist</source>
-        <translation type="unfinished"></translation>
+        <translation>Kolejność sortowania listy miast</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="98"/>
         <source>TimeZone/Continent/City</source>
-        <translation type="unfinished"></translation>
+        <translation>Strefa czasowa/Kontynent/Miasto</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="104"/>
@@ -278,25 +282,25 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="272"/>
         <source>Change of language will be active after restarting the application.</source>
-        <translation type="unfinished"></translation>
+        <translation>Zmiana języka będzie widoczna po zrestartowaniu aplikacji.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="280"/>
+        <location filename="../qml/pages/SettingPage.qml" line="281"/>
         <source>Worldclock pick screen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="281"/>
+        <location filename="../qml/pages/SettingPage.qml" line="282"/>
         <source>Choose screentype used for selecting a worldclock</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="285"/>
+        <location filename="../qml/pages/SettingPage.qml" line="286"/>
         <source>Custom</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="288"/>
+        <location filename="../qml/pages/SettingPage.qml" line="289"/>
         <source>Sailfish</source>
         <translation>Sailfish</translation>
     </message>
