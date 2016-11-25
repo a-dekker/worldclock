@@ -8,6 +8,10 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Mon Nov 25 2016 Arno Dekker <jack.tar@example.com> 0.9-1
+- Remaining Polish part translated
+- Added Azores to missing dutch translation
+
 * Mon Apr 11 2016 Arno Dekker <jack.tar@example.com> 0.9-0
 - Optimized detailspage for landscape
 

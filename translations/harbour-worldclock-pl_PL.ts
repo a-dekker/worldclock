@@ -21,7 +21,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="64"/>
         <source>City times across the world</source>
-        <translation type="unfinished"></translation>
+        <translation>Czas w miastach dookoła świata</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="70"/>
@@ -49,12 +49,12 @@
     <message>
         <location filename="../qml/pages/Aliases.qml" line="184"/>
         <source>Alt. name</source>
-        <translation type="unfinished"></translation>
+        <translation>Alternatywna nazwa</translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="209"/>
         <source>No custom city names defined. Press the plus button to add one.</source>
-        <translation type="unfinished"></translation>
+        <translation>Brak niestandardowych miast. Naciśnij przycisk z plusem aby dodać nowe.</translation>
     </message>
 </context>
 <context>
@@ -63,27 +63,27 @@
         <location filename="../qml/pages/CityDetail.qml" line="65"/>
         <location filename="../qml/pages/CityDetail.qml" line="68"/>
         <source>None</source>
-        <translation type="unfinished">Żaden</translation>
+        <translation>Brak</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="72"/>
         <source>the clock jumped one hour backward</source>
-        <translation type="unfinished"></translation>
+        <translation>zegar przesunięty o godzinę do tyłu</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="75"/>
         <source>the clock jumped one hour forward</source>
-        <translation type="unfinished"></translation>
+        <translation>zegar przesunięty o godzinę do przodu</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="82"/>
         <source>the clock jumps one hour backward</source>
-        <translation type="unfinished"></translation>
+        <translation>zegar przesunie się o godzinę do tyłu</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="85"/>
         <source>the clock jumps one hour forward</source>
-        <translation type="unfinished"></translation>
+        <translation>zegar przesunie się o godzinę do przodu</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="124"/>
@@ -93,7 +93,7 @@
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="140"/>
         <source>Timezone</source>
-        <translation type="unfinished"></translation>
+        <translation>Strefa czasowa</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="144"/>
@@ -121,13 +121,13 @@
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="228"/>
         <source>Prev. daylight transition</source>
-        <translation type="unfinished"></translation>
+        <translation>Poprzednie przejście światła dziennego</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="232"/>
         <location filename="../qml/pages/CityDetail.qml" line="276"/>
         <source>Next daylight transition</source>
-        <translation type="unfinished"></translation>
+        <translation>Następne przejście światła dziennego</translation>
     </message>
 </context>
 <context>
@@ -158,7 +158,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="412"/>
         <source>Custom city names</source>
-        <translation type="unfinished"></translation>
+        <translation>Niestandardowe nazwy miast</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="416"/>
@@ -178,7 +178,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="496"/>
         <source>Manage custom cities on other page</source>
-        <translation type="unfinished"></translation>
+        <translation>Umieść niestandardowe miasta na oddzielnej stronie</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="585"/>
@@ -198,7 +198,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="651"/>
         <source>Cannot remove Local time</source>
-        <translation type="unfinished"></translation>
+        <translation>Nie można usunąć czasu lokalnego</translation>
     </message>
 </context>
 <context>
@@ -226,7 +226,7 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="73"/>
         <source>Sort order of personal list</source>
-        <translation type="unfinished"></translation>
+        <translation>Kolejność sortowania prywatnej listy</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="77"/>
@@ -267,12 +267,12 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="112"/>
         <source>Hide if current</source>
-        <translation type="unfinished"></translation>
+        <translation>Ukryj jeśli bieżący</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="113"/>
         <source>Hide localtime if city is present and current</source>
-        <translation type="unfinished"></translation>
+        <translation>Ukryj czas lokalny jeśli miasto jest w tej samej strefie</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="123"/>
@@ -287,17 +287,17 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="281"/>
         <source>Worldclock pick screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekran wybierania Worldclock</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="282"/>
         <source>Choose screentype used for selecting a worldclock</source>
-        <translation type="unfinished"></translation>
+        <translation>Wybierz rodzaj ekranu do wybierania zegara światowego</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="286"/>
         <source>Custom</source>
-        <translation type="unfinished"></translation>
+        <translation>Niestandardowy</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="289"/>

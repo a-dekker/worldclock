@@ -13,6 +13,7 @@ Atlantic;Atlantisch
 Australia;Australië
 Austria;Oostenrijk
 Azerbaijan;Azerbeidzjan
+Azores;Azoren
 Baghdad;Bagdad
 Bahrain;Bahrein
 Baku;Bakoe
