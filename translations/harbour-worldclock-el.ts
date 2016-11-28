@@ -280,27 +280,27 @@
         <translation>Γλώσσα:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="272"/>
+        <location filename="../qml/pages/SettingPage.qml" line="280"/>
         <source>Change of language will be active after restarting the application.</source>
         <translation>Η αλλαγή της γλώσσας θα λάβει χώρα μετά την επανεκκίνηση της εφαρμογής.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="281"/>
+        <location filename="../qml/pages/SettingPage.qml" line="289"/>
         <source>Worldclock pick screen</source>
         <translation>Οθόνη επιλογής ώρας</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="282"/>
+        <location filename="../qml/pages/SettingPage.qml" line="290"/>
         <source>Choose screentype used for selecting a worldclock</source>
         <translation>Επιλέξτε τον τύπο της οθόνης για την επιλογή της ώρας</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="286"/>
+        <location filename="../qml/pages/SettingPage.qml" line="294"/>
         <source>Custom</source>
         <translation>Προσαρμοσμένο</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="289"/>
+        <location filename="../qml/pages/SettingPage.qml" line="297"/>
         <source>Sailfish</source>
         <translation>Sailfish</translation>
     </message>

@@ -155,8 +155,11 @@ Dialog {
                             text: "Russian/Русский"
                         } // 9
                         MenuItem {
-                            text: "Swedish/Svensk"
+                            text: "Slovenian/Slovenski"
                         } // 10
+                        MenuItem {
+                            text: "Swedish/Svensk"
+                        } // 11
                     }
                     // The next two converter functions decouple the alphabetical language list
                     // index from the internal settings index, which cannot be changed for legacy reasons
@@ -188,6 +191,9 @@ Dialog {
                         case Languages.NL:
                             // Dutch
                             return GlobVars.dutch
+                        case Languages.SL_SI:
+                            // Slovenian
+                            return GlobVars.slovenian
                         case Languages.ES:
                             // Spanish
                             return GlobVars.spanish
@@ -240,6 +246,8 @@ Dialog {
                             return Languages.NL // Dutch
                         case GlobVars.danish:
                             return Languages.DA // Danish
+                        case GlobVars.slovenian:
+                            return Languages.SL_SI // Slovenian
                         case GlobVars.spanish:
                             return Languages.ES // Spanish
                         case GlobVars.french:

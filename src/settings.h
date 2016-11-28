@@ -45,6 +45,7 @@ public:
         IT,    // Italian
         EL,    // Greek
         AR,    // Arabic
+        SL_SI, // Slovenian
         INVALID
     };
 };

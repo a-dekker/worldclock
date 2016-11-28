@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="it">
+<TS version="2.1" language="sl_SI">
 <context>
     <name>About</name>
     <message>
         <location filename="../qml/pages/About.qml" line="24"/>
         <source>About</source>
-        <translation>Info</translation>
+        <translation>O programu</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="27"/>
         <source>Info</source>
-        <translation>Informazioni</translation>
+        <translation>Informacije</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="59"/>
         <source>Version</source>
-        <translation>Versione</translation>
+        <translation>Različica</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="64"/>
         <source>City times across the world</source>
-        <translation>Ora delle città nel mondo</translation>
+        <translation>Trenutni čas v mestih po svetu</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="70"/>
         <source>Author</source>
-        <translation>Autore</translation>
+        <translation>Avtor</translation>
     </message>
 </context>
 <context>
@@ -34,27 +34,27 @@
     <message>
         <location filename="../qml/pages/Aliases.qml" line="64"/>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation>Shrani</translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="65"/>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation>Prekliči</translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="129"/>
         <source>Deleting</source>
-        <translation>Eliminazione</translation>
+        <translation>Brisanje</translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="184"/>
         <source>Alt. name</source>
-        <translation>Nome alt.</translation>
+        <translation>Nadomestno ime</translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="209"/>
         <source>No custom city names defined. Press the plus button to add one.</source>
-        <translation>Nessun nome di città personalizzato definito. Premi + per aggiungerne.</translation>
+        <translation>Ni definiranih imen mest po meri. Za dodajanje pritisni gumb s plusom.</translation>
     </message>
 </context>
 <context>
@@ -63,71 +63,71 @@
         <location filename="../qml/pages/CityDetail.qml" line="65"/>
         <location filename="../qml/pages/CityDetail.qml" line="68"/>
         <source>None</source>
-        <translation>Nessuno</translation>
+        <translation>Brez</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="72"/>
         <source>the clock jumped one hour backward</source>
-        <translation>l&apos;orologio è andato un&apos;ora indietro</translation>
+        <translation>čas se je pramaknil eno uro nazaj</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="75"/>
         <source>the clock jumped one hour forward</source>
-        <translation>l&apos;orologio è andato un&apos;ora avanti</translation>
+        <translation>čas se je pramaknil eno uro naprej</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="82"/>
         <source>the clock jumps one hour backward</source>
-        <translation>l&apos;orologio va un&apos;ora indietro</translation>
+        <translation>čas se pramakne eno uro nazaj</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="85"/>
         <source>the clock jumps one hour forward</source>
-        <translation>l&apos;orologio va un&apos;ora avanti</translation>
+        <translation>čas se pramakne eno uro naprej</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="124"/>
         <source>Timezone details</source>
-        <translation>Dettagli fuso orario</translation>
+        <translation>Podrobnosti časovnega pasu</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="140"/>
         <source>Timezone</source>
-        <translation>Fuso orario</translation>
+        <translation>Časovni pas</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="144"/>
         <location filename="../qml/pages/CityDetail.qml" line="170"/>
         <source>Zone time</source>
-        <translation>Ora di zona</translation>
+        <translation>Čas v pasu</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="186"/>
         <source>Local time</source>
-        <translation>Ora locale</translation>
+        <translation>Lokalni čas</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="189"/>
         <location filename="../qml/pages/CityDetail.qml" line="213"/>
         <source>Time difference</source>
-        <translation>Differenza</translation>
+        <translation>Časovna razlika</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="206"/>
         <location filename="../qml/pages/CityDetail.qml" line="220"/>
         <source>hour</source>
-        <translation>ora</translation>
+        <translation>ura</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="228"/>
         <source>Prev. daylight transition</source>
-        <translation>Transizione diurna prec.</translation>
+        <translation>Zadnji premik ure</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="232"/>
         <location filename="../qml/pages/CityDetail.qml" line="276"/>
         <source>Next daylight transition</source>
-        <translation>Transizione diurna succ.</translation>
+        <translation>Naslednji premik ure</translation>
     </message>
 </context>
 <context>
@@ -143,27 +143,27 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="153"/>
         <source>City already added</source>
-        <translation>Città già presente</translation>
+        <translation>Mesto je že dodano</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="404"/>
         <source>About</source>
-        <translation>Info</translation>
+        <translation>O programu</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="408"/>
         <source>Settings</source>
-        <translation>Impostazioni</translation>
+        <translation>Nastavitve</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="412"/>
         <source>Custom city names</source>
-        <translation>Città personalizzate</translation>
+        <translation>Imena mest po meri</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="416"/>
         <source>Add city</source>
-        <translation>Aggiungi città</translation>
+        <translation>Dodaj mesto</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="454"/>
@@ -173,32 +173,32 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="472"/>
         <source>Deleting</source>
-        <translation>Eliminazione</translation>
+        <translation>Brisanje</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="496"/>
         <source>Manage custom cities on other page</source>
-        <translation>Gestisci le città personalizzate in un&apos;altra pagina</translation>
+        <translation>Urejanje mest po meri na drugi strani</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="585"/>
         <source>Local time</source>
-        <translation>Ora locale</translation>
+        <translation>Lokalni čas</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="629"/>
         <source>Details</source>
-        <translation>Dettagli</translation>
+        <translation>Podrobnosti</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="645"/>
         <source>Remove</source>
-        <translation>Rimuovi</translation>
+        <translation>Odstrani</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="651"/>
         <source>Cannot remove Local time</source>
-        <translation>Impossibile rimuove Ora locale</translation>
+        <translation>Lokalnega časa ni možno odstraniti</translation>
     </message>
 </context>
 <context>
@@ -206,98 +206,98 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="61"/>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation>Shrani</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="62"/>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation>Prekliči</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="65"/>
         <source>Settings</source>
-        <translation>Impostazioni</translation>
+        <translation>Nastavitve</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="72"/>
         <source>Sort order</source>
-        <translation>Ordinamento</translation>
+        <translation>Vrstni red</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="73"/>
         <source>Sort order of personal list</source>
-        <translation>Ordinamento lista personale</translation>
+        <translation>Vrstni red osebnega seznama</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="77"/>
         <source>None</source>
-        <translation>Nessuno</translation>
+        <translation>Brez</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="80"/>
         <source>TimeZone</source>
-        <translation>Fuso orario</translation>
+        <translation>ČasovniPas</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="83"/>
         <location filename="../qml/pages/SettingPage.qml" line="101"/>
         <source>City</source>
-        <translation>Città</translation>
+        <translation>Mesto</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="90"/>
         <source>Sort order list</source>
-        <translation>Lista ordinamento</translation>
+        <translation>Vrstni red seznama</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="91"/>
         <source>Sort order of complete citylist</source>
-        <translation>Ordinamento dell&apos;intera lista città</translation>
+        <translation>Vrstni red celotnega seznama</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="98"/>
         <source>TimeZone/Continent/City</source>
-        <translation>Fuso orario/Continente/Città</translation>
+        <translation>Časovni pas/Kontinent/Mesto</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="104"/>
         <source>Country</source>
-        <translation>Paese</translation>
+        <translation>Država</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="112"/>
         <source>Hide if current</source>
-        <translation>Nascondi se attuale</translation>
+        <translation>Skrij če je trenutno</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="113"/>
         <source>Hide localtime if city is present and current</source>
-        <translation>Nascondi l&apos;ora locale se la città è presente e già attuale</translation>
+        <translation>Skrij lokalni čas, če je mesto na seznamu in trenutno aktivno</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="123"/>
         <source>Language:</source>
-        <translation>Lingua:</translation>
+        <translation>Jezik:</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="280"/>
         <source>Change of language will be active after restarting the application.</source>
-        <translation>La modifica della lingua sarà effettiva dopo il riavvio dell&apos;applicazione.</translation>
+        <translation>Sprememba jezika bo aktivna po ponovnem zagonu programa.</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="289"/>
         <source>Worldclock pick screen</source>
-        <translation>Schermata selezione ora</translation>
+        <translation>Prikaz izbora mest</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="290"/>
         <source>Choose screentype used for selecting a worldclock</source>
-        <translation>Scegli il tipo di schermata per la selezione dell&apos;ora</translation>
+        <translation>Izberite način prikaza seznama mest</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="294"/>
         <source>Custom</source>
-        <translation>Personalizzata</translation>
+        <translation>Po meri</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="297"/>
@@ -307,7 +307,7 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="95"/>
         <source>Continent/City</source>
-        <translation>Continente/Città</translation>
+        <translation>Kontinent/mesto</translation>
     </message>
 </context>
 <context>
@@ -315,7 +315,7 @@
     <message>
         <location filename="../qml/pages/Timezone.qml" line="45"/>
         <source>Select city</source>
-        <translation>Seleziona città</translation>
+        <translation>Izberi mesto</translation>
     </message>
 </context>
 <context>

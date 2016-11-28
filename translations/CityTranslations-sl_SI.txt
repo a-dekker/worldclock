@@ -1,0 +1,360 @@
+Abidjan;Abidžan
+Accra;Akra
+Addis Ababa;Adis Ababa
+Afghanistan;Afganistan
+Africa;Afrika
+Albuquerque;Albuquerque
+Algeria;Alžirija
+Algiers;Alžir
+America;Amerika
+Amman;Aman
+Andorra;Andora
+Ankara;Ankara
+Antananarivo;Antananarivo
+Antarctica;Antarktika
+Aqtau;Aktau
+Argentina;Argentina
+Asunción;Asuncion
+Athens;Atene
+Australia;Avstralija
+Austria;Avstrija
+Azerbaijan;Azerbajdžan
+Azia;Azija
+Baghdad;Bagdad
+Bahamas;Bahami
+Bahrain;Bahrajn
+Baku;Baku
+Baltimore;Baltimore
+Bangalore;Bengaluru
+Bangladesh;Bangladeš
+Barbados;Barbados
+Beijing;Peking
+Beirut;Bejrut
+Belarus;Belorusija
+Belfast;Belfast
+Belgium;Belgija
+Belgrade;Beograd
+Belize;Belize
+Belo Horizonte;Belo Horizonte
+Bermuda;Bermuda
+Beulah;Beulah
+Black Rock City;Black Rock City
+Blantyre;Blantyre
+Bogotá;Bogota
+Bosnia and Herzegovina;Bosna in Hercegovina
+Boston;Boston
+Botswana;Bocvana
+Boulder;Boulder
+Brasília;Brasília
+Bratislava;Bratislava
+Brazil;Brazilija
+Brazzaville;Brazzaville
+Brisbane;Brisbane
+Brussels;Bruselj
+Bucharest;Bukarešta
+Budapest;Budimpešta
+Bulgaria;Bolgarija
+Cairo;Kairo
+Calcutta;Kalkuta
+Calgary;Calgary
+Cambodia;Kambodža
+Cambridge;Cambridge
+Canada;Kanada
+Canary;Canary
+Canberra;Canberra
+Cancún;Cancun
+Cape Town;Cape Town
+Caracas;Caracas
+Casablanca;Casablanca
+Cayman Islands;Kajmanski otoki
+Cayman Palms;Cayman Palms
+Chicago;Čikago
+Chihuahua;Chihuahua
+Chile;Čile
+China;Kitajska
+Chişinău;Chişinău
+Cincinnati;Cincinnati
+Cleveland;Cleveland
+Colombia;Kolumbija
+Colombo;Colombo
+Columbus;Columbus
+Conakry;Conakry
+Copenhagen;Kopenhagen
+Costa Rica;Kostarika
+Croatia;Hrvaška
+Cuba;Kuba
+Czech Republic;Češka republika
+Damascus;Damask
+Dar es Salaam;Dar Es Salaam
+Darwin;Darwin
+Dawson Creek;Dawson Creek
+Delhi;Delhi
+Democratic Republic of the Congo;Demokratična republika Kongo
+Denmark;Danska
+Denver;Denver
+Detroit;Detroit
+Dhaka;Daka
+Djibouti;Džibuti
+Doha;Doha
+Dominica;Dominika
+Dominican Republic;Dominikanska republika
+Dubai;Dubaj
+Dublin;Dublin
+Easter Island;Velikonočni otok
+Ecuador;Ekvador
+Edmonton;Edmonton
+Egypt;Egipt
+El Salvador;Salvador
+Estonia;Estonija
+Ethiopia;Etiopija
+Europe;Evropa
+Falkland Islands;Falklandski otoki
+Fiji;Fidži
+Finland;Finska
+Fortaleza;Fortaleza
+France;Francija
+Frankfurt;Frankfurt
+Freetown;Freetown
+Gaborone;Gaborone
+Gaza;Gaza
+Germany;Nemčija
+Ghana;Gana
+Gibraltar;Gibraltar
+Grand Turk;Grand Turk
+Greece;Grčija
+Grenada;Grenada
+Guam;Guam
+Guangzhou;Guangzhou
+Guatemala;Gvatemala
+Guinea;Gvineja
+Gurgaon;Gurgaon
+Guyana;Gvajana
+Ho Chi Minh City;Hošiminh
+Hungary;Madžarska
+Hyderabad;Hyderabad
+Iceland;Islandija
+India;Indija
+Indian;Indijski
+Indianapolis;Indianapolis
+Indonesia;Indonezija
+Iraq;Irak
+Ireland;Irska
+Islamabad;Islamabad
+Isle of Man;Otok Man
+Israel;Izrael
+Istanbul;Istanbul
+Italy;Italija
+Ivory Coast;Slonokoščena obala
+Jacksonville;Jacksonville
+Jakarta;Džakarta
+Japan;Japonska
+Jerusalem;Jeruzalem
+Johannesburg;Johannesburg
+Jordan;Jordanija
+Kabul;Kabul
+Kampala;Kampala
+Karachi;Karači
+Kazakhstan;Kazahstan
+Kenya;Kenija
+Khartoum;Kartum
+Kiev;Kijev
+Kigali;Kigali
+Kingston;Kingston
+Kinshasa;Kinšasa
+Kiribati;Kiribati
+Kiritimati;Kiritimati
+Kirkland;Kirkland
+Knox;Knox
+Knoxville;Knoxville
+Kraków;Krakov
+Kuala Lumpur;Kuala Lumpur
+Kuwait City;Kuwait City
+Kuwait;Kuvajt
+Kyiv;Kijev
+Lagos;Lagos
+Lahore;Lahore
+Las Vegas;Las Vegas
+Latvia;Latvija
+Lebanon;Libanon
+Lesotho;Lesoto
+Liberia;Liberija
+Libya;Libija
+Lima;Lima
+Lisbon;Lizbona
+Lithuania;Litva
+Luxembourg;Luksemburg
+Macedonia;Makedonija
+Madagascar;Madagaskar
+Malawi;Malavi
+Malaysia;Malezija
+Maldives;Maldivi
+Malta;Malta
+Managua;Managua
+Manchester;Manchester
+Manila;Manila
+Marengo;Marengo
+Martinique;Martinik
+Maseru;Maseru
+Melbourne;Melbourne
+Memphis;Memphis
+Mendoza;Mendoza
+Metlakatla;Metlakatla
+Mexico City;Mexico City
+Mexico;Mehika
+Miami;Miami
+Milan;Milano
+Milwaukee;Milwaukee
+Minneapolis;Minneapolis
+Minsk;Minsk
+Mogadishu;Mogadiš
+Moldova;Moldavija
+Monaco;Monako
+Mongolia;Mongolija
+Monrovia;Monrovija
+Monterrey;Monterrey
+Montevideo;Montevideo
+Montreal;Montreal
+Morocco;Maroko
+Moscow;Moskva
+Mountain View;Mountain View
+Mumbai;Mumbaj
+Munich;München
+Muscat;Muscat
+Myanmar;Mjanmar
+Nairobi;Nairobi
+Nashville;Nashville
+Nassau;Nassau
+Netherlands;Nizozemska
+New Caledonia;Nova Kaledonija
+New Orleans;New Orleans
+New Salem;New Salem
+New South Wales;Novi Južni Wales
+New York;New York
+New Zealand;Nova Zelandija
+Newfoundland;Nova Fundlandija
+Nicaragua;Nikaragva
+Nigeria;Nigerija
+North Korea;Severna Koreja
+Norway;Norveška
+Nouméa;Noumea
+Nuestra Señora de La Paz;Nuestra Señora de La Paz
+Oklahoma City;Oklahoma City
+Oman;Oman
+Osaka;Osaka
+Oulu;Oulu
+Pakistan;Pakistan
+Palestine;Palestina
+Panama;Panama
+Panamá;Panama
+Paraguay;Paragvaj
+Paramaribo;Paramaribo
+Paris;Pariz
+Perth;Perth
+Peru;Peru
+Philadelphia;Filadelfija
+Philippines;Filipini
+Phnom Penh;Phnom Penh
+Phoenix;Phoenix
+Pittsburgh;Pittsburgh
+Poland;Poljska
+Port au Prince;Port au Prince
+Port of Spain;Port of Spain
+Portland;Portland
+Portugal;Portugalska
+Prague;Praga
+Puerto Rico;Portoriko
+Pyongyang;Pjongjang
+Qatar;Katar
+Queensland;Queensland
+Quito;Quito
+Rangoon;Rangoon
+Republic of the Congo;Republika Kongo
+Reykjavík;Reykjavík
+Riga;Riga
+Rio de Janeiro;Rio de Janeiro
+Riyadh;Riyadh
+Romania;Romunija
+Rome;Rim
+Russia;Rusija
+Rwanda;Ruanda
+Sacramento;Sacramento
+Saint Kitts and Nevis;Saint Kitts in Nevis
+Salt Lake City;Salt Lake City
+Samoa;Samoa
+San Antonio;San Antonio
+San Diego;San Diego
+San Francisco;San Francisco
+San José;San Jose
+San Juan;San Juan
+San Marino;San Marino
+San Salvador;San Salvador
+Sanaa;Sana
+Santiago;Santiago
+Santo Domingo;Santo Domingo
+Sarajevo;Sarajevo
+Saskatchewan;Saskatchewan
+Saudi Arabia;Saudova Arabija
+Seattle;Seattle
+Seoul;Seul
+Serbia;Srbija
+Shanghai;Šanghaj
+Sierra Leone;Sierra Leone
+Simferopol;Simferopol
+Singapore;Singapur
+Skopje;Skopje
+Slovakia;Slovaška
+Slovenia;Slovenija
+Sofia;Sofija
+Somalia;Somalija
+South Africa;Južna Afrika
+South Korea;Južna Koreja
+Spain;Španija
+Sri Lanka;Šrilanka
+St.Johns;St.Johns
+St.Kitts;St.Kitts
+St.Louis;St.Louis
+Stanley;Stanley
+Stockholm;Stockholm
+Sudan;Sudan
+Suriname;Surinam
+Suva;Suva
+Svalbard and Jan Mayen;Svalbard in Jan Mayen
+Sweden;Švedska
+Switzerland;Švica
+Sydney;Sydney
+Syria;Sirija
+São Paulo;Sao Paulo
+São Tomé and Príncipe;Sao Tome in Principe
+São Tomé;Sao Tome
+Taipei;Tajpej
+Taiwan;Tajvan
+Tallinn;Talin
+Tanzania;Tanzanija
+Tehran;Teheran
+Thailand;Tajska
+Tokyo;Tokio
+Trinidad and Tobago;Trinidad in Tobago
+Tripoli;Tripoli
+Tunis;Tunis
+Tunisia;Tunizija
+Turkey;Turčija
+Turks and Caicos Islands;Turks in Caicos otoki
+Uganda;Uganda
+Ukraine;Ukrajina
+Ulan Bator;Ulan Bator
+United Arab Emirates;Združeni arabski emirati
+United Kingdom;Velika Britanija
+United States;Združene države Amerike
+Uruguay;Urugvaj
+Vatican City;Mesto Vatikan
+Venezuela;Venezuela
+Vienna;Dunaj
+Vietnam;Vietnam
+Vilnius;Vilna
+Vincennes;Vincennes
+Warsaw;Varšava
+Wrocław;Vroclav
+Yemen;Jemen
+Zagreb;Zagreb
+Zimbabwe;Zimbabve
+Zurich;Zürich

@@ -12,4 +12,5 @@ var hungarian = 6
 var italian = 7
 var polish = 8
 var russian = 9
-var swedish = 10
+var slovenian = 10
+var swedish = 11
