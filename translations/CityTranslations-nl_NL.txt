@@ -83,6 +83,7 @@ Isle of Man;Eiland Man
 Israel;Israël
 Italy;Italië
 Ivory Coast;Ivoorkust
+Jerusalem;Jeruzalem
 Jordan;Jordanië
 Kabul;Kaboel
 Kazakhstan;Kazachstan
@@ -176,7 +177,7 @@ United Kingdom;Verenigd Koninkrijk
 United States Minor Outlying Islands;Kleine afgelegen eilanden van de VS
 United States Virgin Islands;Amerikaanse Maagdeneilanden
 United States;Verenigde Staten
-Uzbekistan;Oesbekistan
+Uzbekistan;Oezbekistan
 Vatican City State;Vaticaanstad
 Vatican;Vaticaan
 Vienna;Wenen

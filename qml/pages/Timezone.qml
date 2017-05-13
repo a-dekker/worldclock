@@ -106,7 +106,6 @@ Page {
         height: page.height
         anchors.top: searchField.bottom
         anchors.bottom: parent.bottom
-        x: isPortrait ? 0 : Theme.paddingMedium
 
         Connections {
             target: searchField.activeFocus ? cityList : null
@@ -124,6 +123,7 @@ Page {
             // height is performance bottleneck
             height: contentItem.visible ? contentItem.height : 0
             width: ListView.view.width
+            x: isPortrait ? 0 : Theme.paddingMedium
 
             function findString(mycountry) {
                 if (searchString.length === 0) {
