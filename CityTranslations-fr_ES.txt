@@ -1,0 +1,118 @@
+Africa;Africa
+Algeria;Algeria
+Algiers;Alger
+Andorra;Andorra
+Aruba;Aruba
+Athens;Atenas
+Australia;Australia
+Austria;Austria
+Azerbaijan;Azerbaiyán
+Baghdad;Bagdad
+Beijing;Beijing
+Belarus;Bielorrusia
+Belgium;Bélgica
+Belgrade;Belgrado
+Bosnia And Herzegowina;Bosnia y Herzegovina
+Brazil;Brazil
+Brussels;Bruselas
+Bucharest;Bucarest
+Bulgaria;ulgaria
+Cairo;Cairo
+Cambodia;Camboya
+Cambridge;Cambridge
+Canada;canada
+Canary;Canario
+Cape Town;Ciudad Del Cabo
+Cayman Islands;Islas Caimán
+China;China
+Colombia;Colombia
+Conakry;Conakry
+Copenhagen;Copenhague
+Croatia;Croacia
+Czech Republic;República Checa
+Damascus;Damasco
+Democratic Republic of the Congo;República Democrática del Congo
+Denmark;Dinamarca
+Dominica;Dominica
+Dominican Republic;República Dominicana
+Easter;Easter
+Egypt;Egypto
+Estonia;Estonia;
+Europe;Europa
+Falkland Islands;Islas Malvinas;
+France;Francia
+Guatemalan;Guatemala
+Germany;Alemania
+Greece;Grecia
+Gurgaon;Gurgaon
+Guyana;Guayana
+Helsinki;Helsinki
+Ho Chi Minh City;Ciudad de Ho Chi Minh
+Hungary;Hungría
+Hyderabad;Hyderabad
+India;India
+Indonesia;Indonesia
+Iraq;Irak
+Ireland;Irlanda
+Isle of Man;Isla de Man
+Italy;Italia
+Kingston;Kingston
+Kyiv;Kyiv
+Latvia;Letonia
+Lebanon;Líbano
+Libya;Libia
+Lisbon;Lisboa
+Lithuania;Lituania
+Macedonia;macedonia
+Madagascar;Madagascar
+Malawi;Malawi
+Maldives;Maldivas
+Mexico;Mexico
+Milan;Milán
+Mogadisio;Mogadiscio
+Moldova;Moldova
+Mongolia;Mongolia
+Montevideo;Montevideo
+Morocco;Marruecos
+Moscow;Moscú
+Mountain View;vista desde la montaña
+Munich;Munich 
+Netherlands;Países Bajos
+New Zealand;Nueva Zelanda
+North Korea;Corea del Norte
+Norway;Noruega
+Oulu;Oulu
+Palestine;Palestina
+Philippines;Filipinas
+Poland;Polonia
+Portugal;Portugal
+Prague;Praga
+Republic of the Congo;República del Congo
+Romania;Rumania
+Rome;Roma
+Russia;Rusia
+Saint Kitts And Nevis;San Cristóbal y Nieves
+Saudi Arabia;Arabia Saudita
+Serbia;Serbia
+Slovakia;Eslovaquia
+South Africa;Sudáfrica
+South Korea;Corea del Sur
+Spain;España
+Suriname;Suriname
+Svalbard and Jan Mayen;Svalbard y Jan Mayen
+Sweden;Suecia
+Switzerland;Suiza
+Syria;Siria
+São Tomé And Príncipe;Santo Tomé y Príncipe
+Trinidad And Tobago;Trinidad y Tobago
+Tunisia;Túnez
+Turkey;Turquia
+Turks And Caicos Islands;Islas Turcas y Caicos
+Ukraine;Ucrania
+United Arab Emirates;Emiratos Árabes Unidos
+United Kingdom;Reino Unido
+United States;Estados Unidos
+Vatican City State;Ciudad del Vaticano
+Vienna;Viena
+Warsaw;Varsovia
+
