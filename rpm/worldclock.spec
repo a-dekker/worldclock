@@ -61,6 +61,7 @@ cp /home/src1/worldclock/translations/CityTranslations-it_IT.txt %{buildroot}/us
 cp /home/src1/worldclock/translations/CityTranslations-el_GR.txt %{buildroot}/usr/share/harbour-worldclock/translations
 cp /home/src1/worldclock/translations/CityTranslations-fr_FR.txt %{buildroot}/usr/share/harbour-worldclock/translations
 cp /home/src1/worldclock/translations/CityTranslations-ru_RU.txt %{buildroot}/usr/share/harbour-worldclock/translations
+cp /home/src1/worldclock/translations/CityTranslations-es_ES.txt %{buildroot}/usr/share/harbour-worldclock/translations
 cp /home/src1/worldclock/translations/CityTranslations-ar_EG.txt %{buildroot}/usr/share/harbour-worldclock/translations
 
 # >> install post
