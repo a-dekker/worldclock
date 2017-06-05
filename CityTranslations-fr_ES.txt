@@ -1,115 +1,118 @@
-Africa;Afrika
-Algeria;Algeriet
+Africa;Africa
+Algeria;Algeria
 Algiers;Alger
 Andorra;Andorra
 Aruba;Aruba
-Athens;Aten
-Australia;Australien
-Austria;Österrike
-Azerbaijan;Azerbajdzjan
+Athens;Atenas
+Australia;Australia
+Austria;Austria
+Azerbaijan;Azerbaiyán
 Baghdad;Bagdad
-Beijing;Peking
-Belarus;Vitryssland
-Belgium;Belgien
-Belgrade;Belgrad
-Bosnia And Herzegowina;Bosnien-Hercegovina
-Brazil;Brasilien
-Brussels;Bryssel
-Bucharest;Bukarest
-Bulgaria;Bulgarien
-Cairo;Kairo
-Cambodia;Kambodja
+Beijing;Beijing
+Belarus;Bielorrusia
+Belgium;Bélgica
+Belgrade;Belgrado
+Bosnia And Herzegowina;Bosnia y Herzegovina
+Brazil;Brazil
+Brussels;Bruselas
+Bucharest;Bucarest
+Bulgaria;ulgaria
+Cairo;Cairo
+Cambodia;Camboya
 Cambridge;Cambridge
-Canada;Kanada
-Canary;Kanarieöarna
-Cape Town;Kapstaden
-Cayman Islands;Caymanöarna
-China;Kina
+Canada;canada
+Canary;Canario
+Cape Town;Ciudad Del Cabo
+Cayman Islands;Islas Caimán
+China;China
+Colombia;Colombia
 Conakry;Conakry
-Copenhagen;Köpenhamn
-Croatia;Kroatien
-Czech Republic;Tjeckien
-Damascus;Damaskus
-Democratic Republic of the Congo;Demokratiska republiken Kongo
-Denmark;Danmark
+Copenhagen;Copenhague
+Croatia;Croacia
+Czech Republic;República Checa
+Damascus;Damasco
+Democratic Republic of the Congo;República Democrática del Congo
+Denmark;Dinamarca
 Dominica;Dominica
-Dominican Republic;Dominikanska Republiken
-Easter;Påskön
-Egypt;Egypten
-Estonia;Estland
+Dominican Republic;República Dominicana
+Easter;Easter
+Egypt;Egypto
+Estonia;Estonia;
 Europe;Europa
-Falkland Islands;Falklandsöarna
-France;Frankrike
-Germany;Tyskland
-Greece;Grekland
+Falkland Islands;Islas Malvinas;
+France;Francia
+Guatemalan;Guatemala
+Germany;Alemania
+Greece;Grecia
 Gurgaon;Gurgaon
-Guyana;Guyana
-Helsinki;Helsingfors
-Ho Chi Minh City;Ho Chi Minh-staden
-Hungary;Ungern
+Guyana;Guayana
+Helsinki;Helsinki
+Ho Chi Minh City;Ciudad de Ho Chi Minh
+Hungary;Hungría
 Hyderabad;Hyderabad
-India;Indien
-Indonesia;Indonesien
+India;India
+Indonesia;Indonesia
 Iraq;Irak
-Ireland;Irland
-Isle of Man;Isle of Man
-Italy;Italien
+Ireland;Irlanda
+Isle of Man;Isla de Man
+Italy;Italia
 Kingston;Kingston
-Kyiv;Kiev
-Latvia;Lettland
-Lebanon;Libanon
-Libya;Libyen
-Lisbon;Lissabon
-Lithuania;Litauen
-Macedonia;Makedonien
-Madagascar;Madagaskar
+Kyiv;Kyiv
+Latvia;Letonia
+Lebanon;Líbano
+Libya;Libia
+Lisbon;Lisboa
+Lithuania;Lituania
+Macedonia;macedonia
+Madagascar;Madagascar
 Malawi;Malawi
-Maldives;Maldiverna
-Milan;Milano
-Mogadishu;Mogadishu
-Moldova;Moldavien
-Mongolia;Mongoliet
+Maldives;Maldivas
+Mexico;Mexico
+Milan;Milán
+Mogadisio;Mogadiscio
+Moldova;Moldova
+Mongolia;Mongolia
 Montevideo;Montevideo
-Morocco;Marocko
-Moscow;Moskva
-Mountain View;Mountain View
-Munich;München
-Netherlands;Nederländerna
-New Zealand;Nya Zeeland
-North Korea;Nordkorea
-Norway;Norge
-Oulu;Uleåborg
+Morocco;Marruecos
+Moscow;Moscú
+Mountain View;vista desde la montaña
+Munich;Munich 
+Netherlands;Países Bajos
+New Zealand;Nueva Zelanda
+North Korea;Corea del Norte
+Norway;Noruega
+Oulu;Oulu
 Palestine;Palestina
-Philippines;Filippinerna
-Poland;Polen
+Philippines;Filipinas
+Poland;Polonia
 Portugal;Portugal
-Prague;Prag
-Republic of the Congo;Republiken Kongo
-Romania;Rumänien
-Rome;Rom
-Russia;Ryssland
-Saint Kitts And Nevis;Saint Kitts och Nevis
-Saudi Arabia;Saudiarabien
-Serbia;Serbien
-Slovakia;Slovakien
-South Africa;Sydafrika
-South Korea;Sydkorea
-Spain;Spanien
-Suriname;Surinam
-Svalbard and Jan Mayen;Svalbard och Jan Mayen
-Sweden;Sverige
-Switzerland;Schweiz
-Syria;Syrien
-São Tomé And Príncipe;São Tomé Och Príncipe
-Trinidad And Tobago;Trinidad och Tobago
-Tunisia;Tunisien
-Turkey;Turkiet
-Turks And Caicos Islands;Turks- och Caicosöarna
-Ukraine;Ukraina
-United Arab Emirates;Förenade Arabemiraten
-United Kingdom;Storbritannien
-United States;Förenta Staterna
-Vatican City State;Vatikanstaten
-Vienna;Wien
-Warsaw;Warszawa
+Prague;Praga
+Republic of the Congo;República del Congo
+Romania;Rumania
+Rome;Roma
+Russia;Rusia
+Saint Kitts And Nevis;San Cristóbal y Nieves
+Saudi Arabia;Arabia Saudita
+Serbia;Serbia
+Slovakia;Eslovaquia
+South Africa;Sudáfrica
+South Korea;Corea del Sur
+Spain;España
+Suriname;Suriname
+Svalbard and Jan Mayen;Svalbard y Jan Mayen
+Sweden;Suecia
+Switzerland;Suiza
+Syria;Siria
+São Tomé And Príncipe;Santo Tomé y Príncipe
+Trinidad And Tobago;Trinidad y Tobago
+Tunisia;Túnez
+Turkey;Turquia
+Turks And Caicos Islands;Islas Turcas y Caicos
+Ukraine;Ucrania
+United Arab Emirates;Emiratos Árabes Unidos
+United Kingdom;Reino Unido
+United States;Estados Unidos
+Vatican City State;Ciudad del Vaticano
+Vienna;Viena
+Warsaw;Varsovia
 
