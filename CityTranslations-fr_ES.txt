@@ -1,0 +1,115 @@
+Africa;Afrika
+Algeria;Algeriet
+Algiers;Alger
+Andorra;Andorra
+Aruba;Aruba
+Athens;Aten
+Australia;Australien
+Austria;Österrike
+Azerbaijan;Azerbajdzjan
+Baghdad;Bagdad
+Beijing;Peking
+Belarus;Vitryssland
+Belgium;Belgien
+Belgrade;Belgrad
+Bosnia And Herzegowina;Bosnien-Hercegovina
+Brazil;Brasilien
+Brussels;Bryssel
+Bucharest;Bukarest
+Bulgaria;Bulgarien
+Cairo;Kairo
+Cambodia;Kambodja
+Cambridge;Cambridge
+Canada;Kanada
+Canary;Kanarieöarna
+Cape Town;Kapstaden
+Cayman Islands;Caymanöarna
+China;Kina
+Conakry;Conakry
+Copenhagen;Köpenhamn
+Croatia;Kroatien
+Czech Republic;Tjeckien
+Damascus;Damaskus
+Democratic Republic of the Congo;Demokratiska republiken Kongo
+Denmark;Danmark
+Dominica;Dominica
+Dominican Republic;Dominikanska Republiken
+Easter;Påskön
+Egypt;Egypten
+Estonia;Estland
+Europe;Europa
+Falkland Islands;Falklandsöarna
+France;Frankrike
+Germany;Tyskland
+Greece;Grekland
+Gurgaon;Gurgaon
+Guyana;Guyana
+Helsinki;Helsingfors
+Ho Chi Minh City;Ho Chi Minh-staden
+Hungary;Ungern
+Hyderabad;Hyderabad
+India;Indien
+Indonesia;Indonesien
+Iraq;Irak
+Ireland;Irland
+Isle of Man;Isle of Man
+Italy;Italien
+Kingston;Kingston
+Kyiv;Kiev
+Latvia;Lettland
+Lebanon;Libanon
+Libya;Libyen
+Lisbon;Lissabon
+Lithuania;Litauen
+Macedonia;Makedonien
+Madagascar;Madagaskar
+Malawi;Malawi
+Maldives;Maldiverna
+Milan;Milano
+Mogadishu;Mogadishu
+Moldova;Moldavien
+Mongolia;Mongoliet
+Montevideo;Montevideo
+Morocco;Marocko
+Moscow;Moskva
+Mountain View;Mountain View
+Munich;München
+Netherlands;Nederländerna
+New Zealand;Nya Zeeland
+North Korea;Nordkorea
+Norway;Norge
+Oulu;Uleåborg
+Palestine;Palestina
+Philippines;Filippinerna
+Poland;Polen
+Portugal;Portugal
+Prague;Prag
+Republic of the Congo;Republiken Kongo
+Romania;Rumänien
+Rome;Rom
+Russia;Ryssland
+Saint Kitts And Nevis;Saint Kitts och Nevis
+Saudi Arabia;Saudiarabien
+Serbia;Serbien
+Slovakia;Slovakien
+South Africa;Sydafrika
+South Korea;Sydkorea
+Spain;Spanien
+Suriname;Surinam
+Svalbard and Jan Mayen;Svalbard och Jan Mayen
+Sweden;Sverige
+Switzerland;Schweiz
+Syria;Syrien
+São Tomé And Príncipe;São Tomé Och Príncipe
+Trinidad And Tobago;Trinidad och Tobago
+Tunisia;Tunisien
+Turkey;Turkiet
+Turks And Caicos Islands;Turks- och Caicosöarna
+Ukraine;Ukraina
+United Arab Emirates;Förenade Arabemiraten
+United Kingdom;Storbritannien
+United States;Förenta Staterna
+Vatican City State;Vatikanstaten
+Vienna;Wien
+Warsaw;Warszawa
+
