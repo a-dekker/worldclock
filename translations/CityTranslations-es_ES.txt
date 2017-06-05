@@ -76,7 +76,7 @@ Montevideo;Montevideo
 Morocco;Marruecos
 Moscow;Moscú
 Mountain View;vista desde la montaña
-Munich;Munich 
+Munich;Munich
 Netherlands;Países Bajos
 New Zealand;Nueva Zelanda
 North Korea;Corea del Norte
@@ -115,4 +115,3 @@ United States;Estados Unidos
 Vatican City State;Ciudad del Vaticano
 Vienna;Viena
 Warsaw;Varsovia
-

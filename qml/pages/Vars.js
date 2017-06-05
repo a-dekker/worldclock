@@ -13,4 +13,5 @@ var italian = 7
 var polish = 8
 var russian = 9
 var slovenian = 10
-var swedish = 11
+var spanish = 11
+var swedish = 12

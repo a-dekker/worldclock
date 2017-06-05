@@ -46,6 +46,7 @@ public:
         EL,    // Greek
         AR,    // Arabic
         SL_SI, // Slovenian
+        ES,    // Spanish
         INVALID
     };
 };
@@ -53,4 +54,3 @@ public:
 } // namespace
 
 #endif // SETTINGS_H
-

@@ -144,10 +144,10 @@ Dialog {
                         } // 5
                         MenuItem {
                             text: "Hungarian/Magyar"
-                        } // 7
+                        } // 6
                         MenuItem {
                             text: "Italian/Italiano"
-                        } // 8
+                        } // 7
                         MenuItem {
                             text: "Polish/Polski"
                         } // 8
@@ -158,8 +158,11 @@ Dialog {
                             text: "Slovenian/Slovenski"
                         } // 10
                         MenuItem {
-                            text: "Swedish/Svensk"
+                            text: "Spanish/Español"
                         } // 11
+                        MenuItem {
+                            text: "Swedish/Svensk"
+                        } // 12
                     }
                     // The next two converter functions decouple the alphabetical language list
                     // index from the internal settings index, which cannot be changed for legacy reasons
@@ -234,6 +237,8 @@ Dialog {
                             return Languages.EN // English
                         case GlobVars.swedish:
                             return Languages.SV // Swedish
+                        case GlobVars.spanish:
+                            return Languages.ES // Spanish
                         case GlobVars.finnish:
                             return Languages.FI // Finnish
                         case GlobVars.german:
@@ -248,8 +253,6 @@ Dialog {
                             return Languages.DA // Danish
                         case GlobVars.slovenian:
                             return Languages.SL_SI // Slovenian
-                        case GlobVars.spanish:
-                            return Languages.ES // Spanish
                         case GlobVars.french:
                             return Languages.FR_FR // French
                         case GlobVars.turkish:

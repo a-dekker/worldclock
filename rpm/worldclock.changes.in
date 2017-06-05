@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sun Apr 16 2017 Arno Dekker <jack.tar@example.com> 0.10-1
+- Added Spanish
+
 * Sun Apr 16 2017 Arno Dekker <jack.tar@example.com> 0.10-0
 - Some fixes in dutch city translations
 - Scrollbar in landscape citylist visible again

@@ -83,6 +83,10 @@ int main(int argc, char *argv[])
     QTranslator translator;
     if (settingsPublic::Languages::SYSTEM_DEFAULT != languageNbr) {
         switch (languageNbr) {
+        // Spanish
+        case settingsPublic::Languages::ES:
+            translator.load("harbour-worldclock-es.qm", SailfishApp::pathTo(QString("translations")).toLocalFile());
+            break;
         // Swedish
         case settingsPublic::Languages::SV:
             translator.load("harbour-worldclock-sv.qm", SailfishApp::pathTo(QString("translations")).toLocalFile());
@@ -152,6 +156,10 @@ QLocale myLanguage(void)
     int languageNbr = mySets.value("language","0").toInt();
     QLocale myLang;
     switch (languageNbr) {
+    // Spanish
+    case settingsPublic::Languages::ES:
+        myLang = QLocale( QLocale::Spanish, QLocale::Spain );
+        break;
     // Swedish
     case settingsPublic::Languages::SV:
         myLang = QLocale( QLocale::Swedish, QLocale::Sweden );
