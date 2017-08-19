@@ -15,28 +15,22 @@ Dialog {
     property int langNbrToSave: -1
 
     onAccepted: {
-        myset.setValue("sortorder", sorting.currentIndex)
-        myset.setValue("sortorder_completeList", citylist_sorting.currentIndex)
-        myset.setValue("hidelocal", localdisplay.checked)
-        myset.setValue("city_pickertype", cityPicker.currentIndex) // not_allowed_in_store
+        myset.setValue("sortorder", sorting.currentIndex.toString())
+        myset.setValue("sortorder_completeList", citylist_sorting.currentIndex.toString())
+        if (localdisplay.checked) {
+            myset.setValue("hidelocal", "true")
+        } else {
+            myset.setValue("hidelocal", "false")
+        }
+        myset.setValue("city_pickertype", cityPicker.currentIndex.toString()) // not_allowed_in_store
         // languagenumber is not index, but enum number!
         if (langNbrToSave !== -1)
-            myset.setValue("language", langNbrToSave)
+            myset.setValue("language", langNbrToSave.toString())
         myset.sync()
         mainapp.city_id = "fromsettings"
     }
 
     objectName: "SettingPage"
-
-    Image {
-        id: coverBgImage
-        anchors.fill: parent
-        fillMode: Image.PreserveAspectFit
-        source: "../images/earth.png"
-        horizontalAlignment: Image.AlignHCenter
-        verticalAlignment: Image.AlignVCenter
-        opacity: largeScreen ? 0.5 : 1
-    }
 
     SilicaFlickable {
         anchors.fill: parent

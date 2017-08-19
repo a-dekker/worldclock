@@ -204,108 +204,108 @@
 <context>
     <name>SettingPage</name>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="61"/>
+        <location filename="../qml/pages/SettingPage.qml" line="55"/>
         <source>Save</source>
         <translation>Mentés</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="62"/>
+        <location filename="../qml/pages/SettingPage.qml" line="56"/>
         <source>Cancel</source>
         <translation>Mégsem</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="65"/>
+        <location filename="../qml/pages/SettingPage.qml" line="59"/>
         <source>Settings</source>
         <translation>Beállítások</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="72"/>
+        <location filename="../qml/pages/SettingPage.qml" line="66"/>
         <source>Sort order</source>
         <translation>Sorrend</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="73"/>
+        <location filename="../qml/pages/SettingPage.qml" line="67"/>
         <source>Sort order of personal list</source>
         <translation>Saját lista rendezése</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="77"/>
+        <location filename="../qml/pages/SettingPage.qml" line="71"/>
         <source>None</source>
         <translation>Nincs</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="80"/>
+        <location filename="../qml/pages/SettingPage.qml" line="74"/>
         <source>TimeZone</source>
         <translation>Időzóna</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="83"/>
-        <location filename="../qml/pages/SettingPage.qml" line="101"/>
+        <location filename="../qml/pages/SettingPage.qml" line="77"/>
+        <location filename="../qml/pages/SettingPage.qml" line="95"/>
         <source>City</source>
         <translation>Város</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="90"/>
+        <location filename="../qml/pages/SettingPage.qml" line="84"/>
         <source>Sort order list</source>
         <translation>Lista rendezése</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="91"/>
+        <location filename="../qml/pages/SettingPage.qml" line="85"/>
         <source>Sort order of complete citylist</source>
         <translation>Teljes városlista rendezése</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="98"/>
+        <location filename="../qml/pages/SettingPage.qml" line="92"/>
         <source>TimeZone/Continent/City</source>
         <translation>Időzóna/Kontinens/Város</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="104"/>
+        <location filename="../qml/pages/SettingPage.qml" line="98"/>
         <source>Country</source>
         <translation>Ország</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="112"/>
+        <location filename="../qml/pages/SettingPage.qml" line="106"/>
         <source>Hide if current</source>
         <translation>Jelenlegi elrejtése</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="113"/>
+        <location filename="../qml/pages/SettingPage.qml" line="107"/>
         <source>Hide localtime if city is present and current</source>
         <translation>Város elrejtése a jelenlegi idő esetén</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="123"/>
+        <location filename="../qml/pages/SettingPage.qml" line="117"/>
         <source>Language:</source>
         <translation>Nyelv:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="283"/>
+        <location filename="../qml/pages/SettingPage.qml" line="277"/>
         <source>Change of language will be active after restarting the application.</source>
         <translation>Az új nyelvi beállítás az alkalmazás újraindítása után aktiválódik.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="292"/>
+        <location filename="../qml/pages/SettingPage.qml" line="286"/>
         <source>Worldclock pick screen</source>
         <translation>Világóra választó képernyő</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="293"/>
+        <location filename="../qml/pages/SettingPage.qml" line="287"/>
         <source>Choose screentype used for selecting a worldclock</source>
         <translation>Válaszd ki a képernyő stílust</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="297"/>
+        <location filename="../qml/pages/SettingPage.qml" line="291"/>
         <source>Custom</source>
         <translation>Egyedi</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="300"/>
+        <location filename="../qml/pages/SettingPage.qml" line="294"/>
         <source>Sailfish</source>
         <translation>Sailfish</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="95"/>
+        <location filename="../qml/pages/SettingPage.qml" line="89"/>
         <source>Continent/City</source>
         <translation>Kontinens/Város</translation>
     </message>

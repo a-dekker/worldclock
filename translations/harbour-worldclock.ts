@@ -204,108 +204,108 @@
 <context>
     <name>SettingPage</name>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="61"/>
+        <location filename="../qml/pages/SettingPage.qml" line="55"/>
         <source>Save</source>
         <translation>Save</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="62"/>
+        <location filename="../qml/pages/SettingPage.qml" line="56"/>
         <source>Cancel</source>
         <translation>Cancel</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="65"/>
+        <location filename="../qml/pages/SettingPage.qml" line="59"/>
         <source>Settings</source>
         <translation>Settings</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="72"/>
+        <location filename="../qml/pages/SettingPage.qml" line="66"/>
         <source>Sort order</source>
         <translation>Sort order</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="73"/>
+        <location filename="../qml/pages/SettingPage.qml" line="67"/>
         <source>Sort order of personal list</source>
         <translation>Sort order of personal list</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="77"/>
+        <location filename="../qml/pages/SettingPage.qml" line="71"/>
         <source>None</source>
         <translation>None</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="80"/>
+        <location filename="../qml/pages/SettingPage.qml" line="74"/>
         <source>TimeZone</source>
         <translation>TimeZone</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="83"/>
-        <location filename="../qml/pages/SettingPage.qml" line="101"/>
+        <location filename="../qml/pages/SettingPage.qml" line="77"/>
+        <location filename="../qml/pages/SettingPage.qml" line="95"/>
         <source>City</source>
         <translation>City</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="90"/>
+        <location filename="../qml/pages/SettingPage.qml" line="84"/>
         <source>Sort order list</source>
         <translation>Sort order list</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="91"/>
+        <location filename="../qml/pages/SettingPage.qml" line="85"/>
         <source>Sort order of complete citylist</source>
         <translation>Sort order of complete citylist</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="98"/>
+        <location filename="../qml/pages/SettingPage.qml" line="92"/>
         <source>TimeZone/Continent/City</source>
         <translation>TimeZone/Continent/City</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="104"/>
+        <location filename="../qml/pages/SettingPage.qml" line="98"/>
         <source>Country</source>
         <translation>Country</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="112"/>
+        <location filename="../qml/pages/SettingPage.qml" line="106"/>
         <source>Hide if current</source>
         <translation>Hide if current</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="113"/>
+        <location filename="../qml/pages/SettingPage.qml" line="107"/>
         <source>Hide localtime if city is present and current</source>
         <translation>Hide localtime if city is present and current</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="123"/>
+        <location filename="../qml/pages/SettingPage.qml" line="117"/>
         <source>Language:</source>
         <translation>Language:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="283"/>
+        <location filename="../qml/pages/SettingPage.qml" line="277"/>
         <source>Change of language will be active after restarting the application.</source>
         <translation>Change of language will be active after restarting the application.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="292"/>
+        <location filename="../qml/pages/SettingPage.qml" line="286"/>
         <source>Worldclock pick screen</source>
         <translation>Worldclock pick screen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="293"/>
+        <location filename="../qml/pages/SettingPage.qml" line="287"/>
         <source>Choose screentype used for selecting a worldclock</source>
         <translation>Choose screentype used for selecting a worldclock</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="297"/>
+        <location filename="../qml/pages/SettingPage.qml" line="291"/>
         <source>Custom</source>
         <translation>Custom</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="300"/>
+        <location filename="../qml/pages/SettingPage.qml" line="294"/>
         <source>Sailfish</source>
         <translation>Sailfish</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="95"/>
+        <location filename="../qml/pages/SettingPage.qml" line="89"/>
         <source>Continent/City</source>
         <translation>Continent/City</translation>
     </message>

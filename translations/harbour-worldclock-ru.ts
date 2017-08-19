@@ -204,108 +204,108 @@
 <context>
     <name>SettingPage</name>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="61"/>
+        <location filename="../qml/pages/SettingPage.qml" line="55"/>
         <source>Save</source>
         <translation>Сохранить</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="62"/>
+        <location filename="../qml/pages/SettingPage.qml" line="56"/>
         <source>Cancel</source>
         <translation>Отменить</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="65"/>
+        <location filename="../qml/pages/SettingPage.qml" line="59"/>
         <source>Settings</source>
         <translation>Настройки</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="72"/>
+        <location filename="../qml/pages/SettingPage.qml" line="66"/>
         <source>Sort order</source>
         <translation>Порядок сортировки</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="73"/>
+        <location filename="../qml/pages/SettingPage.qml" line="67"/>
         <source>Sort order of personal list</source>
         <translation>Порядок сортировки персонального списка</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="77"/>
+        <location filename="../qml/pages/SettingPage.qml" line="71"/>
         <source>None</source>
         <translation>Нет</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="80"/>
+        <location filename="../qml/pages/SettingPage.qml" line="74"/>
         <source>TimeZone</source>
         <translation>Часовой пояс</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="83"/>
-        <location filename="../qml/pages/SettingPage.qml" line="101"/>
+        <location filename="../qml/pages/SettingPage.qml" line="77"/>
+        <location filename="../qml/pages/SettingPage.qml" line="95"/>
         <source>City</source>
         <translation>Город</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="90"/>
+        <location filename="../qml/pages/SettingPage.qml" line="84"/>
         <source>Sort order list</source>
         <translation>Порядок сортировки списка</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="91"/>
+        <location filename="../qml/pages/SettingPage.qml" line="85"/>
         <source>Sort order of complete citylist</source>
         <translation>Порядок сортировки полного списка городов</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="98"/>
+        <location filename="../qml/pages/SettingPage.qml" line="92"/>
         <source>TimeZone/Continent/City</source>
         <translation>Часовой Пояс/Континент/Город</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="104"/>
+        <location filename="../qml/pages/SettingPage.qml" line="98"/>
         <source>Country</source>
         <translation>Страна</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="112"/>
+        <location filename="../qml/pages/SettingPage.qml" line="106"/>
         <source>Hide if current</source>
         <translation>Скрыть, если текущий</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="113"/>
+        <location filename="../qml/pages/SettingPage.qml" line="107"/>
         <source>Hide localtime if city is present and current</source>
         <translation>Скрыть местное время,  если город присутствует и является текущим</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="123"/>
+        <location filename="../qml/pages/SettingPage.qml" line="117"/>
         <source>Language:</source>
         <translation>Язык:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="283"/>
+        <location filename="../qml/pages/SettingPage.qml" line="277"/>
         <source>Change of language will be active after restarting the application.</source>
         <translation>Для смены языка перезапустите программу</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="292"/>
+        <location filename="../qml/pages/SettingPage.qml" line="286"/>
         <source>Worldclock pick screen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="293"/>
+        <location filename="../qml/pages/SettingPage.qml" line="287"/>
         <source>Choose screentype used for selecting a worldclock</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="297"/>
+        <location filename="../qml/pages/SettingPage.qml" line="291"/>
         <source>Custom</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="300"/>
+        <location filename="../qml/pages/SettingPage.qml" line="294"/>
         <source>Sailfish</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="95"/>
+        <location filename="../qml/pages/SettingPage.qml" line="89"/>
         <source>Continent/City</source>
         <translation>Континент/Город</translation>
     </message>
