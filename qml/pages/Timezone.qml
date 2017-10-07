@@ -5,10 +5,7 @@ import "../components"
 
 Page {
     id: page
-    allowedOrientations: Orientation.Portrait | Orientation.Landscape
-                         | Orientation.LandscapeInverted
-    property bool largeScreen: Screen.sizeCategory === Screen.Large ||
-                               Screen.sizeCategory === Screen.ExtraLarge
+    property bool largeScreen: screen.width >= 1080
     property string searchString
 
     TZ {

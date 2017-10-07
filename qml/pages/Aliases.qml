@@ -7,10 +7,8 @@ import "../localdb.js" as DB
 
 Dialog {
     id: aliasesDialog
-    allowedOrientations: Orientation.Portrait | Orientation.Landscape
-                         | Orientation.LandscapeInverted
-    property bool largeScreen: Screen.sizeCategory === Screen.Large
-                               || Screen.sizeCategory === Screen.ExtraLarge
+    property bool largeScreen: screen.width > 1080
+    property bool mediumScreen: (screen.width > 540 && screen.width <= 1080)
     property string isReplace: "false"
     property int currIndex: 0
 
@@ -72,7 +70,7 @@ Dialog {
         source: "../images/earth.png"
         horizontalAlignment: Image.AlignHCenter
         verticalAlignment: Image.AlignVCenter
-        opacity: largeScreen ? 0.5 : 1
+        opacity: largeScreen || mediumScreen ? 0.5 : 1
     }
 
     SilicaListView {

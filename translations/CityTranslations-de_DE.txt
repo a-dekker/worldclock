@@ -13,6 +13,7 @@ Australia;Australien
 Austria;Österreich
 Azerbaijan;Aserbaidschan
 Azia;Asien
+Azores;Azoren
 Baghdad;Bagdad
 Bangladesh;Bangladesch
 Beijing;Peking
@@ -152,3 +153,4 @@ Vilnius;Wilna
 Wrocław;Breslau
 Yemen;Jemen
 Zimbabwe;Simbabwe
+Zurich;Zürich

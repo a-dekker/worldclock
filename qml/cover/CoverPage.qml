@@ -67,7 +67,7 @@ CoverBackground {
                     data = timezones.readCityInfo(myCities[myCity],
                                                   mainapp.timeFormat)
                     data = data.split(';')
-                    var zoneTime = data[0]
+                    var zoneTime = data[0].replace(/\./g, '')
                     var zoneCity = data[1]
                     var zoneCityFull = zoneCity
                     for (var i = 0; i < 3; i++) {
@@ -89,7 +89,7 @@ CoverBackground {
             data = timezones.readCityInfo(customdata[i].split("|")[0],
                                           mainapp.timeFormat)
             data = data.split(';')
-            var zoneTime = data[0]
+            var zoneTime = data[0].replace(/\./g, '')
             var zoneCity = data[1]
             var zoneCityFull = zoneCity
             for (var x = 0; x < 3; x++) {
@@ -119,7 +119,7 @@ CoverBackground {
             data = timezones.readCityTime(cityListModel.get(i).zoneCityFull,
                                           mainapp.timeFormat)
             data = data.split(';')
-            var zoneTime = data[0]
+            var zoneTime = data[0].replace(/\./g, '')
             cityListModel.setProperty(i, "zoneTime", zoneTime)
         }
     }

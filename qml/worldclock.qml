@@ -47,6 +47,11 @@ ApplicationWindow
     property string timeFormat: '24'
     property string myAliases
 
+    allowedOrientations: Orientation.Portrait | Orientation.Landscape
+                         | Orientation.LandscapeInverted
+    _defaultPageOrientations: Orientation.Portrait | Orientation.Landscape
+                         | Orientation.LandscapeInverted
+
     initialPage: Component { MainPage { } }
 
     cover: CoverPage {

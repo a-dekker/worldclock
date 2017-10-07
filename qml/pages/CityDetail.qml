@@ -5,10 +5,7 @@ import "../localdb.js" as DB
 
 Page {
     id: cityDetailPage
-    allowedOrientations: Orientation.Portrait | Orientation.Landscape
-                         | Orientation.LandscapeInverted
-    property bool largeScreen: Screen.sizeCategory === Screen.Large ||
-                               Screen.sizeCategory === Screen.ExtraLarge
+    property bool largeScreen: screen.width >= 1080
     property string zoneDateTime
     property string zoneName
     property string zoneCountry

@@ -6,10 +6,6 @@ import "Vars.js" as GlobVars
 
 Dialog {
     id: settingsPage
-    allowedOrientations: Orientation.Portrait | Orientation.Landscape
-                         | Orientation.LandscapeInverted
-    property bool largeScreen: Screen.sizeCategory === Screen.Large ||
-                               Screen.sizeCategory === Screen.ExtraLarge
     canAccept: true
 
     property int langNbrToSave: -1

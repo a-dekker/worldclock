@@ -1,6 +1,7 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import Sailfish.Timezone 1.0 // not_allowed_in_store
+import Sailfish.Timezone 1.0
+// not_allowed_in_store
 import harbour.worldclock.Launcher 1.0
 import harbour.worldclock.TimeZone 1.0
 import harbour.worldclock.Settings 1.0
@@ -9,10 +10,9 @@ import "../localdb.js" as DB
 
 Page {
     id: page
-    allowedOrientations: Orientation.Portrait | Orientation.Landscape
-                         | Orientation.LandscapeInverted
-    property bool largeScreen: Screen.sizeCategory === Screen.Large ||
-                               Screen.sizeCategory === Screen.ExtraLarge
+    property bool largeScreen: screen.width > 1080
+    property bool mediumScreen: (screen.width > 540 && screen.width <= 1080)
+    property bool smallScreen: (screen.width <= 540)
 
     RemorsePopup {
         id: remorse
@@ -73,7 +73,7 @@ Page {
                     data = timezones.readCityInfo(myCities[myCity],
                                                   mainapp.timeFormat)
                     data = data.split(';')
-                    var zoneTime = data[0]
+                    var zoneTime = data[0].replace(/\./g, '')
                     var zoneCity = data[1]
                     var zoneCityFull = zoneCity
                     for (var i = 0; i < 3; i++) {
@@ -100,7 +100,7 @@ Page {
             data = timezones.readCityInfo(customdata[i].split("|")[0],
                                           mainapp.timeFormat)
             data = data.split(';')
-            var zoneTime = data[0]
+            var zoneTime = data[0].replace(/\./g, '')
             var zoneCity = data[1]
             var zoneCityFull = zoneCity
             for (var x = 0; x < 3; x++) {
@@ -131,7 +131,7 @@ Page {
             var data = timezones.readCityInfo(mainapp.city_id,
                                               mainapp.timeFormat)
             data = data.split(';')
-            var zoneTime = data[0]
+            var zoneTime = data[0].replace(/\./g, '')
             var zoneCity = data[1]
             var zoneCityFull = zoneCity
             for (var i = 0; i < 3; i++) {
@@ -210,7 +210,8 @@ Page {
                 if (myset.value("city_pickertype", "0") === "0") {
                     onClicked: pageStack.push(Qt.resolvedUrl("Timezone.qml"))
                 } else {
-                    pageStack.push(timezonePickerComponent) // not_allowed_in_store
+                    pageStack.push(
+                                timezonePickerComponent) // not_allowed_in_store
                 }
                 pageStack.completeAnimation()
                 mainapp.coverAddZone = false
@@ -257,7 +258,7 @@ Page {
                                               mainapp.timeFormat)
             }
             data = data.split(';')
-            var zoneTime = data[0]
+            var zoneTime = data[0].replace(/\./g, '')
             var zoneDate = data[1]
             listCityModel.set(i, {
                                   zoneTime: zoneTime,
@@ -364,10 +365,10 @@ Page {
     function isArabic() {
         // as it from right to left we use another width for fading
         switch (parseInt(myset.value("language"))) {
-            case Languages.AR:
-               return true
-            default:
-                return false
+        case Languages.AR:
+            return true
+        default:
+            return false
         }
     }
 
@@ -391,7 +392,7 @@ Page {
         source: "../images/earth.png"
         horizontalAlignment: Image.AlignHCenter
         verticalAlignment: Image.AlignVCenter
-        opacity: largeScreen ? 0.5 : 1
+        opacity: largeScreen || mediumScreen ? 0.5 : 1
     }
 
     // To enable PullDownMenu, place our content in a SilicaFlickable
@@ -418,7 +419,8 @@ Page {
                                onClicked: pageStack.push(Qt.resolvedUrl(
                                                              "Timezone.qml"))
                            } else {
-                               pageStack.push(timezonePickerComponent) // not_allowed_in_store
+                               pageStack.push(
+                                           timezonePickerComponent) // not_allowed_in_store
                            }
             }
         }
@@ -469,37 +471,45 @@ Page {
                 // helper function to remove current item
                 function remove() {
                     // run remove via a silica remorse item
-                    remorseAction(qsTr("Deleting") + " '" + listCityModel.get(index).zoneCityTr + "'", function () {
-                        var isReplaced = "false"
-                        var myCities = myset.value("Cities").toString()
-                        var myCitiesNew = myCities
-                        if (myset.contains("Cities")) {
-                            myCities = myCities.split(",")
-                            for (var myCity in myCities) {
-                                if (myCities[myCity].indexOf(
-                                            listCityModel.get(
-                                                index).zoneCity) >= 0) {
-                                    // must be removed
-                                    myCitiesNew = myCitiesNew.replace(
-                                                "," + myCities[myCity], "")
-                                    myCitiesNew = myCitiesNew.replace(
-                                                myCities[myCity] + ",", "")
-                                    myCitiesNew = myCitiesNew.replace(
-                                                myCities[myCity], "")
-                                    myCitiesNew = myCitiesNew.replace(
-                                                /\,[\r\n]/g, "")
-                                    myset.setValue("Cities", myCitiesNew)
-                                    isReplaced = "true"
-                                }
-                            }
-                            if (isReplaced === "false") {
-                                banner("WARNING", qsTr(
-                                           "Manage custom cities on other page"))
-                            } else {
-                                listCity.model.remove(index)
-                            }
-                        }
-                    })
+                    remorseAction(qsTr("Deleting") + " '" + listCityModel.get(
+                                      index).zoneCityTr + "'", function () {
+                                          var isReplaced = "false"
+                                          var myCities = myset.value(
+                                                      "Cities").toString()
+                                          var myCitiesNew = myCities
+                                          if (myset.contains("Cities")) {
+                                              myCities = myCities.split(",")
+                                              for (var myCity in myCities) {
+                                                  if (myCities[myCity].indexOf(
+                                                              listCityModel.get(
+                                                                  index).zoneCity) >= 0) {
+                                                      // must be removed
+                                                      myCitiesNew = myCitiesNew.replace(
+                                                                  "," + myCities[myCity],
+                                                                  "")
+                                                      myCitiesNew = myCitiesNew.replace(
+                                                                  myCities[myCity] + ",",
+                                                                  "")
+                                                      myCitiesNew = myCitiesNew.replace(
+                                                                  myCities[myCity],
+                                                                  "")
+                                                      myCitiesNew = myCitiesNew.replace(
+                                                                  /\,[\r\n]/g,
+                                                                  "")
+                                                      myset.setValue(
+                                                                  "Cities",
+                                                                  myCitiesNew)
+                                                      isReplaced = "true"
+                                                  }
+                                              }
+                                              if (isReplaced === "false") {
+                                                  banner("WARNING", qsTr(
+                                                             "Manage custom cities on other page"))
+                                              } else {
+                                                  listCity.model.remove(index)
+                                              }
+                                          }
+                                      })
                 }
                 // remorse item for all remorse actions
                 RemorseItem {
@@ -545,7 +555,8 @@ Page {
                     font.pixelSize: mainapp.timeFormat
                                     == "24" ? Theme.fontSizeLarge : Theme.fontSizeMedium
                     color: Theme.highlightColor
-                    width: isPortrait ? (mainapp.timeFormat === "24" ? (largeScreen ? parent.width - Theme.paddingLarge * 34: parent.width - Theme.paddingLarge * 18) : (largeScreen ? parent.width - Theme.paddingLarge * 32 : parent.width - Theme.paddingLarge * 17)) : (mainapp.timeFormat === "24" ? (largeScreen ? parent.width - Theme.paddingLarge * 47 : parent.width - Theme.paddingLarge * 35) : (largeScreen ? parent.width - Theme.paddingLarge * 45 : parent.width - Theme.paddingLarge * 33))
+                    width: mainapp.timeFormat === "24" ? (smallScreen
+                                                          && isPortrait ? parent.width / 5 : parent.width / 6) : (smallScreen && isPortrait ? parent.width / 4.5 : parent.width / 5)
                     x: Theme.paddingSmall
                     anchors.verticalCenter: parent.verticalCenter
                     verticalAlignment: Text.AlignVCenter
@@ -557,10 +568,10 @@ Page {
                     id: countryFlag
                     anchors.left: timeLabel.right
                     anchors.verticalCenter: parent.verticalCenter
-                    height: largeScreen ? 82 : 41
-                    width: largeScreen  ? 142 : 71
+                    height: largeScreen ? 82 : (mediumScreen ? 76 : 41)
+                    width: largeScreen ? 142 : (mediumScreen ? 122 : 71)
                     source: zoneCountryOrg !== "" ? '../images/' + zoneCountryOrg + '.png' : ""
-                    visible: isLandscape || largeScreen
+                    visible: isLandscape || largeScreen || mediumScreen
                 }
                 Rectangle {
                     // some whitespace
@@ -574,8 +585,11 @@ Page {
                 Label {
                     id: cityLabel
                     text: zoneCityTr.replace(/_/g, " ")
-                    width: isPortrait ? parent.width * (isArabic() ? 0.40 : 0.50) : parent.width * 0.50
-                    anchors.left: isPortrait && !largeScreen ? timeLabel.right : extraImgSpace.right
+                    width: isPortrait ? parent.width
+                                        * (isArabic()
+                                           || mediumScreen ? 0.40 : 0.50) : parent.width * 0.50
+                    anchors.left: isPortrait && !largeScreen
+                                  && !mediumScreen ? timeLabel.right : extraImgSpace.right
                     opacity: (index & 1) ? 0.9 : 1
                     truncationMode: TruncationMode.Fade
                 }
@@ -588,8 +602,9 @@ Page {
                                 index).zoneCountry === "local_time"
                             || listCityModel.get(index).zoneCity
                             === local_city) ? Theme.highlightColor : Theme.secondaryColor
-                    anchors.left: isPortrait && !largeScreen ? timeLabel.right : extraImgSpace.right
-                    width: isPortrait ? parent.width * (isArabic() ? 0.40 : 0.55) : parent.width * 0.50
+                    anchors.left: isPortrait && !largeScreen
+                                  && !mediumScreen ? timeLabel.right : extraImgSpace.right
+                    width: cityLabel.width
                     truncationMode: TruncationMode.Fade
                     opacity: (index & 1) ? 0.9 : 1
                 }
@@ -597,12 +612,11 @@ Page {
                     id: dateLabel
                     text: zoneDate
                     font.pixelSize: Theme.fontSizeExtraSmall
-                    width: isPortrait ? parent.width - (largeScreen ? (countryFlag.width + extraImgSpace.width + timeLabel.width + cityLabel.width + 2
-                                                        * Theme.paddingSmall) : (timeLabel.width + cityLabel.width + 2
-                                                        * Theme.paddingSmall)) : parent.width
-                                        - (timeLabel.width + cityLabel.width + 2
-                                           * Theme.paddingSmall + extraImgSpace.width
-                                           + countryFlag.width)
+                    width: parent.width
+                           - (Theme.paddingSmall * 4 + timeLabel.width
+                              + (isPortrait
+                                 && smallScreen ? -Theme.paddingMedium : countryFlag.width)
+                              + cityLabel.width)
                     anchors.left: cityLabel.right
                     anchors.rightMargin: Theme.paddingSmall
                     horizontalAlignment: Text.AlignRight

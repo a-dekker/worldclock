@@ -8,6 +8,12 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Tue Sep 26 2017 Arno Dekker <jack.tar@example.com> 0.10-4
+- Second part of 1080p pixelratio changes
+
+* Tue Sep 26 2017 Arno Dekker <jack.tar@example.com> 0.10-3
+- First changes for 1080p pixelratio
+
 * Sun Apr 16 2017 Arno Dekker <jack.tar@example.com> 0.10-2
 - Updated Spanish
 - Fixed bug in settingspage
