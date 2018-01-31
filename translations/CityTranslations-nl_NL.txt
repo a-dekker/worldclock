@@ -1,5 +1,5 @@
 Africa;Afrika
-Aland Islands;Åland Eilanden
+Aland Islands;Ålandseilanden
 Albania;Albanië
 Algeria;Algerije
 Almaty;Alma-Ata (Almaty)
@@ -9,7 +9,7 @@ Argentina;Argentinië
 Armenia;Armenië
 Asia;Azië
 Athens;Athene
-Atlantic;Atlantisch
+Atlantic;Atlantische Oceaan
 Australia;Australië
 Austria;Oostenrijk
 Azerbaijan;Azerbeidzjan
@@ -24,8 +24,8 @@ Belgrade;Belgrado
 Berlin;Berlijn
 Bosnia And Herzegowina;Bosnië-Herzegovina
 Brazil;Brazilië
-British Indian Ocean Territory;Brits Indische Oceaan gebied
-British Virgin Islands;Britse Virgin Eilanden
+British Indian Ocean Territory;Brits Indische Oceaanterritorium
+British Virgin Islands;Britse Maagdeneilanden
 Brussels;Brussel
 Bucharest;Boekarest
 Budapest;Boedapest
@@ -36,8 +36,8 @@ Canary;Canarische Eilanden
 Cape Town;Kaapstad
 Cape Verde;Kaapverdië
 Cayman Islands;Kaaimaneilanden
-Central African Republic;Centraal Afrikaanse Republiek
-Chad;Tjaad
+Central African Republic;Centraal-Afrikaanse Republiek
+Chad;Tsjaad
 Chile;Chili
 Chişinău;Chisinau
 Christmas Island;Kersteiland
@@ -53,7 +53,7 @@ Default;Standaard
 Democratic Republic of the Congo;Democratische Republiek Congo
 Denmark;Denemarken
 Dominican Republic;Dominicaanse Republiek
-East Timor;Oost Timor
+East Timor;Oost-Timor
 Easter Island;Paaseiland
 Easter;Paaseiland
 Egypt;Egypte
@@ -64,9 +64,9 @@ Europe;Europa
 Falkland Islands;Falklandeilanden
 Faroe Islands;Faeröereilanden
 France;Frankrijk
-French Guiana;Frans Guyana
+French Guiana;Frans-Guyana
 French Polynesia;Frans-Polynesië
-French Southern Territories;Franse geb. zuidelijke Indische Oceaan
+French Southern Territories;Franse Zuidelijke en Antarctische Gebieden
 Georgia;Georgië
 Germany;Duitsland
 Greece;Griekenland
@@ -75,11 +75,11 @@ Haiti;Haïti
 Ho Chi Minh City;Ho Chi Minh-stad
 Hungary;Hongarije
 Iceland;IJsland
-Indian;Indisch
+Indian;Indische Oceaan
 Indonesia;Indonesië
 Iraq;Irak
 Ireland;Ierland
-Isle of Man;Eiland Man
+Isle of Man;Man
 Israel;Israël
 Italy;Italië
 Ivory Coast;Ivoorkust
@@ -90,7 +90,7 @@ Kazakhstan;Kazachstan
 Kenya;Kenia
 Khartoum;Khartoem
 Kraków;Krakau
-Kuwait City;Koeweit Stad
+Kuwait City;Koeweit-stad
 Kuwait;Koeweit
 Kyiv;Kiev
 Kyrgyzstan;Kirgizië
@@ -106,7 +106,7 @@ Malaysia;Maleisië
 Maldives;Maldiven
 Marshall Islands;Marshalleilanden
 Mauritania;Mauritanië
-Mexico City;Mexico Stad
+Mexico City;Mexico-stad
 Micronesia;Micronesië
 Milan;Milaan
 Moldova;Moldavië
@@ -123,11 +123,11 @@ Norfolk Island;Norfolkeiland
 North Korea;Noord-Korea
 Northern Mariana Islands;Noordelijke Marianen
 Norway;Noorwegen
-Pacific;Pacifisch
+Pacific;Stille Oceaan
 Palestinian Territories;Palestijnse gebieden
 Papua New Guinea;Papoea-Nieuw-Guinea
 Paris;Parijs
-Philippines;Filippijnen
+Philippines;Filipijnen
 Poland;Polen
 Prague;Praag
 Republic of the Congo;Republiek Congo
@@ -155,7 +155,7 @@ South Africa;Zuid-Afrika
 South Georgia And The South Sandwich Islands;Zuid-Georgia en de Zuidelijke Sandwicheilanden
 South Georgia;Zuid-Georgia
 South Korea;Zuid-Korea
-South Sudan;Zuid Soedan
+South Sudan;Zuid-Soedan
 Spain;Spanje
 Sudan;Soedan
 Svalbard and Jan Mayen Islands;Spitsbergen en Jan Mayen
