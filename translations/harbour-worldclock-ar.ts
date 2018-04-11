@@ -280,27 +280,27 @@
         <translation>اللغة:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="273"/>
+        <location filename="../qml/pages/SettingPage.qml" line="114"/>
         <source>Change of language will be active after restarting the application.</source>
         <translation>تغيير اللغة سيتم تطبيقه بعد إعادة تشغيل البرنامج</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="282"/>
+        <location filename="../qml/pages/SettingPage.qml" line="285"/>
         <source>Worldclock pick screen</source>
         <translation>شاشة اختيار ساعة العالم</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="283"/>
+        <location filename="../qml/pages/SettingPage.qml" line="286"/>
         <source>Choose screentype used for selecting a worldclock</source>
         <translation>اختيار نوع الشاشة المستخدمة لانتقاء ساعة عالمية</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="287"/>
+        <location filename="../qml/pages/SettingPage.qml" line="290"/>
         <source>Custom</source>
         <translation>مخصص</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="290"/>
+        <location filename="../qml/pages/SettingPage.qml" line="293"/>
         <source>Sailfish</source>
         <translation>سايْلفيش</translation>
     </message>

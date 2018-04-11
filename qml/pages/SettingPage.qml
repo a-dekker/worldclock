@@ -111,6 +111,7 @@ Dialog {
                     id: language
                     width: settingsPage.width
                     label: qsTr("Language:")
+                    description: qsTr("Change of language will be active after restarting the application.")
                     currentIndex: toCurrentIndex(myset.value("language"))
                     menu: ContextMenu {
                         // make sure it has the order in Vars.js
@@ -124,35 +125,38 @@ Dialog {
                             text: "Dutch/Nederlands"
                         } // 2
                         MenuItem {
-                            text: "French/Français"
+                            text: "Flemish (Dutch Belgium)/Vlaams"
                         } // 3
                         MenuItem {
-                            text: "German/Deutsch"
+                            text: "French/Français"
                         } // 4
                         MenuItem {
-                            text: "Greek/ελληνικά"
+                            text: "German/Deutsch"
                         } // 5
                         MenuItem {
-                            text: "Hungarian/Magyar"
+                            text: "Greek/ελληνικά"
                         } // 6
                         MenuItem {
-                            text: "Italian/Italiano"
+                            text: "Hungarian/Magyar"
                         } // 7
                         MenuItem {
-                            text: "Polish/Polski"
+                            text: "Italian/Italiano"
                         } // 8
                         MenuItem {
-                            text: "Russian/Русский"
+                            text: "Polish/Polski"
                         } // 9
                         MenuItem {
-                            text: "Slovenian/Slovenski"
+                            text: "Russian/Русский"
                         } // 10
                         MenuItem {
-                            text: "Spanish/Español"
+                            text: "Slovenian/Slovenski"
                         } // 11
                         MenuItem {
-                            text: "Swedish/Svensk"
+                            text: "Spanish/Español"
                         } // 12
+                        MenuItem {
+                            text: "Swedish/Svensk"
+                        } // 13
                     }
                     // The next two converter functions decouple the alphabetical language list
                     // index from the internal settings index, which cannot be changed for legacy reasons
@@ -184,6 +188,9 @@ Dialog {
                         case Languages.NL:
                             // Dutch
                             return GlobVars.dutch
+                        case Languages.NL_BE:
+                            // Flemish
+                            return GlobVars.flemish
                         case Languages.SL_SI:
                             // Slovenian
                             return GlobVars.slovenian
@@ -239,6 +246,8 @@ Dialog {
                             return Languages.CS // Czech
                         case GlobVars.dutch:
                             return Languages.NL // Dutch
+                        case GlobVars.flemish:
+                            return Languages.NL_BE // Flemish
                         case GlobVars.danish:
                             return Languages.DA // Danish
                         case GlobVars.slovenian:
@@ -269,12 +278,6 @@ Dialog {
                     }
                 }
 
-                SilicaLabel {
-                    text: qsTr(
-                              "Change of language will be active after restarting the application.")
-                    font.pixelSize: Theme.fontSizeExtraSmall
-                    color: Theme.secondaryColor
-                }
                 // not_allowed_in_store
                 ComboBox {
                     id: cityPicker

@@ -34,27 +34,27 @@
     <message>
         <location filename="../qml/pages/Aliases.qml" line="62"/>
         <source>Save</source>
-        <translation>Save</translation>
+        <translation type="unfinished">Save</translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="63"/>
         <source>Cancel</source>
-        <translation>Cancel</translation>
+        <translation type="unfinished">Cancel</translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="127"/>
         <source>Deleting</source>
-        <translation>Deleting</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="182"/>
         <source>Alt. name</source>
-        <translation>Alt. name</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="207"/>
         <source>No custom city names defined. Press the plus button to add one.</source>
-        <translation>No custom city names defined. Press the plus button to add one.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -143,62 +143,62 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="153"/>
         <source>City already added</source>
-        <translation>City already added</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="405"/>
         <source>About</source>
-        <translation>About</translation>
+        <translation type="unfinished">About</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="409"/>
         <source>Settings</source>
-        <translation>Settings</translation>
+        <translation type="unfinished">Settings</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="413"/>
         <source>Custom city names</source>
-        <translation>Custom city names</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="417"/>
         <source>Add city</source>
-        <translation>Add city</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="456"/>
         <source>Worldclock</source>
-        <translation>Worldclock</translation>
+        <translation type="unfinished">Worldclock</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="474"/>
         <source>Deleting</source>
-        <translation>Deleting</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="506"/>
         <source>Manage custom cities on other page</source>
-        <translation>Manage custom cities on other page</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="599"/>
         <source>Local time</source>
-        <translation>Local time</translation>
+        <translation type="unfinished">Local time</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="643"/>
         <source>Details</source>
-        <translation>Details</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="659"/>
         <source>Remove</source>
-        <translation>Remove</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="665"/>
         <source>Cannot remove Local time</source>
-        <translation>Cannot remove Local time</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -280,29 +280,29 @@
         <translation>Language:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="273"/>
+        <location filename="../qml/pages/SettingPage.qml" line="114"/>
         <source>Change of language will be active after restarting the application.</source>
         <translation>Change of language will be active after restarting the application.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="282"/>
+        <location filename="../qml/pages/SettingPage.qml" line="285"/>
         <source>Worldclock pick screen</source>
-        <translation>Worldclock pick screen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="283"/>
+        <location filename="../qml/pages/SettingPage.qml" line="286"/>
         <source>Choose screentype used for selecting a worldclock</source>
-        <translation>Choose screentype used for selecting a worldclock</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/SettingPage.qml" line="287"/>
-        <source>Custom</source>
-        <translation>Custom</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="290"/>
+        <source>Custom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/SettingPage.qml" line="293"/>
         <source>Sailfish</source>
-        <translation>Sailfish</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="85"/>

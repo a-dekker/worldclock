@@ -95,6 +95,10 @@ int main(int argc, char *argv[])
         case settingsPublic::Languages::NL:
             translator.load("harbour-worldclock-nl.qm", SailfishApp::pathTo(QString("translations")).toLocalFile());
             break;
+        // Flemish
+        case settingsPublic::Languages::NL_BE:
+            translator.load("harbour-worldclock-nl_BE.qm", SailfishApp::pathTo(QString("translations")).toLocalFile());
+            break;
         // German
         case settingsPublic::Languages::DE:
             translator.load("harbour-worldclock-de.qm", SailfishApp::pathTo(QString("translations")).toLocalFile());
@@ -168,6 +172,10 @@ QLocale myLanguage(void)
     case settingsPublic::Languages::NL:
         myLang = QLocale( QLocale::Dutch, QLocale::Netherlands );
         break;
+    // Flemish
+    case settingsPublic::Languages::NL_BE:
+        myLang = QLocale( QLocale::Dutch, QLocale::Belgium );
+        break;
     // German
     case settingsPublic::Languages::DE:
         myLang = QLocale( QLocale::German, QLocale::Germany );
@@ -210,7 +218,7 @@ QLocale myLanguage(void)
 QString cityTranslations(void)
 {
     QLocale locale = myLanguage();
-    QString cityFile = SailfishApp::pathTo("translations/CityTranslations-"+locale.name()+".txt").toLocalFile();
+    QString cityFile = SailfishApp::pathTo("translations/CityTranslations-"+locale.name()+".txt").toLocalFile().replace("nl_BE","nl_NL");
     QString lines;
     QFile inFile(cityFile);
     if (inFile.open(QIODevice::ReadOnly))
