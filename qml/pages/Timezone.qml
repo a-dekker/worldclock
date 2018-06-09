@@ -1,6 +1,7 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import harbour.worldclock.TimeZone 1.0
+import SortFilterProxyModel 0.2
 import "../components"
 
 Page {
@@ -91,7 +92,6 @@ Page {
     SilicaListView {
         id: cityList
         focus: true
-        model: cityModel
         clip: true
         header: Item {
             id: header
@@ -103,6 +103,18 @@ Page {
         height: page.height
         anchors.top: searchField.bottom
         anchors.bottom: parent.bottom
+
+        model: listUnitProxyModel
+
+        SortFilterProxyModel {
+            id: listUnitProxyModel
+            sourceModel: cityModel
+            filters: RegExpFilter {
+                roleName: "country"
+                pattern: searchField.text.trim()
+                caseSensitivity: Qt.CaseInsensitive
+            }
+        }
 
         Connections {
             target: searchField.activeFocus ? cityList : null
@@ -117,33 +129,16 @@ Page {
         delegate: Item {
             id: cityListItem
 
-            // height is performance bottleneck
-            height: contentItem.visible ? contentItem.height : 0
+            height: contentItem.height
             width: ListView.view.width
             x: isPortrait ? 0 : Theme.paddingMedium
-
-            function findString(mycountry) {
-                if (searchString.length === 0) {
-                    return mycountry
-                }
-                var regexp = new RegExp('(^| |/|\\[|\\(|-)' + searchString.replace(/\+/g,'\\+'), 'i')
-                if (regexp.test(mycountry)) {
-                    return Theme.highlightText(mycountry, regexp,
-                                               Theme.highlightColor)
-                } else {
-                    // record not in search result
-                    return "X"
-                }
-            }
 
             CountryItem {
                 id: contentItem
                 width: parent.width
-                countryName: findString(country)
+                countryName: Theme.highlightText(country, searchField.text, Theme.highlightColor)
                 countryNameOrg: countryOrg
                 anchors.leftMargin: Theme.paddingSmall
-
-                visible: countryName !== "X"
 
                 onClicked: {
                     searchField.text = ""

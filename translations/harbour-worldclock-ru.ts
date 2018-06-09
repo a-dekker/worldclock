@@ -21,7 +21,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="61"/>
         <source>City times across the world</source>
-        <translation>Время города по всему миру</translation>
+        <translation>Время городов по всему миру</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="67"/>
@@ -49,7 +49,7 @@
     <message>
         <location filename="../qml/pages/Aliases.qml" line="182"/>
         <source>Alt. name</source>
-        <translation type="unfinished"></translation>
+        <translation>Альт. название</translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="207"/>
@@ -121,13 +121,13 @@
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="225"/>
         <source>Prev. daylight transition</source>
-        <translation>Предыдущий дневной переход</translation>
+        <translation>Пред. сезонный перевод часов</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="229"/>
         <location filename="../qml/pages/CityDetail.qml" line="273"/>
         <source>Next daylight transition</source>
-        <translation>Следующий дневной переход</translation>
+        <translation>След. сезонный перевод часов</translation>
     </message>
 </context>
 <context>
@@ -135,7 +135,7 @@
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="183"/>
         <source>Worldclock</source>
-        <translation type="unfinished"></translation>
+        <translation>Мировое время</translation>
     </message>
 </context>
 <context>
@@ -168,7 +168,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="456"/>
         <source>Worldclock</source>
-        <translation type="unfinished"></translation>
+        <translation>Мировое время</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="474"/>
@@ -287,22 +287,22 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="285"/>
         <source>Worldclock pick screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Диалог выбора городов</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="286"/>
         <source>Choose screentype used for selecting a worldclock</source>
-        <translation type="unfinished"></translation>
+        <translation>Тип диалога выбора городов</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="290"/>
         <source>Custom</source>
-        <translation type="unfinished"></translation>
+        <translation>Собственный</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="293"/>
         <source>Sailfish</source>
-        <translation type="unfinished"></translation>
+        <translation>Sailfish</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="85"/>
@@ -313,7 +313,7 @@
 <context>
     <name>Timezone</name>
     <message>
-        <location filename="../qml/pages/Timezone.qml" line="42"/>
+        <location filename="../qml/pages/Timezone.qml" line="43"/>
         <source>Select city</source>
         <translation>Выбрать город</translation>
     </message>

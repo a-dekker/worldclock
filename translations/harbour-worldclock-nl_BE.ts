@@ -54,7 +54,7 @@
     <message>
         <location filename="../qml/pages/Aliases.qml" line="207"/>
         <source>No custom city names defined. Press the plus button to add one.</source>
-        <translation>Genen eigen wereldklok gedefinieerd. Druk op de plus om der enen toe te voegen.</translation>
+        <translation>Genen eigen wereldklok gedefinieerd. Drukt op de plus voor der enen toe te voegen.</translation>
     </message>
 </context>
 <context>
@@ -68,7 +68,7 @@
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="69"/>
         <source>the clock jumped one hour backward</source>
-        <translation>de klok ging één uur terug</translation>
+        <translation>de klok ging één uur achteruit</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="72"/>
@@ -78,12 +78,12 @@
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="79"/>
         <source>the clock jumps one hour backward</source>
-        <translation>de klok gaat één uur terug</translation>
+        <translation>de klok gaad één uur achteruit</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="82"/>
         <source>the clock jumps one hour forward</source>
-        <translation>de klok gaat één uur vooruit</translation>
+        <translation>de klok gaad één uur vooruit</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="121"/>
@@ -99,12 +99,12 @@
         <location filename="../qml/pages/CityDetail.qml" line="141"/>
         <location filename="../qml/pages/CityDetail.qml" line="167"/>
         <source>Zone time</source>
-        <translation>Externe tijd</translation>
+        <translation>Externen tijd</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="183"/>
         <source>Local time</source>
-        <translation>Lokale tijd</translation>
+        <translation>Lokalen tijd</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="186"/>
@@ -173,12 +173,12 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="474"/>
         <source>Deleting</source>
-        <translation>Wordt verwijderd</translation>
+        <translation>Word verwijderd</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="506"/>
         <source>Manage custom cities on other page</source>
-        <translation>Beheer eigen wereldklokken op andere pagina</translation>
+        <translation>Beheerd uw eigen wereldklokken op de andere pagina</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="599"/>
@@ -267,12 +267,12 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="102"/>
         <source>Hide if current</source>
-        <translation>Verberg indien huidig</translation>
+        <translation>Verbergd indien huidig</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="103"/>
         <source>Hide localtime if city is present and current</source>
-        <translation>Verberg de lokalen tijd als de stad geselecteerd en de huidige zone is</translation>
+        <translation>Verbergd de lokalen tijd als de stad geselecteerd en de huidige zone is</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="113"/>
@@ -282,7 +282,7 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="114"/>
         <source>Change of language will be active after restarting the application.</source>
-        <translation>Taalwijziging zal actief worden na het herstarten van de toepassing.</translation>
+        <translation>Taalwijziging zal actief worden nadat ge den app herstart.</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="285"/>
@@ -292,7 +292,7 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="286"/>
         <source>Choose screentype used for selecting a worldclock</source>
-        <translation>Kies een schermtype voor het selecteren van ne wereldklok</translation>
+        <translation>Kiesd een schermtype voor het selecteren van ne wereldklok</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="290"/>
@@ -313,7 +313,7 @@
 <context>
     <name>Timezone</name>
     <message>
-        <location filename="../qml/pages/Timezone.qml" line="42"/>
+        <location filename="../qml/pages/Timezone.qml" line="43"/>
         <source>Select city</source>
         <translation>Stad zoeken</translation>
     </message>

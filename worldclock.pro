@@ -98,3 +98,4 @@ lupdate_only {
     SOURCES = qml/*.qml \
               qml/pages/*.qml
 }
+include(SortFilterProxyModel/SortFilterProxyModel.pri)

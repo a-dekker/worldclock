@@ -8,7 +8,12 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* Wed Apr 11 2018 Arno Dekker <jack.tar@example.com> 0.11-0
+* Wed Apr 11 2018 Arno Dekker <jack.tar@example.com> 0.11-2
+- Updated Flemish
+- More Russian strings translated (thanks Dikonov)
+- Implemented faster custom city search engine
+
+* Wed Apr 11 2018 Arno Dekker <jack.tar@example.com> 0.11-1
 - Some additions in Dutch city translation list
 - Added Flemish (Dutch Belgium) translation by Nathan Follens
 
