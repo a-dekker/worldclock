@@ -323,7 +323,7 @@
     <message>
         <location filename="../qml/localdb.js" line="564"/>
         <source>Unknown</source>
-        <translation type="unfinished"></translation>
+        <translation>Неизвестно</translation>
     </message>
 </context>
 </TS>
