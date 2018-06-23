@@ -31,6 +31,9 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import harbour.worldclock.Launcher 1.0
+import harbour.worldclock.Settings 1.0
+import Sailfish.Timezone 1.0
+// not_allowed_in_store
 import "pages"
 import "cover"
 
@@ -42,7 +45,6 @@ ApplicationWindow
     property string localContinent: ''
     property string localCity: ''
     property string localCityTr: ''
-    property bool coverAddZone: false
     property bool viewable: cover.status === Cover.Active || applicationActive
     property string timeFormat: '24'
     property string myAliases
@@ -60,6 +62,24 @@ ApplicationWindow
 
     App {
         id: bar
+    }
+
+    MySettings {
+        id: myset
+    }
+
+    // not_allowed_in_store
+    Component {
+        id: timezonePickerComponent
+        TimezonePicker {
+            onTimezoneClicked: {
+                console.log(name)
+                if (name !== "") {
+                    mainapp.city_id = name
+                }
+                pageStack.pop()
+            }
+        }
     }
 
     function getAMPM() {
@@ -80,9 +100,20 @@ ApplicationWindow
         running: viewable
     }
 
+    function newCity() {
+        if (myset.value("city_pickertype", "0") === "0") {
+            var cityPage = pageStack.find(function(page) { return page.objectName === "Timezone" })
+            pageStack.pop(cityPage, PageStackAction.Immediate)
+            pageStack.push(Qt.resolvedUrl("pages/Timezone.qml"), {}, PageStackAction.Immediate)
+        } else {
+            var cityPage = pageStack.find(function(page) { return page.objectName === "timezonePickerComponent" })
+            pageStack.pop(cityPage, PageStackAction.Immediate)
+            pageStack.push(timezonePickerComponent) // not_allowed_in_store
+        }
+    }
+
     Component.onCompleted: {
         getAMPM()
         timerclock.start()
     }
-
 }

@@ -146,57 +146,57 @@
         <translation>Platsen redan tillagd</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="405"/>
+        <location filename="../qml/pages/MainPage.qml" line="392"/>
         <source>About</source>
         <translation>Om</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="409"/>
+        <location filename="../qml/pages/MainPage.qml" line="396"/>
         <source>Settings</source>
         <translation>Inställningar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="413"/>
+        <location filename="../qml/pages/MainPage.qml" line="400"/>
         <source>Custom city names</source>
         <translation>Anpassade platsnamn</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="417"/>
+        <location filename="../qml/pages/MainPage.qml" line="404"/>
         <source>Add city</source>
         <translation>Lägg till stad</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="456"/>
+        <location filename="../qml/pages/MainPage.qml" line="443"/>
         <source>Worldclock</source>
         <translation>Worldclock</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="474"/>
+        <location filename="../qml/pages/MainPage.qml" line="461"/>
         <source>Deleting</source>
         <translation>Tar bort</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="506"/>
+        <location filename="../qml/pages/MainPage.qml" line="493"/>
         <source>Manage custom cities on other page</source>
         <translation>Hantera anpassade platser på annan sida</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="599"/>
+        <location filename="../qml/pages/MainPage.qml" line="586"/>
         <source>Local time</source>
         <translation>Lokal tid</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="643"/>
+        <location filename="../qml/pages/MainPage.qml" line="630"/>
         <source>Details</source>
         <translation>Detaljerat</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="659"/>
+        <location filename="../qml/pages/MainPage.qml" line="646"/>
         <source>Remove</source>
         <translation>Ta bort</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="665"/>
+        <location filename="../qml/pages/MainPage.qml" line="652"/>
         <source>Cannot remove Local time</source>
         <translation>Kan inte ta bort lokal tid</translation>
     </message>

@@ -146,57 +146,57 @@
         <translation>A város már hozzáadva</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="405"/>
+        <location filename="../qml/pages/MainPage.qml" line="392"/>
         <source>About</source>
         <translation>Névjegy</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="409"/>
+        <location filename="../qml/pages/MainPage.qml" line="396"/>
         <source>Settings</source>
         <translation>Beállítások</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="413"/>
+        <location filename="../qml/pages/MainPage.qml" line="400"/>
         <source>Custom city names</source>
         <translation>Egyedi városnevek</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="417"/>
+        <location filename="../qml/pages/MainPage.qml" line="404"/>
         <source>Add city</source>
         <translation>Város hozzáadása</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="456"/>
+        <location filename="../qml/pages/MainPage.qml" line="443"/>
         <source>Worldclock</source>
         <translation>Világóra</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="474"/>
+        <location filename="../qml/pages/MainPage.qml" line="461"/>
         <source>Deleting</source>
         <translation>Törlés</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="506"/>
+        <location filename="../qml/pages/MainPage.qml" line="493"/>
         <source>Manage custom cities on other page</source>
         <translation>Az egyedi városok kezelése új lapon</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="599"/>
+        <location filename="../qml/pages/MainPage.qml" line="586"/>
         <source>Local time</source>
         <translation>Helyi idő</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="643"/>
+        <location filename="../qml/pages/MainPage.qml" line="630"/>
         <source>Details</source>
         <translation>Részletek</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="659"/>
+        <location filename="../qml/pages/MainPage.qml" line="646"/>
         <source>Remove</source>
         <translation>Eltávolít</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="665"/>
+        <location filename="../qml/pages/MainPage.qml" line="652"/>
         <source>Cannot remove Local time</source>
         <translation>A helyi idő nem eltávolítható.</translation>
     </message>

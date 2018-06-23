@@ -245,10 +245,9 @@ CoverBackground {
             CoverAction {
                 iconSource: "image://theme/icon-cover-new"
                 onTriggered: {
-                    mainapp.coverAddZone = true
-                    pageStack.replace(Qt.resolvedUrl("../pages/MainPage.qml"))
                     pageStack.completeAnimation()
                     mainapp.activate()
+                    mainapp.newCity()
                 }
             }
         }

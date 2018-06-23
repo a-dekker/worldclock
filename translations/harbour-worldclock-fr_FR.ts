@@ -146,57 +146,57 @@
         <translation>Ville déjà ajoutée</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="405"/>
+        <location filename="../qml/pages/MainPage.qml" line="392"/>
         <source>About</source>
         <translation>À propos</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="409"/>
+        <location filename="../qml/pages/MainPage.qml" line="396"/>
         <source>Settings</source>
         <translation>Paramètres</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="413"/>
+        <location filename="../qml/pages/MainPage.qml" line="400"/>
         <source>Custom city names</source>
         <translation>Création de ville</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="417"/>
+        <location filename="../qml/pages/MainPage.qml" line="404"/>
         <source>Add city</source>
         <translation>Ajouter ville</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="456"/>
+        <location filename="../qml/pages/MainPage.qml" line="443"/>
         <source>Worldclock</source>
         <translation>Worldclock</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="474"/>
+        <location filename="../qml/pages/MainPage.qml" line="461"/>
         <source>Deleting</source>
         <translation>Suppression en cours</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="506"/>
+        <location filename="../qml/pages/MainPage.qml" line="493"/>
         <source>Manage custom cities on other page</source>
         <translation>Gérez les villes créées sur l&apos;écran dédié</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="599"/>
+        <location filename="../qml/pages/MainPage.qml" line="586"/>
         <source>Local time</source>
         <translation>Heure locale</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="643"/>
+        <location filename="../qml/pages/MainPage.qml" line="630"/>
         <source>Details</source>
         <translation>Détails</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="659"/>
+        <location filename="../qml/pages/MainPage.qml" line="646"/>
         <source>Remove</source>
         <translation>Supprimer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="665"/>
+        <location filename="../qml/pages/MainPage.qml" line="652"/>
         <source>Cannot remove Local time</source>
         <translation>Impossible de supprimer l&apos;heure locale</translation>
     </message>

@@ -5,11 +5,11 @@ import Sailfish.Timezone 1.0
 import harbour.worldclock.Launcher 1.0
 import harbour.worldclock.TimeZone 1.0
 import harbour.worldclock.Settings 1.0
-import org.nemomobile.notifications 1.0
+import Nemo.Notifications 1.0
 import "../localdb.js" as DB
 
 Page {
-    id: page
+    id: mainpage
     property bool largeScreen: screen.width > 1080
     property bool mediumScreen: (screen.width > 540 && screen.width <= 1080)
     property bool smallScreen: (screen.width <= 540)
@@ -202,19 +202,6 @@ Page {
             mainapp.city_id = ""
             if (myset.value("hidelocal") === "true") {
                 hideLocalCity(local_city)
-            }
-        }
-        if (status === PageStatus.Active) {
-            // if the activation was started by the covers add function
-            if (mainapp.coverAddZone == true) {
-                if (myset.value("city_pickertype", "0") === "0") {
-                    onClicked: pageStack.push(Qt.resolvedUrl("Timezone.qml"))
-                } else {
-                    pageStack.push(
-                                timezonePickerComponent) // not_allowed_in_store
-                }
-                pageStack.completeAnimation()
-                mainapp.coverAddZone = false
             }
         }
     }
@@ -553,7 +540,7 @@ Page {
                     // append the listnames
                     text: zoneTime
                     font.pixelSize: mainapp.timeFormat
-                                    == "24" ? Theme.fontSizeLarge : Theme.fontSizeMedium
+                                    === "24" ? Theme.fontSizeLarge : Theme.fontSizeMedium
                     color: Theme.highlightColor
                     width: mainapp.timeFormat === "24" ? (smallScreen
                                                           && isPortrait ? parent.width / 5 : parent.width / 6) : (smallScreen && isPortrait ? parent.width / 4.5 : parent.width / 5)
