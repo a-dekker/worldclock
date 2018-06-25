@@ -163,7 +163,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="404"/>
         <source>Add city</source>
-        <translation>Agragar ciudad</translation>
+        <translation>Agregar ciudad</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="443"/>
@@ -198,7 +198,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="652"/>
         <source>Cannot remove Local time</source>
-        <translation>No se puede quitar Hora local</translation>
+        <translation>Hora local no es removible</translation>
     </message>
 </context>
 <context>
