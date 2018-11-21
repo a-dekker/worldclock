@@ -380,6 +380,22 @@ Page {
         horizontalAlignment: Image.AlignHCenter
         verticalAlignment: Image.AlignVCenter
         opacity: largeScreen || mediumScreen ? 0.5 : 1
+        layer.effect: ShaderEffect {
+            property color color: Theme.primaryColor
+
+            fragmentShader: "
+            varying mediump vec2 qt_TexCoord0;
+            uniform highp float qt_Opacity;
+            uniform lowp sampler2D source;
+            uniform highp vec4 color;
+            void main() {
+                highp vec4 pixelColor = texture2D(source, qt_TexCoord0);
+                gl_FragColor = vec4(mix(pixelColor.rgb/max(pixelColor.a, 0.00390625), color.rgb/max(color.a, 0.00390625), color.a) * pixelColor.a, pixelColor.a) * qt_Opacity;
+            }
+            "
+        }
+        layer.enabled: true
+        layer.samplerName: "source"
     }
 
     // To enable PullDownMenu, place our content in a SilicaFlickable
@@ -403,8 +419,7 @@ Page {
             MenuItem {
                 text: qsTr("Add city")
                 onClicked: if (myset.value("city_pickertype", "0") === "0") {
-                               onClicked: pageStack.push(Qt.resolvedUrl(
-                                                             "Timezone.qml"))
+                               pageStack.push(Qt.resolvedUrl("Timezone.qml"))
                            } else {
                                pageStack.push(
                                            timezonePickerComponent) // not_allowed_in_store
