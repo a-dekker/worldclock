@@ -285,22 +285,22 @@
         <translation>Die Änderung der Sprache wird erst nach dem Neustart der Anwendung aktiv sein.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="285"/>
+        <location filename="../qml/pages/SettingPage.qml" line="293"/>
         <source>Worldclock pick screen</source>
         <translation>Weltzeituhrauswahl</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="286"/>
+        <location filename="../qml/pages/SettingPage.qml" line="294"/>
         <source>Choose screentype used for selecting a worldclock</source>
         <translation>Wähle die Darstellungsart für die Auswahl einer Weltzeituhr</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="290"/>
+        <location filename="../qml/pages/SettingPage.qml" line="298"/>
         <source>Custom</source>
         <translation>Benutzerdefiniert</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="293"/>
+        <location filename="../qml/pages/SettingPage.qml" line="301"/>
         <source>Sailfish</source>
         <translation>Sailfish</translation>
     </message>

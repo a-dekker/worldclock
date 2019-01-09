@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Wed Jan 09 2019 Arno Dekker <jack.tar@example.com> 0.12-2
+- Added Chinese translation (thanks rui kon)
+
 * Mon Nov 18 2018 Arno Dekker <jack.tar@example.com> 0.12-1
 - Also fixed background image for light ambiences
 - New icon

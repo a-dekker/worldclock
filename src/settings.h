@@ -48,6 +48,7 @@ public:
         AR,    // Arabic
         SL_SI, // Slovenian
         ES,    // Spanish
+        ZH_CN, // Chinese
         INVALID
     };
 };

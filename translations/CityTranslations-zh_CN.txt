@@ -27,7 +27,7 @@ Cayman Islands;开曼群岛
 China;中国
 Colombia;哥伦比亚
 Conakry;科纳克里
-Copenhagen;哥本哈根																																	
+Copenhagen;哥本哈根
 Croatia;克罗地亚
 Czech Republic;捷克
 Damascus;大马士革

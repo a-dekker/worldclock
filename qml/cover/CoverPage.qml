@@ -196,7 +196,7 @@ CoverBackground {
 
         Label {
             id: coverHeader
-            text: qsTr("Worldclock")
+            text: "🕒 " + qsTr("Worldclock")
             width: parent.width - Theme.paddingLarge
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top

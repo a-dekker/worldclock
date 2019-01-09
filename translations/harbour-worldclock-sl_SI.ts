@@ -285,22 +285,22 @@
         <translation>Sprememba jezika bo aktivna po ponovnem zagonu programa.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="285"/>
+        <location filename="../qml/pages/SettingPage.qml" line="293"/>
         <source>Worldclock pick screen</source>
         <translation>Prikaz izbora mest</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="286"/>
+        <location filename="../qml/pages/SettingPage.qml" line="294"/>
         <source>Choose screentype used for selecting a worldclock</source>
         <translation>Izberite način prikaza seznama mest</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="290"/>
+        <location filename="../qml/pages/SettingPage.qml" line="298"/>
         <source>Custom</source>
         <translation>Po meri</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="293"/>
+        <location filename="../qml/pages/SettingPage.qml" line="301"/>
         <source>Sailfish</source>
         <translation>Sailfish</translation>
     </message>

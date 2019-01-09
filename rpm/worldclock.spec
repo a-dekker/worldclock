@@ -14,7 +14,7 @@ Name:       harbour-worldclock
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    Show city times
 Version:    0.12
-Release:    1
+Release:    2
 Group:      Qt/Qt
 License:    LICENSE
 URL:        https://github.com/a-dekker/worldclock
@@ -52,17 +52,19 @@ rm -rf %{buildroot}
 # >> install pre
 # << install pre
 %qmake5_install
-cp /home/src1/worldclock/translations/CityTranslations-nl_NL.txt %{buildroot}/usr/share/harbour-worldclock/translations
-cp /home/src1/worldclock/translations/CityTranslations-sv_SE.txt %{buildroot}/usr/share/harbour-worldclock/translations
+cp /home/src1/worldclock/translations/CityTranslations-ar_EG.txt %{buildroot}/usr/share/harbour-worldclock/translations
 cp /home/src1/worldclock/translations/CityTranslations-de_DE.txt %{buildroot}/usr/share/harbour-worldclock/translations
-cp /home/src1/worldclock/translations/CityTranslations-pl_PL.txt %{buildroot}/usr/share/harbour-worldclock/translations
+cp /home/src1/worldclock/translations/CityTranslations-el_GR.txt %{buildroot}/usr/share/harbour-worldclock/translations
+cp /home/src1/worldclock/translations/CityTranslations-es_ES.txt %{buildroot}/usr/share/harbour-worldclock/translations
+cp /home/src1/worldclock/translations/CityTranslations-fr_FR.txt %{buildroot}/usr/share/harbour-worldclock/translations
 cp /home/src1/worldclock/translations/CityTranslations-hu_HU.txt %{buildroot}/usr/share/harbour-worldclock/translations
 cp /home/src1/worldclock/translations/CityTranslations-it_IT.txt %{buildroot}/usr/share/harbour-worldclock/translations
-cp /home/src1/worldclock/translations/CityTranslations-el_GR.txt %{buildroot}/usr/share/harbour-worldclock/translations
-cp /home/src1/worldclock/translations/CityTranslations-fr_FR.txt %{buildroot}/usr/share/harbour-worldclock/translations
+cp /home/src1/worldclock/translations/CityTranslations-nl_NL.txt %{buildroot}/usr/share/harbour-worldclock/translations
+cp /home/src1/worldclock/translations/CityTranslations-pl_PL.txt %{buildroot}/usr/share/harbour-worldclock/translations
 cp /home/src1/worldclock/translations/CityTranslations-ru_RU.txt %{buildroot}/usr/share/harbour-worldclock/translations
-cp /home/src1/worldclock/translations/CityTranslations-es_ES.txt %{buildroot}/usr/share/harbour-worldclock/translations
-cp /home/src1/worldclock/translations/CityTranslations-ar_EG.txt %{buildroot}/usr/share/harbour-worldclock/translations
+cp /home/src1/worldclock/translations/CityTranslations-sl_SI.txt %{buildroot}/usr/share/harbour-worldclock/translations
+cp /home/src1/worldclock/translations/CityTranslations-sv_SE.txt %{buildroot}/usr/share/harbour-worldclock/translations
+cp /home/src1/worldclock/translations/CityTranslations-zh_CN.txt %{buildroot}/usr/share/harbour-worldclock/translations
 
 # >> install post
 # << install post

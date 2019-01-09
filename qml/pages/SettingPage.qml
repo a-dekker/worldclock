@@ -122,41 +122,44 @@ Dialog {
                             text: "Arabic/العربية"
                         } // 1
                         MenuItem {
-                            text: "Dutch/Nederlands"
+                            text: "Chinese/中文"
                         } // 2
                         MenuItem {
-                            text: "Flemish (Dutch Belgium)/Vlaams"
+                            text: "Dutch/Nederlands"
                         } // 3
                         MenuItem {
-                            text: "French/Français"
+                            text: "Flemish (Dutch Belgium)/Vlaams"
                         } // 4
                         MenuItem {
-                            text: "German/Deutsch"
+                            text: "French/Français"
                         } // 5
                         MenuItem {
-                            text: "Greek/ελληνικά"
+                            text: "German/Deutsch"
                         } // 6
                         MenuItem {
-                            text: "Hungarian/Magyar"
+                            text: "Greek/ελληνικά"
                         } // 7
                         MenuItem {
-                            text: "Italian/Italiano"
+                            text: "Hungarian/Magyar"
                         } // 8
                         MenuItem {
-                            text: "Polish/Polski"
+                            text: "Italian/Italiano"
                         } // 9
                         MenuItem {
-                            text: "Russian/Русский"
+                            text: "Polish/Polski"
                         } // 10
                         MenuItem {
-                            text: "Slovenian/Slovenski"
+                            text: "Russian/Русский"
                         } // 11
                         MenuItem {
-                            text: "Spanish/Español"
+                            text: "Slovenian/Slovenski"
                         } // 12
                         MenuItem {
-                            text: "Swedish/Svensk"
+                            text: "Spanish/Español"
                         } // 13
+                        MenuItem {
+                            text: "Swedish/Svensk"
+                        } // 14
                     }
                     // The next two converter functions decouple the alphabetical language list
                     // index from the internal settings index, which cannot be changed for legacy reasons
@@ -221,6 +224,9 @@ Dialog {
                         case Languages.IT:
                             // Italian
                             return GlobVars.italian
+                        case Languages.ZH_CN:
+                            // Chinese
+                            return GlobVars.chinese
                         default:
                             return GlobVars.english
                         }
@@ -268,6 +274,8 @@ Dialog {
                             return Languages.HU_HU // Hungarian
                         case GlobVars.italian:
                             return Languages.IT // Italian
+                        case GlobVars.chinese:
+                            return Languages.ZH_CN // Chinese
                         default:
                             return Languages.EN // English
                         }

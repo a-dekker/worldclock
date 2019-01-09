@@ -88,6 +88,7 @@ TRANSLATIONS = translations/harbour-worldclock-sv.ts \
                translations/harbour-worldclock-sl_SI.ts \
                translations/harbour-worldclock-es.ts \
                translations/harbour-worldclock-nl_BE.ts \
+               translations/harbour-worldclock-zh_CN.ts \
                translations/harbour-worldclock-nl.ts
 
 

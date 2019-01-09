@@ -1,60 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="pl_PL">
+<TS version="2.1" language="zh_CN">
 <context>
     <name>About</name>
     <message>
         <location filename="../qml/pages/About.qml" line="21"/>
         <source>About</source>
-        <translation>O programie</translation>
+        <translation>关于</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="24"/>
         <source>Info</source>
-        <translation>Informacja</translation>
+        <translation>信息</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="56"/>
         <source>Version</source>
-        <translation>Wersja</translation>
+        <translation>版本</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="61"/>
         <source>City times across the world</source>
-        <translation type="unfinished"></translation>
+        <translation>世界各地的城市时间</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="67"/>
         <source>Author</source>
-        <translation>Autor</translation>
+        <translation>作者</translation>
     </message>
 </context>
 <context>
     <name>Aliases</name>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="61"/>
-        <source>Save</source>
-        <translation>Zapisz</translation>
-    </message>
-    <message>
         <location filename="../qml/pages/Aliases.qml" line="62"/>
+        <source>Save</source>
+        <translation>保存</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Aliases.qml" line="63"/>
         <source>Cancel</source>
-        <translation>Anuluj</translation>
+        <translation>取消</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="112"/>
+        <location filename="../qml/pages/Aliases.qml" line="143"/>
         <source>Deleting</source>
-        <translation>Usuwanie</translation>
+        <translation>删除</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="163"/>
+        <location filename="../qml/pages/Aliases.qml" line="198"/>
         <source>Alt. name</source>
-        <translation type="unfinished"></translation>
+        <translation>别称</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="188"/>
+        <location filename="../qml/pages/Aliases.qml" line="223"/>
         <source>No custom city names defined. Press the plus button to add one.</source>
-        <translation type="unfinished"></translation>
+        <translation>没有明确的惯用城市，请按加号以添加。</translation>
     </message>
 </context>
 <context>
@@ -63,79 +63,79 @@
         <location filename="../qml/pages/CityDetail.qml" line="62"/>
         <location filename="../qml/pages/CityDetail.qml" line="65"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>无</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="69"/>
         <source>the clock jumped one hour backward</source>
-        <translation type="unfinished"></translation>
+        <translation>时钟已向后拨一小时</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="72"/>
         <source>the clock jumped one hour forward</source>
-        <translation type="unfinished"></translation>
+        <translation>时钟已向前拨一小时</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="79"/>
         <source>the clock jumps one hour backward</source>
-        <translation type="unfinished"></translation>
+        <translation>时钟向后拨一小时</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="82"/>
         <source>the clock jumps one hour forward</source>
-        <translation type="unfinished"></translation>
+        <translation>时钟向前拨一小时</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="121"/>
         <source>Timezone details</source>
-        <translation>Szczegóły strefy czasowej</translation>
+        <translation>时区详情</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="137"/>
         <source>Timezone</source>
-        <translation type="unfinished"></translation>
+        <translation>时区</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="141"/>
         <location filename="../qml/pages/CityDetail.qml" line="167"/>
         <source>Zone time</source>
-        <translation>Strefa czasowa</translation>
+        <translation>区时</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="183"/>
         <source>Local time</source>
-        <translation>Czas lokalny</translation>
+        <translation>当地时间</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="186"/>
         <location filename="../qml/pages/CityDetail.qml" line="210"/>
         <source>Time difference</source>
-        <translation type="unfinished"></translation>
+        <translation>时差</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="203"/>
         <location filename="../qml/pages/CityDetail.qml" line="217"/>
         <source>hour</source>
-        <translation>godzina</translation>
+        <translation>小时</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="225"/>
         <source>Prev. daylight transition</source>
-        <translation type="unfinished"></translation>
+        <translation>稍前的日光时间转换</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="229"/>
         <location filename="../qml/pages/CityDetail.qml" line="273"/>
         <source>Next daylight transition</source>
-        <translation type="unfinished"></translation>
+        <translation>稍后的日光时间转换</translation>
     </message>
 </context>
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../qml/cover/CoverPage.qml" line="183"/>
+        <location filename="../qml/cover/CoverPage.qml" line="199"/>
         <source>Worldclock</source>
-        <translation>Zegar światowy</translation>
+        <translation>世界时间</translation>
     </message>
 </context>
 <context>
@@ -143,163 +143,179 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="153"/>
         <source>City already added</source>
-        <translation>Dodane miasta</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/MainPage.qml" line="400"/>
-        <source>About</source>
-        <translation>O programie</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/MainPage.qml" line="404"/>
-        <source>Settings</source>
-        <translation>Ustawienia</translation>
+        <translation>城市已添加</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="408"/>
-        <source>Custom city names</source>
-        <translation type="unfinished"></translation>
+        <source>About</source>
+        <translation>关于</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="412"/>
+        <source>Settings</source>
+        <translation>设置</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="416"/>
+        <source>Custom city names</source>
+        <translation>惯用城市</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="420"/>
         <source>Add city</source>
-        <translation>Dodaj miasto</translation>
+        <translation>添加城市</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="433"/>
+        <location filename="../qml/pages/MainPage.qml" line="458"/>
         <source>Worldclock</source>
-        <translation>Zegar światowy</translation>
+        <translation>世界时间</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="451"/>
+        <location filename="../qml/pages/MainPage.qml" line="476"/>
         <source>Deleting</source>
-        <translation>Usuwanie</translation>
+        <translation>删除</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="483"/>
+        <location filename="../qml/pages/MainPage.qml" line="508"/>
         <source>Manage custom cities on other page</source>
-        <translation type="unfinished"></translation>
+        <translation>在其它页面管理惯用城市</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="576"/>
+        <location filename="../qml/pages/MainPage.qml" line="601"/>
         <source>Local time</source>
-        <translation>czas lokalny</translation>
+        <translation>本地时间</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="620"/>
+        <location filename="../qml/pages/MainPage.qml" line="645"/>
         <source>Details</source>
-        <translation>Szczegóły</translation>
+        <translation>详情</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="636"/>
+        <location filename="../qml/pages/MainPage.qml" line="661"/>
         <source>Remove</source>
-        <translation>Usuń</translation>
+        <translation>移除</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="642"/>
+        <location filename="../qml/pages/MainPage.qml" line="667"/>
         <source>Cannot remove Local time</source>
-        <translation type="unfinished"></translation>
+        <translation>不能移除本地时间</translation>
     </message>
 </context>
 <context>
     <name>SettingPage</name>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="50"/>
-        <source>Save</source>
-        <translation>Zapisz</translation>
-    </message>
-    <message>
         <location filename="../qml/pages/SettingPage.qml" line="51"/>
+        <source>Save</source>
+        <translation>保存</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/SettingPage.qml" line="52"/>
         <source>Cancel</source>
-        <translation>Anuluj</translation>
+        <translation>取消</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="54"/>
+        <location filename="../qml/pages/SettingPage.qml" line="55"/>
         <source>Settings</source>
-        <translation>Ustawienia</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/SettingPage.qml" line="61"/>
-        <source>Sort order</source>
-        <translation type="unfinished"></translation>
+        <translation>设置</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="62"/>
+        <source>Sort order</source>
+        <translation>排序</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/SettingPage.qml" line="63"/>
         <source>Sort order of personal list</source>
-        <translation type="unfinished"></translation>
+        <translation>个人列表排序</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="66"/>
+        <location filename="../qml/pages/SettingPage.qml" line="67"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>无</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="69"/>
+        <location filename="../qml/pages/SettingPage.qml" line="70"/>
         <source>TimeZone</source>
-        <translation type="unfinished"></translation>
+        <translation>时区</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="72"/>
-        <location filename="../qml/pages/SettingPage.qml" line="90"/>
+        <location filename="../qml/pages/SettingPage.qml" line="73"/>
+        <location filename="../qml/pages/SettingPage.qml" line="91"/>
         <source>City</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/SettingPage.qml" line="79"/>
-        <source>Sort order list</source>
-        <translation type="unfinished"></translation>
+        <translation>城市</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="80"/>
+        <source>Sort order list</source>
+        <translation>列表排序</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/SettingPage.qml" line="81"/>
         <source>Sort order of complete citylist</source>
-        <translation type="unfinished"></translation>
+        <translation>全部城市列表</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="87"/>
+        <location filename="../qml/pages/SettingPage.qml" line="88"/>
         <source>TimeZone/Continent/City</source>
-        <translation type="unfinished"></translation>
+        <translation>时区/大陆/城市</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="93"/>
+        <location filename="../qml/pages/SettingPage.qml" line="94"/>
         <source>Country</source>
-        <translation>Państwo</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/SettingPage.qml" line="101"/>
-        <source>Hide if current</source>
-        <translation type="unfinished"></translation>
+        <translation>国家</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="102"/>
-        <source>Hide localtime if city is present and current</source>
-        <translation type="unfinished"></translation>
+        <source>Hide if current</source>
+        <translation>隐藏所在</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="112"/>
-        <source>Language:</source>
-        <translation>Język:</translation>
+        <location filename="../qml/pages/SettingPage.qml" line="103"/>
+        <source>Hide localtime if city is present and current</source>
+        <translation>如果城市是现在所位于的，将隐藏当地时间。</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="113"/>
+        <source>Language:</source>
+        <translation>语言:</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/SettingPage.qml" line="114"/>
         <source>Change of language will be active after restarting the application.</source>
-        <translation type="unfinished"></translation>
+        <translation>更改语言将在重启应用之后生效</translation>
     </message>
     <message>
+        <location filename="../qml/pages/SettingPage.qml" line="293"/>
+        <source>Worldclock pick screen</source>
+        <translation>选取世界时间所用屏幕显示</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/SettingPage.qml" line="294"/>
+        <source>Choose screentype used for selecting a worldclock</source>
+        <translation>选择屏幕显示类型用于选择世界时间</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/SettingPage.qml" line="298"/>
+        <source>Custom</source>
+        <translation>习惯</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/SettingPage.qml" line="301"/>
         <source>Sailfish</source>
-        <translation type="vanished">Sailfish</translation>
+        <translation>旗鱼</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="84"/>
+        <location filename="../qml/pages/SettingPage.qml" line="85"/>
         <source>Continent/City</source>
-        <translation>Kontynent/Miasto</translation>
+        <translation>大陆/城市</translation>
     </message>
 </context>
 <context>
     <name>Timezone</name>
     <message>
-        <location filename="../qml/pages/Timezone.qml" line="42"/>
+        <location filename="../qml/pages/Timezone.qml" line="43"/>
         <source>Select city</source>
-        <translation>Wybierz miasto</translation>
+        <translation>选择城市</translation>
     </message>
 </context>
 <context>

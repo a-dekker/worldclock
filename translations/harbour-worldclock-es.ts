@@ -285,22 +285,22 @@
         <translation>Cambio de idioma estará activo después de reiniciar la aplicación.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="285"/>
+        <location filename="../qml/pages/SettingPage.qml" line="293"/>
         <source>Worldclock pick screen</source>
         <translation>Pantalla de selección reloj mundial</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="286"/>
+        <location filename="../qml/pages/SettingPage.qml" line="294"/>
         <source>Choose screentype used for selecting a worldclock</source>
         <translation>Elegir tipo de pantalla utilizado para seleccionar un reloj mundial</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="290"/>
+        <location filename="../qml/pages/SettingPage.qml" line="298"/>
         <source>Custom</source>
         <translation>Personalizar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="293"/>
+        <location filename="../qml/pages/SettingPage.qml" line="301"/>
         <source>Sailfish</source>
         <translation>SailfishOS</translation>
     </message>

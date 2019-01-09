@@ -285,22 +285,22 @@
         <translation>Taalwijziging zal actief worden nadat ge den app herstart.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="285"/>
+        <location filename="../qml/pages/SettingPage.qml" line="293"/>
         <source>Worldclock pick screen</source>
         <translation>Wereldklokselectiescherm</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="286"/>
+        <location filename="../qml/pages/SettingPage.qml" line="294"/>
         <source>Choose screentype used for selecting a worldclock</source>
         <translation>Kiesd een schermtype voor het selecteren van ne wereldklok</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="290"/>
+        <location filename="../qml/pages/SettingPage.qml" line="298"/>
         <source>Custom</source>
         <translation>Aangepast</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="293"/>
+        <location filename="../qml/pages/SettingPage.qml" line="301"/>
         <source>Sailfish</source>
         <translation>Sailfish</translation>
     </message>
