@@ -4,17 +4,16 @@
 #include <QObject>
 #include <QProcess>
 
-class Launcher : public QObject
-{
+class Launcher : public QObject {
     Q_OBJECT
 
-public:
+   public:
     explicit Launcher(QObject *parent = 0);
     ~Launcher();
     Q_INVOKABLE QString launch(const QString &program);
 
-protected:
+   protected:
     QProcess *m_process;
 };
 
-#endif // LAUNCHER_H
+#endif  // LAUNCHER_H

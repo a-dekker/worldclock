@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 
 Page {
@@ -75,7 +75,7 @@ Page {
                 visible: isPortrait || (largeScreen && screen.width > 1080)
             }
             Label {
-                text: "© Arno Dekker 2015-2019"
+                text: "© Arno Dekker 2015-2021"
                 anchors.horizontalCenter: parent.horizontalCenter
             }
             Label {
