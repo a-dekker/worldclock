@@ -16,8 +16,7 @@ CONFIG += sailfishapp \
     c++11
 
 SOURCES += src/worldclock.cpp \
-    src/settings.cpp \
-    src/osread.cpp
+    src/settings.cpp
 
 DEPLOYMENT_PATH = /usr/share/$${TARGET}
 
@@ -50,6 +49,12 @@ OTHER_FILES += qml/worldclock.qml \
     translations/CityTranslations-sl_SI.txt \
     translations/CityTranslations-es_ES.txt \
     translations/CityTranslations-nl_NL.txt
+
+isEmpty(VERSION) {
+    VERSION = $$system( egrep "^Version:\|^Release:" rpm/worldclock.spec |tr -d "[A-Z][a-z]: " | tr "\\\n" "-" | sed "s/\.$//g"| tr -d "[:space:]")
+    message("VERSION is unset, assuming $$VERSION")
+}
+DEFINES += APP_VERSION=\\\"$$VERSION\\\"
 
 icon86.files += icons/86x86/harbour-worldclock.png
 icon86.path = /usr/share/icons/hicolor/86x86/apps
@@ -95,8 +100,7 @@ TRANSLATIONS = translations/harbour-worldclock-sv.ts \
 
 HEADERS += \
     src/worldclock.h \
-    src/settings.h \
-    src/osread.h
+    src/settings.h
 
 # only include these files for translation:
 lupdate_only {

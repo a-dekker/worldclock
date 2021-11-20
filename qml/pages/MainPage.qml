@@ -2,7 +2,6 @@ import QtQuick 2.2
 import Sailfish.Silica 1.0
 import Sailfish.Timezone 1.0
 // not_allowed_in_store
-import harbour.worldclock.Launcher 1.0
 import harbour.worldclock.TimeZone 1.0
 import harbour.worldclock.Settings 1.0
 import Nemo.Notifications 1.0
@@ -18,17 +17,11 @@ Page {
         id: remorse
     }
 
-    App {
-        id: bar
-    }
-
     MySettings {
         id: myset
     }
 
-    property string local_city
     property string local_city_tr
-    property string local_continent
 
     function loadData() {
         var offset = new Date().toString().split(" ")[5].replace("GMT", "UTC ")
@@ -36,29 +29,17 @@ Page {
         offset = offset.replace("+0", "+")
         offset = offset.replace("-0", "-")
         offset = offset.replace(":00", "")
-        local_city = bar.launch("readlink /var/lib/timed/localtime")
-        var intPos = local_city.lastIndexOf("/")
-        // remove city to find continent
-        local_continent = local_city.substring(0, intPos)
-        // take last entry of remaining path
-        local_continent = local_continent.replace(/(.+)\//,
-                                                  "").replace(/(\r\n|\n|\r)/gm,
-                                                              "")
-        // city itself
-        local_city = local_city.replace(/(.+)\//,
-                                        "").replace(/(\r\n|\n|\r)/gm, "")
+
         // Check if local city is translated
-        var data = timezones.readCityInfo(local_continent + "/" + local_city,
+        var data = timezones.readCityInfo(localContinent + "/" + localCity,
                                           mainapp.timeFormat)
         data = data.split(';')
         local_city_tr = data[6]
         zoneCountryOrg = data[7]
 
-        mainapp.localContinent = local_continent
-        mainapp.localCity = local_city
         mainapp.localCityTr = local_city_tr
         // add city as localtime
-        appendList(local_datetime.local_time, local_city, "local_time",
+        appendList(local_datetime.local_time, localCity, "local_time",
                    local_datetime.local_date,
                    local_datetime.timezone + " (" + offset + ")", "",
                    local_datetime.local_utc_offset, local_city_tr,
@@ -114,11 +95,11 @@ Page {
             var zoneSecs = data[5]
             var zoneCountryOrg = data[7]
 
-            if (zoneCityFull === local_continent + "/" + local_city
+            if (zoneCityFull === localContinent + "/" + localCity
                     && myset.value("hidelocal") === "true") {
                 replaceLocalCity(zoneCity)
             } else {
-                // local_continent
+                // localContinent
                 appendList(zoneTime, zoneCity, zoneCountry, zoneDate, zoneUTC,
                            zoneCityFull, zoneSecs, zoneCityTr, zoneCountryOrg)
             }
@@ -180,14 +161,14 @@ Page {
         sortModel()
         timerclock.start()
         if (myset.value("hidelocal") === "true") {
-            hideLocalCity(local_city)
+            hideLocalCity(localCity)
         }
     }
 
     onStatusChanged: {
         if (status === PageStatus.Activating) {
             if (mainapp.city_id === "fromsettings") {
-                myset.sync() // else skrewed up??
+                myset.sync() // else screwed up??
                 sortModel()
                 mainapp.city_id = ""
             }
@@ -201,7 +182,7 @@ Page {
             storeCity()
             mainapp.city_id = ""
             if (myset.value("hidelocal") === "true") {
-                hideLocalCity(local_city)
+                hideLocalCity(localCity)
             }
         }
     }
@@ -271,7 +252,7 @@ Page {
     function replaceLocalCity(aliasCity) {
         var n
         for (n = 0; n < listCityModel.count; n++)
-            if (listCityModel.get(n).zoneCity === local_city) {
+            if (listCityModel.get(n).zoneCity === localCity) {
                 listCityModel.setProperty(n, "zoneCityTr", aliasCity)
             }
     }
@@ -446,7 +427,7 @@ Page {
             id: timezones
         }
 
-        // Place our content in a Column.  The PageHeader is always placed at the top
+        // Place our content in a Column. The PageHeader is always placed at the top
         // of the page, followed by our content.
         SilicaListView {
             id: listCity
@@ -603,7 +584,7 @@ Page {
                     color: (listCityItem.highlighted || listCityModel.get(
                                 index).zoneCountry === "local_time"
                             || listCityModel.get(index).zoneCity
-                            === local_city) ? Theme.highlightColor : Theme.secondaryColor
+                            === localCity) ? Theme.highlightColor : Theme.secondaryColor
                     anchors.left: isPortrait && !largeScreen
                                   && !mediumScreen ? timeLabel.right : extraImgSpace.right
                     width: cityLabel.width
@@ -631,7 +612,7 @@ Page {
                     color: (listCityItem.highlighted || listCityModel.get(
                                 index).zoneCountry === "local_time"
                             || listCityModel.get(index).zoneCity
-                            === local_city) ? Theme.highlightColor : Theme.secondaryColor
+                            === localCity) ? Theme.highlightColor : Theme.secondaryColor
                     width: dateLabel.width
                     anchors.left: cityLabel.right
                     anchors.rightMargin: Theme.paddingSmall
@@ -646,7 +627,7 @@ Page {
                             onClicked: {
                                 if (listCityModel.get(
                                             index).zoneCountry === "local_time") {
-                                    mainapp.city_id = local_continent + "/" + local_city
+                                    mainapp.city_id = localContinent + "/" + localCity
                                     pageStack.push(Qt.resolvedUrl(
                                                        "CityDetail.qml"))
                                 } else {
@@ -674,7 +655,7 @@ Page {
                 }
                 onClicked: {
                     if (listCityModel.get(index).zoneCountry === "local_time") {
-                        mainapp.city_id = local_continent + "/" + local_city
+                        mainapp.city_id = localContinent + "/" + localCity
                     } else {
                         mainapp.city_id = listCityModel.get(index).zoneCityFull
                     }

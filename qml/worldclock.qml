@@ -1,3 +1,5 @@
+
+
 /*
   Copyright (C) 2013 Jolla Ltd.
   Contact: Thomas Perl <thomas.perl@jollamobile.com>
@@ -27,41 +29,35 @@
   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
-
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import harbour.worldclock.Launcher 1.0
+import org.nemomobile.configuration 1.0
 import harbour.worldclock.Settings 1.0
 import Sailfish.Timezone 1.0
 // not_allowed_in_store
 import "pages"
 import "cover"
 
-ApplicationWindow
-{
+ApplicationWindow {
     id: mainapp
     property string city_id: ''
     property string localTime: ''
-    property string localContinent: ''
-    property string localCity: ''
+    property string localContinent: ContinentName
+    property string localCity: CityName
     property string localCityTr: ''
     property bool viewable: cover.status === Cover.Active || applicationActive
     property string timeFormat: '24'
     property string myAliases
 
-    allowedOrientations: Orientation.Portrait | Orientation.Landscape
-                         | Orientation.LandscapeInverted
-    _defaultPageOrientations: Orientation.Portrait | Orientation.Landscape
-                         | Orientation.LandscapeInverted
+    allowedOrientations: defaultAllowedOrientations
+    _defaultPageOrientations: defaultAllowedOrientations
 
-    initialPage: Component { MainPage { } }
+    initialPage: Component {
+        MainPage {}
+    }
 
     cover: CoverPage {
         id: cover
-    }
-
-    App {
-        id: bar
     }
 
     MySettings {
@@ -82,10 +78,13 @@ ApplicationWindow
         }
     }
 
+    ConfigurationValue {
+        id: timeFormatConfig
+        key: "/sailfish/i18n/lc_timeformat24h"
+    }
+
     function getAMPM() {
-        timeFormat = bar.launch(
-                    "/usr/bin/dconf read /sailfish/i18n/lc_timeformat24h").replace(
-                    /'/g, "").replace(/(\r\n|\n|\r)/gm, "")
+        timeFormat = timeFormatConfig.value
     }
 
     Timer {
@@ -102,11 +101,16 @@ ApplicationWindow
 
     function newCity() {
         if (myset.value("city_pickertype", "0") === "0") {
-            var cityPage = pageStack.find(function(page) { return page.objectName === "Timezone" })
+            var cityPage = pageStack.find(function (page) {
+                return page.objectName === "Timezone"
+            })
             pageStack.pop(cityPage, PageStackAction.Immediate)
-            pageStack.push(Qt.resolvedUrl("pages/Timezone.qml"), {}, PageStackAction.Immediate)
+            pageStack.push(Qt.resolvedUrl("pages/Timezone.qml"), {},
+                           PageStackAction.Immediate)
         } else {
-            var cityPage = pageStack.find(function(page) { return page.objectName === "timezonePickerComponent" })
+            var cityPage = pageStack.find(function (page) {
+                return page.objectName === "timezonePickerComponent"
+            })
             pageStack.pop(cityPage, PageStackAction.Immediate)
             pageStack.push(timezonePickerComponent) // not_allowed_in_store
         }

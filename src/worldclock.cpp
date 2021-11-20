@@ -34,6 +34,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include <qqml.h>
 #include <sailfishapp.h>
+
 #include <QLocale>
 #include <QProcess>
 #include <QQuickView>
@@ -43,7 +44,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <QtQml>
 #include <fstream>
 #include <iostream>
-#include "osread.h"
+
 #include "settings.h"
 #include "worldclock.h"
 
@@ -55,21 +56,9 @@ int main(int argc, char *argv[]) {
     //   - SailfishApp::createView() to get a new QQuickView * instance
     //   - SailfishApp::pathTo(QString) to get a QUrl to a resource file
     //
-    QProcess appinfo;
-    QString appversion;
-    // read app version from rpm database on startup
-    appinfo.start("/bin/rpm", QStringList() << "-qa"
-                                            << "--queryformat"
-                                            << "%{version}-%{RELEASE}"
-                                            << "harbour-worldclock");
-    appinfo.waitForFinished(-1);
-    if (appinfo.bytesAvailable() > 0) {
-        appversion = appinfo.readAll();
-    }
     QScopedPointer<QGuiApplication> app(SailfishApp::application(argc, argv));
     QQuickView *view = SailfishApp::createView();
     qmlRegisterType<TimeZone>("harbour.worldclock.TimeZone", 1, 0, "TZ");
-    qmlRegisterType<Launcher>("harbour.worldclock.Launcher", 1, 0, "App");
     qmlRegisterType<Settings>("harbour.worldclock.Settings", 1, 0,
                               "MySettings");
     qmlRegisterType<settingsPublic::Languages>("harbour.worldclock.Settings", 1,
@@ -81,8 +70,14 @@ int main(int argc, char *argv[]) {
     // + ".qm"; Check if user has set language explicitly to be used in the app
     QString locale = QLocale::system().name();
 
-    QSettings mySets;
-    int languageNbr = mySets.value("language", "0").toInt();
+    QSettings *mySets = new QSettings(
+        QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) +
+            "/org.adekker/worldclock/harbour-worldclock.conf",
+        QSettings::NativeFormat);
+    int languageNbr = mySets->value("language", "0").toInt();
+
+    QString ContinentName = QString(QTimeZone::systemTimeZoneId()).split('/').at(0);
+    QString CityName = QString(QTimeZone::systemTimeZoneId()).split('/').at(1);
 
     QTranslator translator;
     if (settingsPublic::Languages::SYSTEM_DEFAULT != languageNbr) {
@@ -184,15 +179,20 @@ int main(int argc, char *argv[]) {
     }
 
     view->rootContext()->setContextProperty("DebugLocale", QVariant(locale));
-    view->rootContext()->setContextProperty("version", appversion);
+    view->rootContext()->setContextProperty("version", APP_VERSION);
+    view->rootContext()->setContextProperty("ContinentName", ContinentName);
+    view->rootContext()->setContextProperty("CityName", CityName);
     view->setSource(SailfishApp::pathTo("qml/worldclock.qml"));
     view->showFullScreen();
     return app->exec();
 }
 
 QLocale myLanguage(void) {
-    QSettings mySets;
-    int languageNbr = mySets.value("language", "0").toInt();
+    QSettings *mySets = new QSettings(
+        QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) +
+            "/org.adekker/worldclock/harbour-worldclock.conf",
+        QSettings::NativeFormat);
+    int languageNbr = mySets->value("language", "0").toInt();
     QLocale myLang;
     switch (languageNbr) {
         // Spanish
@@ -280,8 +280,11 @@ QString TimeZone::TimeZone::readAllCities() {
     // get translation list
     QString lines = cityTranslations();
 
-    QSettings settings;
-    int sortOrder = settings.value("sortorder_completeList", "").toInt();
+    QSettings *settings = new QSettings(
+        QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) +
+            "/org.adekker/worldclock/harbour-worldclock.conf",
+        QSettings::NativeFormat);
+    int sortOrder = settings->value("sortorder_completeList", "").toInt();
     QList<QByteArray> ids = QTimeZone::availableTimeZoneIds();
     QString output;
     QString sign;
@@ -551,6 +554,8 @@ QString TimeZone::TimeZone::readLocalTime(const QByteArray &time_format) {
         output += mytime.time().toString("hh:mm ap") + ';' +
                   QLocale().toString(mytime.date(), dateFormat);
     }
+
+    // qDebug() <<  output;
     return output;
 }
 

@@ -12,13 +12,15 @@ Dialog {
 
     onAccepted: {
         myset.setValue("sortorder", sorting.currentIndex.toString())
-        myset.setValue("sortorder_completeList", citylist_sorting.currentIndex.toString())
+        myset.setValue("sortorder_completeList",
+                       citylist_sorting.currentIndex.toString())
         if (localdisplay.checked) {
             myset.setValue("hidelocal", "true")
         } else {
             myset.setValue("hidelocal", "false")
         }
-        myset.setValue("city_pickertype", cityPicker.currentIndex.toString()) // not_allowed_in_store
+        myset.setValue("city_pickertype", cityPicker.currentIndex.toString(
+                           )) // not_allowed_in_store
         // languagenumber is not index, but enum number!
         if (langNbrToSave !== -1)
             myset.setValue("language", langNbrToSave.toString())
@@ -39,8 +41,7 @@ Dialog {
 
         clip: true
 
-        ScrollDecorator {
-        }
+        ScrollDecorator {}
 
         Column {
             id: col

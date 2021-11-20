@@ -13,8 +13,8 @@ Name:       harbour-worldclock
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    Show city times
-Version:    0.12
-Release:    3
+Version:    0.13
+Release:    1
 Group:      Qt/Qt
 License:    LICENSE
 URL:        https://github.com/a-dekker/worldclock

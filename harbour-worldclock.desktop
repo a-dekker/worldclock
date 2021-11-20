@@ -5,3 +5,7 @@ Name=Worldclock
 Icon=harbour-worldclock
 Exec=harbour-worldclock
 
+[X-Sailjail]
+OrganizationName=org.adekker
+ApplicationName=worldclock
+Permissions=

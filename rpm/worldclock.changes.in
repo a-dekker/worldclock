@@ -8,6 +8,12 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Mon Jun 28 2021 Arno Dekker <jack.tar@example.com> 0.13-1
+- Changes to make it sailjail compliant
+
+* Mon Jun 28 2021 Arno Dekker <jack.tar@example.com> 0.12-4
+- New icon thanks JSEHV
+
 * Wed Mar 31 2021 Arno Dekker <jack.tar@example.com> 0.12-3
 - Added Chinese translation (thanks rui kon)
 
