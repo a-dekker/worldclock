@@ -26,7 +26,8 @@ BackgroundItem {
         anchors.verticalCenter: parent.verticalCenter
         height: 41
         width: 71
-        source: countryOrg !== "" ? '../images/' + countryOrg + '.png' : ""
+        source: countryOrg === "" ? "" : countryOrg === "Default"
+                                    && isLightTheme ? '../images/Default_lighttheme.png' : '../images/' + countryOrg + '.png'
         visible: isLandscape || largeScreen
     }
     Label {

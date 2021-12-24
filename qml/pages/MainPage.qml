@@ -353,30 +353,15 @@ Page {
                                                                    "hh:mm")
     }
 
-    Image {
+    HighlightImage {
         id: coverBgImage
+        color: Theme.primaryColor
         anchors.fill: parent
         fillMode: Image.PreserveAspectFit
         source: "../images/earth.png"
         horizontalAlignment: Image.AlignHCenter
         verticalAlignment: Image.AlignVCenter
         opacity: largeScreen || mediumScreen ? 0.5 : 1
-        layer.effect: ShaderEffect {
-            property color color: Theme.primaryColor
-
-            fragmentShader: "
-            varying mediump vec2 qt_TexCoord0;
-            uniform highp float qt_Opacity;
-            uniform lowp sampler2D source;
-            uniform highp vec4 color;
-            void main() {
-                highp vec4 pixelColor = texture2D(source, qt_TexCoord0);
-                gl_FragColor = vec4(mix(pixelColor.rgb/max(pixelColor.a, 0.00390625), color.rgb/max(color.a, 0.00390625), color.a) * pixelColor.a, pixelColor.a) * qt_Opacity;
-            }
-            "
-        }
-        layer.enabled: true
-        layer.samplerName: "source"
     }
 
     // To enable PullDownMenu, place our content in a SilicaFlickable
@@ -553,7 +538,7 @@ Page {
                     anchors.verticalCenter: parent.verticalCenter
                     height: largeScreen ? 82 : (mediumScreen ? 76 : 41)
                     width: largeScreen ? 142 : (mediumScreen ? 122 : 71)
-                    source: zoneCountryOrg !== "" ? '../images/' + zoneCountryOrg + '.png' : ""
+                    source: zoneCountryOrg === "Default" && isLightTheme ? '../images/Default_lighttheme.png' : '../images/' + zoneCountryOrg + '.png'
                     visible: isLandscape || largeScreen || mediumScreen
                 }
                 Rectangle {

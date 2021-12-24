@@ -8,6 +8,10 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Fri Dec 24 2021 Arno Dekker <jack.tar@example.com> 0.13-2
+- Center UTC image
+- UTC image now honors light themes
+
 * Mon Jun 28 2021 Arno Dekker <jack.tar@example.com> 0.13-1
 - Changes to make it sailjail compliant
 

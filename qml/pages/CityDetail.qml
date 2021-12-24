@@ -58,31 +58,33 @@ Page {
         dstShiftTxt = data[14]
         countryTranslated = data[15]
         // now some translation stuff, as I can't get it to work in worldclock.cpp
-        if (zonePreviousTransition === "None" ) {
+        if (zonePreviousTransition === "None") {
             zonePreviousTransition = qsTr("None")
         }
-        if (zoneNextTransition === "None" ) {
+        if (zoneNextTransition === "None") {
             zoneNextTransition = qsTr("None")
         }
         switch (dstShiftTxtOld) {
-            case "txt_clock_back_old":
-                dstShiftTxtOld = "(" + qsTr("the clock jumped one hour backward") + ")"
-                break
-            case "txt_clock_forw_old":
-                dstShiftTxtOld = "(" + qsTr("the clock jumped one hour forward") + ")"
-                break
-            default:
-                dstShiftTxtOld = ""
+        case "txt_clock_back_old":
+            dstShiftTxtOld = "(" + qsTr(
+                        "the clock jumped one hour backward") + ")"
+            break
+        case "txt_clock_forw_old":
+            dstShiftTxtOld = "(" + qsTr(
+                        "the clock jumped one hour forward") + ")"
+            break
+        default:
+            dstShiftTxtOld = ""
         }
         switch (dstShiftTxt) {
-            case "txt_clock_back":
-                dstShiftTxt = "(" + qsTr("the clock jumps one hour backward") + ")"
-                break
-            case "txt_clock_forw":
-                dstShiftTxt = "(" + qsTr("the clock jumps one hour forward") + ")"
-                break
-            default:
-                dstShiftTxt = ""
+        case "txt_clock_back":
+            dstShiftTxt = "(" + qsTr("the clock jumps one hour backward") + ")"
+            break
+        case "txt_clock_forw":
+            dstShiftTxt = "(" + qsTr("the clock jumps one hour forward") + ")"
+            break
+        default:
+            dstShiftTxt = ""
         }
     }
 
@@ -100,7 +102,9 @@ Page {
 
     Component.onCompleted: {
         get_city_details(mainapp.city_id)
-        get_country_details()
+        if (zoneCountry !== "Default") {
+            get_country_details()
+        }
     }
 
     // Place our content in a Column.  The PageHeader is always placed at the top
@@ -110,8 +114,7 @@ Page {
         contentWidth: parent.width
         contentHeight: column.height
 
-        VerticalScrollDecorator {
-        }
+        VerticalScrollDecorator {}
 
         Column {
             id: column
@@ -125,10 +128,12 @@ Page {
                 Image {
                     height: largeScreen ? 100 : 55
                     width: largeScreen ? 180 : 95
-                    source: zoneCountry !== "" ? '../images/' + zoneCountry + '.png' : ""
+                    source: zoneCountry === "" ? "" : zoneCountry === "Default"
+                                                 && isLightTheme ? '../images/Default_lighttheme.png' : '../images/' + zoneCountry + '.png'
                     anchors.leftMargin: Theme.paddingSmall
                 }
-                text: zoneCity.replace(/_/g, " ") + ", " + countryTranslated.replace(
+                text: zoneCity.replace(/_/g,
+                                       " ") + ", " + countryTranslated.replace(
                           /([a-z])([A-Z])/g, "$1 $2")
             }
             Row {
@@ -301,27 +306,12 @@ Page {
                 width: parent.width - Theme.paddingLarge
                 spacing: 10
                 visible: iso3pos !== ""
-                Image {
+                HighlightImage {
                     id: isoIcon
+                    color: Theme.primaryColor
                     source: "../images/iso-icon.png"
                     height: largeScreen ? 80 : 40
                     width: largeScreen ? 80 : 40
-                    layer.effect: ShaderEffect {
-                        property color color: Theme.primaryColor
-
-                        fragmentShader: "
-                        varying mediump vec2 qt_TexCoord0;
-                        uniform highp float qt_Opacity;
-                        uniform lowp sampler2D source;
-                        uniform highp vec4 color;
-                        void main() {
-                            highp vec4 pixelColor = texture2D(source, qt_TexCoord0);
-                            gl_FragColor = vec4(mix(pixelColor.rgb/max(pixelColor.a, 0.00390625), color.rgb/max(color.a, 0.00390625), color.a) * pixelColor.a, pixelColor.a) * qt_Opacity;
-                        }
-                        "
-                    }
-                    layer.enabled: true
-                    layer.samplerName: "source"
                 }
                 Label {
                     id: isoTxt
@@ -330,28 +320,13 @@ Page {
                     text: iso3pos + '/' + iso2pos
                     width: isPortrait ? (parent.width / 3) * 0.95 : (parent.width / 6) * 0.95
                 }
-                Image {
+                HighlightImage {
                     x: parent.width / 2
+                    color: Theme.primaryColor
                     id: wwwIcon
                     source: "../images/www-icon.png"
                     height: largeScreen ? 80 : 40
                     width: largeScreen ? 80 : 40
-                    layer.effect: ShaderEffect {
-                        property color color: Theme.primaryColor
-
-                        fragmentShader: "
-                        varying mediump vec2 qt_TexCoord0;
-                        uniform highp float qt_Opacity;
-                        uniform lowp sampler2D source;
-                        uniform highp vec4 color;
-                        void main() {
-                            highp vec4 pixelColor = texture2D(source, qt_TexCoord0);
-                            gl_FragColor = vec4(mix(pixelColor.rgb/max(pixelColor.a, 0.00390625), color.rgb/max(color.a, 0.00390625), color.a) * pixelColor.a, pixelColor.a) * qt_Opacity;
-                        }
-                        "
-                    }
-                    layer.enabled: true
-                    layer.samplerName: "source"
                 }
                 Label {
                     id: wwwTxt
@@ -374,27 +349,12 @@ Page {
                     truncationMode: TruncationMode.Fade
                     width: isPortrait ? (parent.width / 3) * 0.95 : (parent.width / 6) * 0.95
                 }
-                Image {
+                HighlightImage {
                     source: "../images/coin-icon.png"
+                    color: Theme.primaryColor
                     height: largeScreen ? 80 : 40
                     width: largeScreen ? 80 : 40
                     visible: currency !== "" && isLandscape
-                    layer.effect: ShaderEffect {
-                        property color color: Theme.primaryColor
-
-                        fragmentShader: "
-                        varying mediump vec2 qt_TexCoord0;
-                        uniform highp float qt_Opacity;
-                        uniform lowp sampler2D source;
-                        uniform highp vec4 color;
-                        void main() {
-                            highp vec4 pixelColor = texture2D(source, qt_TexCoord0);
-                            gl_FragColor = vec4(mix(pixelColor.rgb/max(pixelColor.a, 0.00390625), color.rgb/max(color.a, 0.00390625), color.a) * pixelColor.a, pixelColor.a) * qt_Opacity;
-                        }
-                        "
-                    }
-                    layer.enabled: true
-                    layer.samplerName: "source"
                 }
                 Label {
                     x: Theme.paddingLarge
@@ -425,28 +385,13 @@ Page {
                     truncationMode: TruncationMode.Fade
                     width: (parent.width / 3) * 0.95
                 }
-                Image {
+                HighlightImage {
                     id: currencyIcon
+                    color: Theme.primaryColor
                     source: "../images/coin-icon.png"
                     height: largeScreen ? 80 : 40
                     width: largeScreen ? 80 : 40
                     visible: currency !== "" && isPortrait
-                    layer.effect: ShaderEffect {
-                        property color color: Theme.primaryColor
-
-                        fragmentShader: "
-                        varying mediump vec2 qt_TexCoord0;
-                        uniform highp float qt_Opacity;
-                        uniform lowp sampler2D source;
-                        uniform highp vec4 color;
-                        void main() {
-                            highp vec4 pixelColor = texture2D(source, qt_TexCoord0);
-                            gl_FragColor = vec4(mix(pixelColor.rgb/max(pixelColor.a, 0.00390625), color.rgb/max(color.a, 0.00390625), color.a) * pixelColor.a, pixelColor.a) * qt_Opacity;
-                        }
-                        "
-                    }
-                    layer.enabled: true
-                    layer.samplerName: "source"
                 }
                 Label {
                     id: currencyTxt

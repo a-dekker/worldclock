@@ -31,7 +31,7 @@
 */
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import org.nemomobile.configuration 1.0
+import Nemo.Configuration 1.0
 import harbour.worldclock.Settings 1.0
 import Sailfish.Timezone 1.0
 // not_allowed_in_store
@@ -48,6 +48,12 @@ ApplicationWindow {
     property bool viewable: cover.status === Cover.Active || applicationActive
     property string timeFormat: '24'
     property string myAliases
+    property bool isLightTheme: {
+        if (Theme.colorScheme === Theme.LightOnDark)
+            return false
+        else
+            return true
+    }
 
     allowedOrientations: defaultAllowedOrientations
     _defaultPageOrientations: defaultAllowedOrientations

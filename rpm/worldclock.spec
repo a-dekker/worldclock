@@ -14,7 +14,7 @@ Name:       harbour-worldclock
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    Show city times
 Version:    0.13
-Release:    1
+Release:    2
 Group:      Qt/Qt
 License:    LICENSE
 URL:        https://github.com/a-dekker/worldclock
@@ -62,7 +62,7 @@ desktop-file-install --delete-original       \
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_bindir}
+%attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}/qml
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
