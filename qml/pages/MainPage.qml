@@ -160,16 +160,23 @@ Page {
         loadData()
         sortModel()
         timerclock.start()
-        if (myset.value("hidelocal") === "true") {
-            hideLocalCity(localCity)
-        }
+        // if (myset.value("hidelocal") === "true") {
+        //     hideLocalCity(localCity)
+        // }
     }
+
+    Component.onDestruction: notification.close()
 
     onStatusChanged: {
         if (status === PageStatus.Activating) {
             if (mainapp.city_id === "fromsettings") {
                 myset.sync() // else screwed up??
+                listCityModel.clear()
+                loadData()
                 sortModel()
+                // if (myset.value("hidelocal") === "true") {
+                //     hideLocalCity(localCity)
+                // }
                 mainapp.city_id = ""
             }
             if (mainapp.city_id === "fromaliases") {
@@ -181,9 +188,6 @@ Page {
             }
             storeCity()
             mainapp.city_id = ""
-            if (myset.value("hidelocal") === "true") {
-                hideLocalCity(localCity)
-            }
         }
     }
 
@@ -206,7 +210,6 @@ Page {
         }
         notification.category = notificationCategory
         notification.previewBody = message
-        notification.previewSummary = "Worldclock"
         notification.publish()
     }
 
@@ -628,7 +631,7 @@ Page {
                             onClicked: {
                                 if (listCityModel.get(
                                             index).zoneCountry === "local_time") {
-                                    hide()
+                                    close()
                                     banner("ERROR",
                                            qsTr("Cannot remove Local time"))
                                 } else {

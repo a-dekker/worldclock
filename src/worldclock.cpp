@@ -166,6 +166,12 @@ int main(int argc, char *argv[]) {
                     "harbour-worldclock-zh_CN.qm",
                     SailfishApp::pathTo(QString("translations")).toLocalFile());
                 break;
+            // Estonian
+            case settingsPublic::Languages::ET:
+                translator.load(
+                    "harbour-worldclock-et.qm",
+                    SailfishApp::pathTo(QString("translations")).toLocalFile());
+                break;
             // English
             default:
                 translator.load(
@@ -244,7 +250,11 @@ QLocale myLanguage(void) {
             break;
         // Chinese
         case settingsPublic::Languages::ZH_CN:
-            myLang = QLocale(QLocale::Chinese, QLocale::Slovenia);
+            myLang = QLocale(QLocale::Chinese, QLocale::China);
+            break;
+        // Estonian
+        case settingsPublic::Languages::ET:
+            myLang = QLocale(QLocale::Estonian, QLocale::Estonia);
             break;
         // English
         default:

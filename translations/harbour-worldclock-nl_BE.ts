@@ -146,57 +146,57 @@
         <translation>Stad is al toegevoegd</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="374"/>
+        <location filename="../qml/pages/MainPage.qml" line="377"/>
         <source>About</source>
         <translation>Over</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="378"/>
+        <location filename="../qml/pages/MainPage.qml" line="381"/>
         <source>Settings</source>
         <translation>Instellingen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="382"/>
+        <location filename="../qml/pages/MainPage.qml" line="385"/>
         <source>Custom city names</source>
         <translation>Eigen wereldklokken</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="386"/>
+        <location filename="../qml/pages/MainPage.qml" line="389"/>
         <source>Add city</source>
         <translation>Nieuwe wereldklok</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="424"/>
+        <location filename="../qml/pages/MainPage.qml" line="427"/>
         <source>Worldclock</source>
         <translation>Wereldklok</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="442"/>
+        <location filename="../qml/pages/MainPage.qml" line="445"/>
         <source>Deleting</source>
         <translation>Word verwijderd</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="474"/>
+        <location filename="../qml/pages/MainPage.qml" line="477"/>
         <source>Manage custom cities on other page</source>
         <translation>Beheerd uw eigen wereldklokken op de andere pagina</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="567"/>
+        <location filename="../qml/pages/MainPage.qml" line="570"/>
         <source>Local time</source>
         <translation>Lokale tijd</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="611"/>
+        <location filename="../qml/pages/MainPage.qml" line="614"/>
         <source>Details</source>
         <translation>Details</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="627"/>
+        <location filename="../qml/pages/MainPage.qml" line="630"/>
         <source>Remove</source>
         <translation>Verwijderen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="633"/>
+        <location filename="../qml/pages/MainPage.qml" line="636"/>
         <source>Cannot remove Local time</source>
         <translation>Lokale tijd kan niet worden verwijderd</translation>
     </message>
@@ -285,22 +285,22 @@
         <translation>Taalwijziging zal actief worden nadat ge den app herstart.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="294"/>
+        <location filename="../qml/pages/SettingPage.qml" line="302"/>
         <source>Worldclock pick screen</source>
         <translation>Wereldklokselectiescherm</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="295"/>
+        <location filename="../qml/pages/SettingPage.qml" line="303"/>
         <source>Choose screentype used for selecting a worldclock</source>
         <translation>Kiesd een schermtype voor het selecteren van ne wereldklok</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="299"/>
+        <location filename="../qml/pages/SettingPage.qml" line="307"/>
         <source>Custom</source>
         <translation>Aangepast</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="302"/>
+        <location filename="../qml/pages/SettingPage.qml" line="310"/>
         <source>Sailfish</source>
         <translation>Sailfish</translation>
     </message>

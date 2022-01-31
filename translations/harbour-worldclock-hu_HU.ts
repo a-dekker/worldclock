@@ -146,57 +146,57 @@
         <translation>A város már hozzáadva</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="374"/>
+        <location filename="../qml/pages/MainPage.qml" line="377"/>
         <source>About</source>
         <translation>Névjegy</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="378"/>
+        <location filename="../qml/pages/MainPage.qml" line="381"/>
         <source>Settings</source>
         <translation>Beállítások</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="382"/>
+        <location filename="../qml/pages/MainPage.qml" line="385"/>
         <source>Custom city names</source>
         <translation>Egyedi városnevek</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="386"/>
+        <location filename="../qml/pages/MainPage.qml" line="389"/>
         <source>Add city</source>
         <translation>Város hozzáadása</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="424"/>
+        <location filename="../qml/pages/MainPage.qml" line="427"/>
         <source>Worldclock</source>
         <translation>Világóra</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="442"/>
+        <location filename="../qml/pages/MainPage.qml" line="445"/>
         <source>Deleting</source>
         <translation>Törlés</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="474"/>
+        <location filename="../qml/pages/MainPage.qml" line="477"/>
         <source>Manage custom cities on other page</source>
         <translation>Az egyedi városok kezelése új lapon</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="567"/>
+        <location filename="../qml/pages/MainPage.qml" line="570"/>
         <source>Local time</source>
         <translation>Helyi idő</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="611"/>
+        <location filename="../qml/pages/MainPage.qml" line="614"/>
         <source>Details</source>
         <translation>Részletek</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="627"/>
+        <location filename="../qml/pages/MainPage.qml" line="630"/>
         <source>Remove</source>
         <translation>Eltávolít</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="633"/>
+        <location filename="../qml/pages/MainPage.qml" line="636"/>
         <source>Cannot remove Local time</source>
         <translation>A helyi idő nem eltávolítható.</translation>
     </message>
@@ -285,22 +285,22 @@
         <translation>Az új nyelvi beállítás az alkalmazás újraindítása után aktiválódik.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="294"/>
+        <location filename="../qml/pages/SettingPage.qml" line="302"/>
         <source>Worldclock pick screen</source>
         <translation>Világóra választó képernyő</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="295"/>
+        <location filename="../qml/pages/SettingPage.qml" line="303"/>
         <source>Choose screentype used for selecting a worldclock</source>
         <translation>Válaszd ki a képernyő stílust</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="299"/>
+        <location filename="../qml/pages/SettingPage.qml" line="307"/>
         <source>Custom</source>
         <translation>Egyedi</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="302"/>
+        <location filename="../qml/pages/SettingPage.qml" line="310"/>
         <source>Sailfish</source>
         <translation>Sailfish</translation>
     </message>

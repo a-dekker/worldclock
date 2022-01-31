@@ -146,57 +146,57 @@
         <translation>المدينة مضافة مسبقاً</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="374"/>
+        <location filename="../qml/pages/MainPage.qml" line="377"/>
         <source>About</source>
         <translation>حول</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="378"/>
+        <location filename="../qml/pages/MainPage.qml" line="381"/>
         <source>Settings</source>
         <translation>إعدادات</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="382"/>
+        <location filename="../qml/pages/MainPage.qml" line="385"/>
         <source>Custom city names</source>
         <translation>أسماء مدن مخصصة</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="386"/>
+        <location filename="../qml/pages/MainPage.qml" line="389"/>
         <source>Add city</source>
         <translation>إضافة مدينة</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="424"/>
+        <location filename="../qml/pages/MainPage.qml" line="427"/>
         <source>Worldclock</source>
         <translation>ساعة العالم</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="442"/>
+        <location filename="../qml/pages/MainPage.qml" line="445"/>
         <source>Deleting</source>
         <translation>جاري الحذف</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="474"/>
+        <location filename="../qml/pages/MainPage.qml" line="477"/>
         <source>Manage custom cities on other page</source>
         <translation>إدارة المدن المخصصة في صفحة أخرى</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="567"/>
+        <location filename="../qml/pages/MainPage.qml" line="570"/>
         <source>Local time</source>
         <translation>الوقت المحلي</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="611"/>
+        <location filename="../qml/pages/MainPage.qml" line="614"/>
         <source>Details</source>
         <translation>التفاصيل</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="627"/>
+        <location filename="../qml/pages/MainPage.qml" line="630"/>
         <source>Remove</source>
         <translation>حذف</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="633"/>
+        <location filename="../qml/pages/MainPage.qml" line="636"/>
         <source>Cannot remove Local time</source>
         <translation>تعذّر حذف الوقت المحلي</translation>
     </message>
@@ -285,22 +285,22 @@
         <translation>تغيير اللغة سيتم تطبيقه بعد إعادة تشغيل البرنامج</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="294"/>
+        <location filename="../qml/pages/SettingPage.qml" line="302"/>
         <source>Worldclock pick screen</source>
         <translation>شاشة اختيار ساعة العالم</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="295"/>
+        <location filename="../qml/pages/SettingPage.qml" line="303"/>
         <source>Choose screentype used for selecting a worldclock</source>
         <translation>اختيار نوع الشاشة المستخدمة لانتقاء ساعة عالمية</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="299"/>
+        <location filename="../qml/pages/SettingPage.qml" line="307"/>
         <source>Custom</source>
         <translation>مخصص</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="302"/>
+        <location filename="../qml/pages/SettingPage.qml" line="310"/>
         <source>Sailfish</source>
         <translation>سايْلفيش</translation>
     </message>

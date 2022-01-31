@@ -146,57 +146,57 @@
         <translation>Mesto je že dodano</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="374"/>
+        <location filename="../qml/pages/MainPage.qml" line="377"/>
         <source>About</source>
         <translation>O programu</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="378"/>
+        <location filename="../qml/pages/MainPage.qml" line="381"/>
         <source>Settings</source>
         <translation>Nastavitve</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="382"/>
+        <location filename="../qml/pages/MainPage.qml" line="385"/>
         <source>Custom city names</source>
         <translation>Imena mest po meri</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="386"/>
+        <location filename="../qml/pages/MainPage.qml" line="389"/>
         <source>Add city</source>
         <translation>Dodaj mesto</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="424"/>
+        <location filename="../qml/pages/MainPage.qml" line="427"/>
         <source>Worldclock</source>
         <translation>Worldclock</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="442"/>
+        <location filename="../qml/pages/MainPage.qml" line="445"/>
         <source>Deleting</source>
         <translation>Brisanje</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="474"/>
+        <location filename="../qml/pages/MainPage.qml" line="477"/>
         <source>Manage custom cities on other page</source>
         <translation>Urejanje mest po meri na drugi strani</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="567"/>
+        <location filename="../qml/pages/MainPage.qml" line="570"/>
         <source>Local time</source>
         <translation>Lokalni čas</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="611"/>
+        <location filename="../qml/pages/MainPage.qml" line="614"/>
         <source>Details</source>
         <translation>Podrobnosti</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="627"/>
+        <location filename="../qml/pages/MainPage.qml" line="630"/>
         <source>Remove</source>
         <translation>Odstrani</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="633"/>
+        <location filename="../qml/pages/MainPage.qml" line="636"/>
         <source>Cannot remove Local time</source>
         <translation>Lokalnega časa ni možno odstraniti</translation>
     </message>
@@ -285,22 +285,22 @@
         <translation>Sprememba jezika bo aktivna po ponovnem zagonu programa.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="294"/>
+        <location filename="../qml/pages/SettingPage.qml" line="302"/>
         <source>Worldclock pick screen</source>
         <translation>Prikaz izbora mest</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="295"/>
+        <location filename="../qml/pages/SettingPage.qml" line="303"/>
         <source>Choose screentype used for selecting a worldclock</source>
         <translation>Izberite način prikaza seznama mest</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="299"/>
+        <location filename="../qml/pages/SettingPage.qml" line="307"/>
         <source>Custom</source>
         <translation>Po meri</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingPage.qml" line="302"/>
+        <location filename="../qml/pages/SettingPage.qml" line="310"/>
         <source>Sailfish</source>
         <translation>Sailfish</translation>
     </message>

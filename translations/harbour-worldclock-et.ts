@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="nl">
+<TS version="2.1" language="et">
 <context>
     <name>About</name>
     <message>
         <location filename="../qml/pages/About.qml" line="20"/>
         <source>About</source>
-        <translation>Over</translation>
+        <translation>Rakenduse teave</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="23"/>
@@ -16,17 +16,17 @@
     <message>
         <location filename="../qml/pages/About.qml" line="55"/>
         <source>Version</source>
-        <translation>Versie</translation>
+        <translation>Versioon</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="60"/>
         <source>City times across the world</source>
-        <translation>Steden en wereldklokken</translation>
+        <translation>Maailma ajavööndid</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="66"/>
         <source>Author</source>
-        <translation>Auteur</translation>
+        <translation>Autor</translation>
     </message>
 </context>
 <context>
@@ -34,27 +34,27 @@
     <message>
         <location filename="../qml/pages/Aliases.qml" line="62"/>
         <source>Save</source>
-        <translation>Opslaan</translation>
+        <translation>Salvesta</translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="63"/>
         <source>Cancel</source>
-        <translation>Annuleren</translation>
+        <translation>Katkesta</translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="128"/>
         <source>Deleting</source>
-        <translation>Verwijderen</translation>
+        <translation>Kustutame</translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="183"/>
         <source>Alt. name</source>
-        <translation>Alt. naam</translation>
+        <translation>Muu nimi</translation>
     </message>
     <message>
         <location filename="../qml/pages/Aliases.qml" line="208"/>
         <source>No custom city names defined. Press the plus button to add one.</source>
-        <translation>Geen eigen wereldklok gedefinieerd. Druk op de plus om toe te voegen.</translation>
+        <translation>Sa pole ühtegi kohandatud linnanime kirjeldanud. Lisamiseks vajuta pluss-ikooni.</translation>
     </message>
 </context>
 <context>
@@ -63,71 +63,71 @@
         <location filename="../qml/pages/CityDetail.qml" line="62"/>
         <location filename="../qml/pages/CityDetail.qml" line="65"/>
         <source>None</source>
-        <translation>Geen</translation>
+        <translation>Pole kasutusel</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="69"/>
         <source>the clock jumped one hour backward</source>
-        <translation>de klok ging één uur terug</translation>
+        <translation>kella keerati üks tund tagasi</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="73"/>
         <source>the clock jumped one hour forward</source>
-        <translation>de klok ging één uur vooruit</translation>
+        <translation>kella keerati üks tund edasi</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="81"/>
         <source>the clock jumps one hour backward</source>
-        <translation>de klok gaat één uur terug</translation>
+        <translation>kella keeratakse üks tund tagasi</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="84"/>
         <source>the clock jumps one hour forward</source>
-        <translation>de klok gaat één uur vooruit</translation>
+        <translation>kella keeratakse üks tund edasi</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="124"/>
         <source>Timezone details</source>
-        <translation>Tijdzone details</translation>
+        <translation>Ajavööndi teave</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="142"/>
         <source>Timezone</source>
-        <translation>Tijdzone</translation>
+        <translation>Ajavöönd</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="146"/>
         <location filename="../qml/pages/CityDetail.qml" line="172"/>
         <source>Zone time</source>
-        <translation>Externe tijd</translation>
+        <translation>Vööndiaeg</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="188"/>
         <source>Local time</source>
-        <translation>Lokale tijd</translation>
+        <translation>Kohalik aeg</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="191"/>
         <location filename="../qml/pages/CityDetail.qml" line="215"/>
         <source>Time difference</source>
-        <translation>Tijdsverschil</translation>
+        <translation>Ajavahe</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="208"/>
         <location filename="../qml/pages/CityDetail.qml" line="222"/>
         <source>hour</source>
-        <translation>uur</translation>
+        <translation>tund</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="230"/>
         <source>Prev. daylight transition</source>
-        <translation>Vorige klok aanpassing</translation>
+        <translation>Eelmine suveaeg</translation>
     </message>
     <message>
         <location filename="../qml/pages/CityDetail.qml" line="234"/>
         <location filename="../qml/pages/CityDetail.qml" line="278"/>
         <source>Next daylight transition</source>
-        <translation>Volgende klok aanpassing</translation>
+        <translation>Järgmine suveaeg</translation>
     </message>
 </context>
 <context>
@@ -135,7 +135,7 @@
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="184"/>
         <source>Worldclock</source>
-        <translation>Wereldklok</translation>
+        <translation>Maailmakell</translation>
     </message>
 </context>
 <context>
@@ -143,62 +143,62 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="134"/>
         <source>City already added</source>
-        <translation>Stad is al toegevoegd</translation>
+        <translation>Selline linn on juba lisatud</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="377"/>
         <source>About</source>
-        <translation>Over</translation>
+        <translation>Rakenduse teave</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="381"/>
         <source>Settings</source>
-        <translation>Instellingen</translation>
+        <translation>Seadistused</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="385"/>
         <source>Custom city names</source>
-        <translation>Eigen wereldklokken</translation>
+        <translation>Kohandatud linnanimed</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="389"/>
         <source>Add city</source>
-        <translation>Nieuwe wereldklok</translation>
+        <translation>Lisa linn</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="427"/>
         <source>Worldclock</source>
-        <translation>Wereldklok</translation>
+        <translation>Maailmakell</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="445"/>
         <source>Deleting</source>
-        <translation>Bezig met verwijderen</translation>
+        <translation>Kustutame</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="477"/>
         <source>Manage custom cities on other page</source>
-        <translation>Beheer eigen wereldklokken op andere pagina</translation>
+        <translation>Kohandatud linnu halda teisel lehel</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="570"/>
         <source>Local time</source>
-        <translation>Lokale tijd</translation>
+        <translation>Kohalik aeg</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="614"/>
         <source>Details</source>
-        <translation>Details</translation>
+        <translation>Lisateave</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="630"/>
         <source>Remove</source>
-        <translation>Verwijderen</translation>
+        <translation>Eemalda</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="636"/>
         <source>Cannot remove Local time</source>
-        <translation>Lokale tijd kan niet worden verwijderd</translation>
+        <translation>Kohalikku aega ei saa eemaldada</translation>
     </message>
 </context>
 <context>
@@ -206,98 +206,98 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="52"/>
         <source>Save</source>
-        <translation>Opslaan</translation>
+        <translation>Salvesta</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="53"/>
         <source>Cancel</source>
-        <translation>Annuleren</translation>
+        <translation>Katkesta</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="56"/>
         <source>Settings</source>
-        <translation>Instellingen</translation>
+        <translation>Seadistused</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="63"/>
         <source>Sort order</source>
-        <translation>Sorteer volgorde</translation>
+        <translation>Sortimise järjekord</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="64"/>
         <source>Sort order of personal list</source>
-        <translation>Sorteer volgorde van persoonlijke lijst</translation>
+        <translation>Sinu valitud ajavööndite kuvamise järjekord</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="68"/>
         <source>None</source>
-        <translation>Geen</translation>
+        <translation>Puudub</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="71"/>
         <source>TimeZone</source>
-        <translation>TijdZone</translation>
+        <translation>Ajavöönd</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="74"/>
         <location filename="../qml/pages/SettingPage.qml" line="92"/>
         <source>City</source>
-        <translation>Stad</translation>
+        <translation>Linn</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="81"/>
         <source>Sort order list</source>
-        <translation>Sorteer volgorde lijst</translation>
+        <translation>Kõik ajavööndid</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="82"/>
         <source>Sort order of complete citylist</source>
-        <translation>Sorteer volgorde complete stadslijst</translation>
+        <translation>Maailma kõikide ajavööndite sortimise järjekord</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="89"/>
         <source>TimeZone/Continent/City</source>
-        <translation>TijdZone/Continent/Stad</translation>
+        <translation>Ajavöönd/maailmajagu/linn</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="95"/>
         <source>Country</source>
-        <translation>Land</translation>
+        <translation>Riik</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="103"/>
         <source>Hide if current</source>
-        <translation>Verberg als huidig</translation>
+        <translation>Peida kohalik aeg</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="104"/>
         <source>Hide localtime if city is present and current</source>
-        <translation>Verberg de lokale tijd als de stad geselecteerd is en de huidige zone</translation>
+        <translation>Kui linn nii loendis, kui kohalik aeg, siis peida kohalik aeg</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="114"/>
         <source>Language:</source>
-        <translation>Taal:</translation>
+        <translation>Keel:</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="115"/>
         <source>Change of language will be active after restarting the application.</source>
-        <translation>Taal aanpassing zal actief worden na het herstarten van de applicatie.</translation>
+        <translation>Keele vahetus jõustub rakenduse uuesti käivitamisel.</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="302"/>
         <source>Worldclock pick screen</source>
-        <translation>Wereldklok selecteer scherm</translation>
+        <translation>Maailmakella valikuvaade</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="303"/>
         <source>Choose screentype used for selecting a worldclock</source>
-        <translation>Kies een schermtype voor het selecteren van een wereldklok</translation>
+        <translation>Vaate tüüp, kust saad maailmakella valida</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="307"/>
         <source>Custom</source>
-        <translation>Eigen</translation>
+        <translation>Kohandatud</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="310"/>
@@ -307,7 +307,7 @@
     <message>
         <location filename="../qml/pages/SettingPage.qml" line="86"/>
         <source>Continent/City</source>
-        <translation>Continent/Stad</translation>
+        <translation>Maailmajagu/linn</translation>
     </message>
 </context>
 <context>
@@ -315,7 +315,7 @@
     <message>
         <location filename="../qml/pages/Timezone.qml" line="43"/>
         <source>Select city</source>
-        <translation>Stad zoeken</translation>
+        <translation>Vali linn</translation>
     </message>
 </context>
 <context>

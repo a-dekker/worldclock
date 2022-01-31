@@ -129,38 +129,41 @@ Dialog {
                             text: "Dutch/Nederlands"
                         } // 3
                         MenuItem {
-                            text: "Flemish (Dutch Belgium)/Vlaams"
+                            text: "Estonian/Eesti keel"
                         } // 4
                         MenuItem {
-                            text: "French/Français"
+                            text: "Flemish (Dutch Belgium)/Vlaams"
                         } // 5
                         MenuItem {
-                            text: "German/Deutsch"
+                            text: "French/Français"
                         } // 6
                         MenuItem {
-                            text: "Greek/ελληνικά"
+                            text: "German/Deutsch"
                         } // 7
                         MenuItem {
-                            text: "Hungarian/Magyar"
+                            text: "Greek/ελληνικά"
                         } // 8
                         MenuItem {
-                            text: "Italian/Italiano"
+                            text: "Hungarian/Magyar"
                         } // 9
                         MenuItem {
-                            text: "Polish/Polski"
+                            text: "Italian/Italiano"
                         } // 10
                         MenuItem {
-                            text: "Russian/Русский"
+                            text: "Polish/Polski"
                         } // 11
                         MenuItem {
-                            text: "Slovenian/Slovenski"
+                            text: "Russian/Русский"
                         } // 12
                         MenuItem {
-                            text: "Spanish/Español"
+                            text: "Slovenian/Slovenski"
                         } // 13
                         MenuItem {
-                            text: "Swedish/Svensk"
+                            text: "Spanish/Español"
                         } // 14
+                        MenuItem {
+                            text: "Swedish/Svensk"
+                        } // 15
                     }
                     // The next two converter functions decouple the alphabetical language list
                     // index from the internal settings index, which cannot be changed for legacy reasons
@@ -192,6 +195,9 @@ Dialog {
                         case Languages.NL:
                             // Dutch
                             return GlobVars.dutch
+                        case Languages.ET:
+                            // Estonian
+                            return GlobVars.estonian
                         case Languages.NL_BE:
                             // Flemish
                             return GlobVars.flemish
@@ -257,6 +263,8 @@ Dialog {
                             return Languages.NL_BE // Flemish
                         case GlobVars.danish:
                             return Languages.DA // Danish
+                        case GlobVars.estonian:
+                            return Languages.ET // Estonian
                         case GlobVars.slovenian:
                             return Languages.SL_SI // Slovenian
                         case GlobVars.french:
