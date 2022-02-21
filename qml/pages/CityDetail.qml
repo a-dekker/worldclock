@@ -37,26 +37,25 @@ Page {
     function get_city_details(cityid) {
         var data = timezones.readCityDetails(cityid, mainapp.timeFormat)
         mainapp.city_id = ""
-        data = data.split(';')
-        zoneDateTime = data[0]
-        zoneName = data[1]
-        zoneCountry = data[2]
-        zoneCity = data[3]
+        zoneDateTime = data["zoneDateTime"]
+        zoneName = data["zoneName"]
+        zoneCountry = data["zoneCountry"]
+        zoneCity = data["zoneCity"]
         for (var i = 0; i < 3; i++) {
             zoneCity = zoneCity.replace(/(.+)\//, "")
         }
-        zoneOffset = data[4]
-        localDateTime = data[5]
-        zoneTimeDiff = data[6]
-        zoneHasDaylightTime = data[7] // incorrect?
-        zoneisDaylightTime = data[8] // not used now
-        zonePreviousTransition = data[9]
-        zoneNextTransition = data[10]
-        abbrevToNext = data[11]
-        abbrevFromPrev = data[12]
-        dstShiftTxtOld = data[13]
-        dstShiftTxt = data[14]
-        countryTranslated = data[15]
+        zoneOffset = data["zoneOffset"]
+        localDateTime = data["localDateTime"]
+        zoneTimeDiff = data["zoneTimeDiff"]
+        zoneHasDaylightTime = data["zoneHasDaylightTime"] // incorrect?
+        zoneisDaylightTime = data["zoneisDaylightTime"] // not used now
+        zonePreviousTransition = data["zonePreviousTransition"]
+        zoneNextTransition = data["zoneNextTransition"]
+        abbrevToNext = data["abbrevToNext"]
+        abbrevFromPrev = data["abbrevFromPrev"]
+        dstShiftTxtOld = data["dstShiftTxtOld"]
+        dstShiftTxt = data["dstShiftTxt"]
+        countryTranslated = data["countryTranslated"]
         // now some translation stuff, as I can't get it to work in worldclock.cpp
         if (zonePreviousTransition === "None") {
             zonePreviousTransition = qsTr("None")

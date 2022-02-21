@@ -15,7 +15,7 @@ class TimeZone : public QObject {
                                      const QByteArray &time_format);
     Q_INVOKABLE QVariantMap readCityTime(const QByteArray &cityid,
                                      const QByteArray &time_format);
-    Q_INVOKABLE QString readCityDetails(const QByteArray &cityid,
+    Q_INVOKABLE QVariantMap readCityDetails(const QByteArray &cityid,
                                         const QByteArray &time_format);
     Q_INVOKABLE QVariantMap readLocalTime(const QByteArray &time_format);
 };

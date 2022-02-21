@@ -569,13 +569,14 @@ QVariantMap TimeZone::TimeZone::readLocalTime(const QByteArray &time_format) {
     return localTime;
 }
 
-QString TimeZone::TimeZone::readCityDetails(const QByteArray &cityid,
-                                            const QByteArray &time_format) {
+QVariantMap TimeZone::TimeZone::readCityDetails(const QByteArray &cityid,
+                                                const QByteArray &time_format) {
     // get translation list
     QString lines = cityTranslations();
 
     QLocale::setDefault(myLanguage());
-    QString output;
+    QVariantMap cityDetails;
+    // QString output;
     QTimeZone zone = QTimeZone(cityid);
     QDateTime mytime = QDateTime::currentDateTime();
     int offset = zone.offsetFromUtc(QDateTime::currentDateTime());
@@ -739,33 +740,37 @@ QString TimeZone::TimeZone::readCityDetails(const QByteArray &cityid,
         cityidTr.replace(cityName.toUtf8().replace(" ", "_"), myCity.toUtf8());
     }
 
+    cityDetails["zoneName"] = longname + " (" + abbreviation + ")";
+    cityDetails["zoneCountry"] = QLocale::countryToString(zone.country());
+    cityDetails["zoneCity"] = cityidTr;
+    cityDetails["zoneOffset"] = offsetname;
+    cityDetails["zoneTimeDiff"] = timeDiff;
+    cityDetails["zoneHasDaylightTime"] = hasDaylighttime;
+    cityDetails["zoneisDaylightTime"] = isDaylighttime;
+    cityDetails["zonePreviousTransition"] = previousTransition;
+    cityDetails["zoneNextTransition"] = nextTransition;
+    cityDetails["abbrevToNext"] = abbrevToNext;
+    cityDetails["abbrevFromPrev"] = abbrevFromPrev;
+    cityDetails["dstShiftTxtOld"] = DST_shift_txt_old;
+    cityDetails["dstShiftTxt"] = DST_shift_txt;
+    cityDetails["countryTranslated"] = myCountry;
+
     if (time_format == "24") {
-        output +=
+        cityDetails["zoneDateTime"] =
             mytime.time().toString("hh:mm") + " - " +
-            QLocale().toString(mytime.date(), QLocale::LongFormat) + ";" +
-            longname + " (" + abbreviation + ")" + ";" +
-            QLocale::countryToString(zone.country()) + ";" + cityidTr + ";" +
-            offsetname + ";" + QTime::currentTime().toString("hh:mm") + " - " +
-            QLocale().toString(QDate::currentDate(), QLocale::LongFormat) +
-            ";" + timeDiff + ";" + hasDaylighttime + ";" + isDaylighttime +
-            ";" + previousTransition + ";" + nextTransition + ";" +
-            abbrevToNext + ";" + abbrevFromPrev + ';' + DST_shift_txt_old +
-            ';' + DST_shift_txt + ';' + myCountry;
+            QLocale().toString(mytime.date(), QLocale::LongFormat);
+        cityDetails["localDateTime"] =
+            QTime::currentTime().toString("hh:mm") + " - " +
+            QLocale().toString(QDate::currentDate(), QLocale::LongFormat);
     } else {
-        output +=
-            QLocale().toString(mytime.time(), "hh:mm ap") + " - " +
-            QLocale().toString(mytime.date(), QLocale::LongFormat) + ";" +
-            longname + " (" + abbreviation + ")" + ";" +
-            QLocale::countryToString(zone.country()) + ";" + cityidTr + ";" +
-            offsetname + ";" +
-            QLocale().toString(QTime::currentTime(), "hh:mm ap") + " - " +
-            QLocale().toString(QDate::currentDate(), QLocale::LongFormat) +
-            ";" + timeDiff + ";" + hasDaylighttime + ";" + isDaylighttime +
-            ";" + previousTransition + ";" + nextTransition + ";" +
-            abbrevToNext + ";" + abbrevFromPrev + ";" + DST_shift_txt_old +
-            ';' + DST_shift_txt + ';' + myCountry;
+        cityDetails["zoneDateTime"] =
+            mytime.time().toString("hh:mm ap") + " - " +
+            QLocale().toString(mytime.date(), QLocale::LongFormat);
+        cityDetails["localDateTime"] =
+            QTime::currentTime().toString("hh:mm ap") + " - " +
+            QLocale().toString(QDate::currentDate(), QLocale::LongFormat);
     }
-    return output;
+    return cityDetails;
 }
 
 TimeZone::~TimeZone() {}
