@@ -133,7 +133,7 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../qml/cover/CoverPage.qml" line="184"/>
+        <location filename="../qml/cover/CoverPage.qml" line="183"/>
         <source>Worldclock</source>
         <translation>世界时间</translation>
     </message>
@@ -146,57 +146,57 @@
         <translation>城市已添加</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="377"/>
+        <location filename="../qml/pages/MainPage.qml" line="369"/>
         <source>About</source>
         <translation>关于</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="381"/>
+        <location filename="../qml/pages/MainPage.qml" line="373"/>
         <source>Settings</source>
         <translation>设置</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="385"/>
+        <location filename="../qml/pages/MainPage.qml" line="377"/>
         <source>Custom city names</source>
         <translation>惯用城市</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="389"/>
+        <location filename="../qml/pages/MainPage.qml" line="381"/>
         <source>Add city</source>
         <translation>添加城市</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="427"/>
+        <location filename="../qml/pages/MainPage.qml" line="419"/>
         <source>Worldclock</source>
         <translation>世界时间</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="445"/>
+        <location filename="../qml/pages/MainPage.qml" line="437"/>
         <source>Deleting</source>
         <translation>删除</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="477"/>
+        <location filename="../qml/pages/MainPage.qml" line="469"/>
         <source>Manage custom cities on other page</source>
         <translation>在其它页面管理惯用城市</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="570"/>
+        <location filename="../qml/pages/MainPage.qml" line="564"/>
         <source>Local time</source>
         <translation>本地时间</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="614"/>
+        <location filename="../qml/pages/MainPage.qml" line="608"/>
         <source>Details</source>
         <translation>详情</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="630"/>
+        <location filename="../qml/pages/MainPage.qml" line="624"/>
         <source>Remove</source>
         <translation>移除</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="636"/>
+        <location filename="../qml/pages/MainPage.qml" line="630"/>
         <source>Cannot remove Local time</source>
         <translation>不能移除本地时间</translation>
     </message>

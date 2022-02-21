@@ -29,10 +29,10 @@ CoverBackground {
     // helper function to add cities to the list
     function appendCity(zoneTime, zoneCityTr, zoneSecs, zoneCityFull) {
         cityListModel.append({
-                                 zoneTime: zoneTime,
-                                 zoneCityTr: zoneCityTr,
-                                 zoneSecs: zoneSecs,
-                                 zoneCityFull: zoneCityFull
+                                 "zoneTime": zoneTime,
+                                 "zoneCityTr": zoneCityTr,
+                                 "zoneSecs": zoneSecs,
+                                 "zoneCityFull": zoneCityFull
                              })
     }
 
@@ -50,7 +50,7 @@ CoverBackground {
                 cityIsReplaced = "true"
             }
         }
-        if  ( cityIsReplaced === "true") {
+        if (cityIsReplaced === "true") {
             return true
         } else {
             return false
@@ -119,9 +119,8 @@ CoverBackground {
         for (var i = 0; i < cityListModel.count; ++i) {
             data = timezones.readCityTime(cityListModel.get(i).zoneCityFull,
                                           mainapp.timeFormat)
-            data = data.split(';')
-            var zoneTime = data[0].replace(/\./g, '')
-            cityListModel.setProperty(i, "zoneTime", zoneTime)
+            cityListModel.setProperty(i, "zoneTime",
+                                      data['zoneTime'].replace(/\./g, ''))
         }
     }
 

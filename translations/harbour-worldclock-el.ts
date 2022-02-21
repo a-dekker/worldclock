@@ -133,7 +133,7 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../qml/cover/CoverPage.qml" line="184"/>
+        <location filename="../qml/cover/CoverPage.qml" line="183"/>
         <source>Worldclock</source>
         <translation>Worldclock</translation>
     </message>
@@ -146,57 +146,57 @@
         <translation>Η πόλη έχει ήδη προστεθεί</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="377"/>
+        <location filename="../qml/pages/MainPage.qml" line="369"/>
         <source>About</source>
         <translation>Περί</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="381"/>
+        <location filename="../qml/pages/MainPage.qml" line="373"/>
         <source>Settings</source>
         <translation>Ρυθμίσεις</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="385"/>
+        <location filename="../qml/pages/MainPage.qml" line="377"/>
         <source>Custom city names</source>
         <translation>Προσαρμοσμένες ονομασίες πόλεων</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="389"/>
+        <location filename="../qml/pages/MainPage.qml" line="381"/>
         <source>Add city</source>
         <translation>Προσθήκη πόλης</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="427"/>
+        <location filename="../qml/pages/MainPage.qml" line="419"/>
         <source>Worldclock</source>
         <translation>Worldclock</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="445"/>
+        <location filename="../qml/pages/MainPage.qml" line="437"/>
         <source>Deleting</source>
         <translation>Διαγραφή</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="477"/>
+        <location filename="../qml/pages/MainPage.qml" line="469"/>
         <source>Manage custom cities on other page</source>
         <translation>Διαχείριση των προσαρμοσμένων πόλεων σε μεμονωμένη σελίδα</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="570"/>
+        <location filename="../qml/pages/MainPage.qml" line="564"/>
         <source>Local time</source>
         <translation>Τοπική ώρα</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="614"/>
+        <location filename="../qml/pages/MainPage.qml" line="608"/>
         <source>Details</source>
         <translation>Λεπτομέρειες</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="630"/>
+        <location filename="../qml/pages/MainPage.qml" line="624"/>
         <source>Remove</source>
         <translation>Αφαίρεση</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="636"/>
+        <location filename="../qml/pages/MainPage.qml" line="630"/>
         <source>Cannot remove Local time</source>
         <translation>Αδύνατη η αφαίρεση της τοπικής ώρας</translation>
     </message>

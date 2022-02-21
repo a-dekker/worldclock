@@ -76,7 +76,8 @@ int main(int argc, char *argv[]) {
         QSettings::NativeFormat);
     int languageNbr = mySets->value("language", "0").toInt();
 
-    QString ContinentName = QString(QTimeZone::systemTimeZoneId()).split('/').at(0);
+    QString ContinentName =
+        QString(QTimeZone::systemTimeZoneId()).split('/').at(0);
     QString CityName = QString(QTimeZone::systemTimeZoneId()).split('/').at(1);
 
     QTranslator translator;
@@ -186,6 +187,7 @@ int main(int argc, char *argv[]) {
 
     view->rootContext()->setContextProperty("DebugLocale", QVariant(locale));
     view->rootContext()->setContextProperty("version", APP_VERSION);
+    view->rootContext()->setContextProperty("buildyear", BUILD_YEAR);
     view->rootContext()->setContextProperty("ContinentName", ContinentName);
     view->rootContext()->setContextProperty("CityName", CityName);
     view->setSource(SailfishApp::pathTo("qml/worldclock.qml"));
@@ -517,10 +519,10 @@ QString TimeZone::TimeZone::readCityInfo(const QByteArray &cityid,
     return output;
 }
 
-QString TimeZone::TimeZone::readCityTime(const QByteArray &cityid,
-                                         const QByteArray &time_format) {
+QVariantMap TimeZone::TimeZone::readCityTime(const QByteArray &cityid,
+                                             const QByteArray &time_format) {
     QLocale::setDefault(myLanguage());
-    QString output;
+    QVariantMap localTime;
     QTimeZone zone = QTimeZone(cityid);
     QDateTime mytime = QDateTime::currentDateTime();
     int offset = zone.offsetFromUtc(QDateTime::currentDateTime());
@@ -535,19 +537,18 @@ QString TimeZone::TimeZone::readCityTime(const QByteArray &cityid,
     QRegExp rx2("\\b(y){2}\\b");
     dateFormat.replace(rx2, "yyyy");
     // qDebug() <<  dateFormat;
+    localTime["zoneDate"] = QLocale().toString(mytime.date(), dateFormat);
     if (time_format == "24") {
-        output += QLocale().toString(mytime.time(), "hh:mm") + ';' +
-                  QLocale().toString(mytime.date(), dateFormat);
+        localTime["zoneTime"] = QLocale().toString(mytime.time(), "hh:mm");
     } else {
-        output += QLocale().toString(mytime.time(), "hh:mm ap") + ';' +
-                  QLocale().toString(mytime.date(), dateFormat);
+        localTime["zoneTime"] = QLocale().toString(mytime.time(), "hh:mm ap");
     }
-    return output;
+    return localTime;
 }
 
-QString TimeZone::TimeZone::readLocalTime(const QByteArray &time_format) {
+QVariantMap TimeZone::TimeZone::readLocalTime(const QByteArray &time_format) {
     QLocale::setDefault(myLanguage());
-    QString output;
+    QVariantMap localTime;
     QDateTime mytime = QDateTime::currentDateTime();
     // try to make the date format look like ddd MMM d yyyy, but in localized
     // order
@@ -557,16 +558,15 @@ QString TimeZone::TimeZone::readLocalTime(const QByteArray &time_format) {
     dateFormat.replace(rx, "MMM");
     QRegExp rx2("\\b(y){2}\\b");
     dateFormat.replace(rx2, "yyyy");
+    localTime["zoneDate"] = QLocale().toString(mytime.date(), dateFormat);
     if (time_format == "24") {
-        output += mytime.time().toString("hh:mm") + ';' +
-                  QLocale().toString(mytime.date(), dateFormat);
+        localTime["zoneTime"] = mytime.time().toString("hh:mm");
     } else {
-        output += mytime.time().toString("hh:mm ap") + ';' +
-                  QLocale().toString(mytime.date(), dateFormat);
+        localTime["zoneTime"] = mytime.time().toString("hh:mm ap");
     }
 
-    // qDebug() <<  output;
-    return output;
+    // qDebug() <<  localTime;
+    return localTime;
 }
 
 QString TimeZone::TimeZone::readCityDetails(const QByteArray &cityid,

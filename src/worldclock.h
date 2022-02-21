@@ -13,11 +13,11 @@ class TimeZone : public QObject {
     Q_INVOKABLE QString readAllCities();
     Q_INVOKABLE QString readCityInfo(const QByteArray &cityid,
                                      const QByteArray &time_format);
-    Q_INVOKABLE QString readCityTime(const QByteArray &cityid,
+    Q_INVOKABLE QVariantMap readCityTime(const QByteArray &cityid,
                                      const QByteArray &time_format);
     Q_INVOKABLE QString readCityDetails(const QByteArray &cityid,
                                         const QByteArray &time_format);
-    Q_INVOKABLE QString readLocalTime(const QByteArray &time_format);
+    Q_INVOKABLE QVariantMap readLocalTime(const QByteArray &time_format);
 };
 
 #endif  // TIMEZONE_H

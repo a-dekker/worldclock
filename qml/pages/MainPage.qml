@@ -160,9 +160,6 @@ Page {
         loadData()
         sortModel()
         timerclock.start()
-        // if (myset.value("hidelocal") === "true") {
-        //     hideLocalCity(localCity)
-        // }
     }
 
     Component.onDestruction: notification.close()
@@ -174,9 +171,6 @@ Page {
                 listCityModel.clear()
                 loadData()
                 sortModel()
-                // if (myset.value("hidelocal") === "true") {
-                //     hideLocalCity(localCity)
-                // }
                 mainapp.city_id = ""
             }
             if (mainapp.city_id === "fromaliases") {
@@ -228,12 +222,10 @@ Page {
                                                   i).zoneCityFull,
                                               mainapp.timeFormat)
             }
-            data = data.split(';')
-            var zoneTime = data[0].replace(/\./g, '')
-            var zoneDate = data[1]
             listCityModel.set(i, {
-                                  zoneTime: zoneTime,
-                                  zoneDate: zoneDate
+                                  "zoneTime": data["zoneTime"].replace(/\./g,
+                                                                       ''),
+                                  "zoneDate": data["zoneDate"]
                               })
         }
     }
@@ -304,15 +296,15 @@ Page {
     // helper function to add lists to the list
     function appendList(zoneTime, zoneCity, zoneCountry, zoneDate, zoneUTC, zoneCityFull, zoneSecs, zoneCityTr, zoneCountryOrg) {
         listCityModel.append({
-                                 zoneTime: zoneTime,
-                                 zoneCity: zoneCity,
-                                 zoneCountry: zoneCountry,
-                                 zoneDate: zoneDate,
-                                 zoneUTC: zoneUTC,
-                                 zoneCityFull: zoneCityFull,
-                                 zoneSecs: zoneSecs,
-                                 zoneCityTr: zoneCityTr,
-                                 zoneCountryOrg: zoneCountryOrg
+                                 "zoneTime": zoneTime,
+                                 "zoneCity": zoneCity,
+                                 "zoneCountry": zoneCountry,
+                                 "zoneDate": zoneDate,
+                                 "zoneUTC": zoneUTC,
+                                 "zoneCityFull": zoneCityFull,
+                                 "zoneSecs": zoneSecs,
+                                 "zoneCityTr": zoneCityTr,
+                                 "zoneCountryOrg": zoneCountryOrg
                              })
     }
 
@@ -541,7 +533,9 @@ Page {
                     anchors.verticalCenter: parent.verticalCenter
                     height: largeScreen ? 82 : (mediumScreen ? 76 : 41)
                     width: largeScreen ? 142 : (mediumScreen ? 122 : 71)
-                    source: zoneCountryOrg === "Default" && isLightTheme ? '../images/Default_lighttheme.png' : '../images/' + zoneCountryOrg + '.png'
+                    source: zoneCountryOrg === "Default"
+                            && isLightTheme ? '../images/Default_lighttheme.png' : '../images/'
+                                              + zoneCountryOrg + '.png'
                     visible: isLandscape || largeScreen || mediumScreen
                 }
                 Rectangle {

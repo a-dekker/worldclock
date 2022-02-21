@@ -55,6 +55,7 @@ isEmpty(VERSION) {
     message("VERSION is unset, assuming $$VERSION")
 }
 DEFINES += APP_VERSION=\\\"$$VERSION\\\"
+DEFINES += BUILD_YEAR=$$system(date '+%Y')
 
 icon86.files += icons/86x86/harbour-worldclock.png
 icon86.path = /usr/share/icons/hicolor/86x86/apps
