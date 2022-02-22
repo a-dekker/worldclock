@@ -109,7 +109,7 @@ Page {
             var data = timezones.readCityInfo(mainapp.city_id,
                                               mainapp.timeFormat)
             var zoneTime = data["zoneTime"].replace(/\./g, '')
-            var zoneCity = data["zoneCity"]
+            var zoneCity = data["zoneCity"].toString()
             var zoneCityFull = zoneCity
             for (var i = 0; i < 3; i++) {
                 zoneCity = zoneCity.replace(/(.+)\//, "")
