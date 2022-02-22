@@ -42,17 +42,17 @@
         <translation>إلغاء</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="128"/>
+        <location filename="../qml/pages/Aliases.qml" line="125"/>
         <source>Deleting</source>
         <translation>جاري الحذف</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="183"/>
+        <location filename="../qml/pages/Aliases.qml" line="181"/>
         <source>Alt. name</source>
         <translation>الاسم البديل</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="208"/>
+        <location filename="../qml/pages/Aliases.qml" line="206"/>
         <source>No custom city names defined. Press the plus button to add one.</source>
         <translation>لم يتم تعريف أسماء مدن مخصصة. اضغط على زر  زائد لإضافة واحدة</translation>
     </message>
@@ -60,72 +60,72 @@
 <context>
     <name>CityDetail</name>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="62"/>
-        <location filename="../qml/pages/CityDetail.qml" line="65"/>
+        <location filename="../qml/pages/CityDetail.qml" line="61"/>
+        <location filename="../qml/pages/CityDetail.qml" line="64"/>
         <source>None</source>
         <translation>لا يوجد</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="69"/>
+        <location filename="../qml/pages/CityDetail.qml" line="68"/>
         <source>the clock jumped one hour backward</source>
         <translation>التوقيت تأخر ساعة واحدة</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="73"/>
+        <location filename="../qml/pages/CityDetail.qml" line="72"/>
         <source>the clock jumped one hour forward</source>
         <translation>التوقيت تقدم ساعة واحدة</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="81"/>
+        <location filename="../qml/pages/CityDetail.qml" line="80"/>
         <source>the clock jumps one hour backward</source>
         <translation>التوقيت يتأخر ساعة واحدة</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="84"/>
+        <location filename="../qml/pages/CityDetail.qml" line="83"/>
         <source>the clock jumps one hour forward</source>
         <translation>التوقيت يتقدم ساعة واحدة</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="124"/>
+        <location filename="../qml/pages/CityDetail.qml" line="123"/>
         <source>Timezone details</source>
         <translation>تفاصيل المنطقة الزمنية</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="142"/>
+        <location filename="../qml/pages/CityDetail.qml" line="141"/>
         <source>Timezone</source>
         <translation>المنطقة الزمنية</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="146"/>
-        <location filename="../qml/pages/CityDetail.qml" line="172"/>
+        <location filename="../qml/pages/CityDetail.qml" line="145"/>
+        <location filename="../qml/pages/CityDetail.qml" line="171"/>
         <source>Zone time</source>
         <translation>الوقت الاقليمي</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="188"/>
+        <location filename="../qml/pages/CityDetail.qml" line="187"/>
         <source>Local time</source>
         <translation>الوقت المحلي</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="191"/>
-        <location filename="../qml/pages/CityDetail.qml" line="215"/>
+        <location filename="../qml/pages/CityDetail.qml" line="190"/>
+        <location filename="../qml/pages/CityDetail.qml" line="214"/>
         <source>Time difference</source>
         <translation>فارق التوقيت</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="208"/>
-        <location filename="../qml/pages/CityDetail.qml" line="222"/>
+        <location filename="../qml/pages/CityDetail.qml" line="207"/>
+        <location filename="../qml/pages/CityDetail.qml" line="221"/>
         <source>hour</source>
         <translation>ساعة</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="230"/>
+        <location filename="../qml/pages/CityDetail.qml" line="229"/>
         <source>Prev. daylight transition</source>
         <translation>التغير السابق في التوقيت الصيفي</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="234"/>
-        <location filename="../qml/pages/CityDetail.qml" line="278"/>
+        <location filename="../qml/pages/CityDetail.qml" line="233"/>
+        <location filename="../qml/pages/CityDetail.qml" line="277"/>
         <source>Next daylight transition</source>
         <translation>التغير التالي في التوقيت الصيفي</translation>
     </message>
@@ -133,7 +133,7 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../qml/cover/CoverPage.qml" line="183"/>
+        <location filename="../qml/cover/CoverPage.qml" line="181"/>
         <source>Worldclock</source>
         <translation>ساعة العالم</translation>
     </message>
@@ -141,62 +141,62 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="134"/>
+        <location filename="../qml/pages/MainPage.qml" line="130"/>
         <source>City already added</source>
         <translation>المدينة مضافة مسبقاً</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="369"/>
+        <location filename="../qml/pages/MainPage.qml" line="365"/>
         <source>About</source>
         <translation>حول</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="373"/>
+        <location filename="../qml/pages/MainPage.qml" line="369"/>
         <source>Settings</source>
         <translation>إعدادات</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="377"/>
+        <location filename="../qml/pages/MainPage.qml" line="373"/>
         <source>Custom city names</source>
         <translation>أسماء مدن مخصصة</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="381"/>
+        <location filename="../qml/pages/MainPage.qml" line="377"/>
         <source>Add city</source>
         <translation>إضافة مدينة</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="419"/>
+        <location filename="../qml/pages/MainPage.qml" line="415"/>
         <source>Worldclock</source>
         <translation>ساعة العالم</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="437"/>
+        <location filename="../qml/pages/MainPage.qml" line="433"/>
         <source>Deleting</source>
         <translation>جاري الحذف</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="469"/>
+        <location filename="../qml/pages/MainPage.qml" line="465"/>
         <source>Manage custom cities on other page</source>
         <translation>إدارة المدن المخصصة في صفحة أخرى</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="564"/>
+        <location filename="../qml/pages/MainPage.qml" line="560"/>
         <source>Local time</source>
         <translation>الوقت المحلي</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="608"/>
+        <location filename="../qml/pages/MainPage.qml" line="604"/>
         <source>Details</source>
         <translation>التفاصيل</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="624"/>
+        <location filename="../qml/pages/MainPage.qml" line="620"/>
         <source>Remove</source>
         <translation>حذف</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="630"/>
+        <location filename="../qml/pages/MainPage.qml" line="626"/>
         <source>Cannot remove Local time</source>
         <translation>تعذّر حذف الوقت المحلي</translation>
     </message>

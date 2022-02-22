@@ -67,18 +67,17 @@ CoverBackground {
                 for (var myCity in myCities) {
                     data = timezones.readCityInfo(myCities[myCity],
                                                   mainapp.timeFormat)
-                    data = data.split(';')
-                    var zoneTime = data[0].replace(/\./g, '')
-                    var zoneCity = data[1]
-                    var zoneCityFull = zoneCity
+                    var zoneTime = data["zoneTime"].replace(/\./g, '')
+                    var zoneCity = data["zoneCity"].toString()
+                    var zoneCityFull = zoneCity.toString()
                     for (var i = 0; i < 3; i++) {
                         zoneCity = zoneCity.replace(/(.+)\//, "")
                     }
-                    var zoneCountry = data[2]
-                    var zoneDate = data[3]
-                    var zoneUTC = data[4]
-                    var zoneSecs = data[5]
-                    var zoneCityTr = data[6]
+                    var zoneCountry = data["zoneCountry"]
+                    var zoneDate = data["zoneDate"]
+                    var zoneUTC = data["zoneUTC"]
+                    var zoneSecs = data["zoneSecs"]
+                    var zoneCityTr = data["zoneCityTr"]
 
                     appendCity(zoneTime, zoneCityTr, zoneSecs, zoneCityFull)
                 }
@@ -89,19 +88,18 @@ CoverBackground {
             var myCity = customdata[i].split("|")[1]
             data = timezones.readCityInfo(customdata[i].split("|")[0],
                                           mainapp.timeFormat)
-            data = data.split(';')
-            var zoneTime = data[0].replace(/\./g, '')
-            var zoneCity = data[1]
-            var zoneCityFull = zoneCity
+            var zoneTime = data["zoneTime"].replace(/\./g, '')
+            var zoneCity = data["zoneCity"].toString()
+            var zoneCityFull = zoneCity.toString()
             for (var x = 0; x < 3; x++) {
                 zoneCity = zoneCity.replace(/(.+)\//, "")
             }
             zoneCity = myCity
-            var zoneCountry = data[2]
-            var zoneDate = data[3]
-            var zoneUTC = data[4]
-            var zoneSecs = data[5]
-            var zoneCityTr = data[6]
+            var zoneCountry = data["zoneCountry"]
+            var zoneDate = data["zoneDate"]
+            var zoneUTC = data["zoneUTC"]
+            var zoneSecs = data["zoneSecs"]
+            var zoneCityTr = data["zoneCityTr"]
 
             if (zoneCityFull === mainapp.localContinent + "/" + mainapp.localCity
                     && myset.value("hidelocal") === "true") {

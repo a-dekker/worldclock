@@ -42,17 +42,17 @@
         <translation>Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="128"/>
+        <location filename="../qml/pages/Aliases.qml" line="125"/>
         <source>Deleting</source>
         <translation>Διαγραφή</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="183"/>
+        <location filename="../qml/pages/Aliases.qml" line="181"/>
         <source>Alt. name</source>
         <translation>Εναλλακτικό όνομα</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="208"/>
+        <location filename="../qml/pages/Aliases.qml" line="206"/>
         <source>No custom city names defined. Press the plus button to add one.</source>
         <translation>Δεν έχουν οριστεί προσαρμοσμένες ονομασίες πόλεων. Πατήστε στο κουμπί με τον συν για να προσθέσετε μια.</translation>
     </message>
@@ -60,72 +60,72 @@
 <context>
     <name>CityDetail</name>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="62"/>
-        <location filename="../qml/pages/CityDetail.qml" line="65"/>
+        <location filename="../qml/pages/CityDetail.qml" line="61"/>
+        <location filename="../qml/pages/CityDetail.qml" line="64"/>
         <source>None</source>
         <translation>Ουδεμία</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="69"/>
+        <location filename="../qml/pages/CityDetail.qml" line="68"/>
         <source>the clock jumped one hour backward</source>
         <translation>το ρολόι γύρισε σε μια ώρα πίσω</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="73"/>
+        <location filename="../qml/pages/CityDetail.qml" line="72"/>
         <source>the clock jumped one hour forward</source>
         <translation>το ρολόι γύρισε μια ώρα μπροστά</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="81"/>
+        <location filename="../qml/pages/CityDetail.qml" line="80"/>
         <source>the clock jumps one hour backward</source>
         <translation>το ρολόι θα γυρίσει μια ώρα πίσω</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="84"/>
+        <location filename="../qml/pages/CityDetail.qml" line="83"/>
         <source>the clock jumps one hour forward</source>
         <translation>το ρολόι θα γυρίσει μια ώρα μπροστά</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="124"/>
+        <location filename="../qml/pages/CityDetail.qml" line="123"/>
         <source>Timezone details</source>
         <translation>Λεπτομέρειες ωρολογιακής ζώνης</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="142"/>
+        <location filename="../qml/pages/CityDetail.qml" line="141"/>
         <source>Timezone</source>
         <translation>Ωρολογιακή ζώνη</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="146"/>
-        <location filename="../qml/pages/CityDetail.qml" line="172"/>
+        <location filename="../qml/pages/CityDetail.qml" line="145"/>
+        <location filename="../qml/pages/CityDetail.qml" line="171"/>
         <source>Zone time</source>
         <translation>Ζώνη ώρας</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="188"/>
+        <location filename="../qml/pages/CityDetail.qml" line="187"/>
         <source>Local time</source>
         <translation>Τοπική ώρα</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="191"/>
-        <location filename="../qml/pages/CityDetail.qml" line="215"/>
+        <location filename="../qml/pages/CityDetail.qml" line="190"/>
+        <location filename="../qml/pages/CityDetail.qml" line="214"/>
         <source>Time difference</source>
         <translation>Διαφορά ώρας</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="208"/>
-        <location filename="../qml/pages/CityDetail.qml" line="222"/>
+        <location filename="../qml/pages/CityDetail.qml" line="207"/>
+        <location filename="../qml/pages/CityDetail.qml" line="221"/>
         <source>hour</source>
         <translation>ώρα</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="230"/>
+        <location filename="../qml/pages/CityDetail.qml" line="229"/>
         <source>Prev. daylight transition</source>
         <translation>Προηγούμενη αλλαγή θερινής ώρας</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="234"/>
-        <location filename="../qml/pages/CityDetail.qml" line="278"/>
+        <location filename="../qml/pages/CityDetail.qml" line="233"/>
+        <location filename="../qml/pages/CityDetail.qml" line="277"/>
         <source>Next daylight transition</source>
         <translation>Επόμενη αλλαγή θερινής ώρας</translation>
     </message>
@@ -133,7 +133,7 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../qml/cover/CoverPage.qml" line="183"/>
+        <location filename="../qml/cover/CoverPage.qml" line="181"/>
         <source>Worldclock</source>
         <translation>Worldclock</translation>
     </message>
@@ -141,62 +141,62 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="134"/>
+        <location filename="../qml/pages/MainPage.qml" line="130"/>
         <source>City already added</source>
         <translation>Η πόλη έχει ήδη προστεθεί</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="369"/>
+        <location filename="../qml/pages/MainPage.qml" line="365"/>
         <source>About</source>
         <translation>Περί</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="373"/>
+        <location filename="../qml/pages/MainPage.qml" line="369"/>
         <source>Settings</source>
         <translation>Ρυθμίσεις</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="377"/>
+        <location filename="../qml/pages/MainPage.qml" line="373"/>
         <source>Custom city names</source>
         <translation>Προσαρμοσμένες ονομασίες πόλεων</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="381"/>
+        <location filename="../qml/pages/MainPage.qml" line="377"/>
         <source>Add city</source>
         <translation>Προσθήκη πόλης</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="419"/>
+        <location filename="../qml/pages/MainPage.qml" line="415"/>
         <source>Worldclock</source>
         <translation>Worldclock</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="437"/>
+        <location filename="../qml/pages/MainPage.qml" line="433"/>
         <source>Deleting</source>
         <translation>Διαγραφή</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="469"/>
+        <location filename="../qml/pages/MainPage.qml" line="465"/>
         <source>Manage custom cities on other page</source>
         <translation>Διαχείριση των προσαρμοσμένων πόλεων σε μεμονωμένη σελίδα</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="564"/>
+        <location filename="../qml/pages/MainPage.qml" line="560"/>
         <source>Local time</source>
         <translation>Τοπική ώρα</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="608"/>
+        <location filename="../qml/pages/MainPage.qml" line="604"/>
         <source>Details</source>
         <translation>Λεπτομέρειες</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="624"/>
+        <location filename="../qml/pages/MainPage.qml" line="620"/>
         <source>Remove</source>
         <translation>Αφαίρεση</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="630"/>
+        <location filename="../qml/pages/MainPage.qml" line="626"/>
         <source>Cannot remove Local time</source>
         <translation>Αδύνατη η αφαίρεση της τοπικής ώρας</translation>
     </message>

@@ -430,13 +430,13 @@ QString TimeZone::TimeZone::readAllCities() {
     return output;
 }
 
-QString TimeZone::TimeZone::readCityInfo(const QByteArray &cityid,
-                                         const QByteArray &time_format) {
+QVariantMap TimeZone::TimeZone::readCityInfo(const QByteArray &cityid,
+                                             const QByteArray &time_format) {
     // get translation list
     QString lines = cityTranslations();
 
     QLocale::setDefault(myLanguage());
-    QString output;
+    QVariantMap cityInfo;
     QString sign;
     QString timeoffset;
     QTimeZone zone = QTimeZone(cityid);
@@ -503,20 +503,19 @@ QString TimeZone::TimeZone::readCityInfo(const QByteArray &cityid,
             index + cityName.length() + 1,
             lines.indexOf('\n', index) - lines.indexOf(';', index) - 1);
     }
+    cityInfo["zoneCity"] = cityid;
+    cityInfo["zoneCountry"] = myCountry;
+    cityInfo["zoneDate"] = QLocale().toString(mytime.date(), dateFormat);
+    cityInfo["zoneUTC"] = abbreviation + " (" + timeoffset + ")";
+    cityInfo["zoneSecs"] = QString::number(offset / 60);
+    cityInfo["zoneCityTr"] = cityTr;
+    cityInfo["zoneCountryOrg"] = myCountryOrg;
     if (time_format == "24") {
-        output +=
-            mytime.time().toString("hh:mm") + ";" + cityid + ";" + myCountry +
-            ";" + QLocale().toString(mytime.date(), dateFormat) + ";" +
-            abbreviation + " (" + timeoffset + ");" +
-            QString::number(offset / 60) + ";" + cityTr + ";" + myCountryOrg;
+        cityInfo["zoneTime"] = mytime.time().toString("hh:mm");
     } else {
-        output +=
-            mytime.time().toString("hh:mm ap") + ";" + cityid + ";" +
-            myCountry + ";" + QLocale().toString(mytime.date(), dateFormat) +
-            ";" + abbreviation + " (" + timeoffset + ");" +
-            QString::number(offset / 60) + ";" + cityTr + ";" + myCountryOrg;
+        cityInfo["zoneTime"] = mytime.time().toString("hh:mm ap");
     }
-    return output;
+    return cityInfo;
 }
 
 QVariantMap TimeZone::TimeZone::readCityTime(const QByteArray &cityid,

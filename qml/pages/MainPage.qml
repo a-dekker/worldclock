@@ -33,9 +33,8 @@ Page {
         // Check if local city is translated
         var data = timezones.readCityInfo(localContinent + "/" + localCity,
                                           mainapp.timeFormat)
-        data = data.split(';')
-        local_city_tr = data[6]
-        zoneCountryOrg = data[7]
+        local_city_tr = data["zoneCityTr"]
+        zoneCountryOrg = data["zoneCountryOrg"]
 
         mainapp.localCityTr = local_city_tr
         // add city as localtime
@@ -53,19 +52,18 @@ Page {
                 for (var myCity in myCities) {
                     data = timezones.readCityInfo(myCities[myCity],
                                                   mainapp.timeFormat)
-                    data = data.split(';')
-                    var zoneTime = data[0].replace(/\./g, '')
-                    var zoneCity = data[1]
-                    var zoneCityFull = zoneCity
+                    var zoneTime = data["zoneTime"].replace(/\./g, '')
+                    var zoneCity = data["zoneCity"].toString()
+                    var zoneCityFull = data["zoneCity"].toString()
                     for (var i = 0; i < 3; i++) {
                         zoneCity = zoneCity.replace(/(.+)\//, "")
                     }
-                    var zoneCountry = data[2]
-                    var zoneDate = data[3]
-                    var zoneUTC = data[4]
-                    var zoneSecs = data[5]
-                    var zoneCityTr = data[6]
-                    var zoneCountryOrg = data[7]
+                    var zoneCountry = data["zoneCountry"]
+                    var zoneDate = data["zoneDate"]
+                    var zoneUTC = data["zoneUTC"]
+                    var zoneSecs = data["zoneSecs"]
+                    var zoneCityTr = data["zoneCityTr"]
+                    var zoneCountryOrg = data["zoneCountryOrg"]
 
                     appendList(zoneTime, zoneCity, zoneCountry, zoneDate,
                                zoneUTC, zoneCityFull, zoneSecs, zoneCityTr,
@@ -80,20 +78,19 @@ Page {
             var myCity = customdata[i].split("|")[1]
             data = timezones.readCityInfo(customdata[i].split("|")[0],
                                           mainapp.timeFormat)
-            data = data.split(';')
-            var zoneTime = data[0].replace(/\./g, '')
-            var zoneCity = data[1]
-            var zoneCityFull = zoneCity
+            var zoneTime = data["zoneTime"].replace(/\./g, '')
+            var zoneCity = data["zoneCity"].toString()
+            var zoneCityFull = zoneCity.toString()
             for (var x = 0; x < 3; x++) {
                 zoneCity = zoneCity.replace(/(.+)\//, "")
             }
             zoneCity = myCity
             zoneCityTr = myCity
-            var zoneCountry = data[2]
-            var zoneDate = data[3]
-            var zoneUTC = data[4]
-            var zoneSecs = data[5]
-            var zoneCountryOrg = data[7]
+            var zoneCountry = data["zoneCountry"]
+            var zoneDate = data["zoneDate"]
+            var zoneUTC = data["zoneUTC"]
+            var zoneSecs = data["zoneSecs"]
+            var zoneCountryOrg = data["zoneCountryOrg"]
 
             if (zoneCityFull === localContinent + "/" + localCity
                     && myset.value("hidelocal") === "true") {
@@ -111,19 +108,18 @@ Page {
             // read info
             var data = timezones.readCityInfo(mainapp.city_id,
                                               mainapp.timeFormat)
-            data = data.split(';')
-            var zoneTime = data[0].replace(/\./g, '')
-            var zoneCity = data[1]
+            var zoneTime = data["zoneTime"].replace(/\./g, '')
+            var zoneCity = data["zoneCity"]
             var zoneCityFull = zoneCity
             for (var i = 0; i < 3; i++) {
                 zoneCity = zoneCity.replace(/(.+)\//, "")
             }
-            var zoneCountry = data[2]
-            var zoneDate = data[3]
-            var zoneUTC = data[4]
-            var zoneSecs = data[5]
-            var zoneCityTr = data[6]
-            var zoneCountryOrg = data[7]
+            var zoneCountry = data["zoneCountry"]
+            var zoneDate = data["zoneDate"]
+            var zoneUTC = data["zoneUTC"]
+            var zoneSecs = data["zoneSecs"]
+            var zoneCityTr = data["zoneCityTr"]
+            var zoneCountryOrg = data["zoneCountryOrg"]
 
             var allcities
             if (myset.contains("Cities")) {

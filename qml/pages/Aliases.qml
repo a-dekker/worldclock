@@ -1,6 +1,7 @@
 import QtQuick 2.2
 import Sailfish.Silica 1.0
-import Sailfish.Timezone 1.0 // not_allowed_in_store
+import Sailfish.Timezone 1.0
+// not_allowed_in_store
 import harbour.worldclock.Settings 1.0
 import harbour.worldclock.TimeZone 1.0
 import "../localdb.js" as DB
@@ -22,11 +23,11 @@ Dialog {
 
     function appendCustomCity(city, citytr, cityinfo, alias, displayed) {
         customcitylist.model.append({
-                                        City: city,
-                                        CityTr: citytr,
-                                        CityInfo: cityinfo,
-                                        Alias: alias,
-                                        Displayed: displayed
+                                        "City": city,
+                                        "CityTr": citytr,
+                                        "CityInfo": cityinfo,
+                                        "Alias": alias,
+                                        "Displayed": displayed
                                     })
     }
 
@@ -35,8 +36,7 @@ Dialog {
             // find possible translation
             var data = timezones.readCityInfo(mainapp.city_id,
                                               mainapp.timeFormat)
-            data = data.split(';')
-            var zoneCityTr = data[6]
+            var zoneCityTr = data["zoneCityTr"]
             // strip city info
             mainapp.city_id = mainapp.city_id.replace(/(.+)\(/, "")
             mainapp.city_id = mainapp.city_id.replace(")", "")
@@ -83,10 +83,8 @@ Dialog {
         y: header.height + Theme.paddingMedium
         contentHeight: customcitylist.count * Theme.itemSizeSmall
         height: parent.height - (header.height + Theme.paddingMedium + addButton.height)
-        VerticalScrollDecorator {
-        }
-        model: ListModel {
-        }
+        VerticalScrollDecorator {}
+        model: ListModel {}
 
         function loadcustomcitylist() {
             DB.readAliases()
@@ -95,13 +93,12 @@ Dialog {
                 var data = timezones.readCityInfo(customcitylist.model.get(
                                                       i).CityInfo,
                                                   mainapp.timeFormat)
-                data = data.split(';')
-                var zoneCityTr = data[6]
+                var zoneCityTr = data["zoneCityTr"]
                 customcitylist.model.setProperty(i, "CityTr", zoneCityTr)
             }
         }
 
-         // not_allowed_in_store
+        // not_allowed_in_store
         Component {
             id: timezonePickerComponent
             TimezonePicker {
@@ -170,7 +167,8 @@ Dialog {
                         if (myset.value("city_pickertype", "0") === "0") {
                             pageStack.push(Qt.resolvedUrl("Timezone.qml"))
                         } else {
-                            pageStack.push(timezonePickerComponent) // not_allowed_in_store
+                            pageStack.push(
+                                        timezonePickerComponent) // not_allowed_in_store
                         }
                         isReplace = "true"
                         currIndex = index

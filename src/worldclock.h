@@ -11,7 +11,7 @@ class TimeZone : public QObject {
     explicit TimeZone(QObject *parent = 0);
     ~TimeZone();
     Q_INVOKABLE QString readAllCities();
-    Q_INVOKABLE QString readCityInfo(const QByteArray &cityid,
+    Q_INVOKABLE QVariantMap readCityInfo(const QByteArray &cityid,
                                      const QByteArray &time_format);
     Q_INVOKABLE QVariantMap readCityTime(const QByteArray &cityid,
                                      const QByteArray &time_format);

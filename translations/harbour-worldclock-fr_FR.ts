@@ -42,17 +42,17 @@
         <translation>Annuler</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="128"/>
+        <location filename="../qml/pages/Aliases.qml" line="125"/>
         <source>Deleting</source>
         <translation>Suppression</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="183"/>
+        <location filename="../qml/pages/Aliases.qml" line="181"/>
         <source>Alt. name</source>
         <translation>Nom alternatif</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Aliases.qml" line="208"/>
+        <location filename="../qml/pages/Aliases.qml" line="206"/>
         <source>No custom city names defined. Press the plus button to add one.</source>
         <translation>Aucune ville n&apos;a été créée. Appuyez sur le bouton &quot;plus&quot; pour en ajouter une.</translation>
     </message>
@@ -60,72 +60,72 @@
 <context>
     <name>CityDetail</name>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="62"/>
-        <location filename="../qml/pages/CityDetail.qml" line="65"/>
+        <location filename="../qml/pages/CityDetail.qml" line="61"/>
+        <location filename="../qml/pages/CityDetail.qml" line="64"/>
         <source>None</source>
         <translation>Aucun</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="69"/>
+        <location filename="../qml/pages/CityDetail.qml" line="68"/>
         <source>the clock jumped one hour backward</source>
         <translation>l&apos;horloge a été reculée d&apos;une heure</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="73"/>
+        <location filename="../qml/pages/CityDetail.qml" line="72"/>
         <source>the clock jumped one hour forward</source>
         <translation>l&apos;horloge a été avancée d&apos;une heure</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="81"/>
+        <location filename="../qml/pages/CityDetail.qml" line="80"/>
         <source>the clock jumps one hour backward</source>
         <translation>l&apos;horloge sera reculée d&apos;une heure</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="84"/>
+        <location filename="../qml/pages/CityDetail.qml" line="83"/>
         <source>the clock jumps one hour forward</source>
         <translation>l&apos;horloge sera avancée d&apos;une heure</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="124"/>
+        <location filename="../qml/pages/CityDetail.qml" line="123"/>
         <source>Timezone details</source>
         <translation>Détails du fuseau horaire</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="142"/>
+        <location filename="../qml/pages/CityDetail.qml" line="141"/>
         <source>Timezone</source>
         <translation>Fuseau horaire</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="146"/>
-        <location filename="../qml/pages/CityDetail.qml" line="172"/>
+        <location filename="../qml/pages/CityDetail.qml" line="145"/>
+        <location filename="../qml/pages/CityDetail.qml" line="171"/>
         <source>Zone time</source>
         <translation>Heure du fuseau</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="188"/>
+        <location filename="../qml/pages/CityDetail.qml" line="187"/>
         <source>Local time</source>
         <translation>Heure locale</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="191"/>
-        <location filename="../qml/pages/CityDetail.qml" line="215"/>
+        <location filename="../qml/pages/CityDetail.qml" line="190"/>
+        <location filename="../qml/pages/CityDetail.qml" line="214"/>
         <source>Time difference</source>
         <translation>Décalage horaire</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="208"/>
-        <location filename="../qml/pages/CityDetail.qml" line="222"/>
+        <location filename="../qml/pages/CityDetail.qml" line="207"/>
+        <location filename="../qml/pages/CityDetail.qml" line="221"/>
         <source>hour</source>
         <translation>heure(s)</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="230"/>
+        <location filename="../qml/pages/CityDetail.qml" line="229"/>
         <source>Prev. daylight transition</source>
         <translation>Dernier changem. d&apos;heure</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="234"/>
-        <location filename="../qml/pages/CityDetail.qml" line="278"/>
+        <location filename="../qml/pages/CityDetail.qml" line="233"/>
+        <location filename="../qml/pages/CityDetail.qml" line="277"/>
         <source>Next daylight transition</source>
         <translation>Prochain changem. d&apos;heure</translation>
     </message>
@@ -133,7 +133,7 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../qml/cover/CoverPage.qml" line="183"/>
+        <location filename="../qml/cover/CoverPage.qml" line="181"/>
         <source>Worldclock</source>
         <translation>Worldclock</translation>
     </message>
@@ -141,62 +141,62 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="134"/>
+        <location filename="../qml/pages/MainPage.qml" line="130"/>
         <source>City already added</source>
         <translation>Ville déjà ajoutée</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="369"/>
+        <location filename="../qml/pages/MainPage.qml" line="365"/>
         <source>About</source>
         <translation>À propos</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="373"/>
+        <location filename="../qml/pages/MainPage.qml" line="369"/>
         <source>Settings</source>
         <translation>Paramètres</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="377"/>
+        <location filename="../qml/pages/MainPage.qml" line="373"/>
         <source>Custom city names</source>
         <translation>Création de ville</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="381"/>
+        <location filename="../qml/pages/MainPage.qml" line="377"/>
         <source>Add city</source>
         <translation>Ajouter ville</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="419"/>
+        <location filename="../qml/pages/MainPage.qml" line="415"/>
         <source>Worldclock</source>
         <translation>Worldclock</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="437"/>
+        <location filename="../qml/pages/MainPage.qml" line="433"/>
         <source>Deleting</source>
         <translation>Suppression en cours</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="469"/>
+        <location filename="../qml/pages/MainPage.qml" line="465"/>
         <source>Manage custom cities on other page</source>
         <translation>Gérez les villes créées sur l&apos;écran dédié</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="564"/>
+        <location filename="../qml/pages/MainPage.qml" line="560"/>
         <source>Local time</source>
         <translation>Heure locale</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="608"/>
+        <location filename="../qml/pages/MainPage.qml" line="604"/>
         <source>Details</source>
         <translation>Détails</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="624"/>
+        <location filename="../qml/pages/MainPage.qml" line="620"/>
         <source>Remove</source>
         <translation>Supprimer</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="630"/>
+        <location filename="../qml/pages/MainPage.qml" line="626"/>
         <source>Cannot remove Local time</source>
         <translation>Impossible de supprimer l&apos;heure locale</translation>
     </message>
