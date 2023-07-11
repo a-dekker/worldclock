@@ -12,6 +12,8 @@ Page {
     property bool largeScreen: screen.width > 1080
     property bool mediumScreen: (screen.width > 540 && screen.width <= 1080)
     property bool smallScreen: (screen.width <= 540)
+    property bool pageactive: false
+    property var applicationActive: mainapp.applicationActive
 
     RemorsePopup {
         id: remorse
@@ -22,6 +24,14 @@ Page {
     }
 
     property string local_city_tr
+
+    onApplicationActiveChanged: {
+        if (applicationActive) {
+            pageactive = true
+        } else {
+            pageactive = false
+        }
+    }
 
     function loadData() {
         var offset = new Date().toString().split(" ")[5].replace("GMT", "UTC ")
@@ -162,6 +172,7 @@ Page {
 
     onStatusChanged: {
         if (status === PageStatus.Activating) {
+            pageactive = true
             if (mainapp.city_id === "fromsettings") {
                 myset.sync() // else screwed up??
                 listCityModel.clear()
@@ -286,7 +297,7 @@ Page {
         onTriggered: {
             updateTime()
         }
-        running: true
+        running: pageactive
     }
 
     // helper function to add lists to the list

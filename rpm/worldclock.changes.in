@@ -8,9 +8,14 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* ??? Jan 24 2022 Arno Dekker <jack.tar@example.com> 0.14-1
+* Tue Jul 11 2023 Arno Dekker <jack.tar@example.com> 0.14-1
 - Added Estonian language thanks Priit Jõerüüt
 - Small fixes in adding custom TZ
+- Also update time on timezone detail page while active
+- Do not update time while app is not active
+- Improved layout on timezone details page
+- Fixed invalid daylightsaving notifications
+
 * Fri Dec 24 2021 Arno Dekker <jack.tar@example.com> 0.13-2
 - Center UTC image
 - UTC image now honors light themes

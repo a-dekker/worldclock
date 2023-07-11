@@ -2,9 +2,11 @@ import QtQuick 2.2
 import Sailfish.Silica 1.0
 import harbour.worldclock.TimeZone 1.0
 import "../localdb.js" as DB
+import "../components"
 
 Page {
     id: cityDetailPage
+
     property bool largeScreen: screen.width >= 1080
     property string zoneDateTime
     property string zoneName
@@ -29,6 +31,9 @@ Page {
     property string iso2pos
     property string iso3pos
     property string wwwExt
+    property string cityId
+    property bool pageactive: false
+    property var applicationActive: mainapp.applicationActive
 
     TZ {
         id: timezones
@@ -99,11 +104,46 @@ Page {
         wwwExt = countryInf[5]
     }
 
+    onApplicationActiveChanged: {
+        if (applicationActive) {
+            pageactive = true
+        } else {
+            pageactive = false
+        }
+    }
+
+    onStatusChanged: {
+        if ((status === PageStatus.Activating)
+                || (status === PageStatus.Active)) {
+            pageactive = true
+        }
+    }
+
+    Timer {
+        id: timerclock
+
+        interval: 15000 // every 15 secs update for now
+        repeat: true
+        triggeredOnStart: true
+        onTriggered: {
+            updateTime()
+        }
+        running: pageactive
+    }
+
+    function updateTime() {
+        var data = timezones.readCityDetails(cityId, mainapp.timeFormat)
+        zoneDateTime = data["zoneDateTime"]
+        localDateTime = data["localDateTime"]
+    }
+
     Component.onCompleted: {
+        cityId = mainapp.city_id
         get_city_details(mainapp.city_id)
         if (zoneCountry !== "Default") {
             get_country_details()
         }
+        timerclock.start()
     }
 
     // Place our content in a Column.  The PageHeader is always placed at the top
@@ -122,18 +162,12 @@ Page {
             PageHeader {
                 title: qsTr("Timezone details")
             }
-            SectionHeader {
-                wrapMode: Text.Wrap
-                Image {
-                    height: largeScreen ? 100 : 55
-                    width: largeScreen ? 180 : 95
-                    source: zoneCountry === "" ? "" : zoneCountry === "Default"
-                                                 && isLightTheme ? '../images/Default_lighttheme.png' : '../images/' + zoneCountry + '.png'
-                    anchors.leftMargin: Theme.paddingSmall
-                }
+            FancySectionHeader {
                 text: zoneCity.replace(/_/g,
                                        " ") + ", " + countryTranslated.replace(
                           /([a-z])([A-Z])/g, "$1 $2")
+                iconSource: zoneCountry === "" ? "" : zoneCountry === "Default"
+                                                 && isLightTheme ? '../images/Default_lighttheme.png' : '../images/' + zoneCountry + '.png'
             }
             Row {
                 x: Theme.paddingLarge

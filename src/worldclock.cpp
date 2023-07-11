@@ -630,16 +630,20 @@ QVariantMap TimeZone::TimeZone::readCityDetails(const QByteArray &cityid,
 
     QTimeZone::OffsetData offset2 =
         zone.previousTransition(QDateTime::currentDateTime());
-    QTimeZone::OffsetData offset3 =
+    QTimeZone::OffsetData offsetNextTransition =
         zone.nextTransition(QDateTime::currentDateTime());
     // lets find the upcoming/previous abbreviation
     QString abbrevToNext = zone.abbreviation(offset2.atUtc.addDays(-1));
-    QString abbrevFromPrev = zone.abbreviation(offset3.atUtc.addDays(1));
+    QString abbrevFromPrev =
+        zone.abbreviation(offsetNextTransition.atUtc.addDays(1));
     QString DST_shift_txt = "";
     QString DST_shift_txt_old = "";
     bool isDayLightTime = zone.isDaylightTime(QDateTime::currentDateTime());
 
-    if (offset3.atUtc != QDateTime()) {
+    if ((offsetNextTransition.atUtc != QDateTime()) &&
+        (offsetNextTransition.atUtc.toString("yyyy-MM-dd HH:mm:ss.zzz") !=
+         "2038-01-19 03:14:07.000")) {
+        // transition offsets in (epoch year) 2038 are bogus?
         abbrevToNext = "(" + abbreviation + "→" + abbrevToNext + ")";
         // try to make the date format look like dddd MMM d yyyy hh:mm, but in
         // localized order
@@ -653,6 +657,13 @@ QVariantMap TimeZone::TimeZone::readCityDetails(const QByteArray &cityid,
         QRegExp rx3("\\b(d){2}\\b");
         dateFormat.replace(rx3, "d");
         // qDebug() <<  dateFormat;
+        // qDebug() << "offset:" << offset;
+        // qDebug() << "hasTransition:" << hasTransitions;
+        // qDebug() << "nextTransition:" << nextTransition;
+        // qDebug() << "offsetNextTransition:.atUtc" << offsetNextTransition.atUtc;
+        // qDebug() << "previousTransition:" << previousTransition;
+        // qDebug() << "isDayLightTime:" << isDayLightTime;
+        // qDebug() << "hasDayLighttime:" << hasDaylighttime;
         if (time_format == "24") {
             if (isDayLightTime) {
                 if (offset > 0) {
@@ -680,14 +691,16 @@ QVariantMap TimeZone::TimeZone::readCityDetails(const QByteArray &cityid,
                 }
             }
             nextTransition =
-                QLocale().toString(offset3.atUtc.addSecs(offset), dateFormat) +
+                QLocale().toString(offsetNextTransition.atUtc.addSecs(offset),
+                                   dateFormat) +
                 " (" + abbreviation + ")";
         } else {
             dateFormat.replace("hh:mm", "hh:mm ap");
             previousTransition =
                 QLocale().toString(offset2.atUtc, dateFormat) + " (UTC)";
             nextTransition =
-                QLocale().toString(offset3.atUtc, dateFormat) + " (UTC)";
+                QLocale().toString(offsetNextTransition.atUtc, dateFormat) +
+                " (UTC)";
         }
         if (isDayLightTime) {
             // we now are in DaylightTime, so we go one hour back
