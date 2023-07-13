@@ -14,6 +14,7 @@ Page {
     property bool smallScreen: (screen.width <= 540)
     property bool pageactive: false
     property var applicationActive: mainapp.applicationActive
+    property string local_city_tr
 
     RemorsePopup {
         id: remorse
@@ -22,8 +23,6 @@ Page {
     MySettings {
         id: myset
     }
-
-    property string local_city_tr
 
     onApplicationActiveChanged: {
         if (applicationActive) {
@@ -75,9 +74,12 @@ Page {
                     var zoneCityTr = data["zoneCityTr"]
                     var zoneCountryOrg = data["zoneCountryOrg"]
 
-                    appendList(zoneTime, zoneCity, zoneCountry, zoneDate,
-                               zoneUTC, zoneCityFull, zoneSecs, zoneCityTr,
-                               zoneCountryOrg)
+                    if (zoneCity !== localCity) {
+                        // do not display if already localtime
+                        appendList(zoneTime, zoneCity, zoneCountry, zoneDate,
+                                   zoneUTC, zoneCityFull, zoneSecs, zoneCityTr,
+                                   zoneCountryOrg)
+                    }
                 }
             }
         }
@@ -154,7 +156,7 @@ Page {
             } else {
                 allcities = mainapp.city_id
                 appendList(zoneTime, zoneCity, zoneCountry, zoneDate, zoneUTC,
-                           zoneCityFull, zoneSecs, zoneCityTr)
+                           zoneCityFull, zoneSecs, zoneCityTr, zoneCountryOrg)
                 myset.setValue("Cities", allcities)
                 myset.sync()
             }
@@ -279,8 +281,8 @@ Page {
             // cityname based
             for (n = 0; n < listCityModel.count; n++)
                 for (i = n + 1; i < listCityModel.count; i++) {
-                    if (listCityModel.get(n).zoneCity > listCityModel.get(
-                                i).zoneCity) {
+                    if (listCityModel.get(n).zoneCityTr > listCityModel.get(
+                                i).zoneCityTr) {
                         listCityModel.move(i, n, 1)
                         n = 0
                     }

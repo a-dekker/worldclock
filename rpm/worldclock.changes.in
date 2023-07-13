@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Wed Jul 12 2023 Arno Dekker <jack.tar@example.com> 0.14-2
+- Various small fixes regarding localtime
+
 * Tue Jul 11 2023 Arno Dekker <jack.tar@example.com> 0.14-1
 - Added Estonian language thanks Priit Jõerüüt
 - Small fixes in adding custom TZ

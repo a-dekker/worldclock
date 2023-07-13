@@ -59,6 +59,16 @@ CoverBackground {
 
     function loadCityList() {
         wipeCityList()
+        var data = timezones.readCityInfo(localContinent + "/" + localCity,
+                                          mainapp.timeFormat)
+        var local_city_tr = data["zoneCityTr"]
+        var zoneSecs = data["zoneSecs"]
+        var zoneCountryOrg = data["zoneCountryOrg"]
+        var zoneCityFull = data["zoneCity"].toString()
+        // add city as localtime
+        appendCity(timezones.readLocalTime(mainapp.timeFormat)['zoneTime'],
+                   local_city_tr, zoneSecs, zoneCityFull)
+
         if (myset.contains("Cities")) {
             var myCities = myset.value("Cities").toString()
             if (myCities !== "") {
@@ -79,7 +89,9 @@ CoverBackground {
                     var zoneSecs = data["zoneSecs"]
                     var zoneCityTr = data["zoneCityTr"]
 
-                    appendCity(zoneTime, zoneCityTr, zoneSecs, zoneCityFull)
+                    if (zoneCity !== mainapp.localCity) {
+                        appendCity(zoneTime, zoneCityTr, zoneSecs, zoneCityFull)
+                    }
                 }
             }
         }
@@ -105,6 +117,7 @@ CoverBackground {
                     && myset.value("hidelocal") === "true") {
                 if (!replaceLocalCity(zoneCity)) {
                     appendCity(zoneTime, zoneCity, zoneSecs, zoneCityFull)
+                    console.log(zoneCity)
                 }
             } else {
                 appendCity(zoneTime, zoneCity, zoneSecs, zoneCityFull)
@@ -115,8 +128,14 @@ CoverBackground {
     function updateTime() {
         var data
         for (var i = 0; i < cityListModel.count; ++i) {
-            data = timezones.readCityTime(cityListModel.get(i).zoneCityFull,
-                                          mainapp.timeFormat)
+            if (cityListModel.get(
+                        i).zoneCountry === mainapp.localContinent + "/" + mainapp.localCity) {
+                data = timezones.readLocalTime(mainapp.timeFormat)
+            } else {
+                data = timezones.readCityTime(cityListModel.get(
+                                                  i).zoneCityFull,
+                                              mainapp.timeFormat)
+            }
             cityListModel.setProperty(i, "zoneTime",
                                       data['zoneTime'].replace(/\./g, ''))
         }
