@@ -60,72 +60,72 @@
 <context>
     <name>CityDetail</name>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="61"/>
-        <location filename="../qml/pages/CityDetail.qml" line="64"/>
+        <location filename="../qml/pages/CityDetail.qml" line="66"/>
+        <location filename="../qml/pages/CityDetail.qml" line="69"/>
         <source>None</source>
         <translation>Nincs</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="68"/>
+        <location filename="../qml/pages/CityDetail.qml" line="73"/>
         <source>the clock jumped one hour backward</source>
         <translation>Visszaállítva egy órával</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="72"/>
+        <location filename="../qml/pages/CityDetail.qml" line="77"/>
         <source>the clock jumped one hour forward</source>
         <translation>Előre állítva egy órával</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="80"/>
+        <location filename="../qml/pages/CityDetail.qml" line="85"/>
         <source>the clock jumps one hour backward</source>
         <translation>Vissza fog állni egy órával</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="83"/>
+        <location filename="../qml/pages/CityDetail.qml" line="88"/>
         <source>the clock jumps one hour forward</source>
         <translation>Előre fog állni egy órával</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="123"/>
+        <location filename="../qml/pages/CityDetail.qml" line="163"/>
         <source>Timezone details</source>
         <translation>Időzóna részletei</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="141"/>
+        <location filename="../qml/pages/CityDetail.qml" line="175"/>
         <source>Timezone</source>
         <translation>Időzóna</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="145"/>
-        <location filename="../qml/pages/CityDetail.qml" line="171"/>
+        <location filename="../qml/pages/CityDetail.qml" line="179"/>
+        <location filename="../qml/pages/CityDetail.qml" line="205"/>
         <source>Zone time</source>
         <translation>Zóna idő</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="187"/>
+        <location filename="../qml/pages/CityDetail.qml" line="221"/>
         <source>Local time</source>
         <translation>Helyi idő</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="190"/>
-        <location filename="../qml/pages/CityDetail.qml" line="214"/>
+        <location filename="../qml/pages/CityDetail.qml" line="224"/>
+        <location filename="../qml/pages/CityDetail.qml" line="248"/>
         <source>Time difference</source>
         <translation>Idő különbség</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="207"/>
-        <location filename="../qml/pages/CityDetail.qml" line="221"/>
+        <location filename="../qml/pages/CityDetail.qml" line="241"/>
+        <location filename="../qml/pages/CityDetail.qml" line="255"/>
         <source>hour</source>
         <translation>óra</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="229"/>
+        <location filename="../qml/pages/CityDetail.qml" line="263"/>
         <source>Prev. daylight transition</source>
         <translation>Előző óraátállítás</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CityDetail.qml" line="233"/>
-        <location filename="../qml/pages/CityDetail.qml" line="277"/>
+        <location filename="../qml/pages/CityDetail.qml" line="267"/>
+        <location filename="../qml/pages/CityDetail.qml" line="311"/>
         <source>Next daylight transition</source>
         <translation>Következő óraátállítás</translation>
     </message>
@@ -133,7 +133,7 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../qml/cover/CoverPage.qml" line="181"/>
+        <location filename="../qml/cover/CoverPage.qml" line="200"/>
         <source>Worldclock</source>
         <translation>Világóra</translation>
     </message>
@@ -141,62 +141,62 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="130"/>
+        <location filename="../qml/pages/MainPage.qml" line="142"/>
         <source>City already added</source>
         <translation>A város már hozzáadva</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="365"/>
+        <location filename="../qml/pages/MainPage.qml" line="378"/>
         <source>About</source>
         <translation>Névjegy</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="369"/>
+        <location filename="../qml/pages/MainPage.qml" line="382"/>
         <source>Settings</source>
         <translation>Beállítások</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="373"/>
+        <location filename="../qml/pages/MainPage.qml" line="386"/>
         <source>Custom city names</source>
         <translation>Egyedi városnevek</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="377"/>
+        <location filename="../qml/pages/MainPage.qml" line="390"/>
         <source>Add city</source>
         <translation>Város hozzáadása</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="415"/>
+        <location filename="../qml/pages/MainPage.qml" line="428"/>
         <source>Worldclock</source>
         <translation>Világóra</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="433"/>
+        <location filename="../qml/pages/MainPage.qml" line="446"/>
         <source>Deleting</source>
         <translation>Törlés</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="465"/>
+        <location filename="../qml/pages/MainPage.qml" line="478"/>
         <source>Manage custom cities on other page</source>
         <translation>Az egyedi városok kezelése új lapon</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="560"/>
+        <location filename="../qml/pages/MainPage.qml" line="573"/>
         <source>Local time</source>
         <translation>Helyi idő</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="604"/>
+        <location filename="../qml/pages/MainPage.qml" line="617"/>
         <source>Details</source>
         <translation>Részletek</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="620"/>
+        <location filename="../qml/pages/MainPage.qml" line="633"/>
         <source>Remove</source>
         <translation>Eltávolít</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="626"/>
+        <location filename="../qml/pages/MainPage.qml" line="639"/>
         <source>Cannot remove Local time</source>
         <translation>A helyi idő nem eltávolítható.</translation>
     </message>
